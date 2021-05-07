@@ -2,16 +2,25 @@ import React from 'react';
 import PoliHeader from '../components/Header';
 import PoliFooter from '../components/Footer';
 import { Container, Image, Row, Col } from 'react-bootstrap';
+import CardButton from '../components/CardButton';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 function Welcome(){
     const frontImg = "../../assets/images/up_books.svg";
     return(
         <div>
             <PoliHeader />
-                <Container>
+                <Container fluid>
                     <Row>
-                        <Col>
-                            <div>Hollaaa perrote</div>
+                        <Col/>
+                        <Col/>
+                        <Col sm={4}>
+                            <CardButton
+                                cardColor={"light-blue"}
+                                icon={faArrowRight}
+                                text={"Ir a polilibro"}
+                                textColor={"white"}
+                            />
                         </Col>
                     </Row>
                     <Row>
@@ -24,18 +33,30 @@ function Welcome(){
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
-                            {/* image*/}
+                        <Col sm={4}>
+                            <CardButton 
+                                cardColor={"dark-blue"}
+                                text={"Bienvenida"}
+                                textColor={"white"}
+                            />
                         </Col>
-                        <Col>
-                            {/* image*/}
+                        <Col sm={4}>
+                            <CardButton 
+                                cardColor={"dark-blue"}
+                                text={"Fuentes"}
+                                textColor={"white"}
+                            />
                         </Col>
-                        <Col>
-                            {/* image*/}
+                        <Col sm={4}>
+                            <CardButton
+                                cardColor={"dark-blue"}
+                                text={"Metodología"}
+                                textColor={"white"}
+                            />
                         </Col>
                     </Row>
                 </Container>
-            <PoliFooter />
+                <PoliFooter />
         </div>
     );
 }//Welcome

@@ -1,6 +1,5 @@
 body {
   background-color: #f6f6f6; /*f6f6f6 fffafa fcf9f4 f6f5f5 eeeeee*/
-  padding-bottom: 60px;
 }
 
 hr{
@@ -39,6 +38,7 @@ hr{
   font-family: 'Nunito Sans', sans-serif;/*Noto Sans KR*/
   font-size: .8rem;
   font-weight: 300;
+  margin-top: 2rem;
   padding: 1.5rem;
   text-align: center;
 }
@@ -62,6 +62,14 @@ hr{
 /****************************************************/
 
 /*******************Welcome page***********************/
+.card-button{
+  border-radius: 7px;
+  box-shadow: 0 2px 7px #073b4c; /*035aa6*/
+  padding: 10px;
+  margin: 10px auto 5px;
+  text-align: center;
+}
+
 .content-text {
   color: #011f3f; /*120136 062743 071e3d 0c084c 222831 010a43*/
   font-family: "Spartan", sans-serif;
@@ -89,10 +97,13 @@ hr{
   height: auto;
   width: 40%;
 }
+.icon {
+  margin: 0 10px;
+}
 /******************************************************/
 
 /**************+COLORS***********/
-.blue-bg{
+.light-blue-bg{
   background: #41b9e3;
 }
 
@@ -102,4 +113,12 @@ hr{
 
 .yellow-bg{
   background: #ecb146;
+}
+
+.dark-blue-bg {
+  background-color: #011f3f;
+}
+
+.white {
+  color: #eeeeee;
 }
