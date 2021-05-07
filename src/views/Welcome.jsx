@@ -8,19 +8,19 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 function Welcome(){
     const frontImg = "../../assets/images/up_books.svg";
     return(
-        <div>
+        <div className="primary-div">
             <PoliHeader />
                 <Container fluid>
                     <Row>
-                        <Col/>
-                        <Col/>
-                        <Col sm={4}>
-                            <CardButton
-                                cardColor={"light-blue"}
-                                icon={faArrowRight}
-                                text={"Ir a polilibro"}
-                                textColor={"white"}
-                            />
+                        <Col>
+                            <div className="enter-card">
+                                <CardButton
+                                    cardColor={"light-blue"}
+                                    icon={faArrowRight}
+                                    text={"Ir a polilibro"}
+                                    textColor={"white"}
+                                />
+                            </div>  
                         </Col>
                     </Row>
                     <Row>
@@ -55,7 +55,7 @@ function Welcome(){
                             />
                         </Col>
                     </Row>
-                </Container>
+                </Container> 
                 <PoliFooter />
         </div>
     );

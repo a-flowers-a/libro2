@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
     return (
-        <div className="footer">
+        <div className="footer fixed-bottom">
             <p className="footer-para">Recurso Didáctico Digital (Polilibro) de Gestión Empresarial por:</p>
             <p className="footer-para">Josefina Hernández Jaime</p>
             <p className="footer-para">Yasmín Ivette Jiménez Galán</p>

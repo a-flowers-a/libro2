@@ -7,6 +7,15 @@ hr{
   border-bottom: 1px solid #929aab;
   height: 0;
   width: 90%;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+.primary-div{
+  background-color:darkseagreen;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 /*********************** Header ************************/
@@ -38,13 +47,12 @@ hr{
   font-family: 'Nunito Sans', sans-serif;/*Noto Sans KR*/
   font-size: .8rem;
   font-weight: 300;
-  margin-top: 2rem;
-  padding: 1.5rem;
+  padding: 10px;
   text-align: center;
 }
 
 .footer-para{
-  margin: 4px;
+  margin: 1px;
 }
 /*******************************************************/
 
@@ -79,6 +87,12 @@ hr{
   font-weight: 500;*/
 }
 
+.enter-card {
+  width: 150px;
+  float: right;
+  margin-right: 2rem;
+}
+
 .poli-title{
   color: #073b4c;
   font-family: "Raleway", sans-serif; /*font-family: "Cormorant Garamond", serif;*/
@@ -97,6 +111,7 @@ hr{
   height: auto;
   width: 40%;
 }
+
 .icon {
   margin: 0 10px;
 }
