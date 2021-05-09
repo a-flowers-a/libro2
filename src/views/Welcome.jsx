@@ -7,6 +7,10 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 function Welcome(){
     const frontImg = "../../assets/images/up_books.svg";
+    function sendTo(page){
+        window.location.href = page;
+    }//sendTo
+
     return(
         <div className="primary-div">
             <PoliHeader />
@@ -17,10 +21,38 @@ function Welcome(){
                                 <CardButton
                                     cardColor={"light-blue"}
                                     icon={faArrowRight}
+                                    clickFunc={() => sendTo('/book')}
                                     text={"Ir a polilibro"}
                                     textColor={"white"}
                                 />
                             </div>  
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <Image 
+                                className="big-img"
+                                src={frontImg}
+                                alt="Books" 
+                            />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <Image 
+                                className="big-img"
+                                src={frontImg}
+                                alt="Books" 
+                            />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <Image 
+                                className="big-img"
+                                src={frontImg}
+                                alt="Books" 
+                            />
                         </Col>
                     </Row>
                     <Row>
