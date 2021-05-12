@@ -15,7 +15,7 @@ function Welcome(){
         <div className="primary-div">
             <PoliHeader />
                 <Container fluid>
-                    <Row>
+                    <Row className="m-v-space">
                         <Col>
                             <div className="enter-card">
                                 <CardButton
@@ -28,16 +28,16 @@ function Welcome(){
                             </div>  
                         </Col>
                     </Row>
-                    <Row>
-                        <Col>
+                    <Row className="justify-content-center m-v-space">
+                        <Col sm={4}>
                             <Image 
-                                className="big-img"
+                                className="full-img"
                                 src={frontImg}
                                 alt="Books" 
                             />
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className="m-v-space">
                         <Col sm={4}>
                             <CardButton 
                                 cardColor={"dark-blue"}
