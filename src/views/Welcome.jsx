@@ -38,33 +38,6 @@ function Welcome(){
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
-                            <Image 
-                                className="big-img"
-                                src={frontImg}
-                                alt="Books" 
-                            />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <Image 
-                                className="big-img"
-                                src={frontImg}
-                                alt="Books" 
-                            />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <Image 
-                                className="big-img"
-                                src={frontImg}
-                                alt="Books" 
-                            />
-                        </Col>
-                    </Row>
-                    <Row>
                         <Col sm={4}>
                             <CardButton 
                                 cardColor={"dark-blue"}
