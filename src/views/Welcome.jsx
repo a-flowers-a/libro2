@@ -3,7 +3,7 @@ import PoliHeader from '../components/Header';
 import PoliFooter from '../components/Footer';
 import { Container, Image, Row, Col } from 'react-bootstrap';
 import CardButton from '../components/CardButton';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 function Welcome(){
     const frontImg = "../../assets/images/girl-books.svg";
@@ -37,14 +37,7 @@ function Welcome(){
                             />
                         </Col>
                     </Row>
-                    <Row className="m-v-space">
-                        <Col sm={4}>
-                            <CardButton 
-                                cardColor={"dark-blue"}
-                                text={"Bienvenida"}
-                                textColor={"white"}
-                            />
-                        </Col>
+                    <Row className="justify-content-center m-v-space">
                         <Col sm={4}>
                             <CardButton 
                                 cardColor={"dark-blue"}
