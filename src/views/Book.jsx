@@ -3,11 +3,11 @@ import PoliHeader from '../components/Header';
 import PoliFooter from '../components/Footer';
 import Facebook from '../components/Facebook';
 
-function Book(){
-    return(
+function Book() {
+    return (
         <div>
             <PoliHeader />
-                <Facebook />
+            <Facebook />
             <PoliFooter />
         </div>
     );

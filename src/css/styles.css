@@ -3,7 +3,7 @@ body {
   font-family: "Spartan", sans-serif;
 }
 
-hr{
+hr {
   border: 0;
   border-bottom: 1px solid #929aab;
   height: 0;
@@ -12,15 +12,15 @@ hr{
   margin-top: 6px;
 }
 
-.primary-div{
-  background-color:darkseagreen;
+.primary-div {
+  background-color: darkseagreen;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 /*********************** Header ************************/
-.header{
+.header {
   margin-bottom: 20px;
   overflow: hidden;
 }
@@ -42,44 +42,50 @@ hr{
 /*******************************************************/
 
 /*********************** Footer ************************/
-.footer{
-  background-color: #393e46;/*1b1c25 222831 #373a40 #393e46 30475e*/
+.footer {
+  background-color: #393e46; /*1b1c25 222831 #373a40 #393e46 30475e*/
   color: #eeeeee;
-  font-family: 'Nunito Sans', sans-serif;/*Noto Sans KR*/
-  font-size: .8rem;
+  font-family: "Nunito Sans", sans-serif; /*Noto Sans KR*/
+  font-size: 0.8rem;
   font-weight: 300;
   padding: 10px;
   text-align: center;
   margin-top: auto;
 }
 
-.footer-para{
+.footer-para {
   margin: 1px;
 }
 /*******************************************************/
 
-
-/*********************** Tab ************************/
-.tab{
-  height: 100px;
+/*********************** Facebook ************************/
+.big-img {
+  max-width: 100%;
+  max-height: 100%;
 }
-.tab-text{
+
+.tab-text {
   color: #ededee; /*073b4c*/
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
-  transform: rotate(90deg);
+  font-size: 8px;
 }
+
+.rotate-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
 /****************************************************/
 
 /*******************Welcome page***********************/
-.card-button{
+.card-button {
   border-radius: 7px;
   box-shadow: 0 2px 7px #073b4c; /*035aa6*/
   padding: 10px;
   margin: 10px auto;
   text-align: center;
 }
-.card-button:hover{
+.card-button:hover {
   cursor: pointer;
   box-shadow: 0 2px 10px #073b4c; /*035aa6*/
 }
@@ -98,7 +104,7 @@ hr{
   margin-right: 2rem;
 }
 
-.poli-title{
+.poli-title {
   color: #073b4c;
   font-family: "Raleway", sans-serif; /*font-family: "Cormorant Garamond", serif;*/
   font-weight: 400;
@@ -112,7 +118,7 @@ hr{
 /******************************************************/
 
 /**************General*********************************/
-.full-img{
+.full-img {
   height: auto;
   width: 100%;
 }
@@ -128,7 +134,7 @@ hr{
 /******************************************************/
 
 /**************+COLORS***********/
-.light-blue-bg{
+.light-blue-bg {
   background: #41b9e3;
 }
 
@@ -136,7 +142,7 @@ hr{
   background: #de4c3c;
 }
 
-.yellow-bg{
+.yellow-bg {
   background: #ecb146;
 }
 
