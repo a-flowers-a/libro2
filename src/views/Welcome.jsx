@@ -41,6 +41,7 @@ function Welcome(){
                         <Col sm={4}>
                             <CardButton 
                                 cardColor={"dark-blue"}
+                                clickFunc={() => sendTo('/sources')}
                                 text={"Fuentes"}
                                 textColor={"white"}
                             />
@@ -48,6 +49,7 @@ function Welcome(){
                         <Col sm={4}>
                             <CardButton
                                 cardColor={"dark-blue"}
+                                clickFunc={() => sendTo('/methodology')}
                                 text={"Metodología"}
                                 textColor={"white"}
                             />
