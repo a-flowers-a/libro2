@@ -6,7 +6,7 @@ import CardButton from '../components/CardButton';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 function Welcome(){
-    const frontImg = "../../assets/images/up_books.svg";
+    const frontImg = "../../assets/images/girl-books.svg";
     function sendTo(page){
         window.location.href = page;
     }//sendTo
