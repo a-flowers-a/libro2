@@ -13,7 +13,7 @@ hr {
 }
 
 .primary-div {
-  background-color: darkseagreen;
+  /*background-color: darkseagreen;*/
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -127,6 +127,21 @@ hr {
 .full-img {
   height: auto;
   width: 100%;
+}
+
+.full-card{
+  background-color: #e7e6e1;
+  border-radius: 10px;
+  box-shadow: 0 2px 7px #073b4c; /*035aa6*/
+  padding: 2rem;
+  width: 100%;
+}
+
+.justify-text{
+  text-align: justify;
+}
+.center-text{
+  text-align: center;
 }
 
 .icon {
