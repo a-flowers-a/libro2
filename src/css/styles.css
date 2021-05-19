@@ -124,29 +124,39 @@ hr {
 /******************************************************/
 
 /**************General*********************************/
+.center-text{
+  text-align: center;
+}
+
 .full-img {
   height: auto;
   width: 100%;
 }
 
 .full-card{
-  background-color: #e7e6e1;
+  background-color: #f7ecf6;
   border-radius: 10px;
   box-shadow: 0 2px 7px #073b4c; /*035aa6*/
   padding: 2rem;
   width: 100%;
-  overflow-wrap: break-word ;
+  overflow-wrap: break-word;
+}
+
+.icon {
+  margin: 0 10px;
 }
 
 .justify-text{
   text-align: justify;
 }
-.center-text{
-  text-align: center;
+
+.main-card {
+  border-radius: 10px;
+  padding: 35px;
 }
 
-.icon {
-  margin: 0 10px;
+.m-b-space {
+  margin-bottom: 20px;
 }
 
 .m-v-space {
@@ -172,6 +182,14 @@ hr {
   background-color: #011f3f;
 }
 
+.purple-bg {
+  background-color: #b673de;
+}
+
+.white-bg {
+  background-color: #fafafa;
+}
+
 .white {
-  color: #eeeeee;
+  color: #fafafa;
 }

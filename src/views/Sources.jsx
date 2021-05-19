@@ -1,12 +1,14 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { Container, Row, Col, Card, Image } from 'react-bootstrap';
+import { faArrowLeft, faFeatherAlt } from '@fortawesome/free-solid-svg-icons';
 import CardButton from '../components/CardButton';
 import PoliHeader from '../components/Header';
 import PoliFooter from '../components/Footer';
 import itemSources from '../content/sources';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Sources(){
+    const bibliography = "../../assets/images/biblio.svg";
     console.log(itemSources);
     function sendTo(page){
         window.location.href = page;
@@ -31,9 +33,21 @@ function Sources(){
                     </Col>
                 </Row>
                 <Row className="justify-content-center m-v-space">
+                    <Col sm={6}>
+                        <Image 
+                            className="full-img"
+                            src={bibliography}
+                            alt="Books" 
+                        />
+                    </Col>
+                </Row>
+                <Row className="justify-content-center m-v-space">
                     <Col sm={10}>
                         <div className="full-card justify-text">
-                            {itemSources.map(item => <p>{item}</p>)}
+                            {itemSources.map(item => <p>
+                                <FontAwesomeIcon className={'icon'} icon={faFeatherAlt}/>
+                                {item}
+                            </p>)}
                         </div>
                     </Col>
                 </Row>
