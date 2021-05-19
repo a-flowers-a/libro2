@@ -32,7 +32,7 @@ function Sources(){
                 </Row>
                 <Row className="justify-content-center m-v-space">
                     <Col sm={10}>
-                        <div className="full-card">
+                        <div className="full-card justify-text">
                             {itemSources.map(item => <p>{item}</p>)}
                         </div>
                     </Col>

@@ -135,6 +135,7 @@ hr {
   box-shadow: 0 2px 7px #073b4c; /*035aa6*/
   padding: 2rem;
   width: 100%;
+  overflow-wrap: break-word ;
 }
 
 .justify-text{
