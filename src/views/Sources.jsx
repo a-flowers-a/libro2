@@ -33,11 +33,11 @@ function Sources(){
                     </Col>
                 </Row>
                 <Row className="justify-content-center m-v-space">
-                    <Col sm={6}>
+                    <Col sm={4}>
                         <Image 
                             className="full-img"
                             src={bibliography}
-                            alt="Books" 
+                            alt="Reading" 
                         />
                     </Col>
                 </Row>

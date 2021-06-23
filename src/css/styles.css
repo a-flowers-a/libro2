@@ -146,6 +146,11 @@ hr {
   margin: 0 10px;
 }
 
+.img-source {
+  font-style: italic;
+  font-size: 13px;
+}
+
 .justify-text{
   text-align: justify;
 }
@@ -163,6 +168,10 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+ol.upper-letter{
+  list-style-type: upper-alpha;
+}
 /******************************************************/
 
 /**************+COLORS***********/
@@ -172,6 +181,10 @@ hr {
 
 .red-bg {
   background: #de4c3c;
+}
+
+.red {
+  color: #de4c3c;
 }
 
 .yellow-bg {

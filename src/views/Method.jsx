@@ -1,11 +1,12 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import CardButton from '../components/CardButton';
 import PoliHeader from '../components/Header';
 import PoliFooter from '../components/Footer';
 
 function Method(){
+    const methodImg = "../../assets/images/method.svg";
     function sendTo(page){
         window.location.href = page;
     }//sendTo
@@ -26,6 +27,15 @@ function Method(){
                                 textColor={"white"}
                             />
                         </div>  
+                    </Col>
+                </Row>
+                <Row className="justify-content-center m-v-space">
+                    <Col sm={4}>
+                        <Image 
+                            className="full-img"
+                            src={methodImg}
+                            alt="Path" 
+                        />
                     </Col>
                 </Row>
                 <Row className="justify-content-center m-v-space">
