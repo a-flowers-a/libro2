@@ -1,9 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPuzzlePiece } from '@fortawesome/free-solid-svg-icons';
 
 function Actividad(props){
-    const {link, number} = props;
+    const {link, number, type, icon} = props;
     function download(){
         window.open(link);
     }
@@ -13,10 +12,10 @@ function Actividad(props){
         >
             <FontAwesomeIcon 
                 className={'icon'}
-                icon={faPuzzlePiece} 
+                icon={icon} 
                 size="2x"
             />
-            {`Actividad_${number}`}
+            {`${type} ${number}`}
         </div>
     );
 }//Actividad

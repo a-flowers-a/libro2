@@ -124,8 +124,18 @@ hr {
 /******************************************************/
 
 /**************General*********************************/
+.bold {
+  display: inline;
+  font-weight: bold;
+}
+
 .center-text{
   text-align: center;
+}
+
+.v-center-content {
+  display: flex;
+  align-items: center;
 }
 
 .full-img {
@@ -171,6 +181,10 @@ hr {
 
 ol.upper-letter{
   list-style-type: upper-alpha;
+}
+
+.paragraph {
+  display: block;
 }
 /******************************************************/
 
