@@ -15,8 +15,13 @@ const img29 = "../../assets/images/29.png";
 const img210 = "../../assets/images/210.png";
 const img211 = "../../assets/images/211.png";
 const img212 = "../../assets/images/212.png";
+const img213 = "../../assets/images/213.png";
+const img214 = "../../assets/images/214.png";
+const img215 = "../../assets/images/215.png";
+const img216 = "../../assets/images/216.png";
 
-const video1= "../../assets/videos/que_son_los_estados_financieros.mp4"
+const video1= "../../assets/videos/que_son_los_estados_financieros.mp4";
+const video2= "../../assets/videos/ley_de_la_partida_doble.mp4";
 
 function Unit1() {
     return (
@@ -295,6 +300,139 @@ function Unit1() {
                             />
                         </Col>
                     </Row>
+                </div>
+            </section>
+
+            <section id="2.3.1.2">
+                <h4>2.3.1.2 Formas de presentar el estado de situación financiera</h4>
+                <div className="justify-text">
+                    <p>En México y de acuerdo con las NIF B-6 las formas más utilizadas para presentar el estado de situación financiera son: en forma de cuenta y en forma de reporte.</p>
+                    <ol class="upper-letter">
+                        <li><p className="bold">Estado de situación financiera en forma de Cuenta.</p> Tiene un formato horizontal, anotando en la parte izquierda el Activo y en la parte derecha el Pasivo y el Capital Contable. Se basa en la fórmula A = P + CC tal como se muestra en la figura 2.13</li>
+                        <Row className="justify-content-center m-v-space">
+                            <Col md={6}>
+                                <div className="center-text">Figura 2.13 Estado de situación financiera en forma de cuenta</div>
+                                <Image 
+                                    className="full-img"
+                                    src={img213}
+                                    alt="Edo. de situación fin. en forma de cuenta" 
+                                />
+                                <div className="img-source center-text">Hernández, J., Rodríguez, E. & Jiménez, Y. (2020).</div>
+                            </Col>
+                        </Row>
+                        <li><p className="bold">Estado de situación financiera en forma de reporte.</p> Consiste en presentar en forma vertical, las cuentas del Activo, Pasivo y Capital contable, tal como se aprecia en la figura 2.14</li>
+                        <Row className="justify-content-center m-v-space">
+                            <Col md={6}>
+                                <div className="center-text">Figura 2.14 Estado de situación financiera en forma de reporte</div>
+                                <Image 
+                                    className="full-img"
+                                    src={img214}
+                                    alt="Edo. de situación fin. en forma de reporte" 
+                                />
+                                <div className="img-source center-text">Hernández, J., Rodríguez, E. & Jiménez, Y. (2020).</div>
+                            </Col>
+                        </Row>
+                    </ol>
+                    <p>Ahora que conoces las formas en que se puede presentar el estado de situación financiera, te invitamos a realizar la siguiente actividad de aprendizaje</p>
+                    <Row className="justify-content-center m-v-space">
+                        <Col md={3}>
+                            <Actividad 
+                                icon={faPuzzlePiece}
+                                link={"https://drive.google.com/file/d/11_F4xMMCAn3yJGMeW4EuRZpscdjq8W6k/view?usp=sharing"}
+                                type={"Actividad"}
+                                number={"2.4"}
+                            />
+                        </Col>
+                    </Row>
+                    <p>Hasta este momento ya tienes los elementos teóricos necesarios para comprender qué es el estado de situación financiera, su estructura y sobre todo su importancia.</p>
+                    <p>Como ya se ha mencionado el estado de situación financiera muestra el resumen en términos monetarios de las operaciones de una entidad a una fecha determinada. Todos los estados financieros se basan en la información contable de la entidad, sin dicha información no se podría generar un estado financiero.</p>
+                    <p>Es importante mencionar que la contabilidad “es una técnica que se utiliza para el registro de las operaciones que afectan económicamente a una entidad y que produce sistemática y estructuralmente información financiera” (NIF A-1).</p>
+                    <p>Por lo expuesto anteriormente, a continuación veremos cómo se lleva acabo el registro contable de las operaciones de una empresa.</p>
+                    <p>Para ello es importante que realices las siguientes lecturas:</p>
+                    <Row className="justify-content-center m-v-space">
+                        <Col md={3}>
+                            <Actividad 
+                                icon={faBookReader}
+                                link={"https://drive.google.com/file/d/1herW34ZgWn-GYHMzFsB22aW5GSqsiXJK/view?usp=sharing"}
+                                type={"Lectura"}
+                                number={"2"}
+                            />
+                        </Col>
+                        <Col md={6} className="v-center-content">
+                            Teoría de la partida doble
+                        </Col>
+                    </Row>
+                    <Row className="justify-content-center m-v-space">
+                        <Col md={3}>
+                            <Actividad 
+                                icon={faBookReader}
+                                link={"https://drive.google.com/file/d/13IWbOfB2-_i7mWFvnfGCnRWbH6F7v5rb/view?usp=sharing"}
+                                type={"Lectura"}
+                                number={"3"}
+                            />
+                        </Col>
+                        <Col md={6} className="v-center-content">
+                            El impuesto al valor agregado (IVA) y su registro contable
+                        </Col>
+                    </Row>
+                    <p>En el siguiente video se explica la teoría de la partida doble.</p>
+                    <Row className="justify-content-center m-v-space">
+                        <Col md={8}>
+                            <video className="full-img" src={video2} controls />
+                            <div className="img-source center-text">Fuente: https://www.youtube.com/watch?v=nilGlPwTx30&t=247s</div>
+                        </Col>
+                    </Row>
+                    <p>Ya cuentas con los elementos necesarios para realizar las siguientes actividades de aprendizaje:</p>
+                    <Row className="justify-content-center m-v-space">
+                        <Col md={3}>
+                            <Actividad 
+                                icon={faPuzzlePiece}
+                                link={"https://drive.google.com/file/d/1QXpcLi7mqs_ULBiIDytF4Q9nA4tncLIs/view?usp=sharing"}
+                                type={"Actividad"}
+                                number={"2.5"}
+                            />
+                        </Col>
+                        <Col md={3}>
+                            <Actividad 
+                                icon={faPuzzlePiece}
+                                link={"https://drive.google.com/file/d/1s_h9d2v8CTVUCJnFV6TNgr-NbMbsIKSS/view?usp=sharing"}
+                                type={"Actividad"}
+                                number={"2.6"}
+                            />
+                        </Col>
+                    </Row>
+                </div>
+            </section>
+            <section id="2.3.2">
+                <h3>2.3.2 Estado de resultados</h3>
+                <div className="justify-text">
+                    <p>Por lo regular, las empresas tienen dos objetivos:</p>
+                    <ol class="upper-letter">
+                        <li><p className="bold">Un objetivo social,</p> en virtud de que brindan a la sociedad bienes y servicios para la satisfacción de necesidades humanas, siendo a la vez una fuente de empleo.</li>
+                        <li><p className="bold">Un objetivo económico,</p> en razón de que persiguen obtener utilidades.</li>
+                    </ol>
+                    <p>El estado financiero que muestra si se cumplió o no el objetivo económico es el <p className="bold">Estado de resultados.</p> Éste nos da el dato de ¿cuánto ganamos o cuánto perdimos? en un período determinado (Figuras 2.15 y 2.16).</p>
+                    <Row className="justify-content-center m-v-space">
+                        <Col md={6}>
+                            <div className="center-text">Figura 2.15 Ingresos mayores que los egresos</div>
+                            <Image 
+                                className="full-img"
+                                src={img215}
+                                alt="Ingresos mayores que los egresos" 
+                            />
+                            <div className="img-source center-text">Hernández, J., Rodríguez, E. & Jiménez, Y. (2020).</div>
+                        </Col>
+                        <Col md={6}>
+                            <div className="center-text">Figura 2.16 Egresos mayores que los ingresos</div>
+                            <Image 
+                                className="full-img"
+                                src={img216}
+                                alt="Egresos mayores que los ingresos" 
+                            />
+                            <div className="img-source center-text">Hernández, J., Rodríguez, E. & Jiménez, Y. (2020).</div>
+                        </Col>
+                    </Row>
+                    <p>García y Mendoza (2013) definen al estado de resultados como “el estado financiero que muestra cómo se ha obtenido la utilidad o la pérdida del ejercicio de una entidad, durante un período determinado. Enfatizando que es un estado financiero que muestra los ingresos, costos y gastos, así como la utilidad o pérdida resultante en el periodo” (p. 63)</p>
                 </div>
             </section>
         </div>
