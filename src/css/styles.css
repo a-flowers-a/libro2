@@ -124,6 +124,10 @@ hr {
 /******************************************************/
 
 /**************General*********************************/
+.text-descrip {
+  /*font-family: ;*/
+  font-size: 14px;
+}
 .bold {
   display: inline;
   font-weight: bold;
@@ -163,6 +167,10 @@ hr {
 
 .justify-text{
   text-align: justify;
+}
+
+.literal-space {
+  white-space: pre-wrap;
 }
 
 .main-card {
