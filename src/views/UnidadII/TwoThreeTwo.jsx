@@ -2,9 +2,8 @@ import React from "react";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import { Row, Col, Image, Container, Table } from "react-bootstrap";
-import { faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
 import Actividad from "../../components/Actividad";
-import { CustomNavbar } from "../../components/CustomNavbar";
+import { faBookReader, faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
 
 function TwoThreeTwo() {
   const img215 = "../../assets/images/215.png";
@@ -15,8 +14,6 @@ function TwoThreeTwo() {
   return (
     <div className="primary-div">
       <PoliHeader />
-      <CustomNavbar />
-
       <Container fluid>
         <section id="2.3.2">
           <h3>2.3.2 Estado de resultados</h3>
@@ -162,26 +159,33 @@ function TwoThreeTwo() {
             A continuación se definen los rubros que conforman al estado de
             resultados:
           </p>
-          <Table striped bordered hover size="sm">
+          <Table striped bordered size="sm">
             <tbody>
               <tr>
-                <td>Ventas o ingresos netos</td>
                 <td>
-                  Ventas o ingresos netos. Ingresos derivados de la venta de
-                  mercancía y de la prestación de servicios. El rubro VENTAS
-                  incluye las ventas realizadas a crédito, así como las de
-                  contado.
+                  <div className="bold">Ventas o ingresos netos</div>
+                </td>
+                <td>
+                  <div className="bold">Ventas o ingresos netos.</div> Ingresos
+                  derivados de la venta de mercancía y de la prestación de
+                  servicios. El rubro VENTAS incluye las ventas realizadas a
+                  crédito, así como las de contado.
                 </td>
               </tr>
               <tr>
-                <td>Costo de ventas</td>
                 <td>
-                  Costo de ventas. Es lo que a la empresa le costó adquirir o
-                  producir la mercancía o servicios que vendió.
+                  <div className="bold">Costo de ventas</div>
+                </td>
+                <td>
+                  <div className="bold">Costo de ventas.</div> Es lo que a la
+                  empresa le costó adquirir o producir la mercancía o servicios
+                  que vendió.
                 </td>
               </tr>
               <tr>
-                <td>Utilidad o pérdida bruta</td>
+                <td>
+                  <div className="bold">Utilidad o pérdida bruta</div>
+                </td>
                 <td>
                   Diferencia que resulta de restar el costo de ventas a las
                   ventas; si dicha diferencia es positiva se tiene utilidad
@@ -190,36 +194,53 @@ function TwoThreeTwo() {
               </tr>
               <tr>
                 <td>
-                  Gastos generales Incluye:
-                  <ul class="upper-letter">
-                    <li className="bold">Gastos de venta</li>
-                    <li className="bold">Gastos de administración</li>
-                    <li className="bold">Otros ingresos</li>
-                    <li className="bold">Otros gastos</li>
-                  </ul>
+                  <div className="bold">
+                    <p>Gastos generales</p>
+                    <p className="center-text no-marg-bottom">Incluye:</p>
+                    <ul>
+                      <li>Gastos de venta</li>
+                      <li>Gastos de administración</li>
+                      <li>Otros ingresos</li>
+                      <li>Otros gastos</li>
+                    </ul>
+                  </div>
                 </td>
                 <td>
-                  Gastos de venta. Gastos que se originan por la
-                  comercialización de bienes y servicios. Gastos de
-                  administración. Gastos que se originan por llevar a cabo las
-                  funciones de dirección y de administración. Otros ingresos.
-                  Este rubro se refiere a los ingresos que no se derivan de las
-                  actividades normales (correspondientes al giro) ni recurrentes
-                  de la entidad, por ejemplo: utilidad en venta de activos,
-                  rentas recibidas, comisiones ganadas por operaciones no
-                  financieras, donativos y cualquier otro ingreso que no tenga
-                  una identificación específica (García y Mendoza, 2013; Lara
-                  2017). Otros gastos. Gastos que no se relacionan con el giro
-                  de la entidad, por ejemplo, los costos de una huelga o las
-                  reparaciones por daños de un fenómeno natural. (García y
-                  Mendoza, 2013; Lara 2017). También “se consideran otros gastos
-                  los donativos, obsequios, pérdida en venta de active fijo y
-                  cualquier gasto que no tenga una identificación específica”
-                  (Escarpulli, 2012, p.56).
+                  <p>
+                    <div className="bold">Gastos de venta.</div> Gastos que se
+                    originan por la comercialización de bienes y servicios.
+                  </p>
+                  <p>
+                    <div className="bold">Gastos de administración.</div> Gastos
+                    que se originan por llevar a cabo las funciones de dirección
+                    y de administración.
+                  </p>
+                  <p>
+                    <div className="bold">Otros ingresos.</div> Este rubro se
+                    refiere a los ingresos que no se derivan de las actividades
+                    normales (correspondientes al giro) ni recurrentes de la
+                    entidad, por ejemplo: utilidad en venta de activos, rentas
+                    recibidas, comisiones ganadas por operaciones no
+                    financieras, donativos y cualquier otro ingreso que no tenga
+                    una identificación específica (García y Mendoza, 2013; Lara
+                    2017).
+                  </p>
+                  <p>
+                    <div className="bold">Otros gastos.</div> Gastos que no se
+                    relacionan con el giro de la entidad, por ejemplo, los
+                    costos de una huelga o las reparaciones por daños de un
+                    fenómeno natural. (García y Mendoza, 2013; Lara 2017).
+                    También “se consideran otros gastos los donativos,
+                    obsequios, pérdida en venta de active fijo y cualquier gasto
+                    que no tenga una identificación específica” (Escarpulli,
+                    2012, p.56).
+                  </p>
                 </td>
               </tr>
               <tr>
-                <td>Utilidad de operación (EBIT)</td>
+                <td>
+                  <div className="bold">Utilidad de operación (EBIT)</div>
+                </td>
                 <td>
                   Diferencia de restar los gastos generales a la utilidad o
                   pérdida bruta. Por sus siglas en inglés se denomina EBIT:
@@ -229,47 +250,84 @@ function TwoThreeTwo() {
               </tr>
               <tr>
                 <td>
-                  Resultado integral de financiamiento (RIF), se conforma por
-                  ingresos y gastos relacionados con actividades de tipo
-                  financiero Incluye:
-                  <ul class="upper-letter">
-                    <li className="bold">Intereses devengados</li>
-                    <li className="bold">Fluctuación cambiaria</li>
-                    <li className="bold">
-                      Cambios en el valor razonable de activos y pasivos
-                      financieros
-                    </li>
-                    <li className="bold">
-                      Resultado por posición monetaria (REPOMO)
-                    </li>
-                  </ul>
+                  <div className="bold">
+                    <p>
+                      Resultado integral de financiamiento (RIF), se conforma
+                      por ingresos y gastos relacionados con actividades de tipo
+                      financiero
+                    </p>
+                    <p className="center-text no-marg-bottom">Incluye:</p>
+                    <ul>
+                      <li>Intereses devengados</li>
+                      <li>Fluctuación cambiaria</li>
+                      <li>
+                        Cambios en el valor razonable de activos y pasivos
+                        financieros
+                      </li>
+                      <li>Resultado por posición monetaria (REPOMO)</li>
+                    </ul>
+                  </div>
                 </td>
                 <td>
-                  Gastos por intereses, también conocidos como intereses a cargo
-                  o gastos financieros. Intereses pagados por el manejo del
-                  dinero de la entidad (comisiones bancarias) o de las cuentas
-                  por pagar (intereses derivados de un préstamo). Ingresos por
-                  intereses o intereses a favor. Intereses derivados de las
-                  cuentas por cobrar o de las inversiones temporales. Ganancia
-                  cambiaria. Ganancia generada por las fluctuaciones en el tipo
-                  de cambio. Por ejemplo, cuando se tienen cuentas bancarias,
-                  cuentas por cobrar y/o por pagar en moneda extranjera. Pérdida
-                  cambiaria. Pérdida generada por las fluctuaciones en el tipo
-                  de cambio. Por ejemplo, cuando se tienen cuentas bancarias,
-                  cuentas por cobrar y/o por pagar en moneda extranjera. Cambios
-                  en el valor razonable de activos y pasivos financieros. Se
-                  genera como resultado de la modificación en el valor de los
-                  instrumentos financieros de capital, por ejemplo, bonos o
-                  acciones, por las condiciones específicas del mercado, la cual
-                  genera un resultado que puede ser positivo o negativo para las
-                  empresas que tienen invertidos sus excedentes en este tipo de
-                  instrumentos. Resultado por posición monetaria (REPOMO).
-                  Utilidad o pérdida que se obtiene al revaluar los activos y
-                  pasivos monetarios por los efectos de la inflación.
+                  <p>
+                    <div className="bold">
+                      Gastos por intereses, también conocidos como intereses a
+                      cargo o gastos financieros.
+                    </div>{" "}
+                    Intereses pagados por el manejo del dinero de la entidad
+                    (comisiones bancarias) o de las cuentas por pagar (intereses
+                    derivados de un préstamo).
+                  </p>
+                  <p>
+                    <div className="bold">
+                      Ingresos por intereses o intereses a favor.
+                    </div>{" "}
+                    Intereses derivados de las cuentas por cobrar o de las
+                    inversiones temporales.
+                  </p>
+                  <p>
+                    <div className="bold">
+                      Ganancia cambiaria. Ganancia generada por las
+                      fluctuaciones en el tipo de cambio.
+                    </div>{" "}
+                    Por ejemplo, cuando se tienen cuentas bancarias, cuentas por
+                    cobrar y/o por pagar en moneda extranjera.
+                  </p>
+                  <p>
+                    <div className="bold">
+                      Pérdida cambiaria. Pérdida generada por las fluctuaciones
+                      en el tipo de cambio.
+                    </div>{" "}
+                    Por ejemplo, cuando se tienen cuentas bancarias, cuentas por
+                    cobrar y/o por pagar en moneda extranjera.
+                  </p>
+                  <p>
+                    <div className="bold">
+                      Cambios en el valor razonable de activos y pasivos
+                      financieros.
+                    </div>{" "}
+                    Se genera como resultado de la modificación en el valor de
+                    los instrumentos financieros de capital, por ejemplo, bonos
+                    o acciones, por las condiciones específicas del mercado, la
+                    cual genera un resultado que puede ser positivo o negativo
+                    para las empresas que tienen invertidos sus excedentes en
+                    este tipo de instrumentos.
+                  </p>
+                  <p>
+                    <div className="bold">
+                      Resultado por posición monetaria (REPOMO).
+                    </div>{" "}
+                    Utilidad o pérdida que se obtiene al revaluar los activos y
+                    pasivos monetarios por los efectos de la inflación.
+                  </p>
                 </td>
               </tr>
               <tr>
-                <td>Utilidad o pérdida antes de impuestos a la utilidad</td>
+                <td>
+                  <div className="bold">
+                    Utilidad o pérdida antes de impuestos a la utilidad
+                  </div>
+                </td>
                 <td>
                   Representa el importe que resulta de restar a los ingresos los
                   costos y gastos incluidos en el estado de resultados, sin
@@ -278,7 +336,9 @@ function TwoThreeTwo() {
                 </td>
               </tr>
               <tr>
-                <td>Impuestos a la utilidad</td>
+                <td>
+                  <div className="bold">Impuestos a la utilidad</div>
+                </td>
                 <td>
                   Impuestos a la utilidad del periodo, sin incluir el impuesto
                   atribuible a operaciones discontinuadas y otros resultados
@@ -287,8 +347,10 @@ function TwoThreeTwo() {
               </tr>
               <tr>
                 <td>
-                  Utilidad o pérdida de operaciones continuas (operaciones de la
-                  empresa)
+                  <div className="bold">
+                    Utilidad o pérdida de operaciones continuas (operaciones de
+                    la empresa)
+                  </div>
                 </td>
                 <td>
                   Es la suma algebraica de la utilidad o pérdida antes de
@@ -298,7 +360,9 @@ function TwoThreeTwo() {
                 </td>
               </tr>
               <tr>
-                <td>Operaciones discontinuadas</td>
+                <td>
+                  <div className="bold">Operaciones discontinuadas</div>
+                </td>
                 <td>
                   En este rubro deben presentarse los ingresos, costos y gastos
                   derivados de las operaciones discontinuadas. Debe entenderse
@@ -308,7 +372,9 @@ function TwoThreeTwo() {
                 </td>
               </tr>
               <tr>
-                <td>Utilidad o pérdida neta</td>
+                <td>
+                  <div className="bold">Utilidad o pérdida neta</div>
+                </td>
                 <td>
                   Es la suma algebraica de la utilidad o pérdida de operaciones
                   continuas y, en su caso, el rubro de operaciones
@@ -337,6 +403,82 @@ function TwoThreeTwo() {
             inventarios perpetuos o continuos son los que utilizarás en este
             curso.
           </p>
+          <Row className="justify-content-center m-v-space">
+            <Col md={3}>
+              <Actividad
+                icon={faBookReader}
+                link={""}
+                type={"Lectura"}
+                number={""}
+              />
+            </Col>
+            <Col md={6} className="v-center-content text-descrip">
+              Procedimientos para el control de inventarios.
+            </Col>
+          </Row>
+          <Row className="justify-content-center m-v-space">
+            <Col md={3}>
+              <Actividad
+                icon={faBookReader}
+                link={""}
+                type={"Actividad"}
+                number={"2.8"}
+              />
+            </Col>
+            <Col md={6} className="v-center-content text-descrip">
+              Estado de resultados y estado de situación financiera
+            </Col>
+          </Row>
+          <Row className="justify-content-center m-v-space">
+            <Col md={3}>
+              <Actividad
+                icon={faBookReader}
+                link={""}
+                type={"Actividad"}
+                number={"2.9"}
+              />
+            </Col>
+            <Col md={6} className="v-center-content text-descrip">
+              Estado de resultados y estado de situación financiera (incluye
+              depreciación)
+            </Col>
+          </Row>
+          <p>
+            Otro aspecto importante que se considera tanto en el estado de
+            resultados como en el estado se situación financiera es la
+            depreciación.
+          </p>
+          <p>
+            Conoce más sobre este útil e interesante tema en la siguiente
+            lectura
+          </p>
+          <Row className="justify-content-center m-v-space">
+            <Col md={3}>
+              <Actividad
+                icon={faBookReader}
+                link={""}
+                type={"Lectura"}
+                number={""}
+              />
+            </Col>
+            <Col md={6} className="v-center-content text-descrip">
+              Depreciación y amortización
+            </Col>
+          </Row>
+          <p>
+            Con el tema antes explicado, has concluido esta unidad temática. Te
+            invitamos a contestar los reactivos de la siguiente evaluación.
+          </p>
+          <Row className="justify-content-center m-v-space">
+            <Col md={3}>
+              <Actividad
+                icon={faBookReader}
+                link={""}
+                type={"Evaluación"}
+                number={""}
+              />
+            </Col>
+          </Row>
         </section>
       </Container>
       <PoliFooter />

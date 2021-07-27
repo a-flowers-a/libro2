@@ -169,9 +169,17 @@ hr {
   margin-bottom: 20px;
 }
 
+.m-t-space {
+  margin-top: 20px;
+}
+
 .m-v-space {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.no-marg-bottom {
+  margin-bottom: 0;
 }
 
 ol.upper-letter {
