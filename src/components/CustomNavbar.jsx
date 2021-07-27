@@ -2,10 +2,9 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import styles from "../css/styles.css";
 
 export function CustomNavbar() {
-  const customBgPurple = "#b673de !important";
-
   return (
     <Navbar
       bg={"primary"}
@@ -14,7 +13,7 @@ export function CustomNavbar() {
       sticky="top"
       collapseOnSelect
     >
-      <Container style={{ backgroundColor: customBgPurple }}>
+      <Container className={styles.purple}>
         <Navbar.Brand href="/">-Here goes topic-</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

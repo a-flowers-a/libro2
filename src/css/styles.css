@@ -59,26 +59,9 @@ hr {
 /*******************************************************/
 
 /*********************** Facebook ************************/
-.back-card {
-  width: 250px;
-  float: left;
-  margin-right: 2rem;
-}
-
-.big-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.tab-text {
-  color: #ededee; /*073b4c*/
-  font-family: "Raleway", sans-serif;
-  font-size: 8px;
-}
-
-.rotate-text {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
+/*Override navbar color*/
+.navbar {
+  background-color: #b673de !important;
 }
 
 /****************************************************/
@@ -133,7 +116,7 @@ hr {
   font-weight: bold;
 }
 
-.center-text{
+.center-text {
   text-align: center;
 }
 
@@ -147,7 +130,7 @@ hr {
   width: 100%;
 }
 
-.full-card{
+.full-card {
   background-color: #f7ecf6;
   border-radius: 10px;
   box-shadow: 0 2px 7px #073b4c; /*035aa6*/
@@ -169,7 +152,7 @@ hr {
   display: inline;
 }
 
-.justify-text{
+.justify-text {
   text-align: justify;
 }
 
@@ -191,7 +174,7 @@ hr {
   margin-bottom: 20px;
 }
 
-ol.upper-letter{
+ol.upper-letter {
   list-style-type: upper-alpha;
 }
 
