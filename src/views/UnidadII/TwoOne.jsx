@@ -3,13 +3,14 @@ import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import { Row, Col, Image, Container } from "react-bootstrap";
 import { CustomNavbar } from "../../components/CustomNavbar";
+import SideMenu from "../../components/SideMenu/SideMenu";
 
 function TwoOne() {
   const img21 = "../../assets/images/21.png";
   return (
     <div className="primary-div">
+      <SideMenu />
       <PoliHeader />
-      <CustomNavbar />
 
       <Container fluid>
         <section id="2.1">

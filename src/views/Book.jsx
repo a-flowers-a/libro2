@@ -5,7 +5,7 @@ import CardButton from "../components/CardButton";
 import Facebook from "../components/Facebook";
 import PoliHeader from "../components/Header";
 import PoliFooter from "../components/Footer";
-import { CustomNavbar } from "../components/CustomNavbar";
+import SideMenu from "../components/SideMenu/SideMenu";
 
 function Book() {
   function sendTo(page) {
@@ -15,7 +15,7 @@ function Book() {
   return (
     <div className="primary-div">
       <PoliHeader />
-      <CustomNavbar />
+      <SideMenu />
       <Container fluid>
         <Row className="m-v-space">
           <Col>
