@@ -2,24 +2,22 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import styles from "../css/styles.css";
 
 export function CustomNavbar() {
   return (
-    <Navbar
-      bg={"primary"}
-      variant="dark"
-      expand="sm"
-      sticky="top"
-      collapseOnSelect
-    >
-      <Container className={styles.purple}>
+    <Navbar variant="dark" expand="xxl" sticky="top" collapseOnSelect>
+      <Container>
         <Navbar.Brand href="/">-Here goes topic-</Navbar.Brand>
+        <NavDropdown title="Unidades" id="drop">
+          <NavDropdown.Item href="#action3">Unidad I</NavDropdown.Item>
+          <NavDropdown.Item href="#action4">Unidad II</NavDropdown.Item>
+          <NavDropdown.Item href="#action5">Unidad III</NavDropdown.Item>
+          <NavDropdown.Item href="#action5">Unidad IV</NavDropdown.Item>
+          <NavDropdown.Item href="#action5">Unidad V</NavDropdown.Item>
+        </NavDropdown>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/intro">Introducción</Nav.Link>
-            <NavDropdown.Divider />
             <Nav.Link href="/content/II/2.1">
               2.1 La información financiera
             </Nav.Link>
@@ -32,11 +30,9 @@ export function CustomNavbar() {
             <Nav.Link href="/content/II/2.3.1">
               2.3.1 Estado de situación financiera
             </Nav.Link>
-            <Nav.Link href="/content/II/2.3">
+            <Nav.Link href="/content/II/2.3.2">
               2.3.2 Estado de resultados
             </Nav.Link>
-            <NavDropdown.Divider />
-            <Nav.Link href="/intro">Cierre</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

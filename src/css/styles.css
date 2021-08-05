@@ -58,10 +58,22 @@ hr {
 }
 /*******************************************************/
 
-/*********************** Facebook ************************/
+/*********************** Navbar ************************/
 /*Override navbar color*/
 .navbar {
   background-color: #b673de !important;
+}
+
+.dropdown-toggle {
+  color: white;
+}
+
+.dropdown-toggle:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /****************************************************/

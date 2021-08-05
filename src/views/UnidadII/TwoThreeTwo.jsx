@@ -4,6 +4,7 @@ import PoliFooter from "../../components/Footer";
 import { Row, Col, Image, Container, Table } from "react-bootstrap";
 import Actividad from "../../components/Actividad";
 import { faBookReader, faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
+import { CustomNavbar } from "../../components/CustomNavbar";
 
 function TwoThreeTwo() {
   const img215 = "../../assets/images/215.png";
@@ -14,6 +15,8 @@ function TwoThreeTwo() {
   return (
     <div className="primary-div">
       <PoliHeader />
+      <CustomNavbar />
+
       <Container fluid>
         <section id="2.3.2">
           <h3>2.3.2 Estado de resultados</h3>
