@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f6f6f6; /*f6f6f6 fffafa fcf9f4 f6f5f5 eeeeee*/
   font-family: "Spartan", sans-serif;
