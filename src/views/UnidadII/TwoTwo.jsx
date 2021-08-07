@@ -4,7 +4,7 @@ import PoliFooter from "../../components/Footer";
 import { Row, Col, Image, Container } from "react-bootstrap";
 import Actividad from "../../components/Actividad";
 import { faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
-import { CustomNavbar } from "../../components/CustomNavbar";
+import SideMenu from "../../components/SideMenu/SideMenu";
 
 function TwoTwo() {
   const img22 = "../../assets/images/22.png";
@@ -12,9 +12,9 @@ function TwoTwo() {
   return (
     <div className="primary-div">
       <PoliHeader />
-      <CustomNavbar />
+      <SideMenu />
 
-      <Container fluid>
+      <Container>
         <section id="2.2">
           <h2>2.2 Las Normas de Información Financiera (NIF)</h2>
           <div className="justify-text">

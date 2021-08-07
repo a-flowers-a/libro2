@@ -5,13 +5,16 @@
   width: 50%;
   display: flex;
   overflow-y: auto;
+  transition: width 0.3s ease;
   flex-direction: column;
   background-color: #b673de;
+  border-right: 1px solid #b673de;
 }
 
 .chevronContainer {
   display: flex;
   justify-content: flex-end;
+  cursor: pointer;
 }
 
 .chevronLeft {
@@ -19,6 +22,7 @@
   color: white;
 }
 
+/*------------------Item----------------------*/
 .itemContainer {
   padding: 1em 0.5em 1em 2em;
   color: white;
@@ -28,6 +32,7 @@
 .itemContainer:hover {
   background-color: #d5bde3;
   color: #584e5e;
+  transition: background-color 0.3s ease;
 }
 
 a:hover {
@@ -39,6 +44,11 @@ a:hover {
   border-right: 5px solid white;
 }
 
+.activeItem .itemContainer {
+  color: #584e5e !important;
+}
+
+/*------  Burger button ---------------*/
 .burguerIcon {
   position: -webkit-sticky;
   position: sticky;
@@ -51,5 +61,10 @@ a:hover {
   background-color: #b673de;
   color: white;
   border-radius: 10px;
-  margin: 1em 0 0 1em;
+  margin: 0 0 2em 1em;
+}
+
+.burguerIcon:hover {
+  cursor: pointer;
+  color: #d5bde3;
 }

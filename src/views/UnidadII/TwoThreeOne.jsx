@@ -8,7 +8,7 @@ import {
   faPuzzlePiece,
 } from "@fortawesome/free-solid-svg-icons";
 import Actividad from "../../components/Actividad";
-import { CustomNavbar } from "../../components/CustomNavbar";
+import SideMenu from "../../components/SideMenu/SideMenu";
 
 function TwoThreeOne() {
   const img26 = "../../assets/images/26.png";
@@ -20,15 +20,14 @@ function TwoThreeOne() {
   const img212 = "../../assets/images/212.png";
   const img213 = "../../assets/images/213.png";
   const img214 = "../../assets/images/214.png";
-
   const video2 = "../../assets/videos/ley_de_la_partida_doble.mp4";
 
   return (
     <div className="primary-div">
       <PoliHeader />
-      <CustomNavbar />
+      <SideMenu />
 
-      <Container fluid>
+      <Container>
         <section id="2.3.1">
           <h3>
             2.3.1 Estado de situación financiera (también llamado estado de
