@@ -162,7 +162,7 @@ function TwoThreeOne() {
               Las cuentas de Activo de acuerdo con las NIF (2020) se clasifican
               en:
             </p>
-            <ol class="upper-letter">
+            <ol className="upper-letter">
               <li>
                 <p className="bold">Activo a corto plazo o circulante.</p> Es
                 aquél que se espera realizar, consumir o vender durante el ciclo
@@ -231,7 +231,7 @@ function TwoThreeOne() {
             <p>
               Las cuentas de Pasivo de acuerdo con las NIF se clasifican en:
             </p>
-            <ol class="upper-letter">
+            <ol className="upper-letter">
               <li>
                 <p className="bold">Pasivo a corto plazo o circulante.</p> Se
                 refiere a las deudas y obligaciones de la entidad cuyo
@@ -374,7 +374,7 @@ function TwoThreeOne() {
               para presentar el estado de situación financiera son: en forma de
               cuenta y en forma de reporte.
             </p>
-            <ol class="upper-letter">
+            <ol className="upper-letter">
               <li>
                 <p className="bold">
                   Estado de situación financiera en forma de Cuenta.

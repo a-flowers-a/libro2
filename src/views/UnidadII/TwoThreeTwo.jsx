@@ -22,7 +22,7 @@ function TwoThreeTwo() {
           <h3>2.3.2 Estado de resultados</h3>
           <div className="justify-text">
             <p>Por lo regular, las empresas tienen dos objetivos:</p>
-            <ol class="upper-letter">
+            <ol className="upper-letter">
               <li>
                 <p className="bold">Un objetivo social,</p> en virtud de que
                 brindan a la sociedad bienes y servicios para la satisfacción de
