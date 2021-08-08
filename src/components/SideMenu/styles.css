@@ -1,8 +1,8 @@
 .sideMenuContainer {
   position: -webkit-sticky;
   position: sticky;
+  height: 100vh;
   top: -1px;
-  height: auto;
   overflow-y: auto;
   display: flex;
   flex-direction: column;

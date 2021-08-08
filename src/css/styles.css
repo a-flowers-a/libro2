@@ -24,6 +24,7 @@ hr {
 
 .flexContainer {
   display: flex;
+  align-items: flex-start;
 }
 
 /*********************** Header ************************/

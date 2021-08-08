@@ -16,7 +16,7 @@ function TwoOne() {
       <PoliHeader />
       <div className="flexContainer">
         <SideMenu />
-        <Container xs={1} md={2}>
+        <Container>
           <section id="2.1">
             <Row className="m-v-space">
               <Col>
