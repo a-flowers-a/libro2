@@ -17,16 +17,18 @@ hr {
 }
 
 .primary-div {
-  /*background-color: darkseagreen;*/
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+.flexContainer {
+  display: flex;
+}
+
 /*********************** Header ************************/
 .header {
   padding-bottom: 1em;
-  margin-bottom: 2em;
   overflow: hidden;
   border-bottom: 1px solid rgba(210, 194, 210, 0.2);
 }

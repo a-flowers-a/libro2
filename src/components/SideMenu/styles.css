@@ -1,11 +1,10 @@
 .sideMenuContainer {
-  position: fixed;
-  z-index: 99;
-  height: 100%;
-  width: 50%;
-  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+  height: auto;
   overflow-y: auto;
-  transition: width 0.3s ease;
+  display: flex;
   flex-direction: column;
   background-color: #b673de;
   border-right: 1px solid #b673de;
@@ -52,16 +51,17 @@ a:hover {
 .burguerIcon {
   position: -webkit-sticky;
   position: sticky;
-  z-index: 99;
+  z-index: 3;
   top: 16px;
   display: flex;
   justify-content: center;
   width: 3em;
+  height: 3em;
   padding: 0.5em;
   background-color: #b673de;
   color: white;
   border-radius: 10px;
-  margin: 0 0 2em 1em;
+  margin: 2em 0 2em 1em;
 }
 
 .burguerIcon:hover {

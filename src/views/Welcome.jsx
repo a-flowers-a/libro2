@@ -17,11 +17,13 @@ function Welcome() {
       <Container fluid>
         <Row className="m-v-space">
           <Col>
-            <div className="enter-card">
+            <div
+              className="enter-card"
+              onClick={() => sendTo("/content/II/2.1")}
+            >
               <CardButton
                 cardColor={"light-blue"}
                 icon={faArrowRight}
-                clickFunc={() => sendTo("/book")}
                 text={"Ir a polilibro"}
                 textColor={"white"}
               />
