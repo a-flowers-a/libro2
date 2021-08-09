@@ -9,6 +9,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Actividad from "../../components/Actividad";
 import SideMenu from "../../components/SideMenu/SideMenu";
+import { UnidadII } from "../../linksToAssets/Actividades/UnidadII";
+import { lecUnidadII } from "../../linksToAssets/Lecturas/UnidadII";
+import { orgUnidadII } from "../../linksToAssets/Organizadores/UnidadII";
 
 function TwoThreeOne() {
   const img26 = "../../assets/images/26.png";
@@ -299,9 +302,7 @@ function TwoThreeOne() {
                 <Col md={3}>
                   <Actividad
                     icon={faBookReader}
-                    link={
-                      "https://drive.google.com/file/d/1OZKRuucT-gA8tATkzAX7ut1LKG6tedWl/view?usp=sharing"
-                    }
+                    link={lecUnidadII[0]}
                     type={"Lectura"}
                     number={"1"}
                   />
@@ -320,9 +321,7 @@ function TwoThreeOne() {
                 <Col md={3}>
                   <Actividad
                     icon={faFolderPlus}
-                    link={
-                      "../../assets/apoyo/Principales_cuentas_del_estado_de_situación_financiera.pdf"
-                    }
+                    link={orgUnidadII[0]}
                     type={"Material de apoyo"}
                     number={"1"}
                   />
@@ -340,9 +339,7 @@ function TwoThreeOne() {
                 <Col md={3}>
                   <Actividad
                     icon={faPuzzlePiece}
-                    link={
-                      "https://drive.google.com/file/d/12PCIXyLLl0o-_dhG1TfNAIw-bskMzo4M/view?usp=sharing"
-                    }
+                    link={UnidadII[1]}
                     type={"Actividad"}
                     number={"2.2"}
                   />
@@ -355,9 +352,7 @@ function TwoThreeOne() {
                 <Col md={3}>
                   <Actividad
                     icon={faPuzzlePiece}
-                    link={
-                      "https://drive.google.com/file/d/1UPLwP7Wv5RuCIcBYRZi-TvdiSXcxoHPw/view?usp=sharing"
-                    }
+                    link={UnidadII[2]}
                     type={"Actividad"}
                     number={"2.3"}
                   />
@@ -439,9 +434,7 @@ function TwoThreeOne() {
                 <Col md={3}>
                   <Actividad
                     icon={faPuzzlePiece}
-                    link={
-                      "https://drive.google.com/file/d/11_F4xMMCAn3yJGMeW4EuRZpscdjq8W6k/view?usp=sharing"
-                    }
+                    link={UnidadII[3]}
                     type={"Actividad"}
                     number={"2.4"}
                   />
@@ -480,9 +473,7 @@ function TwoThreeOne() {
                 <Col md={3}>
                   <Actividad
                     icon={faBookReader}
-                    link={
-                      "https://drive.google.com/file/d/1herW34ZgWn-GYHMzFsB22aW5GSqsiXJK/view?usp=sharing"
-                    }
+                    link={lecUnidadII[1]}
                     type={"Lectura"}
                     number={"2"}
                   />
@@ -495,9 +486,7 @@ function TwoThreeOne() {
                 <Col md={3}>
                   <Actividad
                     icon={faBookReader}
-                    link={
-                      "https://drive.google.com/file/d/13IWbOfB2-_i7mWFvnfGCnRWbH6F7v5rb/view?usp=sharing"
-                    }
+                    link={lecUnidadII[2]}
                     type={"Lectura"}
                     number={"3"}
                   />
@@ -527,9 +516,7 @@ function TwoThreeOne() {
                 <Col md={3}>
                   <Actividad
                     icon={faPuzzlePiece}
-                    link={
-                      "https://drive.google.com/file/d/1QXpcLi7mqs_ULBiIDytF4Q9nA4tncLIs/view?usp=sharing"
-                    }
+                    link={UnidadII[4]}
                     type={"Actividad"}
                     number={"2.5"}
                   />
@@ -542,9 +529,7 @@ function TwoThreeOne() {
                 <Col md={3}>
                   <Actividad
                     icon={faPuzzlePiece}
-                    link={
-                      "https://drive.google.com/file/d/1s_h9d2v8CTVUCJnFV6TNgr-NbMbsIKSS/view?usp=sharing"
-                    }
+                    link={UnidadII[5]}
                     type={"Actividad"}
                     number={"2.6"}
                   />

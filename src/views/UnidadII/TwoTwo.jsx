@@ -5,6 +5,7 @@ import { Row, Col, Image, Container } from "react-bootstrap";
 import Actividad from "../../components/Actividad";
 import { faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
 import SideMenu from "../../components/SideMenu/SideMenu";
+import { UnidadII } from "../../linksToAssets/Actividades/UnidadII";
 
 function TwoTwo() {
   const img22 = "../../assets/images/22.png";
@@ -87,9 +88,7 @@ function TwoTwo() {
                   <Col sm={4}>
                     <Actividad
                       icon={faPuzzlePiece}
-                      link={
-                        "https://drive.google.com/file/d/1GqdpvBckyuPvUdfc29d8vmPSRAMv-tIh/view?usp=sharing"
-                      }
+                      link={UnidadII[0]}
                       number={"2.1"}
                       type={"Actividad"}
                     />

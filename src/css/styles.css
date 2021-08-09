@@ -194,20 +194,40 @@ ol.upper-letter {
 /******************************************************/
 
 /**************+COLORS***********/
-.light-blue-bg {
-  background: #41b9e3;
-}
-
 .green {
   color: green;
 }
 
-.red-bg {
-  background: #de4c3c;
+.light-blue {
+  color: #41b9e3;
+}
+
+.navy {
+  color: navy;
+}
+
+.light-navy {
+  color: #0F52BA;
+}
+
+.dark-blue {
+  color: #011f3f;
 }
 
 .red {
   color: #de4c3c;
+}
+
+.white {
+  color: #fafafa;
+}
+
+.light-blue-bg {
+  background: #41b9e3;
+}
+
+.red-bg {
+  background: #de4c3c;
 }
 
 .yellow-bg {
@@ -224,8 +244,4 @@ ol.upper-letter {
 
 .white-bg {
   background-color: #fafafa;
-}
-
-.white {
-  color: #fafafa;
 }

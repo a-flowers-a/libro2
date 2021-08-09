@@ -44,6 +44,11 @@ function SideMenu(props) {
 }
 
 const unitTwo = [
+  {
+    name: "Introducción",
+    path: "/content/II/intro",
+    level: 1,
+  },
   { name: "2.1 La información financiera", path: "/content/II/2.1", level: 1 },
   {
     name: "2.2 Las Normas de Información Financiera (NIF)",
@@ -85,6 +90,11 @@ const unitTwo = [
     name: "2.3.2.2 Cuentas del estado de resultados",
     path: "/content/II/2.3.2",
     level: 3,
+  },
+  {
+    name: "Cierre",
+    path: "/content/II/cierre",
+    level: 1,
   },
 ];
 

@@ -7,6 +7,8 @@ import TwoTwo from "./views/UnidadII/TwoTwo";
 import TwoThree from "./views/UnidadII/TwoThree";
 import TwoThreeOne from "./views/UnidadII/TwoThreeOne";
 import TwoThreeTwo from "./views/UnidadII/TwoThreeTwo";
+import CierreII from "./views/UnidadII/Cierre";
+import IntroduccionII from "./views/UnidadII/Introduccion";
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
         <Route path="/" exact component={() => <Welcome />} />
         <Route path="/sources" exact component={() => <Sources />} />
         <Route path="/methodology" exact component={() => <Method />} />
+        <Route path="/content/II/intro" exact component={() => <IntroduccionII /> }  />
         <Route path="/content/II/2.1" exact component={() => <TwoOne />} />
         <Route path="/content/II/2.2" exact component={() => <TwoTwo />} />
         <Route path="/content/II/2.3" exact component={() => <TwoThree />} />
@@ -28,6 +31,7 @@ function App() {
           exact
           component={() => <TwoThreeTwo />}
         />
+        <Route path="/content/II/cierre" exact component={() => <CierreII />} />
       </Switch>
     </Router>
   );

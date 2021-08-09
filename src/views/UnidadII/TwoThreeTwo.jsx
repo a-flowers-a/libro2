@@ -5,6 +5,8 @@ import { Row, Col, Image, Container, Table } from "react-bootstrap";
 import Actividad from "../../components/Actividad";
 import { faBookReader, faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
 import SideMenu from "../../components/SideMenu/SideMenu";
+import { UnidadII } from "../../linksToAssets/Actividades/UnidadII";
+import { lecUnidadII } from "../../linksToAssets/Lecturas/UnidadII";
 
 function TwoThreeTwo() {
   const img215 = "../../assets/images/215.png";
@@ -120,9 +122,7 @@ function TwoThreeTwo() {
               <Col md={3}>
                 <Actividad
                   icon={faPuzzlePiece}
-                  link={
-                    "https://drive.google.com/file/d/11_F4xMMCAn3yJGMeW4EuRZpscdjq8W6k/view?usp=sharing"
-                  }
+                  link={UnidadII[9]}
                   type={"Actividad"}
                   number={"2.7"}
                 />
@@ -413,7 +413,7 @@ function TwoThreeTwo() {
               <Col md={3}>
                 <Actividad
                   icon={faBookReader}
-                  link={""}
+                  link={lecUnidadII[3]}
                   type={"Lectura"}
                   number={""}
                 />
@@ -425,8 +425,8 @@ function TwoThreeTwo() {
             <Row className="justify-content-center m-v-space">
               <Col md={3}>
                 <Actividad
-                  icon={faBookReader}
-                  link={""}
+                  icon={faPuzzlePiece}
+                  link={UnidadII[10]}
                   type={"Actividad"}
                   number={"2.8"}
                 />
@@ -438,8 +438,8 @@ function TwoThreeTwo() {
             <Row className="justify-content-center m-v-space">
               <Col md={3}>
                 <Actividad
-                  icon={faBookReader}
-                  link={""}
+                  icon={faPuzzlePiece}
+                  link={UnidadII[11]}
                   type={"Actividad"}
                   number={"2.9"}
                 />
@@ -462,7 +462,7 @@ function TwoThreeTwo() {
               <Col md={3}>
                 <Actividad
                   icon={faBookReader}
-                  link={""}
+                  link={lecUnidadII[4]}
                   type={"Lectura"}
                   number={""}
                 />
