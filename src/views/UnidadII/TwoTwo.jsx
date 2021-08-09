@@ -16,7 +16,7 @@ function TwoTwo() {
       <div className="flexContainer">
         <SideMenu />
         <Container>
-          <section id="2.2">
+          <section name="2.2">
             <h2>2.2 Las Normas de Información Financiera (NIF)</h2>
             <div className="justify-text">
               <p>
@@ -50,7 +50,7 @@ function TwoTwo() {
               </Col>
             </Row>
           </section>
-          <section id="2.2.1">
+          <section name="2.2.1">
             <Row>
               <h3>
                 2.2.1 Importancia de las Normas de Información Financiera (NIF)

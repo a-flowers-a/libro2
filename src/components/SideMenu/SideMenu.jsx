@@ -30,10 +30,12 @@ function SideMenu(props) {
             />
           </div>
           <NavDropdown title="Unidades" id="drop">
-            <NavDropdown.Item href="#action3">Unidad I</NavDropdown.Item>
-            <NavDropdown.Item href="#action4">Unidad II</NavDropdown.Item>
-            <NavDropdown.Item href="#action5">Unidad III</NavDropdown.Item>
-            <NavDropdown.Item href="#action5">Unidad IV</NavDropdown.Item>
+            <NavDropdown.Item href="#action1">Unidad I</NavDropdown.Item>
+            <NavDropdown.Item href="/content/II/intro">
+              Unidad II
+            </NavDropdown.Item>
+            <NavDropdown.Item href="#action3">Unidad III</NavDropdown.Item>
+            <NavDropdown.Item href="#action4">Unidad IV</NavDropdown.Item>
             <NavDropdown.Item href="#action5">Unidad V</NavDropdown.Item>
           </NavDropdown>
           {unitTwo.map((topic) => (
