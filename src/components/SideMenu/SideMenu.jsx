@@ -1,16 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faBars } from "@fortawesome/free-solid-svg-icons";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { isMobile } from "react-device-detect";
 import Item from "./Item";
 import "./styles.css";
+import { classes } from "typestyle";
 
 function SideMenu(props) {
   const [open, setOpen] = useState(true);
+
+  useEffect(() => {
+    isMobile ? setOpen(false) : setOpen(true);
+  }, [setOpen]);
+
   return (
     <>
       {open ? (
-        <div className="sideMenuContainer">
+        <div
+          className={classes("sideMenuContainer", {
+            ["sideMenuMobileContainer"]: isMobile === true,
+          })}
+        >
           <div className="chevronContainer" onClick={() => setOpen(false)}>
             <FontAwesomeIcon
               className="chevronLeft"

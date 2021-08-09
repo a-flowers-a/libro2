@@ -10,6 +10,11 @@
   border-right: 1px solid #b673de;
 }
 
+.sideMenuMobileContainer {
+  position: fixed !important;
+  z-index: 5;
+}
+
 .chevronContainer {
   display: flex;
   justify-content: flex-end;
@@ -49,10 +54,9 @@ a:hover {
 
 /*------  Burger button ---------------*/
 .burguerIcon {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   z-index: 3;
-  top: 16px;
+  top: 5em;
   display: flex;
   justify-content: center;
   width: 3em;
