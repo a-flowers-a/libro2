@@ -19,7 +19,7 @@ function TwoOne() {
         <Container>
           <section id="2.1">
             <Row className="m-v-space">
-              <Col>
+              <Col md={3}>
                 <div className="back-card">
                   <CardButton
                     cardColor={"light-blue"}

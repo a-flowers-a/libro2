@@ -19,7 +19,7 @@ function Welcome() {
           <Col>
             <div
               className="enter-card"
-              onClick={() => sendTo("/content/II/2.1")}
+              onClick={() => sendTo("/content/II/intro")}
             >
               <CardButton
                 cardColor={"light-blue"}
