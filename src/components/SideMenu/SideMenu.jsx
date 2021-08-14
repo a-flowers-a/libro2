@@ -70,7 +70,7 @@ const unitTwo = [
   },
   {
     name: "2.2.1 Importancia de las Normas de Información Financiera (NIF)",
-    path: "/content/II/2.2",
+    path: "/content/II/2.2.1",
     level: 2,
   },
   {
@@ -85,23 +85,23 @@ const unitTwo = [
   },
   {
     name: "2.3.1.1 Estructura del estado de situación financiera",
-    path: "/content/II/2.3.1",
+    path: "/content/II/2.3.1.1",
     level: 3,
   },
   {
     name: "2.3.1.2 Formas de presentar el estado de situación financiera",
-    path: "/content/II/2.3.1",
+    path: "/content/II/2.3.1.2",
     level: 3,
   },
   { name: "2.3.2 Estado de resultados", path: "/content/II/2.3.2", level: 2 },
   {
     name: "2.3.2.1 Estructura del estado de resultados",
-    path: "/content/II/2.3.2",
+    path: "/content/II/2.3.2.1",
     level: 3,
   },
   {
     name: "2.3.2.2 Cuentas del estado de resultados",
-    path: "/content/II/2.3.2",
+    path: "/content/II/2.3.2.2",
     level: 3,
   },
   {
