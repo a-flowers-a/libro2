@@ -15,7 +15,7 @@ const TwoThreeTwoTwo = () => {
       <PoliHeader />
       <div className="flexContainer">
         <SideMenu />
-        <Container>
+        <Container className="padding-md">
           <section id="2.3.2.2">
             <h4>2.3.2.2 Cuentas del estado de resultados</h4>
             <p>

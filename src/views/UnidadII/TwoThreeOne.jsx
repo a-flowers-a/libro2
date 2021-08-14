@@ -13,7 +13,7 @@ function TwoThreeOne() {
       <PoliHeader />
       <div className="flexContainer">
         <SideMenu />
-        <Container>
+        <Container className="padding-md">
           <section id="2.3.1">
             <h3>
               2.3.1 Estado de situación financiera (también llamado estado de

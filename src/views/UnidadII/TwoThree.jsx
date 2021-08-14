@@ -13,7 +13,7 @@ function TwoThree() {
       <PoliHeader />
       <div className="flexContainer">
         <SideMenu />
-        <Container>
+        <Container className="padding-md">
           <section id="2.3">
             <h2>2.3 Estados financieros básicos</h2>
             <div className="justify-text">

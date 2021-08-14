@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Row, Col, Image, Container } from "react-bootstrap";
 import { faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
 import PoliHeader from "../../components/Header";
@@ -12,10 +12,10 @@ const TwoTwoOne = () => {
   return (
     <div className="primary-div">
       <PoliHeader />
-        <div className="flexContainer">
-            <SideMenu />
-            <Container>
-            <section name="2.2.1">
+      <div className="flexContainer">
+        <SideMenu />
+        <Container className="padding-md">
+          <section name="2.2.1">
             <Row>
               <h3>
                 2.2.1 Importancia de las Normas de Información Financiera (NIF)
@@ -75,11 +75,11 @@ const TwoTwoOne = () => {
               </Col>
             </Row>
           </section>
-            </Container>
-        </div>
+        </Container>
+      </div>
       <PoliFooter />
     </div>
   );
-}//
+}; //
 
 export default TwoTwoOne;

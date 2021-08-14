@@ -17,7 +17,7 @@ const TwoThreeOneTwo = () => {
       <PoliHeader />
       <div className="flexContainer">
         <SideMenu />
-        <Container>
+        <Container className="padding-md">
           <section id="2.3.1.2">
             <h4>
               2.3.1.2 Formas de presentar el estado de situación financiera

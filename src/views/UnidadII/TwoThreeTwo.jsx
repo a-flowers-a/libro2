@@ -13,7 +13,7 @@ function TwoThreeTwo() {
       <PoliHeader />
       <div className="flexContainer">
         <SideMenu />
-        <Container>
+        <Container className="padding-md">
           <section id="2.3.2">
             <h3>2.3.2 Estado de resultados</h3>
             <div className="justify-text">

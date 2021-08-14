@@ -188,6 +188,10 @@ ol.upper-letter {
   list-style-type: upper-alpha;
 }
 
+.padding-md {
+  padding: 2em;
+}
+
 .paragraph {
   display: block;
 }
@@ -207,7 +211,7 @@ ol.upper-letter {
 }
 
 .light-navy {
-  color: #0F52BA;
+  color: #0f52ba;
 }
 
 .dark-blue {

@@ -11,7 +11,7 @@ function TwoTwo() {
       <PoliHeader />
       <div className="flexContainer">
         <SideMenu />
-        <Container>
+        <Container className="padding-md">
           <section name="2.2">
             <h2>2.2 Las Normas de Información Financiera (NIF)</h2>
             <div className="justify-text">

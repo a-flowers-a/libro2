@@ -24,7 +24,7 @@ const TwoThreeOneOne = () => {
       <PoliHeader />
       <div className="flexContainer">
         <SideMenu />
-        <Container>
+        <Container className="padding-md">
           <section id="2.3.1.1">
             <h4>2.3.1.1 Estructura del estado de situación financiera</h4>
             <div className="justify-text">
