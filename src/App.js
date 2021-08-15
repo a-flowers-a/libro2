@@ -14,6 +14,9 @@ import TwoThreeOneOne from "./views/UnidadII/TwoThreeOneOne";
 import TwoThreeOneTwo from "./views/UnidadII/TwoThreeOneTwo";
 import TwoThreeTwoOne from "./views/UnidadII/TwoThreeTwoOne";
 import TwoThreeTwoTwo from "./views/UnidadII/TwoThreeTwoTwo";
+import OneOne from "./views/UnidadI/OneOne";
+import OneOneOne from "./views/UnidadI/OneOneOne";
+import OneOneTwo from "./views/UnidadI/OneOneTwo";
 
 function App() {
   return (
@@ -61,6 +64,9 @@ function App() {
           exact
           component={() => <TwoThreeTwoTwo />}
         />
+        <Route path="/content/I/1.1" exact component={() => <OneOne />} />
+        <Route path="/content/I/1.1.1" exact component={() => <OneOneOne />} />
+        <Route path="/content/I/1.1.2" exact component={() => <OneOneTwo />} />
         <Route path="/content/II/cierre" exact component={() => <CierreII />} />
       </Switch>
     </Router>
