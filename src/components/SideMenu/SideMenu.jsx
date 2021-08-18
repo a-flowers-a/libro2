@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faBars } from "@fortawesome/free-solid-svg-icons";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import { isMobile } from "react-device-detect";
+import { classes } from "typestyle";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import unitTwo from "./unitTwo";
+import unitOne from "./unitOne";
 import Item from "./Item";
 import "./styles.css";
-import { classes } from "typestyle";
 
 function SideMenu(props) {
   const [open, setOpen] = useState(true);
@@ -32,13 +34,13 @@ function SideMenu(props) {
           <NavDropdown title="Unidades" id="drop">
             <NavDropdown.Item href="#action1">Unidad I</NavDropdown.Item>
             <NavDropdown.Item href="/content/II/intro">
-              Unidad II
+              Unidad I
             </NavDropdown.Item>
             <NavDropdown.Item href="#action3">Unidad III</NavDropdown.Item>
             <NavDropdown.Item href="#action4">Unidad IV</NavDropdown.Item>
             <NavDropdown.Item href="#action5">Unidad V</NavDropdown.Item>
           </NavDropdown>
-          {unitTwo.map((topic) => (
+          {unitOne.map((topic) => (
             <Item
               topic={topic.name}
               key={topic.name}
@@ -55,60 +57,5 @@ function SideMenu(props) {
     </>
   );
 }
-
-const unitTwo = [
-  {
-    name: "Introducción",
-    path: "/content/II/intro",
-    level: 1,
-  },
-  { name: "2.1 La información financiera", path: "/content/II/2.1", level: 1 },
-  {
-    name: "2.2 Las Normas de Información Financiera (NIF)",
-    path: "/content/II/2.2",
-    level: 1,
-  },
-  {
-    name: "2.2.1 Importancia de las Normas de Información Financiera (NIF)",
-    path: "/content/II/2.2.1",
-    level: 2,
-  },
-  {
-    name: "2.3. Estados Financieros Básicos",
-    path: "/content/II/2.3",
-    level: 1,
-  },
-  {
-    name: "2.3.1 Estado de situación financiera",
-    path: "/content/II/2.3.1",
-    level: 2,
-  },
-  {
-    name: "2.3.1.1 Estructura del estado de situación financiera",
-    path: "/content/II/2.3.1.1",
-    level: 3,
-  },
-  {
-    name: "2.3.1.2 Formas de presentar el estado de situación financiera",
-    path: "/content/II/2.3.1.2",
-    level: 3,
-  },
-  { name: "2.3.2 Estado de resultados", path: "/content/II/2.3.2", level: 2 },
-  {
-    name: "2.3.2.1 Estructura del estado de resultados",
-    path: "/content/II/2.3.2.1",
-    level: 3,
-  },
-  {
-    name: "2.3.2.2 Cuentas del estado de resultados",
-    path: "/content/II/2.3.2.2",
-    level: 3,
-  },
-  {
-    name: "Cierre",
-    path: "/content/II/cierre",
-    level: 1,
-  },
-];
 
 export default SideMenu;
