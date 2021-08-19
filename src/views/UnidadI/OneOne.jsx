@@ -5,7 +5,7 @@ import { Row, Col, Image, Container } from "react-bootstrap";
 import SideMenu from "../../components/SideMenu/SideMenu";
 
 const OneOne = () => {
-  const img11 = "//TODO: IMAGE HERE";
+  const img11 = "../../assets/images/11.png";
   return (
     <div className="primary-div">
       <PoliHeader />
