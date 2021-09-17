@@ -8,18 +8,17 @@ const unitOne = [
   },
   {
     name: "1.2. Función y objetivo de las finanzas empresariales",
-    path: "#",
+    path: "/content/I/1.2",
     level: 1,
   },
-  { name: "1.2.1. ¿Qué son las finanzas? ", path: "#", level: 2 },
   {
     name: "1.3. Las finanzas empresariales y su relación con otras disciplinas",
-    path: "#",
+    path: "/content/I/1.3",
     level: 1,
   },
   {
     name: "1.4. Factores del micro y macro ambiente que impactan a la empresa y a sus finanzas",
-    path: "#",
+    path: "/content/I/1.4",
     level: 1,
   },
 ];

@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Image, Container, Table } from "react-bootstrap";
+import { Row, Col, Container, Table } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import Actividad from "../../components/Actividad";
@@ -62,7 +62,7 @@ const OneOneOne = () => {
                   <Actividad
                     icon={faExternalLinkAlt}
                     link={others[0]}
-                    type={"Régimenes Fisc."}
+                    type={"Régimenes Fiscales"}
                     number={""}
                   />
                 </Col>

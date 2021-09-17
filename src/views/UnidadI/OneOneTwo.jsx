@@ -1,15 +1,8 @@
 import React from "react";
-import { Row, Col, Image, Container, Table } from "react-bootstrap";
+import { Row, Col, Image, Container } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
-import Actividad from "../../components/Actividad";
 import SideMenu from "../../components/SideMenu/SideMenu";
-import {
-  faBookReader,
-  faExternalLinkAlt,
-  faPuzzlePiece,
-} from "@fortawesome/free-solid-svg-icons";
-import { others } from "../../linksToAssets/Other/Others";
 
 const OneOneTwo = () => {
   const img112 = "../../assets/images/112.png";
@@ -45,7 +38,7 @@ const OneOneTwo = () => {
                   </p>
                 </Col>
               </Row>
-              <Row>
+              <Row className="m-v-space">
                 <Col md={6}>
                   <Row>
                     <Col>
@@ -71,6 +64,63 @@ const OneOneTwo = () => {
                     giro y el tipo de organización. Por lo que es un hecho que
                     entre más grande sea la empresa su organización será más
                     robusta.
+                  </p>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <p>
+                    A partir de este momento, por ser el tema central de este
+                    recurso didáctico digital, solo nos enfocaremos en el área
+                    financiera la cual se lleva a cabo mediante dos actividades
+                    importantes: Tesorería y Contraloría.
+                  </p>
+                  <ul>
+                    <li className="m-b-space">
+                      <b>Tesorería:</b>Se enfoca en el manejo de los recursos
+                      financieros
+                    </li>
+                    <li>
+                      <b>Contraloría:</b>Responsable de la actividad contable,
+                      planeación, presupuestos y auditoría interna.
+                      <ul>
+                        <li className="m-b-space">
+                          <i>Contabilidad: </i> Se encarga del registro, en
+                          tiempo y forma, de todas las operaciones realizadas en
+                          la organización.
+                        </li>
+                        <li className="m-b-space">
+                          <i>Presupuestos: </i> Planifica, coordina y evalúa
+                          todas las actividades en términos financieros, analiza
+                          y compara los gastos del presupuesto anterior con el
+                          presupuesto vigente, a fin de determinar acciones para
+                          el ajuste del presupuesto de la organización.
+                        </li>
+                        <li className="m-b-space">
+                          <i>Auditoría: </i> Se encarga de revisar, examinar y
+                          evaluar los resultados de la gestión de una
+                          dependencia o entidad.
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <p className="justify-text">
+                    La organización delimita las actividades y la toma de
+                    decisiones en cada una de las áreas. Cabe destacar que todas
+                    las organizaciones, independientemente de su tamaño y giro
+                    cuentan con un área financiera. Las demás áreas de la
+                    empresa (capital humano, ventas, manufactura, marketing y
+                    sistemas, etc.) están en constante comunicación con el área
+                    financiera, por ejemplo, para justificar sus requerimientos
+                    de recursos humanos y negociar diferentes presupuestos
+                    operativos, entre otros.
+                  </p>
+                  <p className="justify-text">
+                    Es importante señalar que en las empresas pequeñas la
+                    actividad financiera es llevada a cabo por el departamento
+                    de contabilidad, el encargado de dicho departamento evita
+                    las insolvencias y realiza planes acerca de los usos y
+                    necesidades del dinero.
                   </p>
                 </Col>
               </Row>
