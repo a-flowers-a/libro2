@@ -68,7 +68,7 @@ const OneOneTwo = () => {
                 </Col>
               </Row>
               <Row>
-                <Col>
+                <Col className="justify-text">
                   <p>
                     A partir de este momento, por ser el tema central de este
                     recurso didáctico digital, solo nos enfocaremos en el área

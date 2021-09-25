@@ -155,7 +155,7 @@ const OneOneOne = () => {
                 </div>
               </Row>
               <Row>
-                <Col>
+                <Col className="justify-text">
                   <p>
                     Es importante señalar que algunas de las sociedades antes
                     mencionadas han caído en desuso, tal es el caso de la
@@ -165,7 +165,7 @@ const OneOneOne = () => {
                 </Col>
               </Row>
               <Row>
-                <Col>
+                <Col className="justify-text">
                   En la siguiente lectura encontrarás más información sobre las
                   empresas y su constitución jurídica.
                 </Col>

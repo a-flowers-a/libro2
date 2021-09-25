@@ -199,6 +199,12 @@ ol.upper-letter {
 .paragraph {
   display: block;
 }
+
+.information-card {
+  padding: 2em 3em;
+  border-radius: 1em;
+  margin: 2em 0;
+}
 /******************************************************/
 
 /**************+COLORS***********/
@@ -230,6 +236,10 @@ ol.upper-letter {
   color: #fafafa;
 }
 
+.soft-grey {
+  color: #9d9d9d;
+}
+
 .light-blue-bg {
   background: #41b9e3;
 }
@@ -240,6 +250,10 @@ ol.upper-letter {
 
 .red-bg {
   background: #de4c3c;
+}
+
+.soft-blue-bg {
+  background: #d7e9f7;
 }
 
 .yellow-bg {

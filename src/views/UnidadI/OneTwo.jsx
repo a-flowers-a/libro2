@@ -3,11 +3,14 @@ import { Row, Col, Container, Image } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
+import Info from "../../components/Info";
 import Actividad from "../../components/Actividad";
 import { faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
 
 const OneTwo = () => {
   const img13 = "../../assets/images/13.png";
+  const img14 = "../../assets/images/14.png";
+
   return (
     <div className="primary-div">
       <PoliHeader />
@@ -23,6 +26,86 @@ const OneTwo = () => {
               </Row>
               <Row>
                 <Col>
+                  <Info>
+                    <Row>
+                      <p>
+                        <b>¿Qué son las finanzas?</b>
+                      </p>
+                      <p className="justify-text">
+                        Finanzas es un término que seguramente has escuchado con
+                        mucha frecuencia y de hecho en tu vida diaria, de algún
+                        modo, realizas actividades relacionadas con dicha
+                        disciplina. Hay tantas definiciones del término finanzas
+                        como autores al respecto, en la figura 1.4 se rescatan
+                        algunas de ellas.
+                      </p>
+                    </Row>
+                    <Row className="d-flex justify-content-center">
+                      <Image
+                        className="full-img"
+                        src={img14}
+                        alt="Figura 1.4 ¿Qué son las finanzas?"
+                      />
+                    </Row>
+                    <Row className="img-source center-text ">
+                      <Col>
+                        Hernández, J., Rodríguez, E. & Jiménez, Y. (2021).
+                      </Col>
+                    </Row>
+                    <Row>
+                      <p className="justify-text">
+                        Para efectos de este curso entenderemos por finanzas la
+                        actividad económica que realizan las personas, las
+                        empresas y los gobiernos para la obtención de recursos y
+                        su utilización con miras al logro de los mejores
+                        resultados.
+                      </p>
+                      <p className="justify-text">
+                        Siguiendo a Gitman (2012) las finanzas son el arte y la
+                        ciencia de administrar el dinero. Al respecto, el autor
+                        enfatiza que las finanzas afectan las decisiones tanto
+                        de los individuos como de las empresas, ya que ambos en
+                        algún momento se enfrentan a la decisión de cuánto
+                        dinero gastar, cuánto ahorrar y cómo invertir los
+                        ahorros.
+                      </p>
+                      <p>
+                        Específicamente en la empresa las finanzas se enfocan
+                        en:
+                      </p>
+                      <ul>
+                        <li>
+                          Cómo incrementar el dinero de los inversionistas
+                        </li>
+                        <li>
+                          Cómo invertir el dinero para maximizar las utilidades
+                        </li>
+                        <li>
+                          De qué modo conviene reinvertir las ganancias de la
+                          empresa o distribuirlas entre los inversionistas{" "}
+                        </li>
+                      </ul>
+                      <p className="justify-text">
+                        Para lograr lo anterior se requiere del financiamiento y
+                        de la inversión, ambas son consideradas como las
+                        funciones principales de las finanzas. En este sentido,
+                        se entiende por <b>financiamiento</b> la obtención de
+                        recursos provenientes de una o varias fuentes de
+                        financiamiento; en tanto que la <b>inversión</b> se
+                        refiere propiamente a la utilización que se hace de
+                        dichos recursos. Por ejemplo, en el caso de una
+                        organización podría invertir en infraestructura
+                        (instalaciones, bodegas, maquinaria, equipo, entre
+                        otros) a este tipo de inversión se le conoce como
+                        inversión fija; y también podría invertir en el proceso
+                        operativo del negocio
+                      </p>
+                    </Row>
+                  </Info>
+                </Col>
+              </Row>
+              <Row>
+                <Col className="justify-text">
                   <p>
                     Hablar de finanzas implica hablar de contabilidad. La
                     contabilidad se encarga principalmente del registro de las

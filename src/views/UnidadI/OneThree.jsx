@@ -17,7 +17,7 @@ const OneThree = () => {
         <SideMenu />
         <Container className="padding-md">
           <Row>
-            <Col>
+            <Col className="justify-text">
               <Row className="m-b-space">
                 <Col>
                   <h2>

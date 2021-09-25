@@ -21,7 +21,7 @@ const OneOne = () => {
               </Row>
               <Row className="justify-text">
                 <Col>
-                  <p>
+                  <p className="justify-text">
                     Sin importar el lugar en donde te encuentres en este
                     momento, mira a tu alrededor y notarás la existencia de una
                     gran cantidad de satisfactores (bienes). Estos son
@@ -41,7 +41,7 @@ const OneOne = () => {
                       Acción de emprender una cosa con un riesgo implícito
                       (Münch, 2017).
                     </li>
-                    <li>
+                    <li className="justify-text">
                       Unidad económica de producción dedicada a actividades
                       industriales, mercantiles o de prestación de servicios,
                       cuyo objetivo dependerá del sistema de organización
