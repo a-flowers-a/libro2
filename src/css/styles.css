@@ -31,7 +31,7 @@ hr {
 .header {
   padding-bottom: 1em;
   overflow: hidden;
-  border-bottom: 1px solid rgba(210, 194, 210, 0.2);
+  box-shadow: 0 2px 7px #9d9d9d; /*035aa6**/
 }
 
 .responsiveLogo {
