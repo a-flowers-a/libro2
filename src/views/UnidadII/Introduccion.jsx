@@ -1,9 +1,7 @@
 import React from "react";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
-import { Row, Col, Image, Container } from "react-bootstrap";
-import CardButton from "../../components/CardButton";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { Row, Col, Container } from "react-bootstrap";
 import SideMenu from "../../components/SideMenu/SideMenu";
 
 function IntroduccionII() {
@@ -19,8 +17,8 @@ function IntroduccionII() {
             </Col>
           </Row>
           <Row className="justify-content-center m-v-space">
-            <Col m={9}>
-              <p className="justify-text">
+            <Col m={9} className="justify-text">
+              <p>
                 Las organizaciones son parte medular de nuestras vidas. A través
                 del tiempo se ha buscado la manera de intervenir en las
                 organizaciones para hacerlas más productivas, más rentables y

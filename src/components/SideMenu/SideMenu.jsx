@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faBars } from "@fortawesome/free-solid-svg-icons";
 import { isMobile } from "react-device-detect";
 import { classes } from "typestyle";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import { Dropdown } from "react-bootstrap";
 import unitOne from "../../constants/unitOne";
 import unitTwo from "../../constants/unitTwo";
@@ -39,7 +38,7 @@ function SideMenu(props) {
             />
           </div>
 
-          <Dropdown>
+          <Dropdown className="m-b-space">
             <Dropdown.Toggle variant="primary" id="dropdown-menu">
               Unidades
             </Dropdown.Toggle>

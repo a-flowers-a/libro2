@@ -14,7 +14,7 @@ const TwoThreeTwoOne = () => {
       <PoliHeader />
       <div className="flexContainer">
         <SideMenu />
-        <Container className="padding-md">
+        <Container className="padding-md justify-text">
           <h4>2.3.2.1 Estructura del estado de resultados</h4>
           <p>
             Al igual que el estado de situación financiera el Estado de

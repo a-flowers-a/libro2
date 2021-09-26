@@ -15,7 +15,7 @@ const TwoThreeTwoTwo = () => {
       <PoliHeader />
       <div className="flexContainer">
         <SideMenu />
-        <Container className="padding-md">
+        <Container className="padding-md justify-text">
           <h4>2.3.2.2 Cuentas del estado de resultados</h4>
           <p>
             Las cuentas del estado de resultados se clasifican en dos grupos:{" "}
