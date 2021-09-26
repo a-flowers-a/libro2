@@ -34,6 +34,14 @@ hr {
   box-shadow: 0 2px 7px #9d9d9d; /*035aa6**/
 }
 
+.header-title-container {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .responsiveLogo {
   height: auto;
   max-width: 80px;
