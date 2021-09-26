@@ -1,4 +1,4 @@
-const unitOne = [
+export const unitOne = [
   { name: "1.1. La empresa", path: "/content/I/1.1", level: 1 },
   { name: "1.1.1. Constitución jurídica", path: "/content/I/1.1.1", level: 2 },
   {

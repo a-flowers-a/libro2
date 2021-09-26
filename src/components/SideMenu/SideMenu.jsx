@@ -1,21 +1,28 @@
 import React, { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faBars } from "@fortawesome/free-solid-svg-icons";
 import { isMobile } from "react-device-detect";
 import { classes } from "typestyle";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import unitTwo from "./unitTwo";
-import unitOne from "./unitOne";
+import { Dropdown } from "react-bootstrap";
+import unitOne from "../../constants/unitOne";
+import unitTwo from "../../constants/unitTwo";
 import Item from "./Item";
 import "./styles.css";
+import { setUnit } from "../../actions";
 
 function SideMenu(props) {
+  // context
+  const currentUnit = useSelector((state) => state.unitReducer);
+  const dispatch = useDispatch();
   const [open, setOpen] = useState(true);
+  const setCurrentUnit = (unitNumber) => dispatch(setUnit(unitNumber));
 
   useEffect(() => {
     isMobile ? setOpen(false) : setOpen(true);
   }, [setOpen]);
-
+  console.log(currentUnit);
   return (
     <>
       {open ? (
@@ -31,16 +38,24 @@ function SideMenu(props) {
               size="2x"
             />
           </div>
-          <NavDropdown title="Unidades" id="drop">
-            <NavDropdown.Item href="#action1">Unidad I</NavDropdown.Item>
-            <NavDropdown.Item href="/content/II/intro">
-              Unidad I
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action3">Unidad III</NavDropdown.Item>
-            <NavDropdown.Item href="#action4">Unidad IV</NavDropdown.Item>
-            <NavDropdown.Item href="#action5">Unidad V</NavDropdown.Item>
-          </NavDropdown>
-          {unitOne.map((topic) => (
+
+          <Dropdown>
+            <Dropdown.Toggle variant="primary" id="dropdown-menu">
+              Unidades
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item onClick={() => setCurrentUnit(unitOne)}>
+                Unidad I
+              </Dropdown.Item>
+              <Dropdown.Item onClick={() => setCurrentUnit(unitTwo)}>
+                Unidad II
+              </Dropdown.Item>
+              <Dropdown.Item>Unidad III</Dropdown.Item>
+              <Dropdown.Item>Unidad IV</Dropdown.Item>
+              <Dropdown.Item>Unidad V</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+          {currentUnit.map((topic) => (
             <Item
               topic={topic.name}
               key={topic.name}

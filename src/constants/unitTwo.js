@@ -1,4 +1,4 @@
-const unitTwo = [
+export const unitTwo = [
   {
     name: "Introducción",
     path: "/content/II/intro",
