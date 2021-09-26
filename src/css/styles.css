@@ -70,10 +70,14 @@ hr {
 
 /*******************Welcome page***********************/
 .card-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 7px;
   box-shadow: 0 2px 7px #073b4c; /*035aa6*/
-  padding: 10px;
+  flex-wrap: wrap;
   margin: 10px auto;
+  padding: 10px;
   text-align: center;
 }
 .card-button:hover {
