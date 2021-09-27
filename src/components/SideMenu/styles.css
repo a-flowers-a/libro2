@@ -6,8 +6,6 @@
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  background-color: #b673de;
-  border-right: 1px solid #b673de;
 }
 
 .sideMenuMobileContainer {
@@ -26,32 +24,6 @@
   color: white;
 }
 
-/*------------------Item----------------------*/
-.itemContainer {
-  padding: 1em 0.5em 1em 2em;
-  color: white;
-  cursor: pointer;
-}
-
-.itemContainer:hover {
-  background-color: #d5bde3;
-  color: #584e5e;
-  transition: background-color 0.3s ease;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-.activeItem {
-  background-color: #d5bde3;
-  border-right: 5px solid white;
-}
-
-.activeItem .itemContainer {
-  color: #584e5e !important;
-}
-
 /*------  Burger button ---------------*/
 .burguerIcon {
   position: fixed;
@@ -62,13 +34,82 @@ a:hover {
   width: 3em;
   height: 3em;
   padding: 0.5em;
-  background-color: #b673de;
   color: white;
   border-radius: 10px;
   margin: 2em 0 2em 1em;
 }
 
-.burguerIcon:hover {
+/*------------------Item----------------------*/
+.itemContainer {
+  padding: 1em 0.5em 1em 2em;
+  color: white;
+  cursor: pointer;
+}
+
+/*.itemContainer:hover {
+  background-color: #d5bde3;
+  color: #584e5e;
+  transition: background-color 0.3s ease;
+}*/
+
+a:hover {
+  text-decoration: none;
+}
+
+.activeItem {
+  border-right: 5px solid white;
+}
+
+/*.activeItem .itemContainer {
+  background-color: #d5bde3;
+  color: #584e5e !important;
+}*/
+
+/*------------------ Sidemenu colors ----------------------*/
+
+.purple {
+  background-color: #b673de;
+  border-right: 1px solid #b673de;
+}
+
+.purpleHover:hover {
   cursor: pointer;
   color: #d5bde3;
 }
+
+.blue {
+  background-color: #5c7aea;
+  border-right: 1px solid #5c7aea;
+}
+
+.blueHover:hover {
+  cursor: pointer;
+  color: #90aacb;
+}
+
+.aquaHover:hover {
+}
+
+/*------------------ Item of sidemenu colors ----------------------*/
+
+.itemPurpleHover:hover {
+  background-color: #d5bde3;
+  color: #584e5e;
+  transition: background-color 0.3s ease;
+}
+
+.itemActivePurple {
+  background-color: #d5bde3;
+  color: #584e5e !important;
+}
+
+.itemBlueHover:hover {
+  background-color: #90aacb;
+  color: #11324d;
+  transition: background-color 0.3s ease;
+}
+.itemActiveBlue {
+  background-color: #90aacb;
+  color: #11324d !important;
+}
+/*${colorClass} ${hoverClass} */

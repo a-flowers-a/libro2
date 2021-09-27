@@ -16,21 +16,50 @@ function SideMenu(props) {
   const currentUnit = useSelector((state) => state.unitReducer);
   const dispatch = useDispatch();
   const [open, setOpen] = useState(true);
-  const setCurrentUnit = (unitNumber) => dispatch(setUnit(unitNumber));
+  const [unitNumber, setUnitNumber] = useState("unitOne");
+  const [colorClass, setColorClass] = useState("blue");
+  const [hoverClass, setHoverClass] = useState("blueHover");
+
+  const setCurrentUnit = (unitObject) => {
+    console.log(unitObject);
+    dispatch(setUnit(unitObject));
+    let _colorClass = "blue";
+    let _hoverClass = "blueHover";
+
+    switch (unitNumber) {
+      case "unitOne":
+        _colorClass = "purple";
+        _hoverClass = "purpleHover";
+        break;
+      case "unitTwo":
+        _colorClass = "blue";
+        _hoverClass = "blueHover";
+        break;
+      case "unitThree":
+        _colorClass = "";
+        _hoverClass = "";
+        break;
+
+      default:
+        break;
+    }
+    setColorClass(_colorClass);
+    setHoverClass(_hoverClass);
+  };
 
   useEffect(() => {
     isMobile ? setOpen(false) : setOpen(true);
   }, [setOpen]);
-  console.log(currentUnit);
+
   return (
     <>
       {open ? (
         <div
-          className={classes("sideMenuContainer", {
+          className={classes("sideMenuContainer", `${colorClass}`, {
             ["sideMenuMobileContainer"]: isMobile === true,
           })}
         >
-          <div className="chevronContainer" onClick={() => setOpen(false)}>
+          <div className={"chevronContainer"} onClick={() => setOpen(false)}>
             <FontAwesomeIcon
               className="chevronLeft"
               icon={faChevronLeft}
@@ -39,14 +68,24 @@ function SideMenu(props) {
           </div>
 
           <Dropdown className="m-b-space">
-            <Dropdown.Toggle variant="primary" id="dropdown-menu">
+            <Dropdown.Toggle variant="secondary" id="dropdown-menu">
               Unidades
             </Dropdown.Toggle>
             <Dropdown.Menu>
-              <Dropdown.Item onClick={() => setCurrentUnit(unitOne)}>
+              <Dropdown.Item
+                onClick={() => {
+                  setCurrentUnit(unitOne);
+                  setUnitNumber("unitOne");
+                }}
+              >
                 Unidad I
               </Dropdown.Item>
-              <Dropdown.Item onClick={() => setCurrentUnit(unitTwo)}>
+              <Dropdown.Item
+                onClick={() => {
+                  setCurrentUnit(unitTwo);
+                  setUnitNumber("unitTwo");
+                }}
+              >
                 Unidad II
               </Dropdown.Item>
               <Dropdown.Item>Unidad III</Dropdown.Item>
@@ -60,11 +99,15 @@ function SideMenu(props) {
               key={topic.name}
               path={topic.path}
               level={topic.level}
+              currentUnit={unitNumber}
             />
           ))}
         </div>
       ) : (
-        <div className="burguerIcon" onClick={() => setOpen(true)}>
+        <div
+          className={`burguerIcon ${colorClass} ${hoverClass}`}
+          onClick={() => setOpen(true)}
+        >
           <FontAwesomeIcon icon={faBars} size={"2x"} />
         </div>
       )}
