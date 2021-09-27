@@ -1,0 +1,30 @@
+.center-flex-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.header-image {
+  height: auto;
+  max-width: 80px;
+  width: 100%;
+}
+
+.header {
+  overflow: hidden;
+  box-shadow: 0 2px 7px #9d9d9d; /*035aa6**/
+}
+
+.header-title-container {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (min-width: 550px) {
+  .header-title-container {
+    font-size: 26px;
+  }
+}
