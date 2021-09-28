@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -9,18 +9,30 @@ export default function Item(props) {
   const [colorClass, setColorClass] = useState("");
   const [hoverClass, setHoverClass] = useState("");
 
-  /*switch (currentUnit) {
-    case "unitOne":
-      setColorClass("itemActivePurple");
-      setHoverClass("itemPurpleHover");
-      break;
-    case "unitTwo":
-      setColorClass("itemActiveBlue");
-      setHoverClass("itemBlueHover");
-      break;
-    default:
-      break;
-  }*/
+  useEffect(() => {
+    let _colorClass = "blue";
+    let _hoverClass = "blueHover";
+
+    switch (currentUnit.name) {
+      case "unitOne":
+        _colorClass = "itemActivePurple";
+        _hoverClass = "itemPurpleHover";
+        break;
+      case "unitTwo":
+        _colorClass = "itemActiveBlue";
+        _hoverClass = "itemBlueHover";
+        break;
+      case "unitThree":
+        _colorClass = "";
+        _hoverClass = "";
+        break;
+
+      default:
+        break;
+    }
+    setColorClass(_colorClass);
+    setHoverClass(_hoverClass);
+  }, [colorClass, hoverClass, currentUnit]);
 
   return (
     <NavLink to={path} activeClassName={"activeItem"}>
