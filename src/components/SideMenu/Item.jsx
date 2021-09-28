@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { NavLink, useHistory } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 export default function Item(props) {
-  let history = useHistory();
-  const { icon, topic, path, level, currentUnit } = props;
+  const currentUnit = useSelector((state) => state.unitReducer);
+  const { icon, topic, path, level } = props;
   const [colorClass, setColorClass] = useState("");
   const [hoverClass, setHoverClass] = useState("");
 

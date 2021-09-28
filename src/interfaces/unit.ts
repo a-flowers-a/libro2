@@ -4,5 +4,10 @@ export interface SubUnit {
   level: number;
 }
 
-export type Unit = Array<SubUnit>;
+export interface Unit {
+  name: String,
+  content: Array<SubUnit>
+}
+
+//export type Unit = Array<SubUnit>;
 

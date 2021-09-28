@@ -5,28 +5,31 @@ import { faChevronLeft, faBars } from "@fortawesome/free-solid-svg-icons";
 import { isMobile } from "react-device-detect";
 import { classes } from "typestyle";
 import { Dropdown } from "react-bootstrap";
+import { setUnit } from "../../actions";
 import unitOne from "../../constants/unitOne";
 import unitTwo from "../../constants/unitTwo";
 import Item from "./Item";
 import "./styles.css";
-import { setUnit } from "../../actions";
 
 function SideMenu(props) {
   // context
-  const currentUnit = useSelector((state) => state.unitReducer);
   const dispatch = useDispatch();
+  const currentUnit = useSelector((state) => state.unitReducer);
   const [open, setOpen] = useState(true);
-  const [unitNumber, setUnitNumber] = useState("unitOne");
   const [colorClass, setColorClass] = useState("blue");
   const [hoverClass, setHoverClass] = useState("blueHover");
 
-  const setCurrentUnit = (unitObject) => {
-    console.log(unitObject);
-    dispatch(setUnit(unitObject));
+  const setCurrentUnit = (unitObject) => dispatch(setUnit(unitObject));
+
+  useEffect(() => {
+    isMobile ? setOpen(false) : setOpen(true);
+  }, [setOpen]);
+
+  useEffect(() => {
     let _colorClass = "blue";
     let _hoverClass = "blueHover";
 
-    switch (unitNumber) {
+    switch (currentUnit.name) {
       case "unitOne":
         _colorClass = "purple";
         _hoverClass = "purpleHover";
@@ -45,11 +48,7 @@ function SideMenu(props) {
     }
     setColorClass(_colorClass);
     setHoverClass(_hoverClass);
-  };
-
-  useEffect(() => {
-    isMobile ? setOpen(false) : setOpen(true);
-  }, [setOpen]);
+  }, [colorClass, hoverClass, currentUnit]);
 
   return (
     <>
@@ -75,7 +74,6 @@ function SideMenu(props) {
               <Dropdown.Item
                 onClick={() => {
                   setCurrentUnit(unitOne);
-                  setUnitNumber("unitOne");
                 }}
               >
                 Unidad I
@@ -83,7 +81,6 @@ function SideMenu(props) {
               <Dropdown.Item
                 onClick={() => {
                   setCurrentUnit(unitTwo);
-                  setUnitNumber("unitTwo");
                 }}
               >
                 Unidad II
@@ -93,13 +90,12 @@ function SideMenu(props) {
               <Dropdown.Item>Unidad V</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-          {currentUnit.map((topic) => (
+          {currentUnit.content.map((topic) => (
             <Item
               topic={topic.name}
               key={topic.name}
               path={topic.path}
               level={topic.level}
-              currentUnit={unitNumber}
             />
           ))}
         </div>
