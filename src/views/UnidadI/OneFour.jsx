@@ -19,7 +19,7 @@ const OneFour = () => {
         <SideMenu />
         <Container className="padding-md">
           <Row>
-            <Col>
+            <Col className="justify-text">
               <Row>
                 <Col>
                   <h2>
