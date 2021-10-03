@@ -250,12 +250,12 @@ const TwoThreeOneOne = () => {
                 <Actividad
                   icon={faFolderPlus}
                   link={orgUnidadII[0]}
-                  type={"Material de apoyo"}
-                  number={"1"}
+                  type={"Organizador gráfico"}
+                  number={""}
                 />
               </Col>
               <Col md={6} className="v-center-content text-descrip">
-                Organizador gráfico. Cuentas del estado de situación financiera
+                Cuentas del estado de situación financiera
               </Col>
             </Row>
             <p>

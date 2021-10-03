@@ -6,9 +6,9 @@
   padding-bottom: 1em;
 }
 
-.header-image {
+.escom-img {
   height: auto;
-  max-width: 80px;
+  max-width: 95px;
   width: 100%;
 }
 
@@ -21,6 +21,12 @@
   font-size: 16px;
   font-weight: bold;
   text-align: center;
+}
+
+.ipn-img {
+  height: auto;
+  max-width: 120px;
+  width: 110%;
 }
 
 @media (min-width: 550px) {
