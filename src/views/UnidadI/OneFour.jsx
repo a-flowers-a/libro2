@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Container, Table, Image } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
+import { scrollTop } from "../../helpers/general";
 
 const OneFour = () => {
   const proveedor = "../../assets/images/proveedor.png";
@@ -11,6 +12,10 @@ const OneFour = () => {
   const entidades = "../../assets/images/entidades.png";
   const comunidad = "../../assets/images/comunidad.png";
   const alcaldia = "../../assets/images/alcaldia.png";
+
+  useEffect(() => {
+    scrollTop();
+  }, []);
 
   return (
     <div className="primary-div">

@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Container, Image } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
+import { scrollTop } from "../../helpers/general";
 
 const OneThree = () => {
   const derecho = "../../assets/images/derecho.png";
   const economia = "../../assets/images/economia.png";
   const etica = "../../assets/images/etica.png";
   const matematica = "../../assets/images/matematica.png";
+
+  useEffect(() => {
+    scrollTop();
+  }, []);
 
   return (
     <div className="primary-div">
