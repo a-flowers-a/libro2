@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Image, Container } from "react-bootstrap";
 import {
   faBookReader,
@@ -12,6 +12,7 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import { UnidadII } from "../../linksToAssets/Actividades/UnidadII";
 import { orgUnidadII } from "../../linksToAssets/Organizadores/UnidadII";
 import { lecUnidadII } from "../../linksToAssets/Lecturas/UnidadII";
+import { scrollTop } from "../../helpers/general";
 
 const TwoThreeOneOne = () => {
   const img28 = "../../assets/images/28.png";
@@ -19,6 +20,11 @@ const TwoThreeOneOne = () => {
   const img210 = "../../assets/images/210.png";
   const img211 = "../../assets/images/211.png";
   const img212 = "../../assets/images/212.png";
+
+  useEffect(() => {
+    scrollTop();
+  }, []);
+
   return (
     <div className="primary-div">
       <PoliHeader />
@@ -250,12 +256,12 @@ const TwoThreeOneOne = () => {
                 <Actividad
                   icon={faFolderPlus}
                   link={orgUnidadII[0]}
-                  type={"Material de apoyo"}
-                  number={"1"}
+                  type={"Organizador gráfico"}
+                  number={""}
                 />
               </Col>
               <Col md={6} className="v-center-content text-descrip">
-                Organizador gráfico. Cuentas del estado de situación financiera
+                Cuentas del estado de situación financiera
               </Col>
             </Row>
             <p>

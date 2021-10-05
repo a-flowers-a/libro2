@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import { Row, Col, Image, Container } from "react-bootstrap";
 import SideMenu from "../../components/SideMenu/SideMenu";
+import { scrollTop } from "../../helpers/general";
 
 function TwoThree() {
   const img24 = "../../assets/images/24.png";
   const img25 = "../../assets/images/25.png";
   const video1 = "../../assets/videos/que_son_los_estados_financieros.mp4";
+
+  useEffect(() => {
+    scrollTop();
+  }, []);
+
   return (
     <div className="primary-div">
       <PoliHeader />

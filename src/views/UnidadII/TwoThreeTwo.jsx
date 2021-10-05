@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import { Row, Col, Image, Container, Table } from "react-bootstrap";
 import SideMenu from "../../components/SideMenu/SideMenu";
+import { scrollTop } from "../../helpers/general";
 
 function TwoThreeTwo() {
   const img215 = "../../assets/images/215.png";
   const img216 = "../../assets/images/216.png";
+
+  useEffect(() => {
+    scrollTop();
+  }, []);
 
   return (
     <div className="primary-div">

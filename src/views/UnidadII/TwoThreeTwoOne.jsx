@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import { Row, Col, Image, Container, Table } from "react-bootstrap";
@@ -6,9 +6,15 @@ import { faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
 import Actividad from "../../components/Actividad";
 import SideMenu from "../../components/SideMenu/SideMenu";
 import { UnidadII } from "../../linksToAssets/Actividades/UnidadII";
+import { scrollTop } from "../../helpers/general";
 
 const TwoThreeTwoOne = () => {
   const img217 = "../../assets/images/217.png";
+
+  useEffect(() => {
+    scrollTop();
+  }, []);
+
   return (
     <div className="primary-div">
       <PoliHeader />

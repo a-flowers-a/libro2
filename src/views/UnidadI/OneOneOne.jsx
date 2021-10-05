@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Container, Table } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
@@ -10,6 +10,7 @@ import {
   faPuzzlePiece,
 } from "@fortawesome/free-solid-svg-icons";
 import { others } from "../../linksToAssets/Other/Others";
+import { scrollTop } from "../../helpers/general";
 
 const OneOneOne = () => {
   const tdAllCenterTransparent = {
@@ -21,6 +22,11 @@ const OneOneOne = () => {
     verticalAlign: "middle",
     textAlign: "center",
   };
+
+  useEffect(() => {
+    scrollTop();
+  }, []);
+
   return (
     <div className="primary-div">
       <PoliHeader />

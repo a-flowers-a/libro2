@@ -9,14 +9,11 @@ function Header() {
   return (
     <Container fluid className="header">
       <Row>
-        <Col
-          xs={{ span: 3, order: 1 }}
-          className="center-flex-content image-container"
-        >
-          <Image className="header-image" src={ipn} alt="Logo IPN" />
+        <Col xs={{ span: 3, order: 1 }} className="center-flex-content">
+          <Image className="header-image ipn-img" src={ipn} alt="Logo IPN" />
         </Col>
         <Col xs={{ span: 3, order: 3 }} className="center-flex-content">
-          <Image className="header-image" src={escom} alt="Logo ESCOM" />
+          <Image className="escom-img" src={escom} alt="Logo ESCOM" />
         </Col>
         <Col
           xs={{ span: 6, order: 2 }}

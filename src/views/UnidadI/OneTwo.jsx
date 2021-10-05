@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Container, Image } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
@@ -6,10 +6,15 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import Info from "../../components/Info";
 import Actividad from "../../components/Actividad";
 import { faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
+import { scrollTop } from "../../helpers/general";
 
 const OneTwo = () => {
   const img13 = "../../assets/images/13.png";
   const img14 = "../../assets/images/14.png";
+
+  useEffect(() => {
+    scrollTop();
+  }, []);
 
   return (
     <div className="primary-div">

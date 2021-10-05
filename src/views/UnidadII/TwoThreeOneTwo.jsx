@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Image, Container } from "react-bootstrap";
 import { faBookReader, faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
 import PoliHeader from "../../components/Header";
@@ -7,11 +7,17 @@ import Actividad from "../../components/Actividad";
 import SideMenu from "../../components/SideMenu/SideMenu";
 import { UnidadII } from "../../linksToAssets/Actividades/UnidadII";
 import { lecUnidadII } from "../../linksToAssets/Lecturas/UnidadII";
+import { scrollTop } from "../../helpers/general";
 
 const TwoThreeOneTwo = () => {
   const img213 = "../../assets/images/213.png";
   const img214 = "../../assets/images/214.png";
   const video2 = "../../assets/videos/ley_de_la_partida_doble.mp4";
+
+  useEffect(() => {
+    scrollTop();
+  }, []);
+
   return (
     <div className="primary-div">
       <PoliHeader />

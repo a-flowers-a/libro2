@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Image, Container } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
+import { scrollTop } from "../../helpers/general";
 
 const OneOneTwo = () => {
   const img112 = "../../assets/images/112.png";
+
+  useEffect(() => {
+    scrollTop();
+  }, []);
+
   return (
     <div className="primary-div">
       <PoliHeader />
