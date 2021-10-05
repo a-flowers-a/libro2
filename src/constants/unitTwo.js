@@ -57,7 +57,7 @@ export const unitTwo = {
       level: 3,
     },
     {
-      name: "Cierre",
+      name: "Cierre de la unidad temática",
       path: "/content/II/cierre",
       level: 1,
     },
