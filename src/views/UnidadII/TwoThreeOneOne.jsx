@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { Row, Col, Image, Container } from "react-bootstrap";
 import {
   faBookReader,
-  faFolderPlus,
   faPuzzlePiece,
+  faProjectDiagram,
 } from "@fortawesome/free-solid-svg-icons";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
@@ -254,7 +254,7 @@ const TwoThreeOneOne = () => {
             <Row className="justify-content-center m-v-space">
               <Col md={3}>
                 <Actividad
-                  icon={faFolderPlus}
+                  icon={faProjectDiagram}
                   link={orgUnidadII[0]}
                   type={"Organizador gráfico"}
                   number={""}
