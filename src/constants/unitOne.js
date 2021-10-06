@@ -1,6 +1,7 @@
 export const unitOne = {
   name: "unitOne",
   content: [
+    { name: "Introducción", path: "/content/I/intro", level: 1 },
     { name: "1.1. La empresa", path: "/content/I/1.1", level: 1 },
     {
       name: "1.1.1. Constitución jurídica",
@@ -27,6 +28,7 @@ export const unitOne = {
       path: "/content/I/1.4",
       level: 1,
     },
+    { name: "Cierre", path: "/content/I /cierre", level: 1 },
   ],
 };
 

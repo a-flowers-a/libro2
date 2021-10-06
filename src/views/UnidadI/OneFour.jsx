@@ -12,6 +12,12 @@ const OneFour = () => {
   const entidades = "../../assets/images/entidades.png";
   const comunidad = "../../assets/images/comunidad.png";
   const alcaldia = "../../assets/images/alcaldia.png";
+  const dinero = "../../assets/images/dinero.png";
+  const tecnologia = "../../assets/images/tecnologia.png";
+  const politica = "../../assets/images/politica.png";
+  const gustos = "../../assets/images/gustos.png";
+  const demografia = "../../assets/images/demografia.png";
+  const naturaleza = "../../assets/images/naturaleza.png";
 
   useEffect(() => {
     scrollTop();
@@ -157,61 +163,114 @@ const OneFour = () => {
                 </Col>
               </Row>
               <Row>
+                <Col md={4}>
+                  <Image className="full-img" src={dinero} alt="Económicos" />
+                </Col>
                 <Col>
-                  <Table striped bordered size="sm">
-                    <tbody>
-                      <tr>
-                        <td>Económicos</td>
-                        <td>
-                          Los precios, la inflación, las tasas de interés, entre
-                          otros.
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Tecnológicos</td>
-                        <td>
-                          Las nuevas tecnologías facilitan el trabajo, lo
-                          automatizan lo que recude los costos y sobre todo abre
-                          nuevas oportunidades de negocio.
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Político-legales</td>
-                        <td>
-                          Las iniciativas, la legislación y en general las
-                          decisiones del gobierno afectan a las empresas. Por
-                          ejemplo: en materia laboral, impuestos e inversión
-                          extranjera.
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Demográficos</td>
-                        <td>
-                          Datos sobre la población como edad, cantidad de
-                          hombres y de mujeres, nivel de ingresos, etc.
-                          Información muy útil para decidir ¿qué vender? ¿a
-                          quién vender? Y ¿dónde se localizan los clientes?
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Socio culturales</td>
-                        <td>
-                          Se conforma por los estilos de vida, costumbres,
-                          hábitos alimenticios, religión y demás aspectos que
-                          condicionan el comportamiento de las personas.
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Medioambientales</td>
-                        <td>
-                          Consiste en minimizar el impacto medio ambiental, lo
-                          que supone un esfuerzo y un costo para las empresas.
-                          Existen leyes que regulan aspectos ambientales y
-                          quienes no las cumplan son acreedores a sanciones.
-                        </td>
-                      </tr>
-                    </tbody>
-                  </Table>
+                  <p>
+                    <b>Económicos</b>
+                  </p>
+                  <p>
+                    Los precios, la inflación, las tasas de interés, entre
+                    otros.
+                  </p>
+                </Col>
+              </Row>
+              <Row>
+                <Col md={4}>
+                  <Image
+                    className="full-img"
+                    src={tecnologia}
+                    alt="Tecnológicos"
+                  />
+                </Col>
+                <Col>
+                  <p>
+                    <b>Tecnológicos</b>
+                  </p>
+                  <p>
+                    Las nuevas tecnologías facilitan el trabajo, lo automatizan
+                    lo que recude los costos y sobre todo abre nuevas
+                    oportunidades de negocio.
+                  </p>
+                </Col>
+              </Row>
+              <Row>
+                <Col md={4}>
+                  <Image
+                    className="full-img"
+                    src={politica}
+                    alt="Político-legales"
+                  />
+                </Col>
+                <Col>
+                  <p>
+                    <b>Político-legales</b>
+                  </p>
+                  <p>
+                    Las iniciativas, la legislación y en general las decisiones
+                    del gobierno afectan a las empresas. Por ejemplo: en materia
+                    laboral, impuestos e inversión extranjera.
+                  </p>
+                </Col>
+              </Row>
+              <Row>
+                <Col md={4}>
+                  <Image
+                    className="full-img"
+                    src={demografia}
+                    alt="Demográficos"
+                  />
+                </Col>
+                <Col>
+                  <p>
+                    <b>Demográficos</b>
+                  </p>
+                  <p>
+                    Datos sobre la población como edad, cantidad de hombres y de
+                    mujeres, nivel de ingresos, etc. Información muy útil para
+                    decidir ¿qué vender? ¿a quién vender? Y ¿dónde se localizan
+                    los clientes?
+                  </p>
+                </Col>
+              </Row>
+              <Row>
+                <Col md={4}>
+                  <Image
+                    className="full-img"
+                    src={gustos}
+                    alt="Socio culturales"
+                  />
+                </Col>
+                <Col>
+                  <p>
+                    <b>Socio culturales</b>
+                  </p>
+                  <p>
+                    Se conforma por los estilos de vida, costumbres, hábitos
+                    alimenticios, religión y demás aspectos que condicionan el
+                    comportamiento de las personas.
+                  </p>
+                </Col>
+              </Row>
+              <Row>
+                <Col md={4}>
+                  <Image
+                    className="full-img"
+                    src={naturaleza}
+                    alt="Medioambientales"
+                  />
+                </Col>
+                <Col>
+                  <p>
+                    <b>Medioambientales</b>
+                  </p>
+                  <p>
+                    Consiste en minimizar el impacto medio ambiental, lo que
+                    supone un esfuerzo y un costo para las empresas. Existen
+                    leyes que regulan aspectos ambientales y quienes no las
+                    cumplan son acreedores a sanciones.
+                  </p>
                 </Col>
               </Row>
             </Col>

@@ -87,7 +87,7 @@ a:hover {
   transition: background-color 0.3s ease;
 }
 
-.itemActive .itemActivePurple {
+.activeItem .itemActivePurple {
   background-color: #d5bde3;
   color: #584e5e !important;
 }
