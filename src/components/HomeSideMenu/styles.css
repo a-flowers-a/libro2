@@ -1,0 +1,74 @@
+.sideMenuContainer {
+  position: -webkit-sticky;
+  position: sticky;
+  height: 100vh;
+  top: -1px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #316b83;
+  border-right: 1px solid #b673de;
+}
+
+.sideMenuMobileContainer {
+  position: fixed !important;
+  z-index: 5;
+}
+
+.chevronContainer {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.chevronLeft {
+  margin: 0.6em 1em;
+  color: white;
+}
+
+/*------------------Item----------------------*/
+.itemContainer {
+  padding: 1em 0.5em 1em 2em;
+  color: white;
+  cursor: pointer;
+}
+
+.itemContainer:hover {
+  background-color: #cee5d0;
+  color: #082032;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.activeItem {
+  background-color: #d5bde3;
+  border-right: 5px solid white;
+}
+
+.activeItem .itemContainer {
+  color: #584e5e !important;
+}
+
+/*------  Burger button ---------------*/
+.burguerIcon {
+  position: fixed;
+  z-index: 3;
+  top: 5em;
+  display: flex;
+  justify-content: center;
+  width: 3em;
+  height: 3em;
+  padding: 0.5em;
+  background-color: #b673de;
+  color: white;
+  border-radius: 10px;
+  margin: 2em 0 2em 1em;
+}
+
+.burguerIcon:hover {
+  cursor: pointer;
+  color: #d5bde3;
+}
