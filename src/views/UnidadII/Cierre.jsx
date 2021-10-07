@@ -19,7 +19,7 @@ function CierreII() {
           <Row className="justify-content-center m-v-space">
             <Col m={9}>
               <p className="justify-text">
-                <div className="inline bold light-blue">¡Felicidades!</div> ya
+                <div className="inline bold light-navy">¡Felicidades!</div> ya
                 concluiste esta unidad temática. Ahora tienes un panorama más
                 claro acerca de qué es la información financiera, de dónde se
                 obtiene, así como los estados financieros en los que se muestra.
