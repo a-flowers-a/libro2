@@ -4,7 +4,7 @@ import PoliFooter from "../components/Footer";
 import { Container, Image, Row, Col } from "react-bootstrap";
 import CardButton from "../components/CardButton";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import SideMenu from "../components/SideMenu/SideMenu";
+import HomeMenu from "../components/HomeSideMenu/HomeMenu";
 
 function Welcome() {
   const frontImg = "../../assets/images/girl-books.svg";
@@ -16,7 +16,7 @@ function Welcome() {
     <div className="primary-div">
       <PoliHeader />
       <div className="flexContainer">
-        <SideMenu />
+        <HomeMenu />
         <Container className="padding-md">
           <Row>
             <Col></Col>
