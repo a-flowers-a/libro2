@@ -1,7 +1,12 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Welcome from "./views/Welcome";
-import Sources from "./views/Sources";
-import Method from "./views/Method";
+import Welcome from "./views/Home/Welcome";
+import Manual from "./views/Home/Manual";
+import Capability from "./views/Home/Capability";
+import Method from "./views/Home/Method";
+import Evaluation from "./views/Home/Evaluation";
+import Contacts from "./views/Home/Contacts";
+import Requirements from "./views/Home/Require";
+import Sources from "./views/Home/Sources";
 import TwoOne from "./views/UnidadII/TwoOne";
 import TwoTwo from "./views/UnidadII/TwoTwo";
 import TwoThree from "./views/UnidadII/TwoThree";
@@ -26,8 +31,14 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact component={() => <Welcome />} />
-        <Route path="/sources" exact component={() => <Sources />} />
+        <Route path="/welcome" exact component={() => <Welcome />} />
+        <Route path="/manual" exact component={() => <Manual />} />
+        <Route path="/capability" exact component={() => <Capability />} />
         <Route path="/methodology" exact component={() => <Method />} />
+        <Route path="/evaluation" exact component={() => <Evaluation />} />
+        <Route path="/contact" exact component={() => <Contacts />} />
+        <Route path="/requirements" exact component={() => <Requirements />} />
+        <Route path="/sources" exact component={() => <Sources />} />
         <Route
           path="/content/II/intro"
           exact

@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import HomeMenu from "../../components/HomeSideMenu/HomeMenu";
 import ToBookButton from "../../components/ToBookButton";
 
-function Manual() {
+function Evaluation() {
   return (
     <div className="primary-div">
       <PoliHeader />
@@ -17,15 +17,16 @@ function Manual() {
           </Row>
           <Row className="m-v-space ">
             <Col>
-              <h2>Manual de usuario</h2>
+              <h2>Evaluación de los aprendizajes</h2>
             </Col>
           </Row>
+
           <Row className="justify-content-center"></Row>
         </Container>
       </div>
       <PoliFooter />
     </div>
   );
-} //Manual
+} //Evaluation
 
-export default Manual;
+export default Evaluation;
