@@ -4,7 +4,7 @@ import { faChevronLeft, faBars } from "@fortawesome/free-solid-svg-icons";
 import { isMobile } from "react-device-detect";
 import { classes } from "typestyle";
 import home from "../../constants/home";
-import Item from "./Item";
+import Item from "./HomeMenuItem";
 import "./styles.css";
 
 function HomeMenu(props) {

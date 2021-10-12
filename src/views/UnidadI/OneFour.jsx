@@ -6,18 +6,18 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import { scrollTop } from "../../helpers/general";
 
 const OneFour = () => {
-  const proveedor = "../../assets/images/proveedor.png";
-  const cliente = "../../assets/images/cliente.png";
-  const competidores = "../../assets/images/competidores.png";
-  const entidades = "../../assets/images/entidades.png";
-  const comunidad = "../../assets/images/comunidad.png";
-  const alcaldia = "../../assets/images/alcaldia.png";
-  const dinero = "../../assets/images/dinero.png";
-  const tecnologia = "../../assets/images/tecnologia.png";
-  const politica = "../../assets/images/politica.png";
-  const gustos = "../../assets/images/gustos.png";
-  const demografia = "../../assets/images/demografia.png";
-  const naturaleza = "../../assets/images/naturaleza.png";
+  const img19 = "../../assets/images/19.png";
+  const img110 = "../../assets/images/110.png";
+  const img111 = "../../assets/images/111.png";
+  const img112 = "../../assets/images/112.png";
+  const img113 = "../../assets/images/113.png";
+  const img114 = "../../assets/images/114.png";
+  const img115 = "../../assets/images/115.png";
+  const img116 = "../../assets/images/116.png";
+  const img117 = "../../assets/images/117.png";
+  const img118 = "../../assets/images/118.png";
+  const img119 = "../../assets/images/119.png";
+  const img120 = "../../assets/images/120.png";
 
   useEffect(() => {
     scrollTop();
@@ -69,7 +69,7 @@ const OneFour = () => {
                   </p>
                 </Col>
                 <Col md={4}>
-                  <Image className="full-img" src={proveedor} alt="Proveedor" />
+                  <Image className="full-img" src={img19} alt="Proveedor" />
                 </Col>
               </Row>
               <Row>
@@ -80,7 +80,7 @@ const OneFour = () => {
                   <p>Compran bienes o adquieren servicios de la empresa</p>
                 </Col>
                 <Col md={4}>
-                  <Image className="full-img" src={cliente} alt="Clientes" />
+                  <Image className="full-img" src={img110} alt="Clientes" />
                 </Col>
               </Row>
               <Row>
@@ -94,11 +94,7 @@ const OneFour = () => {
                   </p>
                 </Col>
                 <Col md={4}>
-                  <Image
-                    className="full-img"
-                    src={competidores}
-                    alt="Competidores"
-                  />
+                  <Image className="full-img" src={img111} alt="Competidores" />
                 </Col>
               </Row>
               <Row>
@@ -115,7 +111,7 @@ const OneFour = () => {
                 <Col md={4}>
                   <Image
                     className="full-img"
-                    src={entidades}
+                    src={img112}
                     alt="Entidades financieras"
                   />
                 </Col>
@@ -133,7 +129,7 @@ const OneFour = () => {
                   </p>
                 </Col>
                 <Col md={4}>
-                  <Image className="full-img" src={comunidad} alt="Comunidad" />
+                  <Image className="full-img" src={img113} alt="Comunidad" />
                 </Col>
               </Row>
               <Row>
@@ -149,7 +145,7 @@ const OneFour = () => {
                 <Col md={4}>
                   <Image
                     className="full-img"
-                    src={alcaldia}
+                    src={img114}
                     alt="Alcaldías o municipios"
                   />
                 </Col>
@@ -164,7 +160,7 @@ const OneFour = () => {
               </Row>
               <Row>
                 <Col md={4}>
-                  <Image className="full-img" src={dinero} alt="Económicos" />
+                  <Image className="full-img" src={img115} alt="Económicos" />
                 </Col>
                 <Col>
                   <p>
@@ -178,11 +174,7 @@ const OneFour = () => {
               </Row>
               <Row>
                 <Col md={4}>
-                  <Image
-                    className="full-img"
-                    src={tecnologia}
-                    alt="Tecnológicos"
-                  />
+                  <Image className="full-img" src={img116} alt="Tecnológicos" />
                 </Col>
                 <Col>
                   <p>
@@ -199,7 +191,7 @@ const OneFour = () => {
                 <Col md={4}>
                   <Image
                     className="full-img"
-                    src={politica}
+                    src={img117}
                     alt="Político-legales"
                   />
                 </Col>
@@ -216,11 +208,7 @@ const OneFour = () => {
               </Row>
               <Row>
                 <Col md={4}>
-                  <Image
-                    className="full-img"
-                    src={demografia}
-                    alt="Demográficos"
-                  />
+                  <Image className="full-img" src={img118} alt="Demográficos" />
                 </Col>
                 <Col>
                   <p>
@@ -238,7 +226,7 @@ const OneFour = () => {
                 <Col md={4}>
                   <Image
                     className="full-img"
-                    src={gustos}
+                    src={img119}
                     alt="Socio culturales"
                   />
                 </Col>
@@ -257,7 +245,7 @@ const OneFour = () => {
                 <Col md={4}>
                   <Image
                     className="full-img"
-                    src={naturaleza}
+                    src={img120}
                     alt="Medioambientales"
                   />
                 </Col>

@@ -6,10 +6,10 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import { scrollTop } from "../../helpers/general";
 
 const OneThree = () => {
-  const derecho = "../../assets/images/derecho.png";
-  const economia = "../../assets/images/economia.png";
-  const etica = "../../assets/images/etica.png";
-  const matematica = "../../assets/images/matematica.png";
+  const img15 = "../../assets/images/15.png";
+  const img16 = "../../assets/images/16.png";
+  const img17 = "../../assets/images/17.png";
+  const img18 = "../../assets/images/18.png";
 
   useEffect(() => {
     scrollTop();
@@ -33,7 +33,7 @@ const OneThree = () => {
               </Row>
               <Row>
                 <Col md={4}>
-                  <Image className="full-img" src={etica} alt="Ética" />
+                  <Image className="full-img" src={img15} alt="Ética" />
                 </Col>
                 <Col>
                   <p>
@@ -60,12 +60,12 @@ const OneThree = () => {
                   </p>
                 </Col>
                 <Col md={4}>
-                  <Image className="full-img" src={economia} alt="Economía" />
+                  <Image className="full-img" src={img16} alt="Economía" />
                 </Col>
               </Row>
               <Row>
                 <Col md={4}>
-                  <Image className="full-img" src={derecho} alt="Derecho" />
+                  <Image className="full-img" src={img17} alt="Derecho" />
                 </Col>
                 <Col>
                   <p>
@@ -92,11 +92,7 @@ const OneThree = () => {
                   </p>
                 </Col>
                 <Col md={4}>
-                  <Image
-                    className="full-img"
-                    src={matematica}
-                    alt="Matemáticas"
-                  />
+                  <Image className="full-img" src={img18} alt="Matemáticas" />
                 </Col>
               </Row>
             </Col>

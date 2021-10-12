@@ -6,7 +6,7 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import { scrollTop } from "../../helpers/general";
 
 const OneOneTwo = () => {
-  const img112 = "../../assets/images/112.png";
+  const img12 = "../../assets/images/12.png";
 
   useEffect(() => {
     scrollTop();
@@ -50,8 +50,8 @@ const OneOneTwo = () => {
                     <Col>
                       <Image
                         className="full-img"
-                        src={img112}
-                        alt="Figura 1.1.2 Estructura Organizacional"
+                        src={img12}
+                        alt="Figura 1.2 Estructura Organizacional"
                       />
                     </Col>
                   </Row>
