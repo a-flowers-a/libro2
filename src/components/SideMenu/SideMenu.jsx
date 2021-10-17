@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faTimes, faBars, faHome } from "@fortawesome/free-solid-svg-icons";
 import { isMobile } from "react-device-detect";
 import { classes } from "typestyle";
 import { Dropdown } from "react-bootstrap";
@@ -12,7 +12,11 @@ import unitThree from "../../constants/unitThree";
 import Item from "./Item";
 import "./styles.css";
 
-function SideMenu(props) {
+function SideMenu() {
+  function sendTo(page) {
+    window.location.href = page;
+  } //sendTo
+
   // context
   const dispatch = useDispatch();
   const currentUnit = useSelector((state) => state.unitReducer);
@@ -59,11 +63,18 @@ function SideMenu(props) {
             ["sideMenuMobileContainer"]: isMobile === true,
           })}
         >
-          <div className={"chevronContainer"} onClick={() => setOpen(false)}>
+          <div className={"iconsContainer"}>
             <FontAwesomeIcon
-              className="chevronLeft"
-              icon={faChevronLeft}
+              className="homeIcon"
+              icon={faHome}
               size="2x"
+              onClick={() => sendTo("/")}
+            />
+            <FontAwesomeIcon
+              className="crossIcon"
+              icon={faTimes}
+              size="2x"
+              onClick={() => setOpen(false)}
             />
           </div>
 
