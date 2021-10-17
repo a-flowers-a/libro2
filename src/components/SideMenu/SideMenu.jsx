@@ -8,6 +8,7 @@ import { Dropdown } from "react-bootstrap";
 import { setUnit } from "../../actions";
 import unitOne from "../../constants/unitOne";
 import unitTwo from "../../constants/unitTwo";
+import unitThree from "../../constants/unitThree";
 import Item from "./Item";
 import "./styles.css";
 
@@ -31,16 +32,16 @@ function SideMenu(props) {
 
     switch (currentUnit.name) {
       case "unitOne":
-        _colorClass = "purple";
-        _hoverClass = "purpleHover";
+        _colorClass = "aqua";
+        _hoverClass = "aquaHover";
         break;
       case "unitTwo":
         _colorClass = "blue";
         _hoverClass = "blueHover";
         break;
       case "unitThree":
-        _colorClass = "";
-        _hoverClass = "";
+        _colorClass = "purple";
+        _hoverClass = "purpleHover";
         break;
 
       default:
@@ -85,7 +86,13 @@ function SideMenu(props) {
               >
                 Unidad II
               </Dropdown.Item>
-              <Dropdown.Item>Unidad III</Dropdown.Item>
+              <Dropdown.Item
+                onClick={() => {
+                  setCurrentUnit(unitThree);
+                }}
+              >
+                Unidad III
+              </Dropdown.Item>
               <Dropdown.Item>Unidad IV</Dropdown.Item>
               <Dropdown.Item>Unidad V</Dropdown.Item>
             </Dropdown.Menu>

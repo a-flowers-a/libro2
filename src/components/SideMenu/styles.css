@@ -55,15 +55,14 @@ a:hover {
 }
 
 /*------------------ Sidemenu colors ----------------------*/
-
-.purple {
-  background-color: #b673de;
-  border-right: 1px solid #b673de;
+.aqua {
+  background-color: #38a3a5;
+  border-right: 1px solid #38a3a5;
 }
 
-.purpleHover:hover {
+.aquaHover:hover {
   cursor: pointer;
-  color: #d5bde3;
+  color: #74b49b;
 }
 
 .blue {
@@ -76,20 +75,25 @@ a:hover {
   color: #d7e9f7;
 }
 
-.aquaHover:hover {
+.purple {
+  background-color: #b673de;
+  border-right: 1px solid #b673de;
+}
+
+.purpleHover:hover {
+  cursor: pointer;
+  color: #d5bde3;
 }
 
 /*------------------ Item of sidemenu colors ----------------------*/
-
-.itemPurpleHover:hover {
-  background-color: #d5bde3;
-  color: #584e5e;
+.itemAquaHover:hover {
+  background-color: #a7d7c5;
+  color: #34626c;
   transition: background-color 0.3s ease;
 }
-
-.activeItem .itemActivePurple {
-  background-color: #d5bde3;
-  color: #584e5e !important;
+.activeItem .itemActiveAqua {
+  background-color: #a7d7c5;
+  color: #34626c !important;
 }
 
 .itemBlueHover:hover {
@@ -100,4 +104,15 @@ a:hover {
 .activeItem .itemActiveBlue {
   background-color: #d7e9f7;
   color: #11324d !important;
+}
+
+.itemPurpleHover:hover {
+  background-color: #d5bde3;
+  color: #584e5e;
+  transition: background-color 0.3s ease;
+}
+
+.activeItem .itemActivePurple {
+  background-color: #d5bde3;
+  color: #584e5e !important;
 }

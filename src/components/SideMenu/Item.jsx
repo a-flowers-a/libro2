@@ -15,16 +15,16 @@ export default function Item(props) {
 
     switch (currentUnit.name) {
       case "unitOne":
-        _colorClass = "itemActivePurple";
-        _hoverClass = "itemPurpleHover";
+        _colorClass = "itemActiveAqua";
+        _hoverClass = "itemAquaHover";
         break;
       case "unitTwo":
         _colorClass = "itemActiveBlue";
         _hoverClass = "itemBlueHover";
         break;
       case "unitThree":
-        _colorClass = "";
-        _hoverClass = "";
+        _colorClass = "itemActivePurple";
+        _hoverClass = "itemPurpleHover";
         break;
 
       default:
