@@ -1,0 +1,98 @@
+import React, { useEffect } from "react";
+import { Row, Col, Container, Card } from "react-bootstrap";
+import PoliHeader from "../../components/Header";
+import PoliFooter from "../../components/Footer";
+import SideMenu from "../../components/SideMenu/SideMenu";
+
+import { scrollTop } from "../../helpers/general";
+
+const ThreeOne = () => {
+  // const img11 = "../../assets/images/11.png";
+  useEffect(() => {
+    scrollTop();
+  }, []);
+
+  return (
+    <div className="primary-div">
+      <PoliHeader />
+      <div className="flexContainer">
+        <SideMenu />
+        <Container className="padding-md">
+          <Row>
+            <Col className="justify-text">
+              <Row>
+                <Col>
+                  <h2>3.1 El análisis financiero en la empresa</h2>
+                </Col>
+              </Row>
+              <Row>
+                <p>
+                  Recuerda que la contabilidad registra los hechos (operaciones)
+                  del pasado de la organización y los resume en los estados
+                  financieros. Éstos después de ser analizados e interpretados
+                  proporcionan información valiosa para la toma de decisiones y
+                  para la planeación.
+                </p>
+                <p>
+                  Antes de abordar los métodos que se utilizan para realizar
+                  análisis financiero es importante que conozcas en qué el
+                  análisis financiero.
+                </p>
+                <Card className="m-b-space">
+                  <Card.Body>
+                    <blockquote>
+                      <p>
+                        “El análisis financiero es la situación actual de la
+                        empresa basada principalmente en las decisiones pasadas
+                        de la empresa”
+                      </p>
+                      <footer className="blockquote-footer">
+                        <cite title="Source Title">González, 2009:14</cite>
+                      </footer>
+                    </blockquote>
+                  </Card.Body>
+                </Card>
+                <Card className="m-b-space">
+                  <Card.Body>
+                    <blockquote>
+                      <p>
+                        El análisis de los estados financieros consiste en el
+                        “uso de ciertas herramientas y técnicas que se aplican a
+                        los reportes y estados de índole financiera para obtener
+                        algunas medidas y relaciones que facilitan la toma de
+                        decisiones”. Dichas decisiones pueden estar encaminadas
+                        a: modificar, consolidar o mejorar el rumbo financiero
+                        de la empresa.
+                      </p>
+                      <footer className="blockquote-footer">
+                        <cite title="Source Title">García (2006:82). </cite>
+                      </footer>
+                    </blockquote>
+                  </Card.Body>
+                </Card>
+                <p>
+                  Básicamente el análisis financiero radica en identificar las
+                  relaciones que existen entre las principales partidas
+                  (cuentas) de los estados financieros (estado de situación
+                  financiera y estado de resultados), lo que permite medir el
+                  desempeño de la administración (condiciones actuales y
+                  resultados) a una fecha específica, información que tiene
+                  relevancia para la toma de decisiones administrativas y
+                  financieras.
+                </p>
+                <p>
+                  A los medios o herramientas de apoyo que nos ayudan a realizar
+                  el análisis e interpretación de los estados financieros se les
+                  conoce como métodos de análisis financiero.
+                </p>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <PoliFooter />
+    </div>
+  );
+};
+
+export default ThreeOne;

@@ -7,6 +7,7 @@ import Evaluation from "./views/Home/Evaluation";
 import Contacts from "./views/Home/Contacts";
 import Requirements from "./views/Home/Require";
 import Sources from "./views/Home/Sources";
+import ThreeOne from "./views/UnidadIII/ThreeOne";
 import TwoOne from "./views/UnidadII/TwoOne";
 import TwoTwo from "./views/UnidadII/TwoTwo";
 import TwoThree from "./views/UnidadII/TwoThree";
@@ -39,6 +40,7 @@ function App() {
         <Route path="/contact" exact component={() => <Contacts />} />
         <Route path="/requirements" exact component={() => <Requirements />} />
         <Route path="/sources" exact component={() => <Sources />} />
+        <Route path="/content/III/3.1" exact component={() => <ThreeOne />} />
         <Route
           path="/content/II/intro"
           exact
