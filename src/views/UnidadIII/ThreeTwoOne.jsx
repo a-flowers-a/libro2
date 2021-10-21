@@ -6,8 +6,8 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 
 import { scrollTop } from "../../helpers/general";
 
-const ThreeTwo = () => {
-  const imgAnalisis = "../../assets/images/analisis.png";
+const ThreeTwoOne = () => {
+  const imgVerticales = "../../assets/images/verticales.png";
   useEffect(() => {
     scrollTop();
   }, []);
@@ -20,14 +20,13 @@ const ThreeTwo = () => {
         <Container className="padding-md">
           <Row>
             <Col className="justify-text">
-              <h2>3.2 Métodos para el análisis financiero</h2>
+              <h2>3.2.1. Análisis vertical (razones financieras y Dupont)</h2>
             </Col>
           </Row>
           <Row>
             <Col>
               <p>
-                Los principales métodos para realizar el análisis financiero se
-                muestran en la figura [figura x]
+                Los métodos verticales se aplican a <b>un período contable</b>
               </p>
             </Col>
           </Row>
@@ -35,7 +34,7 @@ const ThreeTwo = () => {
             <Col>
               <Image
                 className="full-img"
-                src={imgAnalisis}
+                src={imgVerticales}
                 alt="Figura 1.1 La empresa"
               />
             </Col>
@@ -47,4 +46,4 @@ const ThreeTwo = () => {
   );
 };
 
-export default ThreeTwo;
+export default ThreeTwoOne;
