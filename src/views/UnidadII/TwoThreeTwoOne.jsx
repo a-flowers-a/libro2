@@ -20,33 +20,42 @@ const TwoThreeTwoOne = () => {
       <PoliHeader />
       <div className="flexContainer">
         <SideMenu />
-        <Container className="padding-md justify-text">
-          <h4>2.3.2.1 Estructura del estado de resultados</h4>
-          <p>
-            Al igual que el estado de situación financiera el Estado de
-            resultados debe cumplir con una estructura conformada por las
-            siguientes partes:
-          </p>
-          <ol>
-            <li>
-              <p className="bold">Encabezado.</p> se conforma por los siguientes
-              datos: nombre de la empresa, mención de ser estado de resultados y
-              el período al que hace referencia.
-            </li>
-            <li>
-              <p className="bold">Cuerpo.</p> se conforma por las cuentas de
-              ingresos y egresos hasta obtener la utilidad neta, como puede
-              observarse en la figura 2.17.
-            </li>
-            <li>
-              <p className="bold">Firmas.</p> es la última parte del estado de
-              resultados donde se plasma las firmas de quienes lo elaboran y lo
-              autorizan.
-            </li>
-          </ol>
+        <Container className="padding-md">
+          <Row>
+            <Col>
+              <h2>2.3.2.1 Estructura del estado de resultados</h2>
+            </Col>
+          </Row>
+          <Row className="justify-text">
+            <Col>
+              <p>
+                Al igual que el estado de situación financiera el Estado de
+                resultados debe cumplir con una estructura conformada por las
+                siguientes partes:
+              </p>
+              <ol>
+                <li>
+                  <p className="bold">Encabezado.</p> se conforma por los
+                  siguientes datos: nombre de la empresa, mención de ser estado
+                  de resultados y el período al que hace referencia.
+                </li>
+                <li>
+                  <p className="bold">Cuerpo.</p> se conforma por las cuentas de
+                  ingresos y egresos hasta obtener la utilidad neta, como puede
+                  observarse en la figura 2.17.
+                </li>
+                <li>
+                  <p className="bold">Firmas.</p> es la última parte del estado
+                  de resultados donde se plasma las firmas de quienes lo
+                  elaboran y lo autorizan.
+                </li>
+              </ol>
+            </Col>
+          </Row>
+
           <Row className="justify-content-center m-v-space">
             <Col md={5}>
-              <div className="center-text">
+              <div className="center-text m-b-space">
                 Figura 2.17 Estado de resultados
               </div>
               <Image

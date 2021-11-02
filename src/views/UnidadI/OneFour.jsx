@@ -30,16 +30,16 @@ const OneFour = () => {
         <SideMenu />
         <Container className="padding-md">
           <Row>
-            <Col className="justify-text">
+            <Col>
               <Row>
                 <Col>
                   <h2>
-                    1.4 Factores del micro y macro ambiente que impactan a la
+                    1.4. Factores del micro y macro ambiente que impactan a la
                     empresa y a sus finanzas
                   </h2>
                 </Col>
               </Row>
-              <Row className="m-v-space">
+              <Row className="m-v-space justify-text">
                 <Col>
                   <p>
                     La empresa es un sistema abierto porque tiene elementos

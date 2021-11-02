@@ -22,7 +22,7 @@ const OneThree = () => {
         <SideMenu />
         <Container className="padding-md">
           <Row>
-            <Col className="justify-text">
+            <Col>
               <Row className="m-b-space">
                 <Col>
                   <h2>
@@ -31,7 +31,7 @@ const OneThree = () => {
                   </h2>
                 </Col>
               </Row>
-              <Row>
+              <Row className="justify-text">
                 <Col md={4}>
                   <Image className="full-img" src={img15} alt="Ética" />
                 </Col>

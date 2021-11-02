@@ -19,15 +19,15 @@ const ThreeTwo = () => {
         <SideMenu />
         <Container className="padding-md">
           <Row>
-            <Col className="justify-text">
-              <h2>3.2 Métodos para el análisis financiero</h2>
+            <Col>
+              <h2>3.2. Métodos para el análisis financiero</h2>
             </Col>
           </Row>
           <Row>
             <Col>
               <p>
                 Los principales métodos para realizar el análisis financiero se
-                muestran en la figura [figura x]
+                muestran en la [figura x].
               </p>
             </Col>
           </Row>

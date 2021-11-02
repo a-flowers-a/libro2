@@ -19,13 +19,13 @@ const ThreeOne = () => {
         <SideMenu />
         <Container className="padding-md">
           <Row>
-            <Col className="justify-text">
+            <Col>
               <Row>
                 <Col>
                   <h2>3.1 El análisis financiero en la empresa</h2>
                 </Col>
               </Row>
-              <Row>
+              <Row className="justify-text">
                 <p>
                   Recuerda que la contabilidad registra los hechos (operaciones)
                   del pasado de la organización y los resume en los estados

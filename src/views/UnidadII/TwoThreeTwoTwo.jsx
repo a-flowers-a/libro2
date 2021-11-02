@@ -21,16 +21,25 @@ const TwoThreeTwoTwo = () => {
       <PoliHeader />
       <div className="flexContainer">
         <SideMenu />
-        <Container className="padding-md justify-text">
-          <h4>2.3.2.2 Cuentas del estado de resultados</h4>
-          <p>
-            Las cuentas del estado de resultados se clasifican en dos grupos:{" "}
-            <p className="inline bold green">CUENTAS DE INGRESOS</p> y{" "}
-            <p className="inline bold red">CUENTAS DE EGRESOS</p> (Figura 2.18).
-            Si la suma de los ingresos es mayor que la suma de los egresos se
-            tendrá una utilidad y por el contrario si la suma de los egresos es
-            mayor que la suma de los ingresos entonces se tendrá una pérdida.
-          </p>
+        <Container className="padding-md ">
+          <Col>
+            <Row>
+              <h4>2.3.2.2 Cuentas del estado de resultados</h4>
+            </Row>
+          </Col>
+          <Col>
+            <Row className="justify-text">
+              <p>
+                Las cuentas del estado de resultados se clasifican en dos
+                grupos: <p className="inline bold green">CUENTAS DE INGRESOS</p>{" "}
+                y <p className="inline bold red">CUENTAS DE EGRESOS</p> (Figura
+                2.18). Si la suma de los ingresos es mayor que la suma de los
+                egresos se tendrá una utilidad y por el contrario si la suma de
+                los egresos es mayor que la suma de los ingresos entonces se
+                tendrá una pérdida.
+              </p>
+            </Row>
+          </Col>
 
           <Row className="justify-content-center m-v-space">
             <Col md={4}>
@@ -51,7 +60,7 @@ const TwoThreeTwoTwo = () => {
             A continuación se definen los rubros que conforman al estado de
             resultados:
           </p>
-          <Table striped bordered size="sm">
+          <Table striped bordered responsive size="sm">
             <tbody>
               <tr>
                 <td>

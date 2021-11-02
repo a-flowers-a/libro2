@@ -111,6 +111,11 @@ hr {
   width: 100%;
 }
 
+.mid-img {
+  height: auto;
+  width: 80%;
+}
+
 .full-card {
   background-color: #f7ecf6;
   border-radius: 10px;

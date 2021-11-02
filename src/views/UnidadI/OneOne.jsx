@@ -22,7 +22,7 @@ const OneOne = () => {
             <Col>
               <Row>
                 <Col>
-                  <h2>1.1 La empresa </h2>
+                  <h2>1.1. La empresa </h2>
                 </Col>
               </Row>
               <Row className="justify-text">
@@ -65,7 +65,7 @@ const OneOne = () => {
                   <Image
                     className="full-img"
                     src={img11}
-                    alt="Figura 1.1 La empresa"
+                    alt="Figura 1.1. La empresa"
                   />
                 </Col>
               </Row>
