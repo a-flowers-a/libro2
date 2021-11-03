@@ -31,7 +31,7 @@ const OneTwo = () => {
               </Row>
               <Row>
                 <Col>
-                  <Info>
+                  <Info color="blue">
                     <Row>
                       <p>
                         <b>¿Qué son las finanzas?</b>

@@ -116,6 +116,11 @@ hr {
   width: 80%;
 }
 
+.sm-img {
+  height: auto;
+  width: 30%;
+}
+
 .full-card {
   background-color: #f7ecf6;
   border-radius: 10px;
@@ -234,6 +239,10 @@ ol.upper-letter {
 
 .red-bg {
   background: #de4c3c;
+}
+
+.soft-purple-bg {
+  background: #e9adf5;
 }
 
 .soft-blue-bg {

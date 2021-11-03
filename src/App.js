@@ -10,6 +10,8 @@ import Sources from "./views/Home/Sources";
 import ThreeOne from "./views/UnidadIII/ThreeOne";
 import ThreeTwo from "./views/UnidadIII/ThreeTwo";
 import ThreeTwoOne from "./views/UnidadIII/ThreeTwoOne";
+import ThreeTwoOneOne from "./views/UnidadIII/ThreeTwoOneOne";
+import ThreeTwoOneTwo from "./views/UnidadIII/ThreeTwoOneTwo";
 import TwoOne from "./views/UnidadII/TwoOne";
 import TwoTwo from "./views/UnidadII/TwoTwo";
 import TwoThree from "./views/UnidadII/TwoThree";
@@ -48,6 +50,16 @@ function App() {
           path="/content/III/3.2.1"
           exact
           component={() => <ThreeTwoOne />}
+        />
+        <Route
+          path="/content/III/3.2.1.1"
+          exact
+          component={() => <ThreeTwoOneOne />}
+        />
+        <Route
+          path="/content/III/3.2.1.2"
+          exact
+          component={() => <ThreeTwoOneTwo />}
         />
         <Route
           path="/content/II/intro"
