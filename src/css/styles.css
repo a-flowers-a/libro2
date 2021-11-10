@@ -16,6 +16,10 @@ hr {
   margin-top: 6px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .primary-div {
   display: flex;
   flex-direction: column;
@@ -263,4 +267,8 @@ ol.upper-letter {
 
 .white-bg {
   background-color: #fafafa;
+}
+
+.glosario-text {
+  color: grey;
 }
