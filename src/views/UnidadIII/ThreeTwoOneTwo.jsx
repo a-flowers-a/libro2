@@ -72,7 +72,7 @@ const ThreeTwoOneTwo = () => {
           <Row className="center-text">
             <Col>
               <Image
-                className="full-img"
+                className="mid-img"
                 src={razonesSimples}
                 alt="Estado de resultados"
               />
@@ -92,37 +92,217 @@ const ThreeTwoOneTwo = () => {
               </Info>
             </Col>
           </Row>
+          <Row className="m-v-space">
+            <b>I. Índices de rentabilidad</b>
+          </Row>
           <Row>
             <Col>
-              <Accordion defaultActiveKey="0">
+              <Accordion flush>
                 <Accordion.Item eventKey="0">
-                  <Accordion.Header>Accordion Item #1</Accordion.Header>
+                  <Accordion.Header>
+                    I.1 Margen de utilidad o de rentabilidad
+                  </Accordion.Header>
                   <Accordion.Body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
-                  <Accordion.Header>Accordion Item #2</Accordion.Header>
+                  <Accordion.Header>
+                    I.2 Retorno sobre Activos Totales (RAT) o Retorno de la
+                    Inversión (ROI) o ROA por sus siglas en inglés
+                  </Accordion.Header>
                   <Accordion.Body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="2">
+                  <Accordion.Header>
+                    I.3 Retorno sobre el capital contable (ROE)
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>
             </Col>
+          </Row>
+          <Row className="m-v-space">
+            <b>II. Índices de liquidez</b>
+          </Row>
+          <Row>
+            <Col>
+              <Accordion flush>
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                    II.1 Razón de liquidez, razón circulante o razón corriente
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header>
+                    II.2 Prueba del ácido o razón de liquidez inmediata
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="2">
+                  <Accordion.Header>II.3 Capital de trabajo</Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="2">
+                  <Accordion.Header>
+                    II.4 Ciclo de conversión de efectivo o ciclo operativo
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </Col>
+          </Row>
+          <Row className="m-v-space">
+            <b>III. Índices de endeudamiento</b>
+          </Row>
+          <Row>
+            <Col>
+              <Accordion flush>
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                    III.1 Apalancamiento o deuda sobre el activo total
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header>
+                    III.2 Razón de cobertura de intereses
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </Col>
+          </Row>
+          <Row className="m-v-space">
+            <b>IV. Índices de rotación o administración de activos</b>
+          </Row>
+          <Row>
+            <Col>
+              <Accordion flush>
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                    IV.1 Rotación de la cartera o rotación de cuentas por cobrar
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header>
+                    IV.2 Rotación de cuentas por pagar
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="2">
+                  <Accordion.Header>
+                    IV.3 Rotación de inventarios
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="3">
+                  <Accordion.Header>
+                    IV.4 Rotación de activos fijos
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="4">
+                  <Accordion.Header>
+                    IV.5 Rotación de activos totales
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </Col>
+          </Row>
+          <Row className="m-v-space">
+            <b>V. Razones para valuación de inversiones</b>
+          </Row>
+          <Row>
+            <Col>
+              <Accordion flush>
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                    V.1 Razón de precio a utilidad por acción
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header>
+                    V.2 Razón de valor en libros
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="2">
+                  <Accordion.Header>
+                    V.3 Razón precio de mercado a valor en libros
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="3">
+                  <Accordion.Header>
+                    V.4 Razón de rendimiento de dividendos
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </Col>
+          </Row>
+          <Row className="m-t-space">
+            <i>
+              Fuente: Elaboración propia, con base en Moyer, Mcguigan, Kretlow
+              (2005); Actinver (s.f).
+            </i>
           </Row>
         </Container>
       </div>

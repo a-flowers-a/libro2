@@ -18,14 +18,23 @@ export const unitThree = {
       level: 2,
     },
     {
-      name: "3.2.1.1 Método de razones simples",
+      name: "3.2.1.1 Método de reducción a porcientos",
       path: "/content/III/3.2.1.1",
       level: 3,
     },
-    { name: "3.2.1.2 Método Dupont", path: "/content/III/3.2.1.2", level: 3 },
     {
-      name: "3.2.1.3 Método de razones estándar",
+      name: "3.2.1.2 Método de razones simples",
+      path: "/content/III/3.2.1.2",
+      level: 3,
+    },
+    {
+      name: "3.2.1.3 Método Dupont",
       path: "/content/III/3.2.1.3",
+      level: 3,
+    },
+    {
+      name: "3.2.1.4 Método de razones estándar",
+      path: "/content/III/3.2.1.4",
       level: 3,
     },
     { name: "3.2.2 Análisis horizontal", path: "/content/III/3.2.2", level: 2 },

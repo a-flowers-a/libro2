@@ -30,6 +30,8 @@ import OneOneTwo from "./views/UnidadI/OneOneTwo";
 import OneTwo from "./views/UnidadI/OneTwo";
 import OneThree from "./views/UnidadI/OneThree";
 import OneFour from "./views/UnidadI/OneFour";
+import ThreeTwoOneThree from "./views/UnidadIII/ThreeTwoOneThree";
+import ThreeTwoOneFour from "./views/UnidadIII/ThreeTwoOneFour";
 
 function App() {
   return (
@@ -60,6 +62,16 @@ function App() {
           path="/content/III/3.2.1.2"
           exact
           component={() => <ThreeTwoOneTwo />}
+        />
+        <Route
+          path="/content/III/3.2.1.3"
+          exact
+          component={() => <ThreeTwoOneThree />}
+        />
+        <Route
+          path="/content/III/3.2.1.4"
+          exact
+          component={() => <ThreeTwoOneFour />}
         />
         <Route
           path="/content/II/intro"
