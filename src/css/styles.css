@@ -198,6 +198,7 @@ ol.upper-letter {
   border-radius: 1em;
   margin: 2em 0;
 }
+
 /******************************************************/
 
 /**************+COLORS***********/
@@ -269,6 +270,6 @@ ol.upper-letter {
   background-color: #fafafa;
 }
 
-.glosario-text {
+.grey-font {
   color: grey;
 }

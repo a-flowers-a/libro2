@@ -8,6 +8,13 @@ import { scrollTop } from "../../helpers/general";
 
 const ThreeTwoOneTwo = () => {
   const razonesSimples = "../../assets/images/razonesSimples.png";
+  const margen1 = "../../assets/images/margen1.png";
+  const margenE = "../../assets/images/margenE.png";
+  const rat1 = "../../assets/images/rat1.png";
+  const ratE = "../../assets/images/ratE.png";
+  const roe1 = "../../assets/images/roe1.png";
+  const roeE = "../../assets/images/roeE.png";
+
   useEffect(() => {
     scrollTop();
   }, []);
@@ -94,6 +101,12 @@ const ThreeTwoOneTwo = () => {
           </Row>
           <Row className="m-v-space">
             <b>I. Índices de rentabilidad</b>
+            <p>
+              Los índices de rentabilidad miden la capacidad que tiene la
+              empresa para generar rendimiento sobre las ventas, sobre los
+              activos totales y sobre el patrimonio (capital contable). Los
+              índices de rentabilidad más usados son:
+            </p>
           </Row>
           <Row>
             <Col>
@@ -103,8 +116,17 @@ const ThreeTwoOneTwo = () => {
                     I.1 Margen de utilidad o de rentabilidad
                   </Accordion.Header>
                   <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
+                    <Image src={margen1} alt="Map" />
+                    <p>
+                      Indica el porcentaje de utilidad en relación con las
+                      ventas, en este ejemplo, también se puede leer de la
+                      siguiente manera: por cada peso vendido 7.87 centavos son
+                      de utilidad.
+                    </p>
+                    <p>
+                      <u>Ejemplo:</u>
+                    </p>
+                    <Image src={margenE} alt="Map" />
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
@@ -113,8 +135,17 @@ const ThreeTwoOneTwo = () => {
                     Inversión (ROI) o ROA por sus siglas en inglés
                   </Accordion.Header>
                   <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
+                    <Image src={rat1} alt="Map" />
+                    <p>
+                      Indica el porcentaje de utilidad que se obtiene con el
+                      empleo de todos los recursos (activos) propios y ajenos de
+                      la empresa. Entre más alto sea dicho rendimiento, mejor
+                      será.
+                    </p>
+                    <p>
+                      <u>Ejemplo:</u>
+                    </p>
+                    <Image src={ratE} alt="Map" />
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="2">
@@ -122,22 +153,36 @@ const ThreeTwoOneTwo = () => {
                     I.3 Retorno sobre el capital contable (ROE)
                   </Accordion.Header>
                   <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
+                    <Image src={roe1} alt="Map" />
+                    <p>
+                      Mide el rendimiento que obtiene una empresa sobre el
+                      patrimonio de los accionistas. El ejemplo se puede
+                      interpretar: por cada peso invertido en patrimonio
+                      (capital contable) se está obteniendo 37 centavos de la
+                      utilidad.
+                    </p>
+                    <p>
+                      <u>Ejemplo:</u>
+                    </p>
+                    <Image src={roeE} alt="Map" />
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>
             </Col>
           </Row>
-          <Row className="m-v-space">
-            <b>II. Índices de liquidez</b>
+          <Row className="m-v-space grey-font">
+            <b>
+              <u>II. Índices de liquidez</u>
+            </b>
           </Row>
           <Row>
             <Col>
               <Accordion flush>
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
-                    II.1 Razón de liquidez, razón circulante o razón corriente
+                    <strong>
+                      II.1 Razón de liquidez, razón circulante o razón corriente
+                    </strong>
                   </Accordion.Header>
                   <Accordion.Body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -146,7 +191,9 @@ const ThreeTwoOneTwo = () => {
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
                   <Accordion.Header>
-                    II.2 Prueba del ácido o razón de liquidez inmediata
+                    <strong>
+                      II.2 Prueba del ácido o razón de liquidez inmediata
+                    </strong>
                   </Accordion.Header>
                   <Accordion.Body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -154,7 +201,9 @@ const ThreeTwoOneTwo = () => {
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="2">
-                  <Accordion.Header>II.3 Capital de trabajo</Accordion.Header>
+                  <Accordion.Header>
+                    <strong>II.3 Capital de trabajo</strong>
+                  </Accordion.Header>
                   <Accordion.Body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -162,34 +211,9 @@ const ThreeTwoOneTwo = () => {
                 </Accordion.Item>
                 <Accordion.Item eventKey="2">
                   <Accordion.Header>
-                    II.4 Ciclo de conversión de efectivo o ciclo operativo
-                  </Accordion.Header>
-                  <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                  </Accordion.Body>
-                </Accordion.Item>
-              </Accordion>
-            </Col>
-          </Row>
-          <Row className="m-v-space">
-            <b>III. Índices de endeudamiento</b>
-          </Row>
-          <Row>
-            <Col>
-              <Accordion flush>
-                <Accordion.Item eventKey="0">
-                  <Accordion.Header>
-                    III.1 Apalancamiento o deuda sobre el activo total
-                  </Accordion.Header>
-                  <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="1">
-                  <Accordion.Header>
-                    III.2 Razón de cobertura de intereses
+                    <strong>
+                      II.4 Ciclo de conversión de efectivo o ciclo operativo
+                    </strong>
                   </Accordion.Header>
                   <Accordion.Body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -199,15 +223,19 @@ const ThreeTwoOneTwo = () => {
               </Accordion>
             </Col>
           </Row>
-          <Row className="m-v-space">
-            <b>IV. Índices de rotación o administración de activos</b>
+          <Row className="m-v-space grey-font">
+            <b>
+              <u>III. Índices de endeudamiento</u>
+            </b>
           </Row>
           <Row>
             <Col>
               <Accordion flush>
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
-                    IV.1 Rotación de la cartera o rotación de cuentas por cobrar
+                    <strong>
+                      III.1 Apalancamiento o deuda sobre el activo total
+                    </strong>
                   </Accordion.Header>
                   <Accordion.Body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -216,7 +244,40 @@ const ThreeTwoOneTwo = () => {
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
                   <Accordion.Header>
-                    IV.2 Rotación de cuentas por pagar
+                    <strong>III.2 Razón de cobertura de intereses</strong>
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </Col>
+          </Row>
+          <Row className="m-v-space grey-font">
+            <b>
+              <u>IV. Índices de rotación o administración de activos</u>
+            </b>
+          </Row>
+          <Row>
+            <Col>
+              <Accordion flush>
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                    <strong>
+                      {" "}
+                      IV.1 Rotación de la cartera o rotación de cuentas por
+                      cobrar
+                    </strong>
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header>
+                    <strong>IV.2 Rotación de cuentas por pagar</strong>
                   </Accordion.Header>
                   <Accordion.Body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -225,7 +286,7 @@ const ThreeTwoOneTwo = () => {
                 </Accordion.Item>
                 <Accordion.Item eventKey="2">
                   <Accordion.Header>
-                    IV.3 Rotación de inventarios
+                    <strong>IV.3 Rotación de inventarios</strong>
                   </Accordion.Header>
                   <Accordion.Body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -234,7 +295,7 @@ const ThreeTwoOneTwo = () => {
                 </Accordion.Item>
                 <Accordion.Item eventKey="3">
                   <Accordion.Header>
-                    IV.4 Rotación de activos fijos
+                    <strong>IV.4 Rotación de activos fijos</strong>
                   </Accordion.Header>
                   <Accordion.Body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -243,7 +304,7 @@ const ThreeTwoOneTwo = () => {
                 </Accordion.Item>
                 <Accordion.Item eventKey="4">
                   <Accordion.Header>
-                    IV.5 Rotación de activos totales
+                    <strong>IV.5 Rotación de activos totales</strong>
                   </Accordion.Header>
                   <Accordion.Body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -253,15 +314,17 @@ const ThreeTwoOneTwo = () => {
               </Accordion>
             </Col>
           </Row>
-          <Row className="m-v-space">
-            <b>V. Razones para valuación de inversiones</b>
+          <Row className="m-v-space grey-font">
+            <b>
+              <u>V. Razones para valuación de inversiones</u>
+            </b>
           </Row>
           <Row>
             <Col>
               <Accordion flush>
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
-                    V.1 Razón de precio a utilidad por acción
+                    <strong>V.1 Razón de precio a utilidad por acción</strong>
                   </Accordion.Header>
                   <Accordion.Body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -270,7 +333,7 @@ const ThreeTwoOneTwo = () => {
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
                   <Accordion.Header>
-                    V.2 Razón de valor en libros
+                    <strong> V.2 Razón de valor en libros</strong>
                   </Accordion.Header>
                   <Accordion.Body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -279,7 +342,9 @@ const ThreeTwoOneTwo = () => {
                 </Accordion.Item>
                 <Accordion.Item eventKey="2">
                   <Accordion.Header>
-                    V.3 Razón precio de mercado a valor en libros
+                    <strong>
+                      V.3 Razón precio de mercado a valor en libros
+                    </strong>
                   </Accordion.Header>
                   <Accordion.Body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -288,7 +353,7 @@ const ThreeTwoOneTwo = () => {
                 </Accordion.Item>
                 <Accordion.Item eventKey="3">
                   <Accordion.Header>
-                    V.4 Razón de rendimiento de dividendos
+                    <strong>V.4 Razón de rendimiento de dividendos</strong>
                   </Accordion.Header>
                   <Accordion.Body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
