@@ -32,6 +32,10 @@ import OneThree from "./views/UnidadI/OneThree";
 import OneFour from "./views/UnidadI/OneFour";
 import ThreeTwoOneThree from "./views/UnidadIII/ThreeTwoOneThree";
 import ThreeTwoOneFour from "./views/UnidadIII/ThreeTwoOneFour";
+import ThreeTwoTwo from "./views/UnidadIII/ThreeTwoTwo";
+import ThreeTwoTwoOne from "./views/UnidadIII/ThreeTwoTwoOne";
+import ThreeTwoTwoTwo from "./views/UnidadIII/ThreeTwoTwoTwo";
+import ThreeTwoTwoThree from "./views/UnidadIII/ThreeTwoTwoThree";
 
 function App() {
   return (
@@ -72,6 +76,26 @@ function App() {
           path="/content/III/3.2.1.4"
           exact
           component={() => <ThreeTwoOneFour />}
+        />
+        <Route
+          path="/content/III/3.2.2"
+          exact
+          component={() => <ThreeTwoTwo />}
+        />
+        <Route
+          path="/content/III/3.2.2.1"
+          exact
+          component={() => <ThreeTwoTwoOne />}
+        />
+        <Route
+          path="/content/III/3.2.2.2"
+          exact
+          component={() => <ThreeTwoTwoTwo />}
+        />
+        <Route
+          path="/content/III/3.2.2.3"
+          exact
+          component={() => <ThreeTwoTwoThree />}
         />
         <Route
           path="/content/II/intro"
