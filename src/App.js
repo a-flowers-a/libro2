@@ -7,35 +7,47 @@ import Evaluation from "./views/Home/Evaluation";
 import Contacts from "./views/Home/Contacts";
 import Requirements from "./views/Home/Require";
 import Sources from "./views/Home/Sources";
-import ThreeOne from "./views/UnidadIII/ThreeOne";
-import ThreeTwo from "./views/UnidadIII/ThreeTwo";
-import ThreeTwoOne from "./views/UnidadIII/ThreeTwoOne";
-import ThreeTwoOneOne from "./views/UnidadIII/ThreeTwoOneOne";
-import ThreeTwoOneTwo from "./views/UnidadIII/ThreeTwoOneTwo";
-import TwoOne from "./views/UnidadII/TwoOne";
-import TwoTwo from "./views/UnidadII/TwoTwo";
-import TwoThree from "./views/UnidadII/TwoThree";
-import TwoThreeOne from "./views/UnidadII/TwoThreeOne";
-import TwoThreeTwo from "./views/UnidadII/TwoThreeTwo";
-import CierreII from "./views/UnidadII/Cierre";
-import IntroduccionII from "./views/UnidadII/Introduccion";
-import TwoTwoOne from "./views/UnidadII/TwoTwoOne";
-import TwoThreeOneOne from "./views/UnidadII/TwoThreeOneOne";
-import TwoThreeOneTwo from "./views/UnidadII/TwoThreeOneTwo";
-import TwoThreeTwoOne from "./views/UnidadII/TwoThreeTwoOne";
-import TwoThreeTwoTwo from "./views/UnidadII/TwoThreeTwoTwo";
+// Unit one
 import OneOne from "./views/UnidadI/OneOne";
 import OneOneOne from "./views/UnidadI/OneOneOne";
 import OneOneTwo from "./views/UnidadI/OneOneTwo";
 import OneTwo from "./views/UnidadI/OneTwo";
 import OneThree from "./views/UnidadI/OneThree";
 import OneFour from "./views/UnidadI/OneFour";
+
+// Unit two
+import IntroduccionII from "./views/UnidadII/Introduccion";
+import TwoOne from "./views/UnidadII/TwoOne";
+import TwoTwo from "./views/UnidadII/TwoTwo";
+import TwoTwoOne from "./views/UnidadII/TwoTwoOne";
+import TwoThree from "./views/UnidadII/TwoThree";
+import TwoThreeOne from "./views/UnidadII/TwoThreeOne";
+import TwoThreeOneOne from "./views/UnidadII/TwoThreeOneOne";
+import TwoThreeOneTwo from "./views/UnidadII/TwoThreeOneTwo";
+import TwoThreeTwoOne from "./views/UnidadII/TwoThreeTwoOne";
+import TwoThreeTwoTwo from "./views/UnidadII/TwoThreeTwoTwo";
+import TwoThreeTwo from "./views/UnidadII/TwoThreeTwo";
+import CierreII from "./views/UnidadII/Cierre";
+
+// Unit three
+import ThreeOne from "./views/UnidadIII/ThreeOne";
+import ThreeTwo from "./views/UnidadIII/ThreeTwo";
+import ThreeTwoOne from "./views/UnidadIII/ThreeTwoOne";
+import ThreeTwoOneOne from "./views/UnidadIII/ThreeTwoOneOne";
+import ThreeTwoOneTwo from "./views/UnidadIII/ThreeTwoOneTwo";
 import ThreeTwoOneThree from "./views/UnidadIII/ThreeTwoOneThree";
 import ThreeTwoOneFour from "./views/UnidadIII/ThreeTwoOneFour";
 import ThreeTwoTwo from "./views/UnidadIII/ThreeTwoTwo";
 import ThreeTwoTwoOne from "./views/UnidadIII/ThreeTwoTwoOne";
 import ThreeTwoTwoTwo from "./views/UnidadIII/ThreeTwoTwoTwo";
 import ThreeTwoTwoThree from "./views/UnidadIII/ThreeTwoTwoThree";
+import ThreeThreeOneOne from "./views/UnidadIII/ThreeThreeOneOne";
+import ThreeThreeOne from "./views/UnidadIII/ThreeThreeOne";
+import ThreeThree from "./views/UnidadIII/ThreeThree";
+import ThreeThreeTwo from "./views/UnidadIII/ThreeThreeTwo";
+import ThreeThreeTwoOne from "./views/UnidadIII/ThreeThreeTwoOne";
+import ThreeThreeTwoTwo from "./views/UnidadIII/ThreeThreeTwoTwo";
+import ThreeThreeOneTwo from "./views/UnidadIII/ThreeThreeOneTwo";
 
 function App() {
   return (
@@ -50,6 +62,53 @@ function App() {
         <Route path="/contact" exact component={() => <Contacts />} />
         <Route path="/requirements" exact component={() => <Requirements />} />
         <Route path="/sources" exact component={() => <Sources />} />
+
+        <Route path="/content/I/1.1" exact component={() => <OneOne />} />
+        <Route path="/content/I/1.1.1" exact component={() => <OneOneOne />} />
+        <Route path="/content/I/1.1.2" exact component={() => <OneOneTwo />} />
+        <Route path="/content/I/1.2" exact component={() => <OneTwo />} />
+        <Route path="/content/I/1.3" exact component={() => <OneThree />} />
+        <Route path="/content/I/1.4" exact component={() => <OneFour />} />
+        <Route
+          path="/content/II/intro"
+          exact
+          component={() => <IntroduccionII />}
+        />
+        <Route path="/content/II/2.1" exact component={() => <TwoOne />} />
+        <Route path="/content/II/2.2" exact component={() => <TwoTwo />} />
+        <Route path="/content/II/2.2.1" exact component={() => <TwoTwoOne />} />
+        <Route path="/content/II/2.3" exact component={() => <TwoThree />} />
+        <Route
+          path="/content/II/2.3.1"
+          exact
+          component={() => <TwoThreeOne />}
+        />
+        <Route
+          path="/content/II/2.3.1.1"
+          exact
+          component={() => <TwoThreeOneOne />}
+        />
+        <Route
+          path="/content/II/2.3.1.2"
+          exact
+          component={() => <TwoThreeOneTwo />}
+        />
+        <Route
+          path="/content/II/2.3.2"
+          exact
+          component={() => <TwoThreeTwo />}
+        />
+        <Route
+          path="/content/II/2.3.2.1"
+          exact
+          component={() => <TwoThreeTwoOne />}
+        />
+        <Route
+          path="/content/II/2.3.2.2"
+          exact
+          component={() => <TwoThreeTwoTwo />}
+        />
+        <Route path="/content/II/cierre" exact component={() => <CierreII />} />
         <Route path="/content/III/3.1" exact component={() => <ThreeOne />} />
         <Route path="/content/III/3.2" exact component={() => <ThreeTwo />} />
         <Route
@@ -97,53 +156,37 @@ function App() {
           exact
           component={() => <ThreeTwoTwoThree />}
         />
+        <Route path="/content/III/3.3" exact component={() => <ThreeThree />} />
         <Route
-          path="/content/II/intro"
+          path="/content/III/3.3.1"
           exact
-          component={() => <IntroduccionII />}
-        />
-        <Route path="/content/II/2.1" exact component={() => <TwoOne />} />
-        <Route path="/content/II/2.2" exact component={() => <TwoTwo />} />
-        <Route path="/content/II/2.2.1" exact component={() => <TwoTwoOne />} />
-        <Route path="/content/II/2.3" exact component={() => <TwoThree />} />
-        <Route
-          path="/content/II/2.3.1"
-          exact
-          component={() => <TwoThreeOne />}
+          component={() => <ThreeThreeOne />}
         />
         <Route
-          path="/content/II/2.3.1.1"
+          path="/content/III/3.3.1.1"
           exact
-          component={() => <TwoThreeOneOne />}
+          component={() => <ThreeThreeOneOne />}
         />
         <Route
-          path="/content/II/2.3.1.2"
+          path="/content/III/3.3.1.2"
           exact
-          component={() => <TwoThreeOneTwo />}
+          component={() => <ThreeThreeOneTwo />}
         />
         <Route
-          path="/content/II/2.3.2"
+          path="/content/III/3.3.2"
           exact
-          component={() => <TwoThreeTwo />}
+          component={() => <ThreeThreeTwo />}
         />
         <Route
-          path="/content/II/2.3.2.1"
+          path="/content/III/3.3.2.1"
           exact
-          component={() => <TwoThreeTwoOne />}
+          component={() => <ThreeThreeTwoOne />}
         />
         <Route
-          path="/content/II/2.3.2.2"
+          path="/content/III/3.3.2.2"
           exact
-          component={() => <TwoThreeTwoTwo />}
+          component={() => <ThreeThreeTwoTwo />}
         />
-        <Route path="/content/I/1.1" exact component={() => <OneOne />} />
-        <Route path="/content/I/1.1.1" exact component={() => <OneOneOne />} />
-        <Route path="/content/I/1.1.2" exact component={() => <OneOneTwo />} />
-        <Route path="/content/I/1.1.2" exact component={() => <OneOneTwo />} />
-        <Route path="/content/I/1.2" exact component={() => <OneTwo />} />
-        <Route path="/content/I/1.3" exact component={() => <OneThree />} />
-        <Route path="/content/I/1.4" exact component={() => <OneFour />} />
-        <Route path="/content/II/cierre" exact component={() => <CierreII />} />
       </Switch>
     </Router>
   );

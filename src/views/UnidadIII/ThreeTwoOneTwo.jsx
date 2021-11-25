@@ -714,9 +714,7 @@ const ThreeTwoOneTwo = () => {
             </Col>
           </Row>
           <Row className="m-v-space grey-font">
-            <b>
-              <u>V. Razones para valuación de inversiones</u>
-            </b>
+            <b>V. Razones para valuación de inversiones</b>
           </Row>
           <Row>
             <Col>

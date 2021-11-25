@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Row, Col, Container, Card } from "react-bootstrap";
+import { Row, Col, Container, Card, Image } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
@@ -7,7 +7,7 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import { scrollTop } from "../../helpers/general";
 
 const ThreeOne = () => {
-  // const img11 = "../../assets/images/11.png";
+  const img31 = "../../assets/images/31.jpg";
   useEffect(() => {
     scrollTop();
   }, []);
@@ -85,6 +85,15 @@ const ThreeOne = () => {
                   el análisis e interpretación de los estados financieros se les
                   conoce como métodos de análisis financiero.
                 </p>
+              </Row>
+              <Row>
+                <Col>
+                  <Image
+                    className="full-img"
+                    src={img31}
+                    alt="Figura Análisis financiero"
+                  />
+                </Col>
               </Row>
             </Col>
           </Row>
