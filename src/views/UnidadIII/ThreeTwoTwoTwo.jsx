@@ -7,7 +7,12 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import { scrollTop } from "../../helpers/general";
 
 const ThreeTwoTwoTwo = () => {
-  // const imgVerticales = "../../assets/images/verticales.png";
+  const tendencias1 = "../../assets/images/tendencias1.png";
+  const tendencias2 = "../../assets/images/tendencias2.png";
+  const tendencias3 = "../../assets/images/tendencias3.png";
+  const tendencias4 = "../../assets/images/tendencias4.png";
+  const tendencias5 = "../../assets/images/tendencias5.png";
+
   useEffect(() => {
     scrollTop();
   }, []);
@@ -46,6 +51,72 @@ const ThreeTwoTwoTwo = () => {
                 en las figuras 1 a 6; adicionalmente, nos proporciona
                 información valiosa para la realización de pronósticos.
               </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center m-v-space">
+            <Col sm={10}>
+              <Image
+                src={tendencias1}
+                className="full-img"
+                alt="Tabla 1. Tendencias de algunas partidas de los estados financieros"
+              />
+            </Col>
+          </Row>
+          <Row className="img-source center-text ">
+            <Col>
+              Fuente: Elaboración propia, con base en la bibliografía consultada
+            </Col>
+          </Row>
+          <Row className="justify-content-center m-v-space">
+            <Col sm={6}>
+              <Image
+                src={tendencias2}
+                className="full-img"
+                alt="Figura 2. Gráfica de la tendencia de ventas."
+              />
+            </Col>
+          </Row>
+          <Row className="img-source center-text ">
+            <Col>Fuente: Elaboración propia</Col>
+          </Row>
+          <Row className="justify-content-center m-v-space">
+            <Col sm={6}>
+              <Image
+                src={tendencias3}
+                className="full-img"
+                alt="Figura 3. Gráfica de la tendencia de gastos de administración."
+              />
+            </Col>
+          </Row>
+          <Row className="img-source center-text ">
+            <Col>Fuente: Elaboración propia</Col>
+          </Row>
+          <Row className="justify-content-center m-v-space">
+            <Col sm={6}>
+              <Image
+                src={tendencias4}
+                className="full-img"
+                alt="Figura 4. Gráfica de la tendencia de utilidad del ejercicio"
+              />
+            </Col>
+          </Row>
+          <Row className="img-source center-text ">
+            <Col>Fuente: Elaboración propia</Col>
+          </Row>
+          <Row className="justify-content-center m-v-space">
+            <Col sm={6}>
+              <Image
+                src={tendencias5}
+                className="full-img"
+                alt="Figura 5. Gráfica de la tendencia de razón de liquidez inmediata."
+              />
+            </Col>
+          </Row>
+          <Row className="img-source center-text ">
+            <Col>Fuente: Elaboración propia</Col>
+          </Row>
+          <Row>
+            <Col>
               <p>
                 Cabe destacar que al aplicarse este método deberán hacerse
                 investigaciones sobre los elementos internos y externos que

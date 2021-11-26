@@ -7,7 +7,7 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import { scrollTop } from "../../helpers/general";
 
 const ThreeTwoTwo = () => {
-  // const imgVerticales = "../../assets/images/verticales.png";
+  const img322 = "../../assets/images/322.png";
   useEffect(() => {
     scrollTop();
   }, []);
@@ -34,6 +34,15 @@ const ThreeTwoTwo = () => {
                 Elizondo (1999), considera que los principales métodos de
                 análisis financiero horizontal son:
               </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col sm={6}>
+              <Image
+                src={img322}
+                className="full-img"
+                alt="Figura 3.2.2 análisis horizontal"
+              />
             </Col>
           </Row>
         </Container>

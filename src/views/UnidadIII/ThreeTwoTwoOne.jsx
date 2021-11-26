@@ -7,7 +7,7 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import { scrollTop } from "../../helpers/general";
 
 const ThreeTwoTwoOne = () => {
-  // const imgVerticales = "../../assets/images/verticales.png";
+  const img3221 = "../../assets/images/3221.png";
   useEffect(() => {
     scrollTop();
   }, []);
@@ -65,6 +65,20 @@ const ThreeTwoTwoOne = () => {
                 el método de aumentos o disminuciones, sólo faltaría la
                 interpretación correspondiente
               </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col sm={10}>
+              <Image
+                src={img3221}
+                className="full-img"
+                alt="Figura 11.1. Estados de situación financiera comparativos"
+              />
+            </Col>
+          </Row>
+          <Row className="img-source center-text ">
+            <Col>
+              Fuente: Elaboración propia, con base en la bibliografía consultada
             </Col>
           </Row>
         </Container>
