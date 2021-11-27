@@ -9,6 +9,7 @@ import { scrollTop } from "../../helpers/general";
 const ThreeThreeOneOne = () => {
   const equilibrioUtilidad1 = "../../assets/images/equilibrioUtilidad1.png";
   const equilibrioUtilidad2 = "../../assets/images/equilibrioUtilidad2.png";
+  const tablaEquilibrio = "../../assets/images/tablaEquilibrio.png";
 
   useEffect(() => {
     scrollTop();
@@ -56,20 +57,26 @@ const ThreeThreeOneOne = () => {
               </Row>
               <Row>
                 <Col>
+                  <MathComponent
+                    tex={String.raw`P.E\;en\;uds.=\frac{C.F}{M.C.U} `}
+                  />
+                  <MathComponent
+                    tex={String.raw`P.E\;en\;pesos.=\frac{C.F}{1-\frac{C.V.U}{P}}`}
+                  />
+                  <p>Otra forma de calcular P.E en pesos: </p>
+                  <MathComponent
+                    tex={String.raw`P.E\;en\;pesos.=(P.E\;en\;uds)(P)`}
+                  />
                   <p>Sustituyendo los datos tenemos:</p>
-                  <p>
-                    P.E en número de unidades= C.F/M.C.U = 30,000/20= 1,500
-                    hamburguesas mensuales
-                  </p>
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <MathComponent tex={String.raw`\int_0^1 x^2\ dx`} />
-                </Col>
-              </Row>
-              <Row>
-                <Col>
+                  <MathComponent
+                    tex={String.raw`P.E\;en\;uds.=\frac{C.F}{M.C.U}=\frac{30000}{20}`}
+                  />
+                  <MathComponent
+                    tex={String.raw`=1500\;hamburguesas\;mensuales`}
+                  />
+                  <MathComponent
+                    tex={String.raw`P.E\;en\;pesos.= \frac{C.F}{1-\frac{C.V.U}{P}} = 52,500`}
+                  />
                   <p>
                     El punto de equilibrio se alcanza al vender 1,500
                     hamburguesas recibiendo por esa venta $52,500
@@ -79,8 +86,39 @@ const ThreeThreeOneOne = () => {
                     estaríamos recuperando el costo total pero no estaríamos
                     ganando, comprobémoslo:
                   </p>
+                  <p>
+                    Hagamos la gráfica del punto de equilibrio, para lo cual
+                    necesitamos:
+                  </p>
+
+                  <MathComponent tex={String.raw`I = C.T`} />
+                  <MathComponent tex={String.raw`(Q)(P) = C.F + C.V.U (Q)`} />
+                  <MathComponent
+                    tex={String.raw`(1,500)(35) = 30,000 + (15)(1,500)`}
+                  />
+                  <MathComponent tex={String.raw`52,500 = 52,500`} />
+
+                  <ol>
+                    <li>Definir una escala para las cantidades</li>
+                    <li>
+                      Las siguientes rectas:
+                      <ul>
+                        <li>Recta del costo fijo</li>
+                        <li>Recta del costo total</li>
+                        <li>Recta de ingresos derivado de las ventas</li>
+                      </ul>
+                    </li>
+                  </ol>
                 </Col>
               </Row>
+              <Row className="justify-content-center m-v-space">
+                <Col sm={10}>
+                  <Image src={tablaEquilibrio} className="full-img" />
+                </Col>
+              </Row>
+              <p>
+                <b>FALTA GRÁFICA</b>
+              </p>
             </Col>
           </Row>
         </Container>
