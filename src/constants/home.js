@@ -6,7 +6,7 @@ export const home = {
     { name: "Unidad de competencia", path: "/capability", level: 1 },
     { name: "Metodología", path: "/methodology", level: 1 },
     { name: "Evaluación de los aprendizajes", path: "/evaluation", level: 1 },
-    { name: "Glosario", path: "/sources", level: 1 },
+    { name: "Glosario", path: "/glosario", level: 1 },
     { name: "Contactos", path: "/contact", level: 1 },
     { name: "Requerimientos", path: "/requirements", level: 1 },
     { name: "Fuentes", path: "/sources", level: 1 },
