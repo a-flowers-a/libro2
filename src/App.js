@@ -48,6 +48,7 @@ import ThreeThreeTwo from "./views/UnidadIII/ThreeThreeTwo";
 import ThreeThreeTwoOne from "./views/UnidadIII/ThreeThreeTwoOne";
 import ThreeThreeTwoTwo from "./views/UnidadIII/ThreeThreeTwoTwo";
 import ThreeThreeOneTwo from "./views/UnidadIII/ThreeThreeOneTwo";
+import Formulario from "./views/UnidadIII/formulario";
 
 function App() {
   return (
@@ -186,6 +187,11 @@ function App() {
           path="/content/III/3.3.2.2"
           exact
           component={() => <ThreeThreeTwoTwo />}
+        />
+        <Route
+          path="/content/III/formulas"
+          exact
+          component={() => <Formulario />}
         />
       </Switch>
     </Router>

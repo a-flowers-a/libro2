@@ -88,6 +88,11 @@ export const unitThree = {
       path: "/content/III/3.3.2.2",
       level: 3,
     },
+    {
+      name: "Fórmulas punto de equilibrio",
+      path: "/content/III/formulas",
+      level: 1,
+    },
     { name: "Cierre", path: "/content/III/cierre", level: 1 },
   ],
 };
