@@ -71,6 +71,7 @@ const TwoThreeTwoOne = () => {
           <Row className="justify-content-center m-v-space">
             <Col md={3}>
               <Actividad
+                color="blue"
                 icon={faPuzzlePiece}
                 link={UnidadII[9]}
                 type={"Actividad"}

@@ -192,6 +192,7 @@ const OneTwo = () => {
               <Row className="justify-content-center m-b-space">
                 <Col md={4}>
                   <Actividad
+                    color="aqua"
                     icon={faPuzzlePiece}
                     link={"TODO://link"}
                     type={"Actividad 1.2"}

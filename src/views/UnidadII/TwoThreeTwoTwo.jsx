@@ -307,6 +307,7 @@ const TwoThreeTwoTwo = () => {
           <Row className="justify-content-center m-v-space">
             <Col md={3}>
               <Actividad
+                color="blue"
                 icon={faBookReader}
                 link={lecUnidadII[3]}
                 type={"Lectura"}
@@ -320,6 +321,7 @@ const TwoThreeTwoTwo = () => {
           <Row className="justify-content-center m-v-space">
             <Col md={3}>
               <Actividad
+                color="blue"
                 icon={faPuzzlePiece}
                 link={UnidadII[10]}
                 type={"Actividad"}
@@ -333,6 +335,7 @@ const TwoThreeTwoTwo = () => {
           <Row className="justify-content-center m-v-space">
             <Col md={3}>
               <Actividad
+                color="blue"
                 icon={faPuzzlePiece}
                 link={UnidadII[11]}
                 type={"Actividad"}
@@ -356,6 +359,7 @@ const TwoThreeTwoTwo = () => {
           <Row className="justify-content-center m-v-space">
             <Col md={3}>
               <Actividad
+                color="blue"
                 icon={faBookReader}
                 link={lecUnidadII[4]}
                 type={"Lectura"}
@@ -373,6 +377,7 @@ const TwoThreeTwoTwo = () => {
           <Row className="justify-content-center m-v-space">
             <Col md={3}>
               <Actividad
+                color="blue"
                 icon={faBookReader}
                 link={""}
                 type={"Evaluación"}

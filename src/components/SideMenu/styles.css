@@ -62,7 +62,7 @@ a:hover {
 }
 
 /*------------------ Sidemenu colors ----------------------*/
-.aqua {
+.aqua-bg {
   background-color: #38a3a5;
   border-right: 1px solid #38a3a5;
 }
@@ -72,7 +72,7 @@ a:hover {
   color: #74b49b;
 }
 
-.blue {
+.blue-bg {
   background-color: #6886c5;
   border-right: 1px solid #6886c5;
 }
@@ -82,7 +82,7 @@ a:hover {
   color: #d7e9f7;
 }
 
-.purple {
+.purple-bg {
   background-color: #b673de;
   border-right: 1px solid #b673de;
 }

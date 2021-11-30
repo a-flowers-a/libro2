@@ -66,6 +66,7 @@ const OneOneOne = () => {
               <Row className="justify-content-center m-b-space">
                 <Col md={3}>
                   <Actividad
+                    color="aqua"
                     icon={faExternalLinkAlt}
                     link={others[0]}
                     type={"Régimenes Fiscales"}
@@ -179,6 +180,7 @@ const OneOneOne = () => {
               <Row className="justify-content-center m-b-space">
                 <Col md={3}>
                   <Actividad
+                    color="aqua"
                     icon={faBookReader}
                     link={"TODO://link"}
                     type={"Lectura"}
@@ -192,6 +194,7 @@ const OneOneOne = () => {
               <Row className="justify-content-center m-b-space">
                 <Col md={3}>
                   <Actividad
+                    color="aqua"
                     icon={faPuzzlePiece}
                     link={"TODO://link"}
                     type={"Actividad 1.1"}

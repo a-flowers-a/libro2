@@ -57,6 +57,7 @@ const TwoTwoOne = () => {
               <Row className="justify-content-center v-center-content">
                 <Col sm={4}>
                   <Actividad
+                    color="blue"
                     icon={faPuzzlePiece}
                     link={UnidadII[0]}
                     number={"2.1"}

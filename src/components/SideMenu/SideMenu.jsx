@@ -59,7 +59,7 @@ function SideMenu() {
     <>
       {open ? (
         <div
-          className={classes("sideMenuContainer", `${colorClass}`, {
+          className={classes("sideMenuContainer", `${colorClass}-bg`, {
             ["sideMenuMobileContainer"]: isMobile === true,
           })}
         >

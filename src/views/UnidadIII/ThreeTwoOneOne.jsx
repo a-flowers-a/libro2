@@ -160,6 +160,7 @@ const ThreeTwoOneOne = () => {
           <Row className="justify-content-center m-b-space">
             <Col md={3}>
               <Actividad
+                color="purple"
                 icon={faPuzzlePiece}
                 link={"to-do"}
                 type={"Actividad"}
