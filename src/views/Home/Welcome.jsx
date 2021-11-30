@@ -18,16 +18,10 @@ function Welcome() {
             <ToBookButton />
           </Row>
           <Row className="m-v-space ">
-            <Col>
+            <Col sm={3}>
               <h2>Bienvenida</h2>
             </Col>
-          </Row>
-
-          <Row className="justify-content-center">
-            <Col sm={6} md={5}>
-              <Image className="full-img" src={welcomeImg} alt="person" />
-            </Col>
-            <Col sm={12} md={7}>
+            <Col sm={9}>
               <div className="full-card justify-text purple-bg white">
                 <p>
                   Recibe la más cordial bienvenida a este recurso didáctico
@@ -59,6 +53,12 @@ function Welcome() {
                 </p>
                 <p>johernandezja@ipn.mx y jimenezg@ipn.mx</p>
               </div>
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col sm={5} className="center-text">
+              <Image className="full-img" src={welcomeImg} alt="person" />
             </Col>
           </Row>
         </Container>
