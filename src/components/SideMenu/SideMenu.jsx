@@ -108,6 +108,7 @@ function SideMenu() {
               <Dropdown.Item>Unidad V</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
+          <Item topic="Glosario" level={1} path="/glossary" />
           {currentUnit.content.map((topic) => (
             <Item
               topic={topic.name}

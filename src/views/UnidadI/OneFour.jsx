@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Row, Col, Container, Table, Image } from "react-bootstrap";
+import { useEffect } from "react";
+import { Row, Col, Container, Image } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";

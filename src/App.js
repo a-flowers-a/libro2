@@ -49,6 +49,8 @@ import ThreeThreeTwoOne from "./views/UnidadIII/ThreeThreeTwoOne";
 import ThreeThreeTwoTwo from "./views/UnidadIII/ThreeThreeTwoTwo";
 import ThreeThreeOneTwo from "./views/UnidadIII/ThreeThreeOneTwo";
 import Formulario from "./views/UnidadIII/formulario";
+//Glossary
+import Glossary from "./views/Home";
 
 function App() {
   return (
@@ -193,6 +195,7 @@ function App() {
           exact
           component={() => <Formulario />}
         />
+        <Route path="/glossary" exact component={() => <Glossary />} />
       </Switch>
     </Router>
   );
