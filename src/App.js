@@ -49,6 +49,20 @@ import ThreeThreeTwoOne from "./views/UnidadIII/ThreeThreeTwoOne";
 import ThreeThreeTwoTwo from "./views/UnidadIII/ThreeThreeTwoTwo";
 import ThreeThreeOneTwo from "./views/UnidadIII/ThreeThreeOneTwo";
 import Formulario from "./views/UnidadIII/formulario";
+
+//Fourth
+import FourOne from "./views/UnidadIV/FourOne";
+import FourOneOne from "./views/UnidadIV/FourOneOne";
+import FourOneOneOne from "./views/UnidadIV/FourOneOneOne";
+import FourOneOneTwo from "./views/UnidadIV/FourOneOneTwo";
+import FourTwo from "./views/UnidadIV/FourTwo";
+import FourTwoOne from "./views/UnidadIV/FourTwoOne";
+import FourTwoTwo from "./views/UnidadIV/FourTwoTwo";
+import FourTwoThree from "./views/UnidadIV/FourTwoThree";
+import FourTwoTwoThree from "./views/UnidadIV/FourTwoTwoThree";
+import FourThree from "./views/UnidadIV/FourThree";
+import FourThreeOne from "./views/UnidadIV/FourThreeOne";
+import FourFour from "./views/UnidadIV/FourFour";
 //Glossary
 import Glossary from "./views/Home";
 
@@ -195,6 +209,50 @@ function App() {
           exact
           component={() => <Formulario />}
         />
+        <Route path="/content/IV/4.1" exact component={() => <FourOne />} />
+        <Route
+          path="/content/IV/4.1.1"
+          exact
+          component={() => <FourOneOne />}
+        />
+        <Route
+          path="/content/IV/4.1.1.1"
+          exact
+          component={() => <FourOneOneOne />}
+        />
+        <Route
+          path="/content/IV/4.1.1.2"
+          exact
+          component={() => <FourOneOneTwo />}
+        />
+        <Route path="/content/IV/4.2" exact component={() => <FourTwo />} />
+        <Route
+          path="/content/IV/4.2.1"
+          exact
+          component={() => <FourTwoOne />}
+        />
+        <Route
+          path="/content/IV/4.2.2"
+          exact
+          component={() => <FourTwoTwo />}
+        />
+        <Route
+          path="/content/IV/4.2.3"
+          exact
+          component={() => <FourTwoThree />}
+        />
+        <Route
+          path="/content/IV/4.2.2.3"
+          exact
+          component={() => <FourTwoTwoThree />}
+        />
+        <Route path="/content/IV/4.3" exact component={() => <FourThree />} />
+        <Route
+          path="/content/IV/4.3.1"
+          exact
+          component={() => <FourThreeOne />}
+        />
+        <Route path="/content/IV/4.4" exact component={() => <FourFour />} />
         <Route path="/glossary" exact component={() => <Glossary />} />
       </Switch>
     </Router>

@@ -9,6 +9,7 @@ import { setUnit } from "../../actions";
 import unitOne from "../../constants/unitOne";
 import unitTwo from "../../constants/unitTwo";
 import unitThree from "../../constants/unitThree";
+import unitFour from "../../constants/unitFour";
 import Item from "./Item";
 import "./styles.css";
 
@@ -46,6 +47,10 @@ function SideMenu() {
       case "unitThree":
         _colorClass = "purple";
         _hoverClass = "purpleHover";
+        break;
+      case "unitFour":
+        _colorClass = "blue";
+        _hoverClass = "blueHover";
         break;
 
       default:
@@ -104,7 +109,13 @@ function SideMenu() {
               >
                 Unidad III
               </Dropdown.Item>
-              <Dropdown.Item>Unidad IV</Dropdown.Item>
+              <Dropdown.Item
+                onClick={() => {
+                  setCurrentUnit(unitFour);
+                }}
+              >
+                Unidad IV
+              </Dropdown.Item>
               <Dropdown.Item>Unidad V</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
