@@ -64,6 +64,7 @@ export const unitFour = {
     },
 
     { name: "Cierre", path: "/content/IV/cierre", level: 1 },
+    { name: "Evaluación", path: "/content/IV/evaluacion", level: 1 },
   ],
 };
 

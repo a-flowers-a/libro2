@@ -94,6 +94,7 @@ export const unitThree = {
       level: 1,
     },
     { name: "Cierre", path: "/content/III/cierre", level: 1 },
+    { name: "Evaluación", path: "/content/III/evaluacion", level: 1 },
   ],
 };
 

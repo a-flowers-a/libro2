@@ -92,6 +92,16 @@ a:hover {
   color: #d5bde3;
 }
 
+.pink-bg {
+  background-color: #d4857f; /* #ea97ad #e5707e; */
+  border-right: 1px solid #d4857f;
+}
+
+.pinkHover {
+  cursor: pointer;
+  color: #ffe6e6;
+}
+
 /*------------------ Item of sidemenu colors ----------------------*/
 .itemAquaHover:hover {
   background-color: #a7d7c5;
@@ -122,4 +132,15 @@ a:hover {
 .activeItem .itemActivePurple {
   background-color: #d5bde3;
   color: #584e5e !important;
+}
+
+.itemPinkHover:hover {
+  background-color: #ffe6e6;
+  color: #a9333a;
+  transition: background-color 0.3s ease;
+}
+
+.activeItem .itemActivePink {
+  background-color: #ffe6e6;
+  color: #a9333a !important;
 }

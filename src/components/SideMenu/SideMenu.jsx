@@ -22,8 +22,8 @@ function SideMenu() {
   const dispatch = useDispatch();
   const currentUnit = useSelector((state) => state.unitReducer);
   const [open, setOpen] = useState(true);
-  const [colorClass, setColorClass] = useState("blue");
-  const [hoverClass, setHoverClass] = useState("blueHover");
+  const [colorClass, setColorClass] = useState("aqua");
+  const [hoverClass, setHoverClass] = useState("aquaHover");
 
   const setCurrentUnit = (unitObject) => dispatch(setUnit(unitObject));
 
@@ -32,8 +32,8 @@ function SideMenu() {
   }, [setOpen]);
 
   useEffect(() => {
-    let _colorClass = "blue";
-    let _hoverClass = "blueHover";
+    let _colorClass = "aqua";
+    let _hoverClass = "aquaHover";
 
     switch (currentUnit.name) {
       case "unitOne":
@@ -49,8 +49,8 @@ function SideMenu() {
         _hoverClass = "purpleHover";
         break;
       case "unitFour":
-        _colorClass = "blue";
-        _hoverClass = "blueHover";
+        _colorClass = "pink";
+        _hoverClass = "pinkHover";
         break;
 
       default:
@@ -131,7 +131,7 @@ function SideMenu() {
         </div>
       ) : (
         <div
-          className={`burguerIcon ${colorClass} ${hoverClass}`}
+          className={`burguerIcon ${colorClass}-bg ${hoverClass}`}
           onClick={() => setOpen(true)}
         >
           <FontAwesomeIcon icon={faBars} size={"2x"} />

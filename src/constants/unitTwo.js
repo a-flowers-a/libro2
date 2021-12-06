@@ -61,6 +61,7 @@ export const unitTwo = {
       path: "/content/II/cierre",
       level: 1,
     },
+    { name: "Evaluación", path: "/content/II/evaluacion", level: 1 },
   ],
 };
 

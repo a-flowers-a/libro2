@@ -284,7 +284,7 @@ const ThreeTwoOneTwo = () => {
                     <p>
                       <u>
                         Sí la razón de liquidez, razón circulante o razón
-                        corriente >1 se puede decir que sí hay liquidez.
+                        corriente &lt;1 se puede decir que sí hay liquidez.
                       </u>
                     </p>
                   </Accordion.Body>

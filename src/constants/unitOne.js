@@ -28,7 +28,8 @@ export const unitOne = {
       path: "/content/I/1.4",
       level: 1,
     },
-    { name: "Cierre", path: "/content/I /cierre", level: 1 },
+    { name: "Cierre", path: "/content/I/cierre", level: 1 },
+    { name: "Evaluación", path: "/content/I/evaluacion", level: 1 },
   ],
 };
 
