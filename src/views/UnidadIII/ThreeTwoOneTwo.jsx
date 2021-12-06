@@ -109,10 +109,10 @@ const ThreeTwoOneTwo = () => {
               </p>
             </Col>
           </Row>
-          <Row className="center-text">
-            <Col>
+          <Row className="justify-content-center">
+            <Col sm={8}>
               <Image
-                className="mid-img"
+                className="full-img"
                 src={razonesSimples}
                 alt="Estado de resultados"
               />
@@ -156,9 +156,7 @@ const ThreeTwoOneTwo = () => {
                         className="razones-img"
                       />
                     </Row>
-                    <p>
-                      <u>Ejemplo:</u>
-                    </p>
+                    <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Image
                         src={margenE}
@@ -187,9 +185,7 @@ const ThreeTwoOneTwo = () => {
                         className="razones-img"
                       />
                     </Row>
-                    <p>
-                      <u>Ejemplo:</u>
-                    </p>
+                    <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Image
                         src={ratE}
@@ -217,9 +213,7 @@ const ThreeTwoOneTwo = () => {
                         className="razones-img"
                       />
                     </Row>
-                    <p>
-                      <u>Ejemplo:</u>
-                    </p>
+                    <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Image
                         src={roeE}
@@ -263,9 +257,7 @@ const ThreeTwoOneTwo = () => {
                         className="razones-img"
                       />
                     </Row>
-                    <p>
-                      <u>Ejemplo:</u>
-                    </p>
+                    <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Image
                         src={razonCorrienteE}
@@ -301,9 +293,7 @@ const ThreeTwoOneTwo = () => {
                         className="razones-img"
                       />
                     </Row>
-                    <p>
-                      <u>Ejemplo:</u>
-                    </p>
+                    <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Image
                         src={pruebaAcidoE}
@@ -340,9 +330,7 @@ const ThreeTwoOneTwo = () => {
                         className="razones-img"
                       />
                     </Row>
-                    <p>
-                      <u>Ejemplo:</u>
-                    </p>
+                    <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Image
                         src={capitalTrabajoE}
@@ -377,9 +365,7 @@ const ThreeTwoOneTwo = () => {
                     <p>R.I = Rotación de inventarios</p>
                     <p>R.CxC= Rotación de cuentas por cobrar</p>
                     <p>R.CxP= Rotación de cuentas por pagar</p>
-                    <p>
-                      <u>Ejemplo:</u>
-                    </p>
+                    <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Col md={6}>
                         <Image
@@ -426,9 +412,7 @@ const ThreeTwoOneTwo = () => {
                         className="razones-img"
                       />
                     </Row>
-                    <p>
-                      <u>Ejemplo:</u>
-                    </p>
+                    <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Image
                         src={apalancamientoE}
@@ -457,9 +441,7 @@ const ThreeTwoOneTwo = () => {
                         className="razones-img"
                       />
                     </Row>
-                    <p>
-                      <u>Ejemplo:</u>
-                    </p>
+                    <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Image
                         src={coberturaE}
@@ -508,9 +490,7 @@ const ThreeTwoOneTwo = () => {
                         />
                       </Col>
                     </Row>
-                    <p>
-                      <u>Ejemplo:</u>
-                    </p>
+                    <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Col md={6}>
                         <Image
@@ -551,9 +531,7 @@ const ThreeTwoOneTwo = () => {
                         />
                       </Col>
                     </Row>
-                    <p>
-                      <u>Ejemplo:</u>
-                    </p>
+                    <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Col md={6}>
                         <Image
@@ -597,9 +575,7 @@ const ThreeTwoOneTwo = () => {
                         />
                       </Col>
                     </Row>
-                    <p>
-                      <u>Ejemplo:</u>
-                    </p>
+                    <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Col md={6}>
                         <Image
@@ -648,9 +624,7 @@ const ThreeTwoOneTwo = () => {
                         className="razones-img"
                       />
                     </Row>
-                    <p>
-                      <u>Ejemplo:</u>
-                    </p>
+                    <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Image
                         src={rotacionActivosFijosE}
@@ -680,9 +654,7 @@ const ThreeTwoOneTwo = () => {
                         className="razones-img"
                       />
                     </Row>
-                    <p>
-                      <u>Ejemplo:</u>
-                    </p>
+                    <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Image
                         src={rotacionActivosTotE}
@@ -733,9 +705,7 @@ const ThreeTwoOneTwo = () => {
                         />
                       </Col>
                     </Row>
-                    <p>
-                      <u>Ejemplo:</u>
-                    </p>
+                    <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Col md={6}>
                         <Image
@@ -768,9 +738,7 @@ const ThreeTwoOneTwo = () => {
                         className="razones-img"
                       />
                     </Row>
-                    <p>
-                      <u>Ejemplo:</u>
-                    </p>
+                    <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Image
                         src={valorLibrosE}
@@ -800,9 +768,7 @@ const ThreeTwoOneTwo = () => {
                         />
                       </Col>
                     </Row>
-                    <p>
-                      <u>Ejemplo:</u>
-                    </p>
+                    <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Col md={6}>
                         <Image
@@ -842,9 +808,7 @@ const ThreeTwoOneTwo = () => {
                         />
                       </Col>
                     </Row>
-                    <p>
-                      <u>Ejemplo:</u>
-                    </p>
+                    <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Col md={6}>
                         <Image

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Row, Col, Container, Image } from "react-bootstrap";
+import { Row, Col, Container, Image, Table } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
@@ -38,12 +38,10 @@ const ThreeThreeOneOne = () => {
                 </Col>
               </Row>
               <Row className="justify-content-center m-v-space">
-                <Col sm={4}>
+                <Col sm={6} md={4}>
                   <Image src={equilibrioUtilidad1} className="full-img" />
                 </Col>
-              </Row>
-              <Row className="justify-content-center m-v-space">
-                <Col sm={4}>
+                <Col sm={6} md={4}>
                   <Image src={equilibrioUtilidad2} className="full-img" />
                 </Col>
               </Row>
@@ -55,18 +53,41 @@ const ThreeThreeOneOne = () => {
                   </p>
                 </Col>
               </Row>
+              <Row className="justify-content-center m-v-space">
+                <Col sm={10} md={9}>
+                  <Table striped bordered hover responsive size="sm">
+                    <thead>
+                      <tr>
+                        <th>Punto de equilibrio en número de unidades</th>
+                        <th>
+                          Punto de equilibrio expresado en cantidad de dinero
+                          (pesos)
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <MathComponent
+                            tex={String.raw`P.E\;en\;uds.=\frac{C.F}{M.C.U} `}
+                          />
+                        </td>
+                        <td>
+                          <MathComponent
+                            tex={String.raw`P.E\;en\;pesos.=\frac{C.F}{1-\frac{C.V.U}{P}}`}
+                          />
+                          <p>Otra forma de calcular P.E en pesos: </p>
+                          <MathComponent
+                            tex={String.raw`P.E\;en\;pesos.=(P.E\;en\;uds)(P)`}
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </Table>
+                </Col>
+              </Row>
               <Row>
                 <Col>
-                  <MathComponent
-                    tex={String.raw`P.E\;en\;uds.=\frac{C.F}{M.C.U} `}
-                  />
-                  <MathComponent
-                    tex={String.raw`P.E\;en\;pesos.=\frac{C.F}{1-\frac{C.V.U}{P}}`}
-                  />
-                  <p>Otra forma de calcular P.E en pesos: </p>
-                  <MathComponent
-                    tex={String.raw`P.E\;en\;pesos.=(P.E\;en\;uds)(P)`}
-                  />
                   <p>Sustituyendo los datos tenemos:</p>
                   <MathComponent
                     tex={String.raw`P.E\;en\;uds.=\frac{C.F}{M.C.U}=\frac{30000}{20}`}

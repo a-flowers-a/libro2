@@ -41,20 +41,17 @@ const ThreeThreeTwoOne = () => {
             </Col>
           </Row>
           <Row className="justify-content-center m-v-space">
-            <Col sm={4}>
+            <Col sm={6} md={4}>
               <Image src={equilibrioMezcla1} className="full-img" />
             </Col>
-          </Row>
-          <Row className="justify-content-center m-v-space">
-            <Col sm={4}>
+            <Col sm={6} md={4}>
               <Image src={equilibrioMezcla2} className="full-img" />
             </Col>
-          </Row>
-          <Row className="justify-content-center m-v-space">
-            <Col sm={4}>
+            <Col sm={6} md={4}>
               <Image src={equilibrioMezcla3} className="full-img" />
             </Col>
           </Row>
+          <Row className="justify-content-center m-v-space"></Row>
           <Row>
             <Col>
               <p>
