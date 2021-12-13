@@ -7,7 +7,10 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import { scrollTop } from "../../helpers/general";
 
 const FourOne = () => {
-  const img41 = "../../assets/images/41.png";
+  const FlujoDeEfectivo = "../../assets/images/FlujosDeEfectivo.png";
+  const ValorPresente = "../../assets/images/ValorPresente.png";
+  const ValorFuturo = "../../assets/images/ValorFuturo.png";
+
   useEffect(() => {
     scrollTop();
   }, []);
@@ -56,8 +59,8 @@ const FourOne = () => {
                 </Col>
               </Row>
               <Row className="justify-content-center m-b-space">
-                <Col>
-                  <span className="red">IMAAAAAGEEEEN</span>
+                <Col sm={6}>
+                  <Image src={ValorPresente} className="full-img" />
                 </Col>
               </Row>
               <Row>
@@ -71,8 +74,8 @@ const FourOne = () => {
                 </Col>
               </Row>
               <Row className="justify-content-center m-b-space">
-                <Col>
-                  <span className="red">IMAAAAAGEEEEN</span>
+                <Col sm={6}>
+                  <Image src={ValorFuturo} className="full-img" />
                 </Col>
               </Row>
               <Row>
@@ -103,12 +106,8 @@ const FourOne = () => {
                 </Col>
               </Row>
               <Row className="justify-content-center m-b-space">
-                <Col md={9}>
-                  <Image
-                    className="full-img"
-                    src={img41}
-                    alt="Figura Flujos de efectivo"
-                  />
+                <Col sm={8}>
+                  <Image src={FlujoDeEfectivo} className="full-img" />
                 </Col>
               </Row>
               <Row>

@@ -2,12 +2,13 @@ import { useEffect } from "react";
 import { Row, Col, Container, Image, Table } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
+import { MathComponent } from "mathjax-react";
 import SideMenu from "../../components/SideMenu/SideMenu";
 
 import { scrollTop } from "../../helpers/general";
 
 const FourOneOneOne = () => {
-  const img4111 = "../../assets/images/4111.png";
+  const img4111 = "../../assets/images/4111.jpg";
   useEffect(() => {
     scrollTop();
   }, []);
@@ -154,7 +155,7 @@ const FourOneOneOne = () => {
               </Row>
               <Row className="justify-content-center m-b-space">
                 <Col md={10}>
-                  <span className="red">FOOOOOOOOORMULA</span>
+                  <MathComponent tex={String.raw`VF_{n}= VP(1+i)^{n}`} />
                 </Col>
               </Row>
               <Row>
@@ -164,7 +165,14 @@ const FourOneOneOne = () => {
               </Row>
               <Row className="justify-content-center m-b-space">
                 <Col md={10}>
-                  <span className="red">FOOOOOOOOORMULA</span>
+                  <MathComponent
+                    className={"full-img"}
+                    tex={String.raw`VF_{n}= VP(1+i)^{n}`}
+                  />
+                  <MathComponent
+                    className={"full-img"}
+                    tex={String.raw` =(100,000) (1.10)^3=133,100`}
+                  />
                 </Col>
               </Row>
               <Row>

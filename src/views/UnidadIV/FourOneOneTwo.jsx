@@ -3,11 +3,12 @@ import { Row, Col, Container, Image } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
+import { MathComponent } from "mathjax-react";
 
 import { scrollTop } from "../../helpers/general";
 
 const FourOneOneTwo = () => {
-  const img4112 = "../../assets/images/4112.png";
+  const img4112 = "../../assets/images/4111.jpg";
   useEffect(() => {
     scrollTop();
   }, []);
@@ -38,12 +39,26 @@ const FourOneOneTwo = () => {
               </Row>
               <Row className="justify-content-center m-b-space">
                 <Col sm={10}>
-                  <span className="red">FOOOOOOOOORMULA</span>
+                  <MathComponent
+                    className={"full-img"}
+                    tex={String.raw`VF_{n}= VP(1+i)^{n}`}
+                  />
                 </Col>
               </Row>
               <Row className="justify-content-center m-b-space">
                 <Col sm={10}>
-                  <span className="red">FOOOOOOOOORMULA</span>
+                  <MathComponent
+                    className={"full-img"}
+                    tex={String.raw`VP= \frac{VF_{n}}{(1+i)^{n}}`}
+                  />
+                  <MathComponent
+                    className={"full-img"}
+                    tex={String.raw`=\frac{100,000}{(1+0.06)^{5}}`}
+                  />
+                  <MathComponent
+                    className={"full-img"}
+                    tex={String.raw`=\frac{100,000}{1.338225578}=74,725.81`}
+                  />
                 </Col>
               </Row>
               <Row className="justify-text">

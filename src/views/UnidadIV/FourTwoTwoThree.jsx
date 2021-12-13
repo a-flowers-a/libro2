@@ -3,7 +3,7 @@ import { Row, Col, Container, Image, Table } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
-
+import { MathComponent } from "mathjax-react";
 import { scrollTop } from "../../helpers/general";
 
 const FourTwoTwoThree = () => {
@@ -75,7 +75,9 @@ const FourTwoTwoThree = () => {
               </Row>
               <Row className="justify-content-center m-b-space">
                 <Col md={10}>
-                  <span className="red">FOOOOOOOOORMULA</span>
+                  <MathComponent
+                    tex={String.raw`{{VP}_{An}}=PA\frac{1-\frac{1}{{(1+i)}{n}}}{i}`}
+                  />
                 </Col>
               </Row>
               <Row>
@@ -85,7 +87,16 @@ const FourTwoTwoThree = () => {
               </Row>
               <Row className="justify-content-center m-b-space">
                 <Col md={10}>
-                  <span className="red">FOOOOOOOOORMULA</span>
+                  <MathComponent
+                    tex={String.raw`{{VP}_{An}}=Valor\;presente\;o\;principal(cantidad\;prestada)`}
+                  />
+                  <MathComponent
+                    tex={String.raw`PA=Valor\;del\;pago\;igual\;o\;anualidad`}
+                  />
+                  <MathComponent tex={String.raw`i=Tasa\;de\;interes`} />
+                  <MathComponent
+                    tex={String.raw`n=Numero\;de\;plazos\;para\;liquidar\;el\;prestamo`}
+                  />
                 </Col>
               </Row>
               <Row>
@@ -98,7 +109,12 @@ const FourTwoTwoThree = () => {
               </Row>
               <Row className="justify-content-center m-b-space">
                 <Col md={10}>
-                  <span className="red">FOOOOOOOOORMULA</span>
+                  <MathComponent
+                    tex={String.raw`{{VP}_{An}}=PA\frac{1-\frac{1}{{(1+i)}{n}}}{i}`}
+                  />
+                  <MathComponent
+                    tex={String.raw` \Rightarrow PA=\frac{{VP}_{An}{(1+i)}^{n}(i)}{{(1+i)}^{n}-1}`}
+                  />
                 </Col>
               </Row>
               <Row>
@@ -108,12 +124,14 @@ const FourTwoTwoThree = () => {
               </Row>
               <Row className="justify-content-center m-b-space">
                 <Col md={10}>
-                  <span className="red">FOOOOOOOOORMULA</span>
+                  <MathComponent tex={String.raw`{{VP}_{An}}=1,500,000`} />
+                  <MathComponent tex={String.raw`i=\frac{0.12}{12}`} />
+                  <MathComponent tex={String.raw`n=6`} />
                 </Col>
               </Row>
               <Row>
                 <Col>
-                  <Table striped bordered size="sm">
+                  <Table striped bordered responsive size="sm">
                     <thead>
                       <tr className="center-text">
                         <th>VF de una anualidad</th>
@@ -123,9 +141,21 @@ const FourTwoTwoThree = () => {
                     </thead>
                     <tbody>
                       <tr>
-                        <td className="red">FOOOOOOOOORMULA</td>
-                        <td className="red">FOOOOOOOOORMULA</td>
-                        <td className="red">FOOOOOOOOORMULA</td>
+                        <td>
+                          <MathComponent
+                            tex={String.raw`{{VP}_{An}}=1,500,000`}
+                          />
+                        </td>
+                        <td>
+                          <MathComponent
+                            tex={String.raw`{{VP}_{An}}=PA\frac{1-\frac{1}{{(1+i)}{n}}}{i}`}
+                          />
+                        </td>
+                        <td>
+                          <MathComponent
+                            tex={String.raw`{{VP}_{An}}=1,500,000`}
+                          />
+                        </td>
                       </tr>
                     </tbody>
                   </Table>

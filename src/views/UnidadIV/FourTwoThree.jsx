@@ -3,7 +3,7 @@ import { Row, Col, Container, Image } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
-
+import { MathComponent } from "mathjax-react";
 import { scrollTop } from "../../helpers/general";
 
 const FourTwoThree = () => {
@@ -70,7 +70,12 @@ const FourTwoThree = () => {
               </Row>
               <Row className="justify-content-center m-b-space">
                 <Col md={10}>
-                  <span className="red">FOOOOOOOOORMULA</span>
+                  <MathComponent
+                    tex={String.raw`{{VF}_{AAn}}=10,000(1+i)^{4}+10,000(1+i)^{3}`}
+                  />
+                  <MathComponent
+                    tex={String.raw`+10,000(1+i)^{2}+10,000(1+i)^{1}=51,051`}
+                  />
                 </Col>
               </Row>
               <Row className="justify-text">
@@ -83,12 +88,16 @@ const FourTwoThree = () => {
                   </p>
                   <Row className="justify-content-center m-b-space">
                     <Col md={10}>
-                      <span className="red">FOOOOOOOOORMULA</span>
+                      <MathComponent
+                        tex={String.raw`{{VF}_{Anualidad\;Anticipada}}=VP\frac{{(1+i)}^{n}}{i}(1+i)`}
+                      />
                     </Col>
                   </Row>
                   <Row className="justify-content-center m-b-space">
                     <Col md={10}>
-                      <span className="red">FOOOOOOOOORMULA</span>
+                      <MathComponent
+                        tex={String.raw`{{VF}_{AAn}}=10,000\frac{{(1.10)}^{4}-1}{0.10}(1.10)=51,051`}
+                      />
                     </Col>
                   </Row>
                 </Col>

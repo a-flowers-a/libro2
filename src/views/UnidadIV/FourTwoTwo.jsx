@@ -3,7 +3,7 @@ import { Row, Col, Container, Image, Table } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
-
+import { MathComponent } from "mathjax-react";
 import { scrollTop } from "../../helpers/general";
 
 const FourTwoTwo = () => {
@@ -75,7 +75,18 @@ const FourTwoTwo = () => {
                   </p>
                   <Row className="justify-content-center m-b-space">
                     <Col md={10}>
-                      <span className="red">FOOOOOOOOORMULA</span>
+                      <MathComponent
+                        tex={String.raw`VP=\frac{10,000}{(1.10)^{1}}=9,090.90`}
+                      />
+                      <MathComponent
+                        tex={String.raw`VP=\frac{10,000}{(1.10)^{2}}=8,264.46`}
+                      />
+                      <MathComponent
+                        tex={String.raw`VP=\frac{10,000}{(1.10)^{3}}=7,513.14`}
+                      />
+                      <MathComponent
+                        tex={String.raw`VP=\frac{10,000}{(1.10)^{4}}=6,830.13`}
+                      />
                     </Col>
                   </Row>
                 </Col>
@@ -88,7 +99,9 @@ const FourTwoTwo = () => {
                   </p>
                   <Row className="justify-content-center m-b-space">
                     <Col md={10}>
-                      <span className="red">FOOOOOOOOORMULA</span>
+                      <MathComponent
+                        tex={String.raw`{{VP}_{An}}=PA\frac{1-\frac{1}{(1+i)^{n}}}{i}`}
+                      />
                     </Col>
                   </Row>
                 </Col>
@@ -135,7 +148,7 @@ const FourTwoTwo = () => {
               </Row>
               <Row>
                 <Col>
-                  <Table striped bordered size="sm">
+                  <Table striped bordered responsive size="sm">
                     <thead>
                       <tr className="center-text">
                         <th>VF de una anualidad</th>
@@ -145,9 +158,21 @@ const FourTwoTwo = () => {
                     </thead>
                     <tbody>
                       <tr>
-                        <td className="red">FOOOOOOOOORMULA</td>
-                        <td className="red">FOOOOOOOOORMULA</td>
-                        <td className="red">FOOOOOOOOORMULA</td>
+                        <td className="red">
+                          <MathComponent
+                            tex={String.raw`{{VF}_{An}}=PA\frac{(1+i)^{n}-1}{i}`}
+                          />
+                        </td>
+                        <td className="red">
+                          <MathComponent
+                            tex={String.raw`{{VP}_{An}}=PA\frac{1-\frac{1}{(1+i)^{n}}}{i}`}
+                          />
+                        </td>
+                        <td className="red">
+                          <MathComponent
+                            tex={String.raw`PA=P(\frac{i(1+i)^{n}}{(1+i)^{n}-1})`}
+                          />
+                        </td>
                       </tr>
                     </tbody>
                   </Table>
@@ -158,11 +183,11 @@ const FourTwoTwo = () => {
                   <p>Donde:</p>
                   <p className="no-marg-bottom">
                     <span className="bold">VFan</span> = Valor futuro de la
-                    annualidad
+                    anualidad
                   </p>
                   <p className="no-marg-bottom">
                     <span className="bold">VPan</span> = Valor presente de la
-                    annualidad
+                    anualidad
                   </p>
                   <p className="no-marg-bottom">
                     <span className="bold">PA</span> = Pago igual (anualidad)

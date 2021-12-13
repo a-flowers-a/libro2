@@ -73,7 +73,7 @@ const FourOneOne = () => {
                     cantidad se repite en forma periódica entonces ya no se
                     trataría de una cantidad única sino de una anualidad. Los
                     conceptos más básicos de valores futuro y presente se
-                    refieren a cantidades únicas. (ver{" "}
+                    refieren a cantidades únicas. (verX)
                     <span className="bold">Figura 29</span>).
                   </p>
                 </Col>

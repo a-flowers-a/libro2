@@ -3,10 +3,11 @@ import { Row, Col, Container, Image } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
-
+import { MathComponent } from "mathjax-react";
 import { scrollTop } from "../../helpers/general";
 
 const FourTwoOne = () => {
+  const img421 = "../../assets/images/421.jpg";
   useEffect(() => {
     scrollTop();
   }, []);
@@ -41,8 +42,12 @@ const FourTwoOne = () => {
                     <li>
                       <p>Utilizando la línea de flujo de efectivo</p>
                       <Row className="justify-content-center m-b-space">
-                        <Col md={10}>
-                          <span className="red">FOOOOOOOOORMULA</span>
+                        <Col md={8}>
+                          <Image
+                            className="full-img"
+                            src={img421}
+                            alt="Línea de Flujo de efectivo"
+                          />
                         </Col>
                       </Row>
                     </li>
@@ -53,7 +58,42 @@ const FourTwoOne = () => {
                       </p>
                       <Row className="justify-content-center m-b-space">
                         <Col md={10}>
-                          <span className="red">FOOOOOOOOORMULA</span>
+                          <MathComponent
+                            tex={String.raw`VF_{n}= VP(1+i)^{n}`}
+                          />
+                        </Col>
+                      </Row>
+                      <p>El VF del periodo 1 se capitaliza en 3 periodos</p>
+                      <Row className="justify-content-center m-b-space">
+                        <Col md={10}>
+                          <MathComponent
+                            tex={String.raw`VF_{1}= 10,000(1+i)^{3}=13,310`}
+                          />
+                        </Col>
+                      </Row>
+                      <p>El VF del periodo 2 se capitaliza en 2 periodos</p>
+                      <Row className="justify-content-center m-b-space">
+                        <Col md={10}>
+                          <MathComponent
+                            tex={String.raw`VF_{2}= 10,000(1+i)^{2}=12,100`}
+                          />
+                        </Col>
+                      </Row>
+                      <p>El VF del periodo 2 se capitaliza en 2 periodos</p>
+                      <Row className="justify-content-center m-b-space">
+                        <Col md={10}>
+                          <MathComponent
+                            tex={String.raw`VF_{3}= 10,000(1+i)^{1}=11,000`}
+                          />
+                        </Col>
+                      </Row>
+                      <p>El VF del periodo 4 no se capitaliza</p>
+                      <Row className="justify-content-center m-b-space">
+                        <Col md={10}>
+                          <MathComponent
+                            tex={String.raw`VF_{4}= 10,000(1+i)^{0}=10,000`}
+                          />
+                          <MathComponent tex={String.raw`Total=46,410`} />
                         </Col>
                       </Row>
                     </li>
@@ -64,7 +104,13 @@ const FourTwoOne = () => {
                       </p>
                       <Row className="justify-content-center m-b-space">
                         <Col md={10}>
-                          <span className="red">FOOOOOOOOORMULA</span>
+                          <MathComponent
+                            tex={String.raw`{VF_{An}}=PA(\frac{(1+i)^{n}-1}{i})`}
+                          />
+                          <MathComponent
+                            tex={String.raw`=10,000(\frac{(1+0.10)^{4}-1}{0.10})`}
+                          />
+                          <MathComponent tex={String.raw`= \$46,410`} />
                         </Col>
                       </Row>
                     </li>
@@ -87,7 +133,13 @@ const FourTwoOne = () => {
               </Row>
               <Row className="justify-content-center m-b-space">
                 <Col md={10}>
-                  <span className="red">FOOOOOOOOORMULA</span>
+                  <MathComponent
+                    tex={String.raw`{VF_{An}}=PA(\frac{(1+i)^{n}-1}{i})`}
+                  />
+                  <MathComponent
+                    tex={String.raw`=5,000(\frac{(1+0.05)^{40}-1}{0.05})`}
+                  />
+                  <MathComponent tex={String.raw`= \$ 603,998.8712`} />
                 </Col>
               </Row>
               <Row>
