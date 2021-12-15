@@ -106,7 +106,7 @@ const OneOneOne = () => {
               </Row>
               <Row>
                 <Col>
-                  <Table striped bordered size="sm">
+                  <Table striped bordered responsive size="sm">
                     <thead>
                       <tr>
                         <th>Sociedad/Asociación:</th>

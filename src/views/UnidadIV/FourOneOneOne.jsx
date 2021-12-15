@@ -89,7 +89,7 @@ const FourOneOneOne = () => {
               </Row>
               <Row>
                 <Col>
-                  <Table striped bordered size="sm">
+                  <Table striped bordered responsive size="sm">
                     <thead>
                       <tr className="center-text">
                         <th>Año</th>

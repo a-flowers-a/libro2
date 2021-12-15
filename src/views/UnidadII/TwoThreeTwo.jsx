@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
-import { Row, Col, Image, Container, Table } from "react-bootstrap";
+import { Row, Col, Image, Container } from "react-bootstrap";
 import SideMenu from "../../components/SideMenu/SideMenu";
 import { scrollTop } from "../../helpers/general";
 

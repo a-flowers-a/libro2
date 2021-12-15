@@ -88,15 +88,20 @@ const FourTwoTwoThree = () => {
               <Row className="justify-content-center m-b-space">
                 <Col md={10}>
                   <MathComponent
-                    tex={String.raw`{{VP}_{An}}=Valor\;presente\;o\;principal(cantidad\;prestada)`}
+                    display={false}
+                    tex={String.raw`{{VP}_{An}}=`}
                   />
-                  <MathComponent
-                    tex={String.raw`PA=Valor\;del\;pago\;igual\;o\;anualidad`}
-                  />
-                  <MathComponent tex={String.raw`i=Tasa\;de\;interes`} />
-                  <MathComponent
-                    tex={String.raw`n=Numero\;de\;plazos\;para\;liquidar\;el\;prestamo`}
-                  />
+                  <span>Valor presente o principal(cantidad prestada)</span>
+                  <br />
+                  <MathComponent display={false} tex={String.raw`PA=`} />
+                  <span>Valor del pago igual o anualidad</span>
+                  <br />
+                  <MathComponent display={false} tex={String.raw`i=`} />
+                  <span> tasa de interés</span>
+                  <br />
+                  <MathComponent display={false} tex={String.raw`n=`} />
+                  <span>Número de plazos para liquidar el préstamo</span>
+                  <br />
                 </Col>
               </Row>
               <Row>
@@ -143,7 +148,7 @@ const FourTwoTwoThree = () => {
                       <tr>
                         <td>
                           <MathComponent
-                            tex={String.raw`{{VP}_{An}}=1,500,000`}
+                            tex={String.raw`{VF}_{An}=PA\frac{{(1+i)}^{n}-1}{i}`}
                           />
                         </td>
                         <td>
@@ -153,7 +158,7 @@ const FourTwoTwoThree = () => {
                         </td>
                         <td>
                           <MathComponent
-                            tex={String.raw`{{VP}_{An}}=1,500,000`}
+                            tex={String.raw`PA=P\frac{{i(1+i)}^{n}}{(1+i)^{n}-1}`}
                           />
                         </td>
                       </tr>
@@ -168,7 +173,13 @@ const FourTwoTwoThree = () => {
               </Row>
               <Row className="justify-content-center m-b-space">
                 <Col md={10}>
-                  <span className="red">FOOOOOOOOORMULA</span>
+                  <MathComponent
+                    tex={String.raw`PA=\frac{{VP}_{An}i{(1+i)}^{n}}{(1+i)^{n}-1}`}
+                  />
+                  <MathComponent
+                    tex={String.raw`=\frac{(1,500,000)(0.01)[({1+0.01}^{6})]}{({1+0.01}^{6})-1}`}
+                  />
+                  <MathComponent tex={String.raw`=258,822.55`} />
                 </Col>
               </Row>
               <Row>
@@ -183,7 +194,7 @@ const FourTwoTwoThree = () => {
               </Row>
               <Row>
                 <Col>
-                  <Table striped bordered size="sm">
+                  <Table striped responsive bordered size="sm">
                     <thead>
                       <tr className="center-text">
                         <th>Fecha</th>
@@ -267,7 +278,7 @@ const FourTwoTwoThree = () => {
               </Row>
               <Row>
                 <Col>
-                  <Table striped bordered size="sm">
+                  <Table striped responsive bordered size="sm">
                     <thead>
                       <tr className="center-text">
                         <th>A</th>
@@ -362,7 +373,15 @@ const FourTwoTwoThree = () => {
                   </p>
                   <Row className="justify-content-center m-b-space">
                     <Col md={10}>
-                      <span className="red">FOOOOOOOOORMULA</span>
+                      <MathComponent
+                        tex={String.raw`PA=\frac{{VP}_{An}i{(1+i)}^{n}}{(1+i)^{n}-1}`}
+                      />
+                      <MathComponent
+                        tex={String.raw`=\frac{(1,500,000)(0.32)[({1+0.32}^{5})]}{({1+0.32}^{5})-1}`}
+                      />
+                      <MathComponent
+                        tex={String.raw`=639,602.8951 \approx 639,603`}
+                      />
                     </Col>
                   </Row>
                   <p className="bold">Columna D</p>

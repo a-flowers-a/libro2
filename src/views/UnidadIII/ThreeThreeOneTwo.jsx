@@ -46,7 +46,7 @@ const ThreeThreeOneTwo = () => {
           </Row>
           <Row className="justify-content-center">
             <Col sm={6}>
-              <Table striped bordered hover>
+              <Table striped bordered responsive hover>
                 <tbody>
                   <tr>
                     <td>+ Ventas = (3,500) ($35)</td>
