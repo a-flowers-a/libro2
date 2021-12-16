@@ -5,48 +5,10 @@ import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
 import Info from "../../components/Info";
 import { scrollTop } from "../../helpers/general";
+import { MathComponent } from "mathjax-react";
 
 const ThreeTwoOneTwo = () => {
   const razonesSimples = "../../assets/images/razonesSimples.png";
-  const margen1 = "../../assets/images/margen1.png";
-  const margenE = "../../assets/images/margenE.png";
-  const rat1 = "../../assets/images/rat1.png";
-  const ratE = "../../assets/images/ratE.png";
-  const roe1 = "../../assets/images/roe1.png";
-  const roeE = "../../assets/images/roeE.png";
-  const razonCorrienteF = "../../assets/images/razonCorrienteF.png";
-  const razonCorrienteE = "../../assets/images/razonCorrienteE.png";
-  const pruebaAcidoF = "../../assets/images/pruebaAcidoF.png";
-  const pruebaAcidoE = "../../assets/images/pruebaAcidoE.png";
-  const capitalTrabajoF = "../../assets/images/capitalTrabajoF.png";
-  const capitalTrabajoE = "../../assets/images/capitalTrabajoE.png";
-  const cicloOperativoF = "../../assets/images/cicloOperativoF.png";
-  const cicloOperativoE = "../../assets/images/cicloOperativoE.png";
-  const apalancamientoF = "../../assets/images/apalancamientoF.png";
-  const apalancamientoE = "../../assets/images/apalancamientoE.png";
-  const coberturaF = "../../assets/images/coberturaF.png";
-  const coberturaE = "../../assets/images/coberturaE.png";
-  const rotacionCobrarF = "../../assets/images/rotacionCobrarF.png";
-  const rotacionCobrarE1 = "../../assets/images/rotacionCobrarE1.png";
-  const rotacionCobrarE2 = "../../assets/images/rotacionCobrarE2.png";
-  const rotacionPagarF = "../../assets/images/rotacionPagarF.png";
-  const rotacionPagarE1 = "../../assets/images/rotacionPagarE1.png";
-  const rotacionPagarE2 = "../../assets/images/rotacionPagarE2.png";
-  const rotacionInventariosF = "../../assets/images/rotacionInventariosF.png";
-  const rotacionInventariosE1 = "../../assets/images/rotacionInventariosE1.png";
-  const rotacionInventariosE2 = "../../assets/images/rotacionInventariosE2.png";
-  const rotacionActivosFijosF = "../../assets/images/rotacionActivosFijosF.png";
-  const rotacionActivosFijosE = "../../assets/images/rotacionActivosFijosE.png";
-  const rotacionActivosTotF = "../../assets/images/rotacionActivosTotalesF.png";
-  const rotacionActivosTotE = "../../assets/images/rotacionActivosTotalesE.png";
-  const utilidadAccionF = "../../assets/images/utilidadAccionF.png";
-  const utilidadAccionE = "../../assets/images/utilidadAccionE.png";
-  const valorLibrosF = "../../assets/images/valorLibrosF.png";
-  const valorLibrosE = "../../assets/images/valorLibrosE.png";
-  const precioValorF = "../../assets/images/precioValorF.png";
-  const precioValorE = "../../assets/images/precioValorE.png";
-  const rendDividendosF = "../../assets/images/rendimientoDividendosF.png";
-  const rendDividendosE = "../../assets/images/rendimientoDividendosE.png";
 
   useEffect(() => {
     scrollTop();
@@ -150,19 +112,13 @@ const ThreeTwoOneTwo = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <Row className="justify-content-center">
-                      <Image
-                        src={margen1}
-                        alt="Fórmula margen de utilidad"
-                        className="razones-img"
+                      <MathComponent
+                        tex={String.raw`Margen\;de\;utilidad\;o\;de\;rentabilidad=\frac{Utilidad\;neta}{Ventas\;netas}`}
                       />
                     </Row>
                     <p>Ejemplo:</p>
                     <Row className="justify-content-center">
-                      <Image
-                        src={margenE}
-                        alt="Ejemplo margen de utilidad"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>
                       Indica el porcentaje de utilidad en relación con las
@@ -179,19 +135,11 @@ const ThreeTwoOneTwo = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <Row className="justify-content-center">
-                      <Image
-                        src={rat1}
-                        alt="Fórmula RAT"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>Ejemplo:</p>
                     <Row className="justify-content-center">
-                      <Image
-                        src={ratE}
-                        alt="Ejemplo RAT"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>
                       Indica el porcentaje de utilidad que se obtiene con el
@@ -207,19 +155,11 @@ const ThreeTwoOneTwo = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <Row className="justify-content-center">
-                      <Image
-                        src={roe1}
-                        alt="Fórmula ROE"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>Ejemplo:</p>
                     <Row className="justify-content-center">
-                      <Image
-                        src={roeE}
-                        alt="Ejemplo ROE"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>
                       Mide el rendimiento que obtiene una empresa sobre el
@@ -251,19 +191,11 @@ const ThreeTwoOneTwo = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <Row className="justify-content-center">
-                      <Image
-                        src={razonCorrienteF}
-                        alt="Fórmula razón de liquidez"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>Ejemplo:</p>
                     <Row className="justify-content-center">
-                      <Image
-                        src={razonCorrienteE}
-                        alt="Ejemplo razón de liquidez"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>
                       Indica el número de veces que con el activo circulante se
@@ -287,19 +219,11 @@ const ThreeTwoOneTwo = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <Row className="justify-content-center">
-                      <Image
-                        src={pruebaAcidoF}
-                        alt="Fórmula prueba del ácido"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>Ejemplo:</p>
                     <Row className="justify-content-center">
-                      <Image
-                        src={pruebaAcidoE}
-                        alt="Ejemplo prueba del ácido"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>
                       Esta razón financiera es una medición más estricta de la
@@ -324,19 +248,11 @@ const ThreeTwoOneTwo = () => {
                       inmediato.
                     </p>
                     <Row className="justify-content-center">
-                      <Image
-                        src={capitalTrabajoF}
-                        alt="Fórmula capital de trabajo"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>Ejemplo:</p>
                     <Row className="justify-content-center">
-                      <Image
-                        src={capitalTrabajoE}
-                        alt="Ejemplo capital de trabajo"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>
                       Se llama capital de trabajo al dinero que tiene la empresa
@@ -354,11 +270,7 @@ const ThreeTwoOneTwo = () => {
                   <Accordion.Body>
                     <Row className="justify-content-center">
                       <Col md={6}>
-                        <Image
-                          src={cicloOperativoF}
-                          alt="Fórmula ciclo de conversión"
-                          className="razones-img"
-                        />
+                        <MathComponent tex={String.raw``} />
                       </Col>
                     </Row>
                     <p>Donde:</p>
@@ -368,11 +280,7 @@ const ThreeTwoOneTwo = () => {
                     <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Col md={6}>
-                        <Image
-                          src={cicloOperativoE}
-                          alt="Ejemplo ciclo de conversión"
-                          className="razones-img"
-                        />
+                        <MathComponent tex={String.raw``} />
                       </Col>
                     </Row>
                     <p>
@@ -406,19 +314,11 @@ const ThreeTwoOneTwo = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <Row className="justify-content-center">
-                      <Image
-                        src={apalancamientoF}
-                        alt="Fórmula apalancamiento"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>Ejemplo:</p>
                     <Row className="justify-content-center">
-                      <Image
-                        src={apalancamientoE}
-                        alt="Ejemplo apalancamiento"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>
                       Indica el porcentaje del activo total que es financiado
@@ -435,19 +335,11 @@ const ThreeTwoOneTwo = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <Row className="justify-content-center">
-                      <Image
-                        src={coberturaF}
-                        alt="Fórmula cobertura de intereses"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>Ejemplo:</p>
                     <Row className="justify-content-center">
-                      <Image
-                        src={coberturaE}
-                        alt="Ejemplo cobertura de intereses"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>
                       Indica en qué medida los ingresos actuales de la empresa
@@ -483,30 +375,18 @@ const ThreeTwoOneTwo = () => {
                   <Accordion.Body>
                     <Row className="justify-content-center">
                       <Col md={6}>
-                        <Image
-                          src={rotacionCobrarF}
-                          alt="Fórmula rotación de cartera"
-                          className="razones-img"
-                        />
+                        <MathComponent tex={String.raw``} />
                       </Col>
                     </Row>
                     <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Col md={6}>
-                        <Image
-                          src={rotacionCobrarE1}
-                          alt="Ejemplo rotación cartera"
-                          className="razones-img"
-                        />
+                        <MathComponent tex={String.raw``} />
                       </Col>
                     </Row>
                     <Row className="justify-content-center">
                       <Col md={6}>
-                        <Image
-                          src={rotacionCobrarE2}
-                          alt="Ejemplo rotación cartera"
-                          className="razones-img"
-                        />
+                        <MathComponent tex={String.raw``} />
                       </Col>
                     </Row>
                     <p>
@@ -524,30 +404,18 @@ const ThreeTwoOneTwo = () => {
                   <Accordion.Body>
                     <Row className="justify-content-center">
                       <Col md={6}>
-                        <Image
-                          src={rotacionPagarF}
-                          alt="Fórmula rotación de cuentas por pagar"
-                          className="razones-img"
-                        />
+                        <MathComponent tex={String.raw``} />
                       </Col>
                     </Row>
                     <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Col md={6}>
-                        <Image
-                          src={rotacionPagarE1}
-                          alt="Ejemplo rotación de cuentas por pagar"
-                          className="razones-img"
-                        />
+                        <MathComponent tex={String.raw``} />
                       </Col>
                     </Row>
                     <Row className="justify-content-center">
                       <Col md={6}>
-                        <Image
-                          src={rotacionPagarE2}
-                          alt="Ejemplo rotación de cuentas por pagar"
-                          className="razones-img"
-                        />
+                        <MathComponent tex={String.raw``} />
                       </Col>
                     </Row>
                     <p>
@@ -568,30 +436,18 @@ const ThreeTwoOneTwo = () => {
                   <Accordion.Body>
                     <Row className="justify-content-center">
                       <Col md={6}>
-                        <Image
-                          src={rotacionInventariosF}
-                          alt="Fórmula rotación de inventarios"
-                          className="razones-img"
-                        />
+                        <MathComponent tex={String.raw``} />
                       </Col>
                     </Row>
                     <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Col md={6}>
-                        <Image
-                          src={rotacionInventariosE1}
-                          alt="Ejemplo rotación de inventarios"
-                          className="razones-img"
-                        />
+                        <MathComponent tex={String.raw``} />
                       </Col>
                     </Row>
                     <Row className="justify-content-center">
                       <Col md={6}>
-                        <Image
-                          src={rotacionInventariosE2}
-                          alt="Ejemplo rotación de inventarios"
-                          className="razones-img"
-                        />
+                        <MathComponent tex={String.raw``} />
                       </Col>
                     </Row>
                     <p>
@@ -618,19 +474,11 @@ const ThreeTwoOneTwo = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <Row className="justify-content-center">
-                      <Image
-                        src={rotacionActivosFijosF}
-                        alt="Fórmula rotación de activos fijos"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>Ejemplo:</p>
                     <Row className="justify-content-center">
-                      <Image
-                        src={rotacionActivosFijosE}
-                        alt="Ejemplo rotación de activos fijos"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>
                       Mide la eficiencia de la empresa para utilizar su planta y
@@ -648,19 +496,11 @@ const ThreeTwoOneTwo = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <Row className="justify-content-center">
-                      <Image
-                        src={rotacionActivosTotF}
-                        alt="Fórmula rotación de activos totales"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>Ejemplo:</p>
                     <Row className="justify-content-center">
-                      <Image
-                        src={rotacionActivosTotE}
-                        alt="Ejemplo rotación de activos totales"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>
                       Esta razón financiera es muy útil para la empresa, ya que
@@ -698,21 +538,13 @@ const ThreeTwoOneTwo = () => {
                   <Accordion.Body>
                     <Row className="justify-content-center">
                       <Col md={6}>
-                        <Image
-                          src={utilidadAccionF}
-                          alt="Fórmula precio a utilidad por acción"
-                          className="razones-img"
-                        />
+                        <MathComponent tex={String.raw``} />
                       </Col>
                     </Row>
                     <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Col md={6}>
-                        <Image
-                          src={utilidadAccionE}
-                          alt="Ejemplo precio a utilidad por acción"
-                          className="razones-img"
-                        />
+                        <MathComponent tex={String.raw``} />
                       </Col>
                     </Row>
                     <p>
@@ -732,19 +564,11 @@ const ThreeTwoOneTwo = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <Row className="justify-content-center">
-                      <Image
-                        src={valorLibrosF}
-                        alt="Fórmula razón de valor en libros"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>Ejemplo:</p>
                     <Row className="justify-content-center">
-                      <Image
-                        src={valorLibrosE}
-                        alt="Ejemplo razón de valor en libros"
-                        className="razones-img"
-                      />
+                      <MathComponent tex={String.raw``} />
                     </Row>
                     <p>
                       El valor en libros de una acción representa el monto
@@ -761,21 +585,13 @@ const ThreeTwoOneTwo = () => {
                   <Accordion.Body>
                     <Row className="justify-content-center">
                       <Col md={6}>
-                        <Image
-                          src={precioValorF}
-                          alt="Fórmula razón precio de mercado a valor en libros"
-                          className="razones-img"
-                        />
+                        <MathComponent tex={String.raw``} />
                       </Col>
                     </Row>
                     <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Col md={6}>
-                        <Image
-                          src={precioValorE}
-                          alt="Ejemplo razón precio de mercado a valor en libros"
-                          className="razones-img"
-                        />
+                        <MathComponent tex={String.raw``} />
                       </Col>
                     </Row>
                     <p>
@@ -801,21 +617,13 @@ const ThreeTwoOneTwo = () => {
                   <Accordion.Body>
                     <Row className="justify-content-center">
                       <Col md={6}>
-                        <Image
-                          src={rendDividendosF}
-                          alt="Fórmula razón de rendimiento de dividendos"
-                          className="razones-img"
-                        />
+                        <MathComponent tex={String.raw``} />
                       </Col>
                     </Row>
                     <p>Ejemplo:</p>
                     <Row className="justify-content-center">
                       <Col md={6}>
-                        <Image
-                          src={rendDividendosE}
-                          alt="Ejemplo razón de rendimiento de dividendos"
-                          className="razones-img"
-                        />
+                        <MathComponent tex={String.raw``} />
                       </Col>
                     </Row>
                     <p>
