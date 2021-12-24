@@ -12,6 +12,7 @@ import unitThree from "../../constants/unitThree";
 import unitFour from "../../constants/unitFour";
 import Item from "./Item";
 import "./styles.css";
+import unitFive from "../../constants/unitFive";
 
 function SideMenu() {
   function sendTo(page) {
@@ -116,7 +117,13 @@ function SideMenu() {
               >
                 Unidad IV
               </Dropdown.Item>
-              <Dropdown.Item>Unidad V</Dropdown.Item>
+              <Dropdown.Item
+                onClick={() => {
+                  setCurrentUnit(unitFive);
+                }}
+              >
+                Unidad V
+              </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           <Item topic="Glosario" level={1} path="/glossary" />

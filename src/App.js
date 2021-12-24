@@ -65,6 +65,10 @@ import FourThreeOne from "./views/UnidadIV/FourThreeOne";
 import FourFour from "./views/UnidadIV/FourFour";
 //Glossary
 import Glossary from "./views/Home";
+import FiveOne from "./views/UnidadV/FiveOne";
+import IntroduccionV from "./views/UnidadV/Introduccion";
+import FiveTwo from "./views/UnidadV/FiveTwo";
+import FiveThree from "./views/UnidadV/FiveThree";
 
 function App() {
   return (
@@ -253,6 +257,14 @@ function App() {
           component={() => <FourThreeOne />}
         />
         <Route path="/content/IV/4.4" exact component={() => <FourFour />} />
+        <Route
+          path="/content/V/intro"
+          exact
+          component={() => <IntroduccionV />}
+        />
+        <Route path="/content/V/5.1" exact component={() => <FiveOne />} />
+        <Route path="/content/V/5.2" exact component={() => <FiveTwo />} />
+        <Route path="/content/V/5.3" exact component={() => <FiveThree />} />
         <Route path="/glossary" exact component={() => <Glossary />} />
       </Switch>
     </Router>
