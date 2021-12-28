@@ -39,12 +39,12 @@ export const unitFive = {
     },
     {
       name: "5.3.5 Tasa interna de rendimiento (TIR)",
-      path: "/content/V/5.3.4",
+      path: "/content/V/5.3.5",
       level: 2,
     },
     {
       name: "5.3.6 Costo-beneficio",
-      path: "/content/V/5.3.4",
+      path: "/content/V/5.3.6",
       level: 2,
     },
     { name: "Cierre", path: "/content/V/cierre", level: 1 },
