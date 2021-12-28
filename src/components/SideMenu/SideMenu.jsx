@@ -53,6 +53,10 @@ function SideMenu() {
         _colorClass = "pink";
         _hoverClass = "pinkHover";
         break;
+      case "unitFive":
+        _colorClass = "orange";
+        _hoverClass = "orangeHover";
+        break;
 
       default:
         break;

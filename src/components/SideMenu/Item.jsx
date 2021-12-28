@@ -30,6 +30,10 @@ export default function Item(props) {
         _colorClass = "itemActivePink";
         _hoverClass = "itemPinkHover";
         break;
+      case "unitFive":
+        _colorClass = "itemActiveOrange";
+        _hoverClass = "itemOrangeHover";
+        break;
 
       default:
         break;
