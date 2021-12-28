@@ -76,6 +76,7 @@ import FiveThreeTwo from "./views/UnidadV/FiveThreeTwo";
 import FiveThreeThree from "./views/UnidadV/FiveThreeThree";
 import FiveThreeFour from "./views/UnidadV/FiveThreeFour";
 import FiveThreeFive from "./views/UnidadV/FiveThreeFive";
+import FiveThreeSix from "./views/UnidadV/FiveThreeSix";
 
 function App() {
   return (
@@ -297,6 +298,11 @@ function App() {
           path="/content/V/5.3.5"
           exact
           component={() => <FiveThreeFive />}
+        />
+        <Route
+          path="/content/V/5.3.6"
+          exact
+          component={() => <FiveThreeSix />}
         />
       </Switch>
     </Router>
