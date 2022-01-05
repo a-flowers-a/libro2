@@ -111,14 +111,16 @@ const ThreeTwoOneTwo = () => {
                     I.1 Margen de utilidad o de rentabilidad
                   </Accordion.Header>
                   <Accordion.Body>
-                    <Row className="justify-content-center">
+                    <Row className="justify-content-center overflow-auto m-v-space">
                       <MathComponent
                         tex={String.raw`Margen\;de\;utilidad\;o\;de\;rentabilidad=\frac{Utilidad\;neta}{Ventas\;netas}`}
                       />
                     </Row>
                     <p>Ejemplo:</p>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <MathComponent
+                        tex={String.raw`Margen\;de\;utilidad\;o\;de\;rentabilidad=\frac{315,000}{4,000,000}=7.87\%`}
+                      />
                     </Row>
                     <p>
                       Indica el porcentaje de utilidad en relación con las
@@ -134,12 +136,16 @@ const ThreeTwoOneTwo = () => {
                     Inversión (ROI) o ROA por sus siglas en inglés
                   </Accordion.Header>
                   <Accordion.Body>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <MathComponent
+                        tex={String.raw`Rendimiento\;sobre\;activos\;totales=\frac{Utilidad\;neta}{Activo\;total}`}
+                      />
                     </Row>
                     <p>Ejemplo:</p>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <MathComponent
+                        tex={String.raw`Rendimiento\;sobre\;activos\;totales=\frac{315,000}{1,490,000}=21.14\%`}
+                      />
                     </Row>
                     <p>
                       Indica el porcentaje de utilidad que se obtiene con el
@@ -154,12 +160,16 @@ const ThreeTwoOneTwo = () => {
                     I.3 Retorno sobre el capital contable (ROE)
                   </Accordion.Header>
                   <Accordion.Body>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <MathComponent
+                        tex={String.raw`Rendimiento\;sobre\;el\;capital\;contable=\frac{Utilidad\;neta}{Capital\;contable}`}
+                      />
                     </Row>
                     <p>Ejemplo:</p>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <MathComponent
+                        tex={String.raw`Rendimiento\;sobre\;el\;capital\;contable=\frac{315,000}{845,000}=37.28\%`}
+                      />
                     </Row>
                     <p>
                       Mide el rendimiento que obtiene una empresa sobre el
@@ -190,12 +200,16 @@ const ThreeTwoOneTwo = () => {
                     II.1 Razón de liquidez, razón circulante o razón corriente
                   </Accordion.Header>
                   <Accordion.Body>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <MathComponent
+                        tex={String.raw`Raz\acute{o}n\;de\;liquidez,\;raz\acute{o}n\;circulante\;o\;raz\acute{o}n\;corriente=\frac{Activo\;circulante}{Pasivo\;circulante}`}
+                      />
                     </Row>
                     <p>Ejemplo:</p>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <MathComponent
+                        tex={String.raw`Raz\acute{o}n\;de\;liquidez,\;raz\acute{o}n\;circulante\;o\;raz\acute{o}n\;corriente=\frac{800,000}{345,000}=2.32\;veces`}
+                      />
                     </Row>
                     <p>
                       Indica el número de veces que con el activo circulante se
@@ -206,10 +220,10 @@ const ThreeTwoOneTwo = () => {
                     </p>
 
                     <p>
-                      <u>
+                      <i>
                         Sí la razón de liquidez, razón circulante o razón
-                        corriente &lt;1 se puede decir que sí hay liquidez.
-                      </u>
+                        corriente &gt; 1 se puede decir que sí hay liquidez.
+                      </i>
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -218,12 +232,16 @@ const ThreeTwoOneTwo = () => {
                     II.2 Prueba del ácido o razón de liquidez inmediata
                   </Accordion.Header>
                   <Accordion.Body>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <MathComponent
+                        tex={String.raw`Prueba\;del\;\acute{a}cido\;o\;raz\acute{o}n\;de\;liquidez\;inmediata=\frac{Activo\;circulante-Inventario}{Pasivo\;circulante}`}
+                      />
                     </Row>
                     <p>Ejemplo:</p>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <MathComponent
+                        tex={String.raw`Prueba\;del\;\acute{a}cido\;o\;raz\acute{o}n\;de\;liquidez\;inmediata=\frac{800,000-370,000}{345,000}=1.25\;veces`}
+                      />
                     </Row>
                     <p>
                       Esta razón financiera es una medición más estricta de la
@@ -247,12 +265,16 @@ const ThreeTwoOneTwo = () => {
                       plazo, en el caso de que tuvieran que ser pagados de
                       inmediato.
                     </p>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <MathComponent
+                        tex={String.raw`Capital\;de\;trabajo\;=Activo\;circulante-Pasivo\;circulante`}
+                      />
                     </Row>
                     <p>Ejemplo:</p>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <MathComponent
+                        tex={String.raw`Capital\;de\;trabajo\;=800,000-345,000=455,000`}
+                      />
                     </Row>
                     <p>
                       Se llama capital de trabajo al dinero que tiene la empresa
@@ -268,20 +290,20 @@ const ThreeTwoOneTwo = () => {
                     II.4 Ciclo de conversión de efectivo o ciclo operativo
                   </Accordion.Header>
                   <Accordion.Body>
-                    <Row className="justify-content-center">
-                      <Col md={6}>
-                        <MathComponent tex={String.raw``} />
-                      </Col>
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <MathComponent
+                        tex={String.raw`Ciclo\;operativo\;=R.I+R.CxC-R.CxP`}
+                      />
                     </Row>
                     <p>Donde:</p>
                     <p>R.I = Rotación de inventarios</p>
                     <p>R.CxC= Rotación de cuentas por cobrar</p>
                     <p>R.CxP= Rotación de cuentas por pagar</p>
                     <p>Ejemplo:</p>
-                    <Row className="justify-content-center">
-                      <Col md={6}>
-                        <MathComponent tex={String.raw``} />
-                      </Col>
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <MathComponent
+                        tex={String.raw`Ciclo\;operativo\;=46.23+28.74-20.53=54.44\;días`}
+                      />
                     </Row>
                     <p>
                       Esta razón es importante debido a que demuestra la
@@ -313,12 +335,16 @@ const ThreeTwoOneTwo = () => {
                     III.1 Apalancamiento o deuda sobre el activo total
                   </Accordion.Header>
                   <Accordion.Body>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <MathComponent
+                        tex={String.raw`Apalancamiento\;o\;deuda\;sobre\;activo\;total=\frac{Pasivo\;total}{Activo\;total}`}
+                      />
                     </Row>
                     <p>Ejemplo:</p>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <MathComponent
+                        tex={String.raw`Apalancamiento\;o\;deuda\;sobre\;activo\;total=\frac{645,000}{1,490,000}=43.29\%`}
+                      />
                     </Row>
                     <p>
                       Indica el porcentaje del activo total que es financiado
@@ -334,12 +360,16 @@ const ThreeTwoOneTwo = () => {
                     III.2 Razón de cobertura de intereses
                   </Accordion.Header>
                   <Accordion.Body>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <MathComponent
+                        tex={String.raw`Raz\acute{o}n\;de\;cobertura\;de\;intereses=\frac{Utilidad\;de\;operaci\acute{o}n}{Intereses}`}
+                      />
                     </Row>
                     <p>Ejemplo:</p>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <MathComponent
+                        tex={String.raw`Raz\acute{o}n\;de\;cobertura\;de\;intereses=\frac{500,000}{50,000}=10\;veces`}
+                      />
                     </Row>
                     <p>
                       Indica en qué medida los ingresos actuales de la empresa
@@ -373,20 +403,24 @@ const ThreeTwoOneTwo = () => {
                     IV.1 Rotación de la cartera o rotación de cuentas por cobrar
                   </Accordion.Header>
                   <Accordion.Body>
-                    <Row className="justify-content-center">
-                      <Col md={6}>
-                        <MathComponent tex={String.raw``} />
-                      </Col>
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <MathComponent
+                        tex={String.raw`Rotaci\acute{o}n\;de\;cuentas\;por\;cobrar=\frac{\frac{CxC\;al\;inicio\;del\;perido\;+CxC\;al\;final\;del\;perido}{2}}{\frac{ventas\;a\;cr\acute{e}dito}{365}}`}
+                      />
                     </Row>
                     <p>Ejemplo:</p>
-                    <Row className="justify-content-center">
-                      <Col md={6}>
-                        <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Rotaci\acute{o}n\;de\;cuentas\;por\;cobrar=\frac{\frac{280,000+350,000}{2}}{\frac{4,000,000}{365}}`}
+                        />
                       </Col>
                     </Row>
-                    <Row className="justify-content-center">
-                      <Col md={6}>
-                        <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Rotaci\acute{o}n\;de\;cuentas\;por\;cobrar=\frac{315,000}{10,958.90}=28.74\;d\acute{\imath}as`}
+                        />
                       </Col>
                     </Row>
                     <p>
@@ -402,20 +436,26 @@ const ThreeTwoOneTwo = () => {
                     IV.2 Rotación de cuentas por pagar
                   </Accordion.Header>
                   <Accordion.Body>
-                    <Row className="justify-content-center">
-                      <Col md={6}>
-                        <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Rotaci\acute{o}n\;de\;cuentas\;por\;pagar=\frac{\frac{CxP\;al\;inicio\;del\;perido\;+CxP\;al\;final\;del\;perido}{2}}{\frac{ventas\;netas}{365}}`}
+                        />
                       </Col>
                     </Row>
                     <p>Ejemplo:</p>
-                    <Row className="justify-content-center">
-                      <Col md={6}>
-                        <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Rotaci\acute{o}n\;de\;cuentas\;por\;pagar=\frac{\frac{400,000+50,000}{2}}{\frac{4,000,000}{365}}`}
+                        />
                       </Col>
                     </Row>
-                    <Row className="justify-content-center">
-                      <Col md={6}>
-                        <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Rotaci\acute{o}n\;de\;cuentas\;por\;pagar=\frac{225,000}{10,958.90}=20.53\;d\acute{\imath}as`}
+                        />
                       </Col>
                     </Row>
                     <p>
@@ -434,20 +474,26 @@ const ThreeTwoOneTwo = () => {
                     IV.3 Rotación de inventarios
                   </Accordion.Header>
                   <Accordion.Body>
-                    <Row className="justify-content-center">
-                      <Col md={6}>
-                        <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Rotaci\acute{o}n\;de\;inventarios=\frac{\frac{Inventario\;al\;inicio\;del\;perido\;+Inventario\;al\;final\;del\;perido}{2}}{\frac{Costo\;de\;ventas}{365}}`}
+                        />
                       </Col>
                     </Row>
                     <p>Ejemplo:</p>
-                    <Row className="justify-content-center">
-                      <Col md={6}>
-                        <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Rotaci\acute{o}n\;de\;inventarios=\frac{\frac{390,000+370,000}{2}}{\frac{3,000,000}{365}}`}
+                        />
                       </Col>
                     </Row>
-                    <Row className="justify-content-center">
-                      <Col md={6}>
-                        <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Rotaci\acute{o}n\;de\;inventarios=\frac{380,000}{8,219.18}=46.23\;d\acute{\imath}as`}
+                        />
                       </Col>
                     </Row>
                     <p>
@@ -473,12 +519,20 @@ const ThreeTwoOneTwo = () => {
                     IV.4 Rotación de activos fijos
                   </Accordion.Header>
                   <Accordion.Body>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Rotaci\acute{o}n\;de\;activos\;fijos=\frac{Ventas\;netas}{Activo\;fijo\;neto}`}
+                        />
+                      </Col>
                     </Row>
                     <p>Ejemplo:</p>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Rotaci\acute{o}n\;de\;activos\;fijos=\frac{4,000,000}{690,000}=5.79\;veces`}
+                        />
+                      </Col>
                     </Row>
                     <p>
                       Mide la eficiencia de la empresa para utilizar su planta y
@@ -495,12 +549,20 @@ const ThreeTwoOneTwo = () => {
                     IV.5 Rotación de activos totales
                   </Accordion.Header>
                   <Accordion.Body>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Rotaci\acute{o}n\;de\;activos\;totales=\frac{Ventas\;netas}{Activo\;total}`}
+                        />
+                      </Col>
                     </Row>
                     <p>Ejemplo:</p>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Rotaci\acute{o}n\;de\;activos\;totales=\frac{4,000,000}{1,490,000}=2.68\;veces`}
+                        />
+                      </Col>
                     </Row>
                     <p>
                       Esta razón financiera es muy útil para la empresa, ya que
@@ -536,15 +598,19 @@ const ThreeTwoOneTwo = () => {
                     V.1 Razón de precio a utilidad por acción
                   </Accordion.Header>
                   <Accordion.Body>
-                    <Row className="justify-content-center">
-                      <Col md={6}>
-                        <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Precio\;utilidad\;por\;acci\acute{o}n=\frac{(Precio\;por\;acci\acute{o}n)(n\acute{u}mero\;de\;acciones)}{Utilidades}`}
+                        />
                       </Col>
                     </Row>
                     <p>Ejemplo:</p>
-                    <Row className="justify-content-center">
-                      <Col md={6}>
-                        <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Precio\;utilidad\;por\;acci\acute{o}n=\frac{(3,000)(1,000)}{315,000}=9.52\;veces`}
+                        />
                       </Col>
                     </Row>
                     <p>
@@ -563,12 +629,20 @@ const ThreeTwoOneTwo = () => {
                     V.2 Razón de valor en libros
                   </Accordion.Header>
                   <Accordion.Body>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Valor\;en\;libros=\frac{Capital\;contable}{n\acute{u}mero\;de\;acciones}`}
+                        />
+                      </Col>
                     </Row>
                     <p>Ejemplo:</p>
-                    <Row className="justify-content-center">
-                      <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Valor\;en\;libros=\frac{845,000}{1,000}=845`}
+                        />
+                      </Col>
                     </Row>
                     <p>
                       El valor en libros de una acción representa el monto
@@ -583,15 +657,19 @@ const ThreeTwoOneTwo = () => {
                     V.3 Razón precio de mercado a valor en libros
                   </Accordion.Header>
                   <Accordion.Body>
-                    <Row className="justify-content-center">
-                      <Col md={6}>
-                        <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Precio/Valor\;en\;libros=\frac{Precio\;por\;acci\acute{o}n}{Valor\;en\;libros}`}
+                        />
                       </Col>
                     </Row>
                     <p>Ejemplo:</p>
-                    <Row className="justify-content-center">
-                      <Col md={6}>
-                        <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Precio/Valor\;en\;libros=\frac{3,000}{845}=3.55\;veces`}
+                        />
                       </Col>
                     </Row>
                     <p>
@@ -615,15 +693,19 @@ const ThreeTwoOneTwo = () => {
                     V.4 Razón de rendimiento de dividendos
                   </Accordion.Header>
                   <Accordion.Body>
-                    <Row className="justify-content-center">
-                      <Col md={6}>
-                        <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Rendimiento\;de\;dividendos=\frac{Dividendo\;anual\;por\;acci\acute{o}n}{Precio\;de\;la\;acci\acute{o}n}`}
+                        />
                       </Col>
                     </Row>
                     <p>Ejemplo:</p>
-                    <Row className="justify-content-center">
-                      <Col md={6}>
-                        <MathComponent tex={String.raw``} />
+                    <Row className="justify-content-center overflow-auto m-v-space">
+                      <Col>
+                        <MathComponent
+                          tex={String.raw`Rendimiento\;de\;dividendos=\frac{80}{3,000}=2.66\%`}
+                        />
                       </Col>
                     </Row>
                     <p>

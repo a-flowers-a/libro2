@@ -1,18 +1,29 @@
 import React, { useEffect } from "react";
-import { Row, Col, Container, Image } from "react-bootstrap";
+import { Row, Col, Container, Table } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
-
+import { Line } from "react-chartjs-2";
 import { scrollTop } from "../../helpers/general";
+import {
+  Chart as ChartJS,
+  LineElement,
+  PointElement,
+  CategoryScale,
+  LinearScale,
+  Tooltip,
+  Legend,
+} from "chart.js";
+ChartJS.register(
+  LineElement,
+  PointElement,
+  CategoryScale,
+  LinearScale,
+  Tooltip,
+  Legend
+);
 
 const ThreeTwoTwoTwo = () => {
-  const tendencias1 = "../../assets/images/tendencias1.png";
-  const tendencias2 = "../../assets/images/tendencias2.png";
-  const tendencias3 = "../../assets/images/tendencias3.png";
-  const tendencias4 = "../../assets/images/tendencias4.png";
-  const tendencias5 = "../../assets/images/tendencias5.png";
-
   useEffect(() => {
     scrollTop();
   }, []);
@@ -53,13 +64,81 @@ const ThreeTwoTwoTwo = () => {
               </p>
             </Col>
           </Row>
-          <Row className="justify-content-center m-v-space">
-            <Col sm={10}>
-              <Image
-                src={tendencias1}
-                className="full-img"
-                alt="Tabla 1. Tendencias de algunas partidas de los estados financieros"
-              />
+          <Row className="center-table-rows justify-content-center">
+            <Col sm={11}>
+              <Table striped bordered hover responsive size="sm">
+                <thead>
+                  <tr>
+                    <th colSpan={2}>Concepto</th>
+                    <th>2017</th>
+                    <th>2018</th>
+                    <th>2019</th>
+                    <th>2020</th>
+                    <th>2021</th>
+                    <th>2022</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1. </td>
+                    <td>Ventas</td>
+                    <td>21,000</td>
+                    <td>25,000</td>
+                    <td>27,000</td>
+                    <td>23,000</td>
+                    <td>31,000</td>
+                    <td>
+                      <b>34,000</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2. </td>
+                    <td>Gastos de administración</td>
+                    <td>440</td>
+                    <td>680</td>
+                    <td>900</td>
+                    <td>1,100</td>
+                    <td>1,200</td>
+                    <td>
+                      <b>1,400</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3. </td>
+                    <td>Utilidades del ejercicio</td>
+                    <td>4,200</td>
+                    <td>5,000</td>
+                    <td>5,400</td>
+                    <td>2,000</td>
+                    <td>6,200</td>
+                    <td>
+                      <b>6,800</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4. </td>
+                    <td>Razón de liquidez inmediata</td>
+                    <td>
+                      <b>4</b>
+                    </td>
+                    <td>
+                      <b>2</b>
+                    </td>
+                    <td>
+                      <b>6</b>
+                    </td>
+                    <td>
+                      <b>4</b>
+                    </td>
+                    <td>
+                      <b>4</b>
+                    </td>
+                    <td>
+                      <b>2</b>
+                    </td>
+                  </tr>
+                </tbody>
+              </Table>
             </Col>
           </Row>
           <Row className="img-source center-text ">
@@ -69,53 +148,23 @@ const ThreeTwoTwoTwo = () => {
           </Row>
           <Row className="justify-content-center m-v-space">
             <Col sm={6}>
-              <Image
-                src={tendencias2}
-                className="full-img"
-                alt="Figura 2. Gráfica de la tendencia de ventas."
-              />
+              <Line options={options} data={ventas} />
             </Col>
-          </Row>
-          <Row className="img-source center-text ">
-            <Col>Fuente: Elaboración propia</Col>
-          </Row>
-          <Row className="justify-content-center m-v-space">
             <Col sm={6}>
-              <Image
-                src={tendencias3}
-                className="full-img"
-                alt="Figura 3. Gráfica de la tendencia de gastos de administración."
-              />
+              <Line options={options} data={gastos} />
             </Col>
-          </Row>
-          <Row className="img-source center-text ">
-            <Col>Fuente: Elaboración propia</Col>
-          </Row>
-          <Row className="justify-content-center m-v-space">
             <Col sm={6}>
-              <Image
-                src={tendencias4}
-                className="full-img"
-                alt="Figura 4. Gráfica de la tendencia de utilidad del ejercicio"
-              />
+              <Line options={options} data={utilidades} />
             </Col>
-          </Row>
-          <Row className="img-source center-text ">
-            <Col>Fuente: Elaboración propia</Col>
-          </Row>
-          <Row className="justify-content-center m-v-space">
             <Col sm={6}>
-              <Image
-                src={tendencias5}
-                className="full-img"
-                alt="Figura 5. Gráfica de la tendencia de razón de liquidez inmediata."
-              />
+              <Line options={options} data={liquidez} />
             </Col>
           </Row>
           <Row className="img-source center-text ">
             <Col>Fuente: Elaboración propia</Col>
           </Row>
-          <Row>
+
+          <Row className="m-v-space">
             <Col>
               <p>
                 Cabe destacar que al aplicarse este método deberán hacerse
@@ -146,6 +195,66 @@ const ThreeTwoTwoTwo = () => {
       <PoliFooter />
     </div>
   );
+};
+
+const options = {
+  responsive: true,
+  plugins: {
+    legend: {
+      position: "top",
+    },
+  },
+};
+const labels = ["2017", "2018", "2019", "2020", "2021", "2022"];
+
+const ventasX = [21000, 25000, 27000, 23000, 31000, 34000];
+const ventas = {
+  labels,
+  datasets: [
+    {
+      label: "Ventas",
+      data: ventasX,
+      borderColor: "#68DADE",
+      backgroundColor: "rgba(104,218,222, 0.5)",
+    },
+  ],
+};
+const gastosX = [440, 680, 900, 1100, 1200, 1400];
+const gastos = {
+  labels,
+  datasets: [
+    {
+      label: "Gastos de administración",
+      data: gastosX,
+      borderColor: "#DEC08A",
+      backgroundColor: "rgba(222,192,138, 0.5)",
+    },
+  ],
+};
+const utilidadesX = [4200, 5000, 5400, 2000, 6200, 6800];
+const utilidades = {
+  labels,
+  datasets: [
+    {
+      label: "Utilidades del ejercicio",
+      data: utilidadesX,
+      borderColor: "#B673DE",
+      backgroundColor: "rgba(182,115,222, 0.5)",
+    },
+  ],
+};
+
+const liquidezX = [4, 2, 6, 4, 4, 2];
+const liquidez = {
+  labels,
+  datasets: [
+    {
+      label: "Razón de liquidez inmediata",
+      data: liquidezX,
+      borderColor: "#5DDE99",
+      backgroundColor: "rgba(93,222,153, 0.5)",
+    },
+  ],
 };
 
 export default ThreeTwoTwoTwo;
