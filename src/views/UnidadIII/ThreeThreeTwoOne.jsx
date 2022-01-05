@@ -7,8 +7,6 @@ import { MathComponent } from "mathjax-react";
 import { scrollTop } from "../../helpers/general";
 
 const ThreeThreeTwoOne = () => {
-  const equilibrioMezcla1 = "../../assets/images/equilibrioMezcla1.png";
-  const equilibrioMezcla2 = "../../assets/images/equilibrioMezcla2.png";
   const equilibrioMezcla3 = "../../assets/images/equilibrioMezcla3.png";
   const MCP = "../../assets/images/MCP.png";
 
@@ -42,10 +40,135 @@ const ThreeThreeTwoOne = () => {
           </Row>
           <Row className="justify-content-center m-v-space">
             <Col sm={6} md={4}>
-              <Image src={equilibrioMezcla1} className="full-img" />
+              <Table striped bordered responsive size="sm">
+                <thead>
+                  <tr className="center-text">
+                    <th colSpan={3}>Hamburguesa sencilla</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colSpan={2}>
+                      <b>Precio de venta unitario (P)</b>
+                    </td>
+                    <td>
+                      <b>$35.00</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colSpan={2}>
+                      <b>Costo variable unitario (C.V.U)</b>
+                    </td>
+                    <td>
+                      <b>$15.00</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Carne</td>
+                    <td>$7.00</td>
+                    <td />
+                  </tr>
+                  <tr>
+                    <td>Pan</td>
+                    <td>$4.00</td>
+                    <td />
+                  </tr>
+                  <tr>
+                    <td>Gas</td>
+                    <td>$2.00</td>
+                    <td />
+                  </tr>
+                  <tr>
+                    <td>Varios</td>
+                    <td>$2.00</td>
+                    <td />
+                  </tr>
+                  <tr>
+                    <td colSpan={2}>
+                      <b>Margen de contribución unitario</b>
+                    </td>
+                    <td>
+                      <b>$20.00</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colSpan={2}>
+                      <b>Proporción en las ventas totales</b>
+                    </td>
+                    <td>
+                      <b>0.20</b>
+                    </td>
+                  </tr>
+                </tbody>
+              </Table>
             </Col>
             <Col sm={6} md={4}>
-              <Image src={equilibrioMezcla2} className="full-img" />
+              <Table striped bordered responsive size="sm">
+                <thead>
+                  <tr className="center-text">
+                    <th colSpan={3}>Hamburguesa sencilla</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colSpan={2}>
+                      <b>Precio de venta unitario (P)</b>
+                    </td>
+                    <td>
+                      <b>$45.00</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colSpan={2}>
+                      <b>Costo variable unitario (C.V.U)</b>
+                    </td>
+                    <td>
+                      <b>$20.00</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Carne</td>
+                    <td>$7.00</td>
+                    <td />
+                  </tr>
+                  <tr>
+                    <td>Pan</td>
+                    <td>$4.00</td>
+                    <td />
+                  </tr>
+                  <tr>
+                    <td>Gas</td>
+                    <td>$2.00</td>
+                    <td />
+                  </tr>
+                  <tr>
+                    <td>Piña</td>
+                    <td>$3.00</td>
+                    <td />
+                  </tr>
+                  <tr>
+                    <td>Varios</td>
+                    <td>$4.00</td>
+                    <td />
+                  </tr>
+                  <tr>
+                    <td colSpan={2}>
+                      <b>Margen de contribución unitario</b>
+                    </td>
+                    <td>
+                      <b>$25.00</b>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colSpan={2}>
+                      <b>Proporción en las ventas totales</b>
+                    </td>
+                    <td>
+                      <b>0.80</b>
+                    </td>
+                  </tr>
+                </tbody>
+              </Table>
             </Col>
             <Col sm={6} md={4}>
               <Image src={equilibrioMezcla3} className="full-img" />

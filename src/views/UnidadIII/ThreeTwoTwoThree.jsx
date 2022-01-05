@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Row, Col, Container, Image } from "react-bootstrap";
+import { Row, Col, Container, Table } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
@@ -7,7 +7,6 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import { scrollTop } from "../../helpers/general";
 
 const ThreeTwoTwoThree = () => {
-  const contPresupuestal = "../../assets/images/controlPresupuestal.png";
   useEffect(() => {
     scrollTop();
   }, []);
@@ -45,13 +44,32 @@ const ThreeTwoTwoThree = () => {
               </p>
             </Col>
           </Row>
-          <Row className="justify-content-center m-v-space">
-            <Col sm={10}>
-              <Image
-                src={contPresupuestal}
-                className="full-img"
-                alt="Tabla 2. Método de control presupuestal de solo un elemento (VENTAS) del Estado de resultados"
-              />
+          <Row className="justify-content-center center-table-rows m-v-space">
+            <Col>
+              <Table striped bordered responsive size="sm">
+                <thead>
+                  <tr className="center-text">
+                    <th>Concepto</th>
+                    <th>Real 2020</th>
+                    <th>Presupuestado 2021</th>
+                    <th>Real 2021</th>
+                    <th>Real 2021 vs. presupuestado 2021</th>
+                    <th>Real 2020 vs. real 2021</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <b>Ventas</b>
+                    </td>
+                    <td>2,100,000</td>
+                    <td>2,300,000</td>
+                    <td>2,000,000</td>
+                    <td>-300,000</td>
+                    <td>-100,000</td>
+                  </tr>
+                </tbody>
+              </Table>
             </Col>
           </Row>
           <Row className="img-source center-text ">

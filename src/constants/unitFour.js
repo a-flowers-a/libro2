@@ -43,8 +43,8 @@ export const unitFour = {
       level: 2,
     },
     {
-      name: "4.2.2.3 Anualidades y programa de amortización",
-      path: "/content/IV/4.2.2.3",
+      name: "4.2.3.1 Anualidades y programa de amortización",
+      path: "/content/IV/4.2.3.1",
       level: 3,
     },
     {

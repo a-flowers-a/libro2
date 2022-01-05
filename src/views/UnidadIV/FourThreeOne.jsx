@@ -82,7 +82,7 @@ const FourThreeOne = () => {
                   </p>
                   <ol>
                     <li>
-                      PRESUPUESTO DE OPERACIÓN
+                      <b>Presupuestos de operación</b>
                       <ol>
                         <li>Presupuesto de ventas </li>
                         <li>
@@ -101,7 +101,7 @@ const FourThreeOne = () => {
                       </ol>
                     </li>
                     <li>
-                      PRESUPUESTOS FINANCIEROS
+                      <b>Presupuestos financieros</b>
                       <ol>
                         <li>
                           Presupuesto de efectivo (presupuesto de flujo de

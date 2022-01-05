@@ -61,7 +61,7 @@ import FourTwo from "./views/UnidadIV/FourTwo";
 import FourTwoOne from "./views/UnidadIV/FourTwoOne";
 import FourTwoTwo from "./views/UnidadIV/FourTwoTwo";
 import FourTwoThree from "./views/UnidadIV/FourTwoThree";
-import FourTwoTwoThree from "./views/UnidadIV/FourTwoTwoThree";
+import FourTwoThreeOne from "./views/UnidadIV/FourTwoThreeOne";
 import FourThree from "./views/UnidadIV/FourThree";
 import FourThreeOne from "./views/UnidadIV/FourThreeOne";
 import FourFour from "./views/UnidadIV/FourFour";
@@ -255,9 +255,9 @@ function App() {
           component={() => <FourTwoThree />}
         />
         <Route
-          path="/content/IV/4.2.2.3"
+          path="/content/IV/4.2.3.1"
           exact
-          component={() => <FourTwoTwoThree />}
+          component={() => <FourTwoThreeOne />}
         />
         <Route path="/content/IV/4.3" exact component={() => <FourThree />} />
         <Route

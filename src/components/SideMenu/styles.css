@@ -46,6 +46,10 @@
   margin: 2em 0 2em 1em;
 }
 
+.burguerIcon:hover {
+  color: white !important;
+}
+
 /*------------------Item----------------------*/
 .itemContainer {
   padding: 1em 0.5em 1em 2em;

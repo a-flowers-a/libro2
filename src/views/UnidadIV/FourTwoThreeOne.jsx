@@ -6,7 +6,7 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import { MathComponent } from "mathjax-react";
 import { scrollTop } from "../../helpers/general";
 
-const FourTwoTwoThree = () => {
+const FourTwoThreeOne = () => {
   useEffect(() => {
     scrollTop();
   }, []);
@@ -21,7 +21,7 @@ const FourTwoTwoThree = () => {
             <Col>
               <Row>
                 <Col>
-                  <h2>4.2.2.3 Anualidades y programa de amortización</h2>
+                  <h2>4.2.3.1 Anualidades y programa de amortización</h2>
                 </Col>
               </Row>
               <Row className="justify-text">
@@ -411,4 +411,4 @@ const FourTwoTwoThree = () => {
   );
 };
 
-export default FourTwoTwoThree;
+export default FourTwoThreeOne;
