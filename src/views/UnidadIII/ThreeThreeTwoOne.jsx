@@ -7,7 +7,6 @@ import { MathComponent } from "mathjax-react";
 import { scrollTop } from "../../helpers/general";
 
 const ThreeThreeTwoOne = () => {
-  const equilibrioMezcla3 = "../../assets/images/equilibrioMezcla3.png";
   const MCP = "../../assets/images/MCP.png";
 
   useEffect(() => {
@@ -171,7 +170,39 @@ const ThreeThreeTwoOne = () => {
               </Table>
             </Col>
             <Col sm={6} md={4}>
-              <Image src={equilibrioMezcla3} className="full-img" />
+              <Table striped bordered responsive size="sm">
+                <thead>
+                  <tr className="center-text">
+                    <th colSpan={2}>Costos fijos mensuales</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Renta</td>
+                    <td>$10,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>Sueldos</td>
+                    <td>$18,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>Productos de limpieza</td>
+                    <td>$1,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>Servicios</td>
+                    <td>$1,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <b>Total</b>
+                    </td>
+                    <td>
+                      <b>$30,000.00</b>
+                    </td>
+                  </tr>
+                </tbody>
+              </Table>
             </Col>
           </Row>
           <Row className="justify-content-center m-v-space"></Row>

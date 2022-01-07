@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Row, Col, Container, Image, Table } from "react-bootstrap";
+import { Row, Col, Container, Table } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
@@ -7,10 +7,6 @@ import { MathComponent } from "mathjax-react";
 import { scrollTop } from "../../helpers/general";
 
 const ThreeThreeOneOne = () => {
-  const equilibrioUtilidad1 = "../../assets/images/equilibrioUtilidad1.png";
-  const equilibrioUtilidad2 = "../../assets/images/equilibrioUtilidad2.png";
-  const tablaEquilibrio = "../../assets/images/tablaEquilibrio.png";
-
   useEffect(() => {
     scrollTop();
   }, []);
@@ -39,10 +35,102 @@ const ThreeThreeOneOne = () => {
               </Row>
               <Row className="justify-content-center m-v-space">
                 <Col sm={6} md={4}>
-                  <Image src={equilibrioUtilidad1} className="full-img" />
+                  <Table striped bordered responsive size="sm">
+                    <thead>
+                      <tr className="center-text">
+                        <th colSpan={2}>Costos fijos mensuales</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Renta</td>
+                        <td>$10,000.00</td>
+                      </tr>
+                      <tr>
+                        <td>Sueldos</td>
+                        <td>$18,000.00</td>
+                      </tr>
+                      <tr>
+                        <td>Productos de limpieza</td>
+                        <td>$1,000.00</td>
+                      </tr>
+                      <tr>
+                        <td>Servicios</td>
+                        <td>$1,000.00</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <b>Total</b>
+                        </td>
+                        <td>
+                          <b>$30,000.00</b>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </Table>
                 </Col>
                 <Col sm={6} md={4}>
-                  <Image src={equilibrioUtilidad2} className="full-img" />
+                  <Table striped bordered responsive size="sm">
+                    <thead>
+                      <tr className="center-text">
+                        <th colSpan={3}>Hamburguesa sencilla</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td colSpan={2}>
+                          <b>Precio de venta unitario (P)</b>
+                        </td>
+                        <td>
+                          <b>$35.00</b>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colSpan={2}>
+                          <b>Costo variable unitario (C.V.U)</b>
+                        </td>
+                        <td>
+                          <b>$15.00</b>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Carne</td>
+                        <td>$7.00</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>Pan</td>
+                        <td>$4.00</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>Gas</td>
+                        <td>$2.00</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td>Varios</td>
+                        <td>$2.00</td>
+                        <td />
+                      </tr>
+                      <tr>
+                        <td colSpan={2}>
+                          <b>Margen de contribución unitario</b>
+                        </td>
+                        <td>
+                          <b>$20.00</b>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colSpan={2}>
+                          <b>Proporción en las ventas totales</b>
+                        </td>
+                        <td>
+                          <b>0.20</b>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </Table>
                 </Col>
               </Row>
               <Row>
@@ -132,9 +220,90 @@ const ThreeThreeOneOne = () => {
                   </ol>
                 </Col>
               </Row>
-              <Row className="justify-content-center m-v-space">
+              <Row className="center-table-rows justify-content-center">
                 <Col sm={10}>
-                  <Image src={tablaEquilibrio} className="full-img" />
+                  <Table striped bordered responsive size="sm">
+                    <thead>
+                      <tr>
+                        <th>
+                          <b>Q</b>
+                        </th>
+                        <th>
+                          <b>C.F</b>
+                        </th>
+                        <th>
+                          <b>C.V.U</b>
+                        </th>
+                        <th>
+                          <b>C.V.T</b>
+                        </th>
+                        <th>
+                          <b>C.T</b>
+                        </th>
+                        <th>
+                          <b>P</b>
+                        </th>
+                        <th>
+                          <b>Ingresos</b>
+                        </th>
+                        <th>
+                          <b>Utilidad o pérdida</b>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0</td>
+                        <td>30,000</td>
+                        <td>15</td>
+                        <td>0</td>
+                        <td>30,000</td>
+                        <td>35</td>
+                        <td>0</td>
+                        <td>-30,000</td>
+                      </tr>
+                      <tr>
+                        <td>500</td>
+                        <td>30,000</td>
+                        <td>15</td>
+                        <td>7,500</td>
+                        <td>37,500</td>
+                        <td>35</td>
+                        <td>17,500</td>
+                        <td>-20,000</td>
+                      </tr>
+                      <tr>
+                        <td>1,000</td>
+                        <td>30,000</td>
+                        <td>15</td>
+                        <td>15,000</td>
+                        <td>45,000</td>
+                        <td>35</td>
+                        <td>35,000</td>
+                        <td>-15,000</td>
+                      </tr>
+                      <tr>
+                        <td>1,500</td>
+                        <td>30,000</td>
+                        <td>15</td>
+                        <td>22,500</td>
+                        <td>52,500</td>
+                        <td>35</td>
+                        <td>52,500</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>2,000</td>
+                        <td>30,000</td>
+                        <td>15</td>
+                        <td>30,000</td>
+                        <td>60,000</td>
+                        <td>35</td>
+                        <td>70,000</td>
+                        <td>10,000</td>
+                      </tr>
+                    </tbody>
+                  </Table>
                 </Col>
               </Row>
               <p>
