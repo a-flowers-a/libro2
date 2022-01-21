@@ -63,7 +63,11 @@ export const unitFour = {
       level: 1,
     },
 
-    { name: "Cierre", path: "/content/IV/cierre", level: 1 },
+    {
+      name: "Cierre de la unidad temática",
+      path: "/content/IV/cierre",
+      level: 1,
+    },
     { name: "Evaluación", path: "/content/IV/evaluacion", level: 1 },
   ],
 };

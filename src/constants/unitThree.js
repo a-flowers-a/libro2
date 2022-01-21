@@ -93,7 +93,11 @@ export const unitThree = {
       path: "/content/III/formulas",
       level: 1,
     },
-    { name: "Cierre", path: "/content/III/cierre", level: 1 },
+    {
+      name: "Cierre de la unidad temática",
+      path: "/content/III/cierre",
+      level: 1,
+    },
     { name: "Evaluación", path: "/content/III/evaluacion", level: 1 },
   ],
 };

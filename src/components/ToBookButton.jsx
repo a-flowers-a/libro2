@@ -11,7 +11,7 @@ function ToBookButton() {
   return (
     <Row className="m-v-space">
       <Col>
-        <div className="enter-card" onClick={() => sendTo("/content/II/intro")}>
+        <div className="enter-card" onClick={() => sendTo("/content/I/intro")}>
           <CardButton
             cardColor={"light-blue"}
             icon={faArrowRight}

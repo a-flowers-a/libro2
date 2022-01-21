@@ -10,12 +10,14 @@ import Sources from "./views/Home/Sources";
 import Glossary from "./views/Home";
 
 // Unit one
+import IntroduccionI from "./views/UnidadI/Intro";
 import OneOne from "./views/UnidadI/OneOne";
 import OneOneOne from "./views/UnidadI/OneOneOne";
 import OneOneTwo from "./views/UnidadI/OneOneTwo";
 import OneTwo from "./views/UnidadI/OneTwo";
 import OneThree from "./views/UnidadI/OneThree";
 import OneFour from "./views/UnidadI/OneFour";
+import CierreI from "./views/UnidadI/Cierre";
 
 // Unit two
 import IntroduccionII from "./views/UnidadII/Introduccion";
@@ -93,12 +95,18 @@ function App() {
         <Route path="/sources" exact component={() => <Sources />} />
         <Route path="/glossary" exact component={() => <Glossary />} />
 
+        <Route
+          path="/content/I/intro"
+          exact
+          component={() => <IntroduccionI />}
+        />
         <Route path="/content/I/1.1" exact component={() => <OneOne />} />
         <Route path="/content/I/1.1.1" exact component={() => <OneOneOne />} />
         <Route path="/content/I/1.1.2" exact component={() => <OneOneTwo />} />
         <Route path="/content/I/1.2" exact component={() => <OneTwo />} />
         <Route path="/content/I/1.3" exact component={() => <OneThree />} />
         <Route path="/content/I/1.4" exact component={() => <OneFour />} />
+        <Route path="/content/I/cierre" exact component={() => <CierreI />} />
         <Route
           path="/content/II/intro"
           exact

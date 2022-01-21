@@ -47,7 +47,11 @@ export const unitFive = {
       path: "/content/V/5.3.6",
       level: 2,
     },
-    { name: "Cierre", path: "/content/V/cierre", level: 1 },
+    {
+      name: "Cierre de la unidad temática",
+      path: "/content/V/cierre",
+      level: 1,
+    },
     { name: "Evaluación", path: "/content/V/evaluacion", level: 1 },
   ],
 };
