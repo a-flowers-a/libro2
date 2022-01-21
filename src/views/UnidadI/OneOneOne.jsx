@@ -116,7 +116,7 @@ const OneOneOne = () => {
                     <tbody>
                       <tr>
                         <td>Sociedad en nombre colectivo (S.N.C)</td>
-                        <td rowSpan="6">
+                        <td rowSpan="6" style={tdAllCenter}>
                           Ley General de Sociedades Mercantiles (L.G.S.M)
                         </td>
                       </tr>
@@ -137,7 +137,7 @@ const OneOneOne = () => {
                       </tr>
                       <tr>
                         <td>Sociedad cooperativa</td>
-                        <td>
+                        <td style={tdAllCenter}>
                           Ley General de Sociedades Cooperativas (L.G.S.C)
                         </td>
                       </tr>
