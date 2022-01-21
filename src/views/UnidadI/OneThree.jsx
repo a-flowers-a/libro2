@@ -72,7 +72,7 @@ const OneThree = () => {
                     <b>Derecho</b>
                   </p>
                   <p className="justify-content-center">
-                    El Derecho regula a través de diferentes leyes las
+                    El Derecho a través de diferentes leyes regula las
                     actividades financieras y de no acatarse y/o cumplirse
                     dichas leyes hay sanciones en materia legal.
                   </p>

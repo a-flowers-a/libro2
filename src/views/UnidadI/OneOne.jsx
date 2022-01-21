@@ -28,7 +28,7 @@ const OneOne = () => {
               <Row className="justify-text">
                 <Col>
                   <p className="justify-text">
-                    Sin importar el lugar en donde te encuentres en este
+                    Independientemente del lugar en donde te encuentres en este
                     momento, mira a tu alrededor y notarás la existencia de una
                     gran cantidad de satisfactores (bienes). Estos son
                     producidos y/o distribuidos por diferentes empresas.

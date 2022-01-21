@@ -188,7 +188,7 @@ const FourTwoThreeOne = () => {
                     Con esto se construye la tabla de amortización del pago de
                     la deuda para determinar qué parte de PA = $639,603 pagada
                     cada periodo se destina a pagar el préstamo y qué cantidad
-                    corresponde al pago de intereses.{" "}
+                    corresponde al pago de intereses.
                   </p>
                 </Col>
               </Row>
@@ -369,7 +369,7 @@ const FourTwoThreeOne = () => {
                   <p className="bold">Columna C</p>
                   <p>
                     La anualidad, renta o cuota es el pago igual que se hace de
-                    manera periódica, mismo que se calculó con la fórmula:{" "}
+                    manera periódica, mismo que se calculó con la fórmula:
                   </p>
                   <Row className="justify-content-center m-b-space">
                     <Col md={10}>

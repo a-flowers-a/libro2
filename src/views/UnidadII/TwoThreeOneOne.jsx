@@ -124,7 +124,7 @@ const TwoThreeOneOne = () => {
                 </Col>
               </Row>
               <li>
-                <p className="bold">Activo a largo plazo o no circulante.</p>{" "}
+                <p className="bold">Activo a largo plazo o no circulante.</p>
                 Incluye activos tangibles, intangibles y financieros, que por su
                 naturaleza, son recuperables a largo plazo; es decir, no son
                 recuperables en el ciclo normal de operaciones (NIF-B6). Dentro
@@ -177,7 +177,7 @@ const TwoThreeOneOne = () => {
                 de un año.
               </li>
               <li>
-                <p className="bold">Pasivo a largo plazo o no circulante.</p>{" "}
+                <p className="bold">Pasivo a largo plazo o no circulante.</p>
                 Siendo su principal característica que el vencimiento de la
                 deuda o de la obligación es mayor a un año.
               </li>

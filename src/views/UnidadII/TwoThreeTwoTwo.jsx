@@ -31,7 +31,7 @@ const TwoThreeTwoTwo = () => {
             <Row className="justify-text">
               <p>
                 Las cuentas del estado de resultados se clasifican en dos
-                grupos: <p className="inline bold green">CUENTAS DE INGRESOS</p>{" "}
+                grupos: <p className="inline bold green">CUENTAS DE INGRESOS</p>
                 y <p className="inline bold red">CUENTAS DE EGRESOS</p> (Figura
                 2.18). Si la suma de los ingresos es mayor que la suma de los
                 egresos se tendrá una utilidad y por el contrario si la suma de
@@ -174,7 +174,7 @@ const TwoThreeTwoTwo = () => {
                     <div className="bold">
                       Gastos por intereses, también conocidos como intereses a
                       cargo o gastos financieros.
-                    </div>{" "}
+                    </div>
                     Intereses pagados por el manejo del dinero de la entidad
                     (comisiones bancarias) o de las cuentas por pagar (intereses
                     derivados de un préstamo).
@@ -182,7 +182,7 @@ const TwoThreeTwoTwo = () => {
                   <p>
                     <div className="bold">
                       Ingresos por intereses o intereses a favor.
-                    </div>{" "}
+                    </div>
                     Intereses derivados de las cuentas por cobrar o de las
                     inversiones temporales.
                   </p>
@@ -190,7 +190,7 @@ const TwoThreeTwoTwo = () => {
                     <div className="bold">
                       Ganancia cambiaria. Ganancia generada por las
                       fluctuaciones en el tipo de cambio.
-                    </div>{" "}
+                    </div>
                     Por ejemplo, cuando se tienen cuentas bancarias, cuentas por
                     cobrar y/o por pagar en moneda extranjera.
                   </p>
@@ -198,7 +198,7 @@ const TwoThreeTwoTwo = () => {
                     <div className="bold">
                       Pérdida cambiaria. Pérdida generada por las fluctuaciones
                       en el tipo de cambio.
-                    </div>{" "}
+                    </div>
                     Por ejemplo, cuando se tienen cuentas bancarias, cuentas por
                     cobrar y/o por pagar en moneda extranjera.
                   </p>
@@ -206,7 +206,7 @@ const TwoThreeTwoTwo = () => {
                     <div className="bold">
                       Cambios en el valor razonable de activos y pasivos
                       financieros.
-                    </div>{" "}
+                    </div>
                     Se genera como resultado de la modificación en el valor de
                     los instrumentos financieros de capital, por ejemplo, bonos
                     o acciones, por las condiciones específicas del mercado, la
@@ -217,7 +217,7 @@ const TwoThreeTwoTwo = () => {
                   <p>
                     <div className="bold">
                       Resultado por posición monetaria (REPOMO).
-                    </div>{" "}
+                    </div>
                     Utilidad o pérdida que se obtiene al revaluar los activos y
                     pasivos monetarios por los efectos de la inflación.
                   </p>

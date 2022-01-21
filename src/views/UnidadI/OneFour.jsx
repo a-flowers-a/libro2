@@ -48,9 +48,8 @@ const OneFour = () => {
                     existiendo un impacto bidireccional. El entorno se conforma
                     por el micro y macro ambiente.
                   </p>
-
+                  <div className="inline bold light-navy">Micro ambiente</div>
                   <p>
-                    <b>Micro ambiente. </b>
                     Representado por elementos que tienen relación directa con
                     la empresa e influyen en ella.
                   </p>
@@ -77,7 +76,7 @@ const OneFour = () => {
                   <p>
                     <b>Clientes</b>
                   </p>
-                  <p>Compran bienes o adquieren servicios de la empresa</p>
+                  <p>Compran bienes o adquieren servicios de la empresa.</p>
                 </Col>
                 <Col md={4}>
                   <Image className="full-img" src={img110} alt="Clientes" />
@@ -135,7 +134,7 @@ const OneFour = () => {
               <Row>
                 <Col>
                   <p>
-                    <b>Alcaldías o municipio</b>
+                    <b>Alcaldías o municipios</b>
                   </p>
                   <p>
                     Se realizan trámites y permisos, por ejemplo: trámite de uso
@@ -152,9 +151,10 @@ const OneFour = () => {
               </Row>
               <Row className="m-v-space">
                 <Col>
+                  <div className="inline bold light-navy">Macro ambiente</div>
                   <p>
-                    <b>Macro ambiente. </b>
-                    Factores que tienen una gran influencia en la empresa.
+                    Conformado por todos aquellos factores que tienen una gran
+                    influencia en la empresa.
                   </p>
                 </Col>
               </Row>
@@ -181,9 +181,8 @@ const OneFour = () => {
                     <b>Tecnológicos</b>
                   </p>
                   <p>
-                    Las nuevas tecnologías facilitan el trabajo, lo automatizan
-                    lo que recude los costos y sobre todo abre nuevas
-                    oportunidades de negocio.
+                    El uso de las nuevas tecnologías facilitan el trabajo,
+                    reducen los costos y abren nuevas oportunidades de negocio.
                   </p>
                 </Col>
               </Row>
@@ -217,8 +216,8 @@ const OneFour = () => {
                   <p>
                     Datos sobre la población como edad, cantidad de hombres y de
                     mujeres, nivel de ingresos, etc. Información muy útil para
-                    decidir ¿qué vender? ¿a quién vender? Y ¿dónde se localizan
-                    los clientes?
+                    las empresas y así decidir ¿qué vender? ¿a quién vender? Y
+                    ¿dónde se localizan los clientes?
                   </p>
                 </Col>
               </Row>

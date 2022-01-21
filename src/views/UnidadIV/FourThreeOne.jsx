@@ -67,7 +67,7 @@ const FourThreeOne = () => {
                     <li>Presupuestos de costos de venta</li>
                     <li>
                       Presupuestos financieros, de efectivo, de capital y de
-                      requerimientos{" "}
+                      requerimientos
                     </li>
                     <li>financieros</li>
                     <li>Estados financieros presupuestados o proforma</li>

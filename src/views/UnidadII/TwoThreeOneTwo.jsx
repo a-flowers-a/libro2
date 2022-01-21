@@ -35,7 +35,7 @@ const TwoThreeOneTwo = () => {
               <li>
                 <p className="bold">
                   Estado de situación financiera en forma de Cuenta.
-                </p>{" "}
+                </p>
                 Tiene un formato horizontal, anotando en la parte izquierda el
                 Activo y en la parte derecha el Pasivo y el Capital Contable. Se
                 basa en la fórmula <p className="bold">A = P + CC</p> tal como
@@ -60,7 +60,7 @@ const TwoThreeOneTwo = () => {
               <li>
                 <p className="bold">
                   Estado de situación financiera en forma de reporte.
-                </p>{" "}
+                </p>
                 Consiste en presentar en forma vertical, las cuentas del Activo,
                 Pasivo y Capital contable, tal como se aprecia en la figura 2.14
               </li>

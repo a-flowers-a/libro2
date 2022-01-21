@@ -59,13 +59,6 @@ const OneTwo = () => {
                     </Row>
                     <Row>
                       <p className="justify-text">
-                        Para efectos de este curso entenderemos por finanzas la
-                        actividad económica que realizan las personas, las
-                        empresas y los gobiernos para la obtención de recursos y
-                        su utilización con miras al logro de los mejores
-                        resultados.
-                      </p>
-                      <p className="justify-text">
                         Siguiendo a Gitman (2012) las finanzas son el arte y la
                         ciencia de administrar el dinero. Al respecto, el autor
                         enfatiza que las finanzas afectan las decisiones tanto
@@ -87,7 +80,7 @@ const OneTwo = () => {
                         </li>
                         <li>
                           De qué modo conviene reinvertir las ganancias de la
-                          empresa o distribuirlas entre los inversionistas{" "}
+                          empresa o distribuirlas entre los inversionistas
                         </li>
                       </ul>
                       <p className="justify-text">
@@ -103,7 +96,7 @@ const OneTwo = () => {
                         (instalaciones, bodegas, maquinaria, equipo, entre
                         otros) a este tipo de inversión se le conoce como
                         inversión fija; y también podría invertir en el proceso
-                        operativo del negocio
+                        operativo del negocio.
                       </p>
                     </Row>
                   </Info>
@@ -125,38 +118,32 @@ const OneTwo = () => {
                     financiera se lleva a cabo mediante dos actividades
                     importantes:
                   </p>
-                  <ol>
-                    <li className="s-b-space">
-                      <b>Tesorería. </b>
-                      Básicamente se enfoca al manejo de los recursos
-                      financieros, entre sus principales actividades se
-                      encuentran:
-                      <ul>
-                        <li>Administración del flujo de efectivo</li>
-                        <li>Inversiones</li>
-                        <li>Presupuestos</li>
-                        <li>Financiamiento</li>
-                        <li>Administración de activos</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <b>Contraloría. </b>
-                      Responsable de la actividad contable, planeación,
-                      presupuestos y auditoría interna
-                      <ul>
-                        <li>Contabilidad</li>
-                        <li>Pronósticos</li>
-                        <li>Administración de riesgos</li>
-                        <li>Impuestos</li>
-                        <li>
-                          Verificar que la Administración esté de acuerdo con
-                          los objetivos de la empresa
-                        </li>
-                        <li>Auditoría interna</li>
-                        <li>Desarrollo de políticas y procedimientos</li>
-                      </ul>
-                    </li>
-                  </ol>
+                  <b>Tesorería: </b>
+                  <p>
+                    Básicamente se enfoca al manejo de los recursos financieros,
+                    entre sus principales actividades se encuentran:
+                  </p>
+                  <p>Administración del flujo de efectivo</p>
+                  <p>Inversiones</p>
+                  <p>Presupuestos</p>
+                  <p>Financiamiento</p>
+                  <p>Administración de activos</p>
+
+                  <b>Contraloría:</b>
+                  <p>
+                    Área encargada de coordinar y dirigir las siguientes
+                    actividades:
+                  </p>
+                  <p>Contabilidad</p>
+                  <p>Pronósticos</p>
+                  <p>Administración de riesgos</p>
+                  <p>
+                    Verificar que le Administración esté de acuerdo con los
+                    objetivos de la empresa
+                  </p>
+                  <p>Auditoría interna</p>
+                  <p>Desarrollo de políticas y procedimientos</p>
+
                   <p>
                     Para que la función financiera se lleve a cabo en forma
                     adecuada requiere de información verídica y confiable

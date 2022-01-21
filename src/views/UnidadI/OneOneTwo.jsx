@@ -81,33 +81,30 @@ const OneOneTwo = () => {
                     financiera la cual se lleva a cabo mediante dos actividades
                     importantes: Tesorería y Contraloría.
                   </p>
+                  <b>Tesorería:</b>
+                  <p>Se enfoca en el manejo de los recursos financieros.</p>
+                  <b>Contraloría:</b>
+                  <p>
+                    Responsable de la actividad contable,planeación,
+                    presupuestos y auditoría interna.
+                  </p>
                   <ul>
                     <li className="m-b-space">
-                      <b>Tesorería:</b>Se enfoca en el manejo de los recursos
-                      financieros
+                      <i>Contabilidad: </i> Se encarga del registro, en tiempo y
+                      forma, de todas las operaciones realizadas en la
+                      organización.
                     </li>
-                    <li>
-                      <b>Contraloría:</b>Responsable de la actividad contable,
-                      planeación, presupuestos y auditoría interna.
-                      <ul>
-                        <li className="m-b-space">
-                          <i>Contabilidad: </i> Se encarga del registro, en
-                          tiempo y forma, de todas las operaciones realizadas en
-                          la organización.
-                        </li>
-                        <li className="m-b-space">
-                          <i>Presupuestos: </i> Planifica, coordina y evalúa
-                          todas las actividades en términos financieros, analiza
-                          y compara los gastos del presupuesto anterior con el
-                          presupuesto vigente, a fin de determinar acciones para
-                          el ajuste del presupuesto de la organización.
-                        </li>
-                        <li className="m-b-space">
-                          <i>Auditoría: </i> Se encarga de revisar, examinar y
-                          evaluar los resultados de la gestión de una
-                          dependencia o entidad.
-                        </li>
-                      </ul>
+                    <li className="m-b-space">
+                      <i>Presupuestos: </i> Planifica, coordina y evalúa todas
+                      las actividades en términos financieros, analiza y compara
+                      los gastos del presupuesto anterior con el presupuesto
+                      vigente, a fin de determinar acciones para el ajuste del
+                      presupuesto de la organización.
+                    </li>
+                    <li className="m-b-space">
+                      <i>Auditoría: </i> Se encarga de revisar, examinar y
+                      evaluar los resultados de la gestión de una dependencia o
+                      entidad.
                     </li>
                   </ul>
                   <p className="justify-text">

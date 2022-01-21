@@ -58,7 +58,7 @@ const FourFour = () => {
                     de los egresos de un ente económico.
                   </p>
                   <p className="light-navy">
-                    ¿Quiénes utilizan los estados financieros proforma?{" "}
+                    ¿Quiénes utilizan los estados financieros proforma?
                   </p>
                   <ol type="a">
                     <li>
@@ -66,7 +66,7 @@ const FourFour = () => {
                         Accionistas y dueños.
                       </span>
                       Para conocer la situación financiera de la empresa y los
-                      resultados esperados, con el fin de tomar decisiones.{" "}
+                      resultados esperados, con el fin de tomar decisiones.
                     </li>
                     <li>
                       <span className="bold light-navy">Administradores.</span>

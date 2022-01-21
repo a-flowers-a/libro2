@@ -44,8 +44,8 @@ const OneOneOne = () => {
                 <Col>
                   <p>
                     En México de acuerdo con el Servicio de Administración
-                    Tributaria (SAT) existen para fines fiscales las siguientes
-                    figuras: personas físicas y personas morales.{" "}
+                    Tributaria (SAT) para fines fiscales existen las siguientes
+                    figuras: personas físicas y personas morales.
                   </p>
                 </Col>
               </Row>
@@ -56,11 +56,11 @@ const OneOneOne = () => {
               </Row>
               <Row className="justify-text">
                 <Col>
-                  Individuo que realiza cualquier actividad económica (vendedor,
-                  comerciante, empleado, profesionista, etc.), el cual tiene
-                  derechos y obligaciones (SAT, s.f). En el siguiente link
-                  conoce las actividades que como persona física se pueden
-                  realizar:
+                  "Individuo que realiza cualquier actividad económica
+                  (vendedor, comerciante, empleado, profesionista, etc.), el
+                  cual tiene derechos y obligaciones (SAT, s.f). En el siguiente
+                  link conoce las actividades que como persona física se pueden
+                  realizar":
                 </Col>
               </Row>
               <Row className="justify-content-center m-b-space">
@@ -82,12 +82,12 @@ const OneOneOne = () => {
               <Row className="justify-text">
                 <Col>
                   <p>
-                    Es el conjunto de personas físicas, que se unen para la
+                    "Es el conjunto de personas físicas, que se unen para la
                     realización de un fin colectivo, son entes creados por el
                     derecho, no tienen una realidad material o corporal (no se
                     pueden tocar como tal como en el caso de una persona
                     física), sin embargo, la ley les otorga capacidad jurídica
-                    para tener derechos y obligaciones (SAT, s.f).
+                    para tener derechos y obligaciones (SAT, s.f)".
                   </p>
                 </Col>
               </Row>
@@ -104,11 +104,11 @@ const OneOneOne = () => {
               <Row className="justify-content-center">
                 Tabla 1.1 Constitución jurídica de las personas morales
               </Row>
-              <Row>
+              <Row className="vertical-align-rows">
                 <Col>
                   <Table striped bordered responsive size="sm">
                     <thead>
-                      <tr>
+                      <tr className="center-text">
                         <th>Sociedad/Asociación:</th>
                         <th>Regulada por:</th>
                       </tr>
@@ -116,7 +116,7 @@ const OneOneOne = () => {
                     <tbody>
                       <tr>
                         <td>Sociedad en nombre colectivo (S.N.C)</td>
-                        <td rowSpan="6" style={tdAllCenterTransparent}>
+                        <td rowSpan="6">
                           Ley General de Sociedades Mercantiles (L.G.S.M)
                         </td>
                       </tr>
@@ -144,7 +144,7 @@ const OneOneOne = () => {
                       <tr>
                         <td>Asociación civil (A.C)</td>
                         <td rowSpan="6" style={tdAllCenter}>
-                          Código Civil{" "}
+                          Código Civil
                         </td>
                       </tr>
                       <tr>
@@ -157,7 +157,7 @@ const OneOneOne = () => {
               <Row>
                 <div className="img-source center-text">
                   Hernández, J., Rodríguez, E. & Jiménez, Y. (2021). Con base en
-                  la Ley General de Sociedades Mercantiles, Ley general de
+                  la Ley General de Sociedades Mercantiles, Ley General de
                   Sociedades Cooperativas y Código Civil.
                 </div>
               </Row>
