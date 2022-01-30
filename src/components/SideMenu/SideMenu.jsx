@@ -8,12 +8,8 @@ import { classes } from "typestyle";
 import { Dropdown } from "react-bootstrap";
 import { setUnit } from "../../actions";
 import unitOne from "../../constants/unitOne";
-import unitTwo from "../../constants/unitTwo";
-import unitThree from "../../constants/unitThree";
-import unitFour from "../../constants/unitFour";
 import Item from "./Item";
 import "./styles.css";
-import unitFive from "../../constants/unitFive";
 
 function SideMenu() {
   const history = useHistory();
@@ -99,35 +95,6 @@ function SideMenu() {
                 }}
               >
                 Unidad 1
-              </Dropdown.Item>
-              <Dropdown.Item
-                onClick={() => {
-                  history.push("/content/II/intro");
-                  setCurrentUnit(unitTwo);
-                }}
-              >
-                Unidad 2
-              </Dropdown.Item>
-              <Dropdown.Item
-                onClick={() => {
-                  setCurrentUnit(unitThree);
-                }}
-              >
-                Unidad 3
-              </Dropdown.Item>
-              <Dropdown.Item
-                onClick={() => {
-                  setCurrentUnit(unitFour);
-                }}
-              >
-                Unidad 4
-              </Dropdown.Item>
-              <Dropdown.Item
-                onClick={() => {
-                  setCurrentUnit(unitFive);
-                }}
-              >
-                Unidad 5
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
