@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container, Image } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
@@ -7,6 +7,7 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import { scrollTop } from "../../helpers/general";
 
 const IntroduccionI = () => {
+  const introImg = "../../assets/images/intro1.png";
   useEffect(() => {
     scrollTop();
   }, []);
@@ -23,7 +24,7 @@ const IntroduccionI = () => {
             </Col>
           </Row>
           <Row className="justify-text">
-            <Col>
+            <Col md={8}>
               <p>
                 Las empresas, al producir bienes y con estos satisfacer las
                 necesidades del mercado, constituyen la columna vertebral de la
@@ -49,6 +50,13 @@ const IntroduccionI = () => {
                 otras disciplinas y los factores del micro y macro ambiente que
                 impactan a las empresas y desde luego a sus finanzas.
               </p>
+            </Col>
+            <Col md={4}>
+              <Image
+                className="full-img"
+                src={introImg}
+                alt="Figura 1.1. La empresa"
+              />
             </Col>
           </Row>
         </Container>

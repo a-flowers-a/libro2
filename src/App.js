@@ -10,6 +10,9 @@ import Sources from "./views/Home/Sources";
 import Glossary from "./views/Home";
 
 // Unit one
+import Competencia1 from "./views/UnidadI/Competencia";
+import MaterialApoyo1 from "./views/UnidadI/Material";
+import Referencias1 from "./views/UnidadI/Referencias";
 import IntroduccionI from "./views/UnidadI/Intro";
 import OneOne from "./views/UnidadI/OneOne";
 import OneOneOne from "./views/UnidadI/OneOneOne";
@@ -18,6 +21,7 @@ import OneTwo from "./views/UnidadI/OneTwo";
 import OneThree from "./views/UnidadI/OneThree";
 import OneFour from "./views/UnidadI/OneFour";
 import CierreI from "./views/UnidadI/Cierre";
+import Evaluacion1 from "./views/UnidadI/Evaluacion";
 
 // Unit two
 import IntroduccionII from "./views/UnidadII/Introduccion";
@@ -99,6 +103,26 @@ function App() {
           path="/content/I/intro"
           exact
           component={() => <IntroduccionI />}
+        />
+        <Route
+          path="/content/I/material"
+          exact
+          component={() => <MaterialApoyo1 />}
+        />
+        <Route
+          path="/content/I/referencias"
+          exact
+          component={() => <Referencias1 />}
+        />
+        <Route
+          path="/content/I/competencia"
+          exact
+          component={() => <Competencia1 />}
+        />
+        <Route
+          path="/content/I/evaluacion"
+          exact
+          component={() => <Evaluacion1 />}
         />
         <Route path="/content/I/1.1" exact component={() => <OneOne />} />
         <Route path="/content/I/1.1.1" exact component={() => <OneOneOne />} />

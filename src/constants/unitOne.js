@@ -2,6 +2,7 @@ export const unitOne = {
   name: "unitOne",
   content: [
     { name: "Introducción", path: "/content/I/intro", level: 1 },
+    { name: "Unidad de competencia", path: "/content/I/competencia", level: 1 },
     { name: "1.1. La empresa", path: "/content/I/1.1", level: 1 },
     {
       name: "1.1.1. Constitución jurídica",
@@ -28,12 +29,14 @@ export const unitOne = {
       path: "/content/I/1.4",
       level: 1,
     },
+    { name: "Material de apoyo", path: "/content/I/material", level: 1 },
     {
       name: "Cierre de la unidad temática",
       path: "/content/I/cierre",
       level: 1,
     },
     { name: "Evaluación", path: "/content/I/evaluacion", level: 1 },
+    { name: "Referencias", path: "/content/I/referencias", level: 1 },
   ],
 };
 

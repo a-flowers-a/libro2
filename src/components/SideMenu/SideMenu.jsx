@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes, faBars, faHome } from "@fortawesome/free-solid-svg-icons";
 import { isMobile } from "react-device-detect";
@@ -15,9 +16,7 @@ import "./styles.css";
 import unitFive from "../../constants/unitFive";
 
 function SideMenu() {
-  function sendTo(page) {
-    window.location.href = page;
-  } //sendTo
+  const history = useHistory();
 
   // context
   const dispatch = useDispatch();
@@ -78,7 +77,7 @@ function SideMenu() {
               className="homeIcon"
               icon={faHome}
               size="2x"
-              onClick={() => sendTo("/")}
+              onClick={() => history.push("/")}
             />
             <FontAwesomeIcon
               className="crossIcon"
@@ -87,7 +86,7 @@ function SideMenu() {
               onClick={() => setOpen(false)}
             />
           </div>
-
+          <Item topic="Glosario" level={1} path="/glossary" />
           <Dropdown className="m-b-space">
             <Dropdown.Toggle variant="secondary" id="dropdown-menu">
               Unidades
@@ -95,42 +94,44 @@ function SideMenu() {
             <Dropdown.Menu>
               <Dropdown.Item
                 onClick={() => {
+                  history.push("/content/I/intro");
                   setCurrentUnit(unitOne);
                 }}
               >
-                Unidad I
+                Unidad 1
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => {
+                  history.push("/content/II/intro");
                   setCurrentUnit(unitTwo);
                 }}
               >
-                Unidad II
+                Unidad 2
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => {
                   setCurrentUnit(unitThree);
                 }}
               >
-                Unidad III
+                Unidad 3
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => {
                   setCurrentUnit(unitFour);
                 }}
               >
-                Unidad IV
+                Unidad 4
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => {
                   setCurrentUnit(unitFive);
                 }}
               >
-                Unidad V
+                Unidad 5
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-          <Item topic="Glosario" level={1} path="/glossary" />
+
           {currentUnit.content.map((topic) => (
             <Item
               topic={topic.name}

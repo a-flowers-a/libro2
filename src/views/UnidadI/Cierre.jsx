@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container, Image } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
@@ -7,6 +7,7 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import { scrollTop } from "../../helpers/general";
 
 const CierreI = () => {
+  const successImg = "../../assets/images/success1.png";
   useEffect(() => {
     scrollTop();
   }, []);
@@ -43,6 +44,13 @@ const CierreI = () => {
                 financiera y estados financieros son temas que estudiarás en la
                 siguiente unidad temática.
               </p>
+            </Col>
+            <Col md={4}>
+              <Image
+                className="full-img"
+                src={successImg}
+                alt="Figura 1.1. La empresa"
+              />
             </Col>
           </Row>
         </Container>
