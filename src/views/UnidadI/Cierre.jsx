@@ -26,7 +26,7 @@ const CierreI = () => {
           <Row className="justify-text m-v-space">
             <Col>
               <p className="justify-text">
-                <div className="inline bold light-navy">¡Felicidades!</div> ya
+                <div className="inline bold light-navy">¡Felicidades! </div>
                 Has concluido esta primera unidad temática. Ahora tienes más
                 elementos que te ayudarán a reconocer la relevancia que tienen
                 las finanzas en todas las organizaciones y en específico en las

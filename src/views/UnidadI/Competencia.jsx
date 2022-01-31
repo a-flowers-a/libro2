@@ -7,7 +7,7 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import { scrollTop } from "../../helpers/general";
 
 const Competencia1 = () => {
-  const buildingImg = "../../assets/images/building.png";
+  const ideaImg = "../../assets/images/idea.png";
   useEffect(() => {
     scrollTop();
   }, []);
@@ -25,12 +25,13 @@ const Competencia1 = () => {
           </Row>
           <Row className="justify-content-center m-v-space">
             <Col md={6}>
-              <h5>
-                <i>Ups! esta página aún está en construcción</i>
-              </h5>
+              Reconoce el papel de las finanzas a partir del contexto
+              empresarial.
+            </Col>
+            <Col md={6}>
               <Image
                 className="full-img"
-                src={buildingImg}
+                src={ideaImg}
                 alt="Página web en construcción"
               />
             </Col>

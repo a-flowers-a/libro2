@@ -7,8 +7,8 @@ function Footer() {
         Polilibro Académico de Finanzas Empresariales por:
       </p>
       <p className="footer-para">Josefina Hernández Jaime</p>
-      <p className="footer-para">Yasmín Ivette Jiménez Galán</p>
       <p className="footer-para">Eduardo Rodríguez Flores</p>
+      <p className="footer-para">Yasmín Ivette Jiménez Galán</p>
       <hr />
       <p className="footer-para">
         Se distribuye bajo una Licencia Creative Commons

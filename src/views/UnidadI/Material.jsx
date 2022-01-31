@@ -28,21 +28,27 @@ const MaterialApoyo1 = () => {
               <Actividad
                 color="aqua"
                 icon={faBookReader}
-                link={"TODO://link"}
+                link={
+                  "https://drive.google.com/file/d/1Iq2UPaA-xyxm2_3quJc2OFy1Tr5_nRDV/view"
+                }
                 type={"Lectura"}
                 number={""}
               />
               <Actividad
                 color="aqua"
                 icon={faPuzzlePiece}
-                link={"TODO://link"}
+                link={
+                  "https://drive.google.com/file/d/1qq4C3UEpfppd4zL9SuYJGNZK8bFs-gnv/view"
+                }
                 type={"Actividad 1.1"}
                 number={""}
               />
               <Actividad
                 color="aqua"
                 icon={faPuzzlePiece}
-                link={"TODO://link"}
+                link={
+                  "https://drive.google.com/file/d/1wfSNJHqnOdg56pfnvvORsJvzrRGrCnyE/view"
+                }
                 type={"Actividad 1.2"}
                 number={""}
               />

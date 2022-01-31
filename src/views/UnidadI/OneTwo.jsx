@@ -181,7 +181,9 @@ const OneTwo = () => {
                   <Actividad
                     color="aqua"
                     icon={faPuzzlePiece}
-                    link={"TODO://link"}
+                    link={
+                      "https://drive.google.com/file/d/1wfSNJHqnOdg56pfnvvORsJvzrRGrCnyE/view"
+                    }
                     type={"Actividad 1.2"}
                     number={""}
                   />
