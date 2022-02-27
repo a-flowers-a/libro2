@@ -19,31 +19,28 @@ function IntroduccionII() {
           <Row className="justify-content-center m-v-space">
             <Col m={9} className="justify-text">
               <p>
-                Las organizaciones son parte medular de nuestras vidas. A través
-                del tiempo se ha buscado la manera de intervenir en las
-                organizaciones para hacerlas más productivas, más rentables y
-                por supuesto, más competitivas. Para lograrlo es necesario,
-                entre otros factores, la generación y utilización de información
-                financiera oportuna y confiable.
+                Como ya vimos, las organizaciones son parte medular de nuestras
+                vidas. Por su relevancia, a través del tiempo, han sido objeto
+                de estudio con el propósito de conseguir que sean más
+                productivas, más rentables y más competitivas. Para lograr
+                dichos propósitos es necesario, entre otros factores, la
+                generación y utilización de información financiera oportuna y
+                confiable
               </p>
               <p>
-                Alguna vez te has puesto a pensar o a reflexionar sobre: ¿qué es
-                la información financiera?, ¿cómo se genera?, ¿dónde se puede
-                visualizar? o mejor aún ¿cómo se interpreta? y ¿cómo se utiliza
-                en la toma de decisiones empresariales?
+                Información financiera es un término que seguramente has
+                escuchado, alguna vez te has puesto a pensar o a reflexionar
+                sobre: ¿qué es?, ¿cómo se genera?, ¿dónde se puede visualizar? o
+                mejor aún ¿cómo se interpreta? y ¿cómo se utiliza en la toma de
+                decisiones empresariales?
               </p>
               <p>
-                La respuesta a estas y otras interrogantes las encontrarás al ir
-                abordando los temas desarrollados en este recurso didáctico
-                digital (RDD), que pretende apuntalar la comprensión de los
-                contenidos de la unidad temática 2 de la unidad de aprendizaje
-                Finanzas Empresariales. Ésta comprende cinco unidades temáticas,
-                el RDD se centra únicamente en la unidad temática 2: Importancia
-                y utilización de la información financiera. Se eligió esta
-                unidad porque sus contenidos te van a ayudar a contextualizar la
-                importancia del manejo de la información financiera y al mismo
-                tiempo aprenderás a construir los estados financieros básicos
-                con base en las Normas de Información Financiera (NIF).
+                Las respuestas a estas y otras interrogantes las encontrarás al
+                ir abordando los temas desarrollados en esta unidad temática;
+                adicionalmente, aprenderás a construir dos de los estados
+                financieros básicos (estado de resultados y estado de situación
+                financiera) con base en las Normas de Información Financiera
+                (NIF) vigentes.
               </p>
             </Col>
           </Row>

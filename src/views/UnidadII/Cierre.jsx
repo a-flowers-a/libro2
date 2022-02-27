@@ -35,13 +35,9 @@ function CierreII() {
           <Row className="justify-content-center m-v-space">
             <Col className="center-text">
               <h4 className="navy">
-                Esperamos que este RDD te haya sido de gran utilidad.
+                Te invitamos a continuar con el estudio de las siguientes
+                unidades temáticas de este polilibro.
               </h4>
-            </Col>
-          </Row>
-          <Row className="justify-content-center m-v-space">
-            <Col className="center-text">
-              <h4 className="light-navy">¡¡GRACIAS!!</h4>
             </Col>
           </Row>
         </Container>
