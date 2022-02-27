@@ -42,7 +42,6 @@ function Header() {
     }
     setUnitNumber(_unitNumber);
     setColorClass(_colorClass);
-    console.log(location.pathname);
   }, [currentUnit, unitNumber, colorClass]);
 
   return (
