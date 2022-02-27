@@ -36,7 +36,7 @@ const IntroduccionI = () => {
               </p>
               <p>
                 En una economía de mercado el fin de la empresa es la obtención
-                del máximo beneficio o lucro, que dependerá, entre otros
+                del máximo beneficio o lucro que dependerá, entre otros
                 factores, de la administración que se haga del dinero y de las
                 decisiones que se tomen en relación a ¿cuánto gastar?, ¿en qué
                 gastar?, ¿en qué invertir?, etc.; es decir, la obtención de

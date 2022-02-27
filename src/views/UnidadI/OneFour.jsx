@@ -61,10 +61,10 @@ const OneFour = () => {
                     <b>Proveedores</b>
                   </p>
                   <p>
-                    Venden bienes o prestan servicios a la empresa. Por ejemplo:
-                    materia prima, equipo de cómputo, mobiliario y equipo de
-                    oficina, servicios de internet, servicios de mantenimiento,
-                    etc.
+                    Son las entidades que venden bienes o prestan servicios a la
+                    empresa. Por ejemplo: materia prima, equipo de cómputo,
+                    mobiliario y equipo de oficina, servicios de internet,
+                    servicios de mantenimiento, etc.
                   </p>
                 </Col>
                 <Col md={4}>
@@ -76,7 +76,10 @@ const OneFour = () => {
                   <p>
                     <b>Clientes</b>
                   </p>
-                  <p>Compran bienes o adquieren servicios de la empresa.</p>
+                  <p>
+                    Son quienes compran bienes o adquieren servicios de la
+                    empresa.
+                  </p>
                 </Col>
                 <Col md={4}>
                   <Image className="full-img" src={img110} alt="Clientes" />
@@ -89,7 +92,7 @@ const OneFour = () => {
                   </p>
                   <p>
                     Ofrecen el mismo producto o productos sustitutos (cubren la
-                    misma necesidad aunque no son idénticos).
+                    misma necesidad, aunque no son idénticos).
                   </p>
                 </Col>
                 <Col md={4}>
@@ -102,9 +105,9 @@ const OneFour = () => {
                     <b>Entidades financieras</b>
                   </p>
                   <p>
-                    Prestan dinero cobrando una tasa de interés. Las entidades
-                    financieras más comunes son los bancos y estos constituyen
-                    una fuente de financiamiento importante.
+                    Las entidades financieras más comunes son los bancos, estos
+                    son una fuente de financiamiento importante, prestan dinero
+                    y a cambio cobran una tasa de interés.
                   </p>
                 </Col>
                 <Col md={4}>
@@ -121,10 +124,11 @@ const OneFour = () => {
                     <b>Comunidad</b>
                   </p>
                   <p>
-                    Constituye una fuente de empleos y manifiesta preocupación
-                    por el medio ambiente, Hay zonas demarcadas para uso
-                    comercial o habitacional; las empresas que generan desechos
-                    tóxicos deben estar alejadas de la comunidad.
+                    La comunidad en la que se inserta la empresa tiene ciertas
+                    características, tales como: ideología, costumbres,
+                    inquietud por el medio ambiente y en general un estilo de
+                    vida. Dichos aspectos definitivamente influyen en la
+                    empresa.
                   </p>
                 </Col>
                 <Col md={4}>
@@ -137,8 +141,10 @@ const OneFour = () => {
                     <b>Alcaldías o municipios</b>
                   </p>
                   <p>
-                    Se realizan trámites y permisos, por ejemplo: trámite de uso
-                    de suelo y permisos de apertura, entre otros.
+                    Las empresas al realizar algunos trámites y permisos tienen
+                    relación con las alcaldías o municipios. Por ejemplo:
+                    trámite de uso de suelo y permisos de apertura, por
+                    mencionar algunos.
                   </p>
                 </Col>
                 <Col md={4}>
@@ -167,8 +173,9 @@ const OneFour = () => {
                     <b>Económicos</b>
                   </p>
                   <p>
-                    Los precios, la inflación, las tasas de interés, entre
-                    otros.
+                    La inflación, las tasas de interés, y el tipo de cambio,
+                    entre otros, son factores que inciden en los costos y por
+                    tanto en el precio y en el resultado de la empresa.
                   </p>
                 </Col>
               </Row>
@@ -181,8 +188,8 @@ const OneFour = () => {
                     <b>Tecnológicos</b>
                   </p>
                   <p>
-                    El uso de las nuevas tecnologías facilitan el trabajo,
-                    reducen los costos y abren nuevas oportunidades de negocio.
+                    Las nuevas tecnologías no solo facilitan y/o automatizan el
+                    trabajo, también abren nuevas oportunidades de negocio.
                   </p>
                 </Col>
               </Row>
@@ -201,7 +208,8 @@ const OneFour = () => {
                   <p>
                     Las iniciativas, la legislación y en general las decisiones
                     del gobierno afectan a las empresas. Por ejemplo: en materia
-                    laboral, impuestos e inversión extranjera.
+                    laboral, impuestos e inversión extranjera, por mencionar
+                    algunos.
                   </p>
                 </Col>
               </Row>
@@ -214,10 +222,12 @@ const OneFour = () => {
                     <b>Demográficos</b>
                   </p>
                   <p>
-                    Datos sobre la población como edad, cantidad de hombres y de
-                    mujeres, nivel de ingresos, etc. Información muy útil para
-                    las empresas y así decidir ¿qué vender? ¿a quién vender? Y
-                    ¿dónde se localizan los clientes?
+                    La información sobre la población, como por ejemplo: edad,
+                    cantidad de hombres y de mujeres, nivel de ingresos, nivel
+                    socioeconómico, entre otros, son datos en los que las
+                    empresas podrían apoyarse para identificar ¿qué vender? ¿a
+                    quién vender? y ¿dónde se localizan los clientes?, entre
+                    otras interrogantes.
                   </p>
                 </Col>
               </Row>
@@ -234,7 +244,7 @@ const OneFour = () => {
                     <b>Socio culturales</b>
                   </p>
                   <p>
-                    Se conforma por los estilos de vida, costumbres, hábitos
+                    Corresponde a los estilos de vida, costumbres, hábitos
                     alimenticios, religión y demás aspectos que condicionan el
                     comportamiento de las personas.
                   </p>
@@ -253,10 +263,11 @@ const OneFour = () => {
                     <b>Medioambientales</b>
                   </p>
                   <p>
-                    Consiste en minimizar el impacto medio ambiental, lo que
-                    supone un esfuerzo y un costo para las empresas. Existen
-                    leyes que regulan aspectos ambientales y quienes no las
-                    cumplan son acreedores a sanciones.
+                    Hoy día existe una preocupación mundial por minimizar el
+                    impacto medio ambiental, lo que supone un esfuerzo y un
+                    costo para las empresas. Existen leyes que regulan aspectos
+                    ambientales y quienes no las cumplan son acreedores a
+                    sanciones.
                   </p>
                 </Col>
               </Row>

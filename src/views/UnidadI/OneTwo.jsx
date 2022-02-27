@@ -54,7 +54,8 @@ const OneTwo = () => {
                     </Row>
                     <Row className="img-source center-text ">
                       <Col>
-                        Hernández, J., Rodríguez, E. & Jiménez, Y. (2021).
+                        Hernández, J., Rodríguez, E. & Jiménez, Y. (
+                        {new Date().getFullYear()}).
                       </Col>
                     </Row>
                     <Row>
@@ -123,34 +124,37 @@ const OneTwo = () => {
                     Básicamente se enfoca al manejo de los recursos financieros,
                     entre sus principales actividades se encuentran:
                   </p>
-                  <p>Administración del flujo de efectivo</p>
-                  <p>Inversiones</p>
-                  <p>Presupuestos</p>
-                  <p>Financiamiento</p>
-                  <p>Administración de activos</p>
+                  <ul>
+                    <li>Administración del flujo de efectivo</li>
+                    <li>Inversiones</li>
+                    <li>Presupuestos</li>
+                    <li>Financiamiento</li>
+                    <li>Administración de activos</li>
+                  </ul>
 
                   <b>Contraloría:</b>
                   <p>
                     Área encargada de coordinar y dirigir las siguientes
                     actividades:
                   </p>
-                  <p>Contabilidad</p>
-                  <p>Pronósticos</p>
-                  <p>Administración de riesgos</p>
-                  <p>
-                    Verificar que le Administración esté de acuerdo con los
-                    objetivos de la empresa
-                  </p>
-                  <p>Auditoría interna</p>
-                  <p>Desarrollo de políticas y procedimientos</p>
-
+                  <ul>
+                    <li>Contabilidad</li>
+                    <li>Pronósticos</li>
+                    <li>Administración de riesgos</li>
+                    <li>
+                      Verificar que le Administración esté de acuerdo con los
+                      objetivos de la empresa
+                    </li>
+                    <li>Auditoría interna</li>
+                    <li>Desarrollo de políticas y procedimientos</li>
+                  </ul>
                   <p>
                     Para que la función financiera se lleve a cabo en forma
                     adecuada requiere de información verídica y confiable
                     proporcionada por el área contable.
                   </p>
                   <p>
-                    En la figura 1.3 se presentan algunas de las principales
+                    En la figura 1.3 encontrarás algunas de las principales
                     funciones de las áreas contable y financiera.
                   </p>
                 </Col>
@@ -165,7 +169,10 @@ const OneTwo = () => {
                 </Col>
               </Row>
               <Row className="img-source center-text">
-                <Col>Hernández, J., Rodríguez, E. & Jiménez, Y. (2021).</Col>
+                <Col>
+                  Hernández, J., Rodríguez, E. & Jiménez, Y. (
+                  {new Date().getFullYear()}).
+                </Col>
               </Row>
               <Row className="m-v-space">
                 <Col>

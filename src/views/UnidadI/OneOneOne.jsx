@@ -156,9 +156,10 @@ const OneOneOne = () => {
               </Row>
               <Row>
                 <div className="img-source center-text">
-                  Hernández, J., Rodríguez, E. & Jiménez, Y. (2021). Con base en
-                  la Ley General de Sociedades Mercantiles, Ley General de
-                  Sociedades Cooperativas y Código Civil.
+                  Hernández, J., Rodríguez, E. & Jiménez, Y. (
+                  {new Date().getFullYear()}). Con base en la Ley General de
+                  Sociedades Mercantiles, Ley General de Sociedades Cooperativas
+                  y Código Civil.
                 </div>
               </Row>
               <Row>

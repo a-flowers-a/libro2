@@ -57,7 +57,8 @@ const OneOneTwo = () => {
                   </Row>
                   <Row className="img-source center-text">
                     <Col>
-                      Hernández, J., Rodríguez, E. & Jiménez, Y. (2021).
+                      Hernández, J., Rodríguez, E. & Jiménez, Y. (
+                      {new Date().getFullYear()}).
                     </Col>
                   </Row>
                 </Col>
@@ -117,13 +118,6 @@ const OneOneTwo = () => {
                     financiera, por ejemplo, para justificar sus requerimientos
                     de recursos humanos y negociar diferentes presupuestos
                     operativos, entre otros.
-                  </p>
-                  <p className="justify-text">
-                    Es importante señalar que en las empresas pequeñas la
-                    actividad financiera es llevada a cabo por el departamento
-                    de contabilidad, el encargado de dicho departamento evita
-                    las insolvencias y realiza planes acerca de los usos y
-                    necesidades del dinero.
                   </p>
                 </Col>
               </Row>
