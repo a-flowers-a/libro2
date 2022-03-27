@@ -7,7 +7,7 @@ import Evaluation from "./views/Home/Evaluation";
 import Contacts from "./views/Home/Contacts";
 import Requirements from "./views/Home/Require";
 import Sources from "./views/Home/Sources";
-import Glossary from "./views/Home";
+import Glossary from "./views/Home/Glossary";
 
 // Unit one
 import Competencia1 from "./views/UnidadI/Competencia";

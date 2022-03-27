@@ -47,7 +47,7 @@ const OneThree = () => {
                   </p>
                 </Col>
               </Row>
-              <Row>
+              <Row className="justify-text">
                 <Col>
                   <p>
                     <b>Economía</b>
@@ -63,7 +63,7 @@ const OneThree = () => {
                   <Image className="full-img" src={img16} alt="Economía" />
                 </Col>
               </Row>
-              <Row>
+              <Row className="justify-text">
                 <Col md={4}>
                   <Image className="full-img" src={img17} alt="Derecho" />
                 </Col>
@@ -78,7 +78,7 @@ const OneThree = () => {
                   </p>
                 </Col>
               </Row>
-              <Row>
+              <Row className="justify-text m-v-space">
                 <Col>
                   <p>
                     <b>Matemáticas</b>

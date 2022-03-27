@@ -39,7 +39,7 @@ const ThreeThreeOneTwo = () => {
               />
               <MathComponent tex={String.raw`=\frac{(30,000+40,000)}{20}`} />
               <MathComponent
-                tex={String.raw`=3,500\;hambuerguesas\;sencillas\;al\;mes`}
+                tex={String.raw`=3,500\;hamburguesas\;sencillas\;al\;mes`}
               />
               <p>Comprobación:</p>
             </Col>

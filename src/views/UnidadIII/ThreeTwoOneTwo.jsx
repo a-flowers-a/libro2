@@ -6,6 +6,8 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import Info from "../../components/Info";
 import { scrollTop } from "../../helpers/general";
 import { MathComponent } from "mathjax-react";
+import Actividad from "../../components/Actividad";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 const ThreeTwoOneTwo = () => {
   const razonesSimples = "../../assets/images/razonesSimples.png";
@@ -72,7 +74,7 @@ const ThreeTwoOneTwo = () => {
             </Col>
           </Row>
           <Row className="justify-content-center">
-            <Col sm={8}>
+            <Col sm={6}>
               <Image
                 className="full-img"
                 src={razonesSimples}
@@ -88,9 +90,23 @@ const ThreeTwoOneTwo = () => {
                 simples antes mencionados.
               </p>
               <Info color="purple">
-                NOTA: Antes de continuar descarga los siguientes estados
-                financieros, porque en éstos se basa el cálculo de todas las
-                razones financieras que se explican a continuación
+                <p>
+                  <b>Nota:</b>
+                </p>
+                Antes de continuar descarga los siguientes estados financieros,
+                porque en éstos se basa el cálculo de todas las razones
+                financieras que se explican a continuación
+                <Row className="justify-content-center m-t-space">
+                  <Col md={4}>
+                    <Actividad
+                      color="purple"
+                      icon={faDownload}
+                      link={"to-do"}
+                      type={"Estados financieros"}
+                      number={""}
+                    />
+                  </Col>
+                </Row>
               </Info>
             </Col>
           </Row>

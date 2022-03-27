@@ -52,7 +52,7 @@ const OneTwo = () => {
                         alt="Figura 1.4 ¿Qué son las finanzas?"
                       />
                     </Row>
-                    <Row className="img-source center-text ">
+                    <Row className="img-source center-text m-v-space">
                       <Col>
                         Hernández, J., Rodríguez, E. & Jiménez, Y. (
                         {new Date().getFullYear()}).

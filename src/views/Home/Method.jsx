@@ -6,7 +6,7 @@ import HomeMenu from "../../components/HomeSideMenu/HomeMenu";
 import ToBookButton from "../../components/ToBookButton";
 
 function Method() {
-  const methodImg = "../../../../assets/images/method.svg";
+  const methodImg = "../../../../assets/images/method.png";
 
   return (
     <div className="primary-div">
@@ -22,13 +22,13 @@ function Method() {
               <h2>Metodología</h2>
             </Col>
           </Row>
-          <Row className="justify-content-center m-v-space">
+          <Row className="justify-content-center">
             <Col sm={4}>
               <Image className="full-img" src={methodImg} alt="Path" />
             </Col>
           </Row>
-          <Row className="justify-content-center m-v-space">
-            <Col sm={8}>
+          <Row className="justify-content-center ">
+            <Col sm={11}>
               <div className="full-card justify-text">
                 <p>
                   El propósito de la Unidad de Aprendizaje (UA) Administración

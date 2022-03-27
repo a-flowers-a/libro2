@@ -108,10 +108,13 @@ const FiveThreeOne = () => {
               <p>El PRI se estima de la siguiente forma:</p>
             </Col>
           </Row>
-          <Row className="justify-content-center">
-            <Col className="overflow-auto">
+          <Row>
+            <Col className="justify-content-center overflow-auto">
               <MathComponent
-                tex={String.raw`PRI=\frac{Monto\;faltante\;para\;recuperar\;la \;inversi\acute{o}n\;inicial}{FNE\;del\;a\widetilde{n}o\;en\;que\;se\;recupera\;la\;inversi\acute{o}n}+periodo\;inmediato\;anterior\;en\;que\;se\;recupera\;la \;inversi\acute{o}n`}
+                tex={String.raw`PRI=\frac{Monto\;faltante\;para\;recuperar\;la \;inversi\acute{o}n\;inicial}{FNE\;del\;a\widetilde{n}o\;en\;que\;se\;recupera\;la\;inversi\acute{o}n}`}
+              />
+              <MathComponent
+                tex={String.raw`+\;periodo\;inmediato\;anterior\;en\;que\;se\;recupera\;la \;inversi\acute{o}n`}
               />
             </Col>
           </Row>

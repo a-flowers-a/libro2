@@ -6,7 +6,6 @@ function Actividad(props) {
   function download() {
     window.open(link);
   }
-  console.log("color", color);
   return (
     <div className={`card-button ${color}-bg white`} onClick={download}>
       <FontAwesomeIcon className={"icon"} icon={icon} size="2x" />

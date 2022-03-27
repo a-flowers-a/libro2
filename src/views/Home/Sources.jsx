@@ -9,7 +9,7 @@ import { faFeatherAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Sources() {
-  const bibliography = "../../../../assets/images/biblio.svg";
+  const bibliography = "../../../../assets/images/biblio.png";
   return (
     <div className="primary-div">
       <PoliHeader />
@@ -30,7 +30,7 @@ function Sources() {
             </Col>
           </Row>
           <Row className="justify-content-center m-v-space">
-            <Col sm={10}>
+            <Col sm={11}>
               <div className="full-card justify-text">
                 {itemSources.map((item) => (
                   <p>
