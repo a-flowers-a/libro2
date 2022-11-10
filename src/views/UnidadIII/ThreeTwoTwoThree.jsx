@@ -37,10 +37,10 @@ const ThreeTwoTwoThree = () => {
               <p>
                 En términos generales el método de control presupuestal consiste
                 en preparar presupuestos para el conjunto de operaciones de una
-                empresa e ir monitoreándolo con el fin de detectar las
+                empresa e ir monitoreándolos con el fin de detectar las
                 desviaciones entre lo planeado y lo real (tabla X ), lo que
                 permite emprender acciones de control y ejecución a efecto de
-                corregir las desviaciones presentadas
+                corregir las desviaciones presentadas.
               </p>
             </Col>
           </Row>
@@ -50,11 +50,11 @@ const ThreeTwoTwoThree = () => {
                 <thead>
                   <tr className="center-text">
                     <th>Concepto</th>
-                    <th>Real 2020</th>
-                    <th>Presupuestado 2021</th>
-                    <th>Real 2021</th>
-                    <th>Real 2021 vs. presupuestado 2021</th>
-                    <th>Real 2020 vs. real 2021</th>
+                    <th>Real 2022</th>
+                    <th>Presupuestado 2023</th>
+                    <th>Real 2023</th>
+                    <th>Real 2023 vs. presupuestado 2023</th>
+                    <th>Real 2022 vs. real 2023</th>
                   </tr>
                 </thead>
                 <tbody>

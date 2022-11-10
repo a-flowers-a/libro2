@@ -37,11 +37,16 @@ const ThreeTwoOneOne = () => {
                 que integran a los estados financieros y da agilidad al manejo
                 de las cifras.
               </p>
+              <p>
+                El método de reducción a por cientos cientos se puede aplicar
+                tanto al estado de situación financiera como al estado de
+                resultados.
+              </p>
               <dl>
                 <dd>
-                  a. Método de reducción a por cientos aplicado al estado de
-                  situación financiera, estado de posición financiera o balance
-                  general
+                  <b> a.</b> Método de reducción a por cientos aplicado al
+                  estado de situación financiera, estado de posición financiera
+                  o balance general
                 </dd>
               </dl>
               <p>
@@ -98,16 +103,11 @@ const ThreeTwoOneOne = () => {
           </Row>
           <Row>
             <Col>
-              <p>
-                Ahora, apliquemos en método de reducción a porcientos al estado
-                de resultados; es muy sencillo, se sigue el siguiente
-                procedimiento:
-              </p>
               <dl>
                 <dd>
-                  b. Método de reducción a por cientos aplicado al estado de
-                  situación financiera, estado de posición financiera o balance
-                  general
+                  <b> b.</b> Método de reducción a por cientos aplicado al
+                  estado de situación financiera, estado de posición financiera
+                  o balance general
                 </dd>
               </dl>
               <p>
@@ -117,7 +117,7 @@ const ThreeTwoOneOne = () => {
               </p>
               <ul>
                 <li className="m-b-space">
-                  El monto por ventas netas se considera el 100% y con base en
+                  El monto de ventas netas se considera el 100% y con base en
                   este dato se determina qué porcentaje representan cada uno de
                   los renglones del estado de resultados. Para nuestro ejemplo
                   sí $190,400 corresponde al 100%, ¿qué porcentaje representa,

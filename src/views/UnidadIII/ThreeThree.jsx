@@ -29,30 +29,28 @@ const ThreeThree = () => {
                 A lo largo del tiempo se han desarrollado herramientas
                 administrativas y financieras que facilitan la toma de
                 decisiones empresariales. Una de esas herramientas es el punto
-                de equilibrio (P.E).
+                de equilibrio (PE).
               </p>
               <p>
-                El P.E se obtiene cuando el ingreso derivado de las ventas es
+                El PE se obtiene cuando el ingreso derivado de las ventas es
                 igual al costo total. El costo total se conforma por la suma de
                 costos y gastos; costo y gasto no es lo mismo, el costo está
                 directamente relacionado con la producción y el gasto con las
-                demás actividades que realiza la empresa para su funcionamiento.
+                demás actividades operativas que realiza la empresa para su
+                funcionamiento.
               </p>
               <p>
                 El punto de equilibrio, tal y como se aprecia en la figura (X)
                 se obtiene cuando los ingresos son iguales al costo total (suma
-                de los costos y gastos); es decir, no hay ganancias tampoco
-                pérdidas. Es importante aclarar que costo y gasto no es lo
-                mismo, el costo está directamente relacionado con la producción
-                y el gasto con las demás actividades que realiza la empresa para
-                su funcionamiento
+                de los costos y gastos); es decir, cuando no hay ganancias
+                tampoco pérdidas.
               </p>
               <p>
                 Antes de continuar, es importante que conozcas los siguientes
                 términos:
               </p>
               <p>
-                <b>Costos y gastos variables (C.V): </b>
+                <b>Costos y gastos variables (CV): </b>
                 Son aquellos que están relacionados con el volumen de producción
                 y ventas tal es el caso de la materia prima, la mano de obra a
                 destajo, y las comisiones que se pagan a los vendedores por
@@ -61,27 +59,27 @@ const ThreeThree = () => {
                 entre otros.
               </p>
               <p>
-                <b>Costo variable unitario (C.V.U): </b>Es el costo variable de
+                <b>Costo variable unitario (CVU): </b>Es el costo variable de
                 producir y vender <u>una</u> unidad
               </p>
               <p>
-                <b>Costo variable total (C.V.T): </b>
+                <b>Costo variable total (CVT): </b>
                 Es el costo variable de producir y vender “Q” número de
                 unidades, y se obtiene multiplicando la cantidad de unidades
                 producidas y/o vendidas por su costo variable unitario; es decir
-                C.V.T = (C.V.U)(Q)
+                CVT = (CVU)(Q)
               </p>
               <p>
-                <b>Costos y gastos fijos (C.F): </b>
+                <b>Costos y gastos fijos (CF): </b>
                 Son los costos constantes, no están en función del volumen de
                 producción ni de ventas; es decir, se generan haya o no
                 producción y ventas. Algunos ejemplos son: sueldos fijos, renta,
                 pago de intereses al banco, depreciación de la maquinaria, etc.
               </p>
               <p>
-                <b>Costo total (C.T): </b>
+                <b>Costo total (CT): </b>
                 Es la suma de los costos fijos más el costo variable; es decir:
-                C.T = C.F + C.V.U (Q)
+                CT = CF + CVU (Q)
               </p>
               <p>
                 <b>Ingreso o ventas: </b>
@@ -90,11 +88,11 @@ const ThreeThree = () => {
               </p>
               <p>
                 <b>
-                  Margen de contribución unitario (M.C.U) o contribución
-                  marginal unitaria (M.C.U):
+                  Margen de contribución unitario (MCU) o contribución marginal
+                  unitaria (MCU):&nbsp;
                 </b>
                 es el resultado que queda de restar al precio de venta unitario
-                (P) el costo variable unitario (C.V.U)
+                (P) el costo variable unitario (CVU)
               </p>
               <p>
                 Ahora sí veamos cómo se calcula y por qué es tan importante
@@ -107,11 +105,11 @@ const ThreeThree = () => {
                 escenario: tener pérdidas, que ocurren cuando el costo total es
                 mayor al dinero que recibimos por vender. Es aquí donde calcular
                 el punto de equilibrio cobra relevancia. El Punto de equilibrio
-                (P.E) es una herramienta que nos da información acerca de
-                cuántas unidades hay que producir y vender para no ganar ni
-                perder; es decir cuando los ingresos y el costo total son
-                iguales o viéndolo de otro modo cuanto restamos el costo total a
-                los ingresos y la diferencia es cero.
+                (PE) es una herramienta que nos da información acerca de cuántas
+                unidades hay que producir y vender para no ganar ni perder; es
+                decir cuando los ingresos y el costo total son iguales o
+                viéndolo de otro modo cuanto restamos el costo total a los
+                ingresos y la diferencia es cero.
               </p>
               <p>
                 Entonces, el punto de equilibrio se encuentra cuando:
@@ -124,7 +122,7 @@ const ThreeThree = () => {
                 I =Ingresos generados de las ventas, que se obtiene
                 multiplicando el precio unitario por la cantidad vendida (p)(Q)
               </p>
-              <p>C.T = C.F + C.V.U (Q)</p>
+              <p>CT = CF + CVU (Q)</p>
               <p>Q = volumen de ventas</p>
             </Col>
           </Row>

@@ -30,7 +30,7 @@ const ThreeTwoOneTwo = () => {
           <Row className="justify-text">
             <Col>
               <p>
-                Las razones o índices (ratios en el idioma inglés), se ocupan en
+                Las razones o índices (ratios en el idioma inglés) se ocupan en
                 la vida diaria, por ejemplo, algunas personas decidirán comprar
                 un automóvil considerando el recorrido por litro de gasolina, es
                 decir; utilizan índices para valorar un desempeño específico, en
@@ -140,15 +140,19 @@ const ThreeTwoOneTwo = () => {
                     </Row>
                     <p>
                       Indica el porcentaje de utilidad en relación con las
-                      ventas, en este ejemplo, también se puede leer de la
-                      siguiente manera: por cada peso vendido 7.87 centavos son
-                      de utilidad.
+                      ventas.
+                    </p>
+                    <p>
+                      El resultado del ejemplo se puede interpretar así: se está
+                      obteniendo un 7.87% de utilidad en relación con las ventas
+                      o bien, por cada peso vendido 7.87 centavos son de
+                      utilidad.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
                   <Accordion.Header>
-                    I.2 Retorno sobre Activos Totales (RAT) o Retorno de la
+                    I.2 Retorno sobre activos totales (RAT) o Retorno de la
                     Inversión (ROI) o ROA por sus siglas en inglés
                   </Accordion.Header>
                   <Accordion.Body>
@@ -165,9 +169,15 @@ const ThreeTwoOneTwo = () => {
                     </Row>
                     <p>
                       Indica el porcentaje de utilidad que se obtiene con el
-                      empleo de todos los recursos (activos) propios y ajenos de
-                      la empresa. Entre más alto sea dicho rendimiento, mejor
-                      será.
+                      empleo de todos los recursos (propios y ajenos de la
+                      empresa).
+                    </p>
+                    <p>
+                      El resultado del ejemplo se puede interpretar así: se está
+                      obteniendo un 21.14% de utilidad con el empleo del activo;
+                      también se puede leer de la siguiente manera: por cada
+                      peso invertido en el activo total se están obteniendo
+                      21.14 centavos son de utilidad.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -188,11 +198,14 @@ const ThreeTwoOneTwo = () => {
                       />
                     </Row>
                     <p>
-                      Mide el rendimiento que obtiene una empresa sobre el
-                      patrimonio de los accionistas. El ejemplo se puede
-                      interpretar: por cada peso invertido en patrimonio
-                      (capital contable) se está obteniendo 37 centavos de la
-                      utilidad.
+                      Mide el rendimiento sobre el patrimonio o capital contable
+                      de los accionistas.
+                    </p>
+                    <p>
+                      El resultado del ejemplo indica que se está obteniendo un
+                      37.28% de utilidad en relación con el capital contable; es
+                      decir, por cada peso que se tiene en el capital contable
+                      se están obteniendo 37.28 centavos de utilidad.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -204,7 +217,7 @@ const ThreeTwoOneTwo = () => {
             <p>
               Se entiende por liquidez la capacidad que tiene la empresa para
               cumplir con sus obligaciones en el corto plazo a medida que se van
-              venciendo, en otras palabras, la liquidez es la capacidad para
+              venciendo; en otras palabras, la liquidez es la capacidad para
               convertir el activo circulante en dinero.
             </p>
           </Row>
@@ -227,19 +240,15 @@ const ThreeTwoOneTwo = () => {
                         tex={String.raw`Raz\acute{o}n\;de\;liquidez,\;raz\acute{o}n\;circulante\;o\;raz\acute{o}n\;corriente=\frac{800,000}{345,000}=2.32\;veces`}
                       />
                     </Row>
-                    <p>
-                      Indica el número de veces que con el activo circulante se
-                      puede pagar el pasivo circulante; en el ejemplo, el
-                      resultado es una razón de 2.32 a 1, lo cual significa que
-                      por cada peso que la empresa debe a corto plazo se tienen
-                      $2.32 pesos para pagar.
-                    </p>
 
                     <p>
-                      <i>
-                        Sí la razón de liquidez, razón circulante o razón
-                        corriente &gt; 1 se puede decir que sí hay liquidez.
-                      </i>
+                      Indica el número de veces que con el activo circulante se
+                      puede pagar el pasivo circulante.
+                    </p>
+                    <p>
+                      En este ejemplo el resultado es una razón de 2.32 a 1; lo
+                      que significa que por cada peso que la empresa debe en el
+                      corto plazo se tienen $2.32 pesos para pagar.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -260,14 +269,14 @@ const ThreeTwoOneTwo = () => {
                       />
                     </Row>
                     <p>
-                      Esta razón financiera es una medición más estricta de la
-                      liquidez de la empresa que la razón circulante. Indica qué
-                      tanto se pueden pagar las obligaciones en el corto plazo
-                      sin convertir los inventarios en efectivo inmediatamente.
-                      En otras palabras, al activo circulante se le quitan los
-                      inventarios por tratarse del activo menos líquido, de esta
-                      manera se puede saber que tanta liquidez tiene una empresa
-                      sin recurrir a la venta de sus inventarios.
+                      Indica qué tanto se pueden pagar las obligaciones en el
+                      corto plazo sin convertir los inventarios en efectivo
+                      inmediatamente, por tratarse del activo menos líquido.
+                    </p>
+                    <p>
+                      En el ejemplo, el resultado se interpreta: con el activo
+                      circulante (sin considerar el inventario) se podría pagar
+                      1.25 veces el pasivo circulante o a corto plazo.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -303,7 +312,7 @@ const ThreeTwoOneTwo = () => {
                 </Accordion.Item>
                 <Accordion.Item eventKey="3">
                   <Accordion.Header>
-                    II.4 Ciclo de conversión de efectivo o ciclo operativo
+                    II.4 Ciclo de conversión de efectivo
                   </Accordion.Header>
                   <Accordion.Body>
                     <Row className="justify-content-center overflow-auto m-v-space">
@@ -322,12 +331,14 @@ const ThreeTwoOneTwo = () => {
                       />
                     </Row>
                     <p>
-                      Esta razón es importante debido a que demuestra la
-                      efectividad en la que la compañía transforma sus
-                      inventarios en ventas y las ventas en efectivo para poder
-                      pagar a sus proveedores y acreedores. En el ejemplo, la
-                      empresa está tardando aproximadamente 54.44 días en
-                      realizar su ciclo de conversión de efectivo.
+                      Indica la efectividad con la que la compañía transforma
+                      sus inventarios en ventas y las ventas en efectivo y así
+                      poder pagar a sus proveedores y acreedores.
+                    </p>
+                    <p>
+                      El resultado del ejemplo nos indica que la empresa está
+                      tardando aproximadamente 54 días en realizar su ciclo de
+                      conversión de efectivo.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -369,6 +380,10 @@ const ThreeTwoOneTwo = () => {
                       incumplimiento de las deudas y obligaciones por parte de
                       la empresa.
                     </p>
+                    <p>
+                      El resultado del ejemplo indica que el 43.29% de los
+                      activos están siendo financiados (se deben).
+                    </p>
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
@@ -388,14 +403,17 @@ const ThreeTwoOneTwo = () => {
                       />
                     </Row>
                     <p>
-                      Indica en qué medida los ingresos actuales de la empresa
-                      pueden cumplir con los pagos de intereses corrientes. En
-                      otras palabras, indica el número de veces que con la
-                      utilidad de operación la entidad puede pagar los intereses
-                      generados en el periodo. Cuando la razón de cobertura de
-                      intereses cae por debajo de 1.0, la empresa se ve
-                      amenazada debido a su incapacidad para pagar los intereses
-                      a su vencimiento, lo cual la puede llevar a la bancarrota.
+                      Indica el número de veces que con la utilidad de operación
+                      se pueden pagar los intereses generados en el período.
+                      Cuando la razón de cobertura de intereses es menor a uno,
+                      la empresa puede verse amenazada debido a su incapacidad
+                      para pagar los intereses a su vencimiento, lo cual la
+                      puede llevar a la bancarrota.
+                    </p>
+                    <p>
+                      El resultado del ejemplo indica que con la utilidad de
+                      operación se podrían cubrir hasta 10 veces los intereses
+                      del período.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -440,8 +458,8 @@ const ThreeTwoOneTwo = () => {
                       </Col>
                     </Row>
                     <p>
-                      La rotación de cuentas por cobrar demuestra el número de
-                      días en promedio en que la empresa tarda en cobrar a sus
+                      La rotación de cuentas por cobrar indica el número de días
+                      en promedio en que la empresa tarda en cobrar a sus
                       deudores, en otras palabras, el tiempo en el que convierte
                       sus cuentas por cobrar en efectivo.
                     </p>
@@ -476,12 +494,12 @@ const ThreeTwoOneTwo = () => {
                     </Row>
                     <p>
                       La rotación de cuentas por pagar arroja el número de días
-                      que en promedio la empresa tarda en pagar a sus
-                      proveedores y acreedores las deudas adquiridas. Existen
-                      múltiples factores que afectan esta razón por lo que su
-                      análisis y comparación se vuelve complicada siendo
-                      necesario realizar un análisis retrospectivo para poder
-                      obtener una opinión fundamentada.
+                      que, en promedio, la empresa tarda en pagar las deudas
+                      adquiridas con proveedores y acreedores. Existen múltiples
+                      factores que afectan esta razón por lo que su análisis y
+                      comparación se vuelve complicada siendo necesario realizar
+                      un análisis retrospectivo para poder obtener una opinión
+                      fundamentada.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -493,7 +511,7 @@ const ThreeTwoOneTwo = () => {
                     <Row className="justify-content-center overflow-auto m-v-space">
                       <Col>
                         <MathComponent
-                          tex={String.raw`Rotaci\acute{o}n\;de\;inventarios=\frac{\frac{Inventario\;al\;inicio\;del\;perido\;+Inventario\;al\;final\;del\;perido}{2}}{\frac{Costo\;de\;ventas}{365}}`}
+                          tex={String.raw`Rotaci\acute{o}n\;de\;inventarios=\frac{\frac{Inventario\;al\;inicio\;del\;periodo\;+Inventario\;al\;final\;del\;perido}{2}}{\frac{Costo\;de\;ventas}{365}}`}
                         />
                       </Col>
                     </Row>
@@ -515,7 +533,7 @@ const ThreeTwoOneTwo = () => {
                     <p>
                       La rotación de inventarios permite al analista observar el
                       tiempo en que tarda en sustituirse el inventario antiguo
-                      por uno nuevo. Esta razón se mide en días. No es
+                      por uno nuevo; esta razón se mide en número de días. No es
                       conveniente mantener por mucho tiempo los inventarios por
                       los costos que implica. Es importante mencionar que la
                       actividad que realiza una unidad económica es factor
@@ -582,21 +600,21 @@ const ThreeTwoOneTwo = () => {
                     </Row>
                     <p>
                       Esta razón financiera es muy útil para la empresa, ya que
-                      indica si es productiva o no de acuerdo con los activos
-                      que se tienen en la entidad. Cuando el resultado es menor
-                      a 1.0, significa que no se vendió ni siquiera una vez el
-                      valor de los activos, lo que quiere decir que la empresa
-                      tiene activos subutilizados, o que no están generando
-                      ningún valor, y por tanto debe decidirse qué hacer con
-                      ellos, ya sea hacerlos productivos, o bien desecharlos y
-                      venderlos. En conclusión, esta razón mide la eficiencia de
-                      la empresa al utilizar su activo total y así contribuir a
-                      generar un mayor nivel de ventas. Es importante considerar
-                      que el resultado variará de acuerdo a la actividad que
-                      desarrolle la empresa, ya que una unidad económica del
-                      ramo industrial tendrá una fuerte inversión en activos
-                      fijos y una comercial su mayor inversión radicará en
-                      activos circulantes.
+                      indica qué tan productiva de acuerdo con los activos que
+                      se tienen en la entidad. Cuando el resultado es menor a
+                      1.0, significa que no se vendió ni siquiera una vez el
+                      valor de los activos, lo que podría significar que la
+                      empresa tiene activos subutilizados, o que no están
+                      generando ningún valor, y por tanto debe decidirse qué
+                      hacer con ellos, ya sea hacerlos productivos, o bien
+                      desecharlos y venderlos. En conclusión, esta razón mide la
+                      eficiencia de la empresa al utilizar su activo total y así
+                      contribuir a generar un mayor nivel de ventas. Es
+                      importante considerar que el resultado variará de acuerdo
+                      a la actividad que desarrolle la empresa, ya que una
+                      unidad económica del ramo industrial tendrá una fuerte
+                      inversión en activos fijos y una comercial su mayor
+                      inversión radicará en activos circulantes.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -663,8 +681,8 @@ const ThreeTwoOneTwo = () => {
                     <p>
                       El valor en libros de una acción representa el monto
                       contable o nominal al que equivale una acción de la
-                      empresa. No considera las expectativas del mercado ni los
-                      factores externos que afectan a la empresa.
+                      empresa, sin considerar las expectativas del mercado ni
+                      los factores externos que afectan a la empresa.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -690,17 +708,19 @@ const ThreeTwoOneTwo = () => {
                     </Row>
                     <p>
                       Representa el número de veces en que una acción cotiza en
-                      mercado públicos contra el valor en libros (el registrado
-                      en la compañía) de la acción. Esta razón permite observar
-                      las expectativas que tienen los inversionistas sobre el
-                      crecimiento de la empresa. En nuestro ejemplo, el precio
-                      de la acción en mercados públicos cotiza 3.55 veces de lo
-                      que está registrado en la empresa o dicho en otras
-                      palabras “la acción cotiza 3.55 veces el valor en libros
-                      que se tiene en compañía”. Este indicador permite saber si
-                      una acción está sobrevaluada o premiada por el mercado
-                      (indicador positivo) o subvaluada o castigada (indicador
-                      negativo).
+                      el mercado público contra el valor en libros (el
+                      registrado en la compañía) de la acción. Esta razón
+                      permite observar las expectativas que tienen los
+                      inversionistas sobre el crecimiento de la empresa.
+                    </p>
+                    <p>
+                      En nuestro ejemplo, el precio de la acción en mercados
+                      públicos cotiza 3.55 veces de lo que está registrado en la
+                      empresa o dicho en otras palabras “la acción cotiza 3.55
+                      veces el valor en libros que se tiene en compañía”. Este
+                      indicador permite saber si una acción está sobrevaluada o
+                      premiada por el mercado (indicador positivo) o subvaluada
+                      o castigada (indicador negativo).
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>

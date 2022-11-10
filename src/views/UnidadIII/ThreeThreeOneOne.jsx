@@ -126,11 +126,22 @@ const ThreeThreeOneOne = () => {
                           <b>Proporción en las ventas totales</b>
                         </td>
                         <td>
-                          <b>0.20</b>
+                          <b>20%=0.20</b>
                         </td>
                       </tr>
                     </tbody>
                   </Table>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <p>
+                    <i>
+                      <b>Nota: </b>el margen de contribución unitario se obtiene
+                      restando el costo variable unitario (CVU) al precio de
+                      venta unitario (PVU).
+                    </i>
+                  </p>
                 </Col>
               </Row>
               <Row>

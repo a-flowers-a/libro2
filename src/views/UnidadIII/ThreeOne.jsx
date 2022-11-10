@@ -35,8 +35,8 @@ const ThreeOne = () => {
                 </p>
                 <p>
                   Antes de abordar los métodos que se utilizan para realizar
-                  análisis financiero es importante que conozcas en qué el
-                  análisis financiero.
+                  análisis financiero es importante que conozcas en que consiste
+                  el análisis financiero.
                 </p>
                 <Card className="m-b-space">
                   <Card.Body>
@@ -65,7 +65,7 @@ const ThreeOne = () => {
                         de la empresa.
                       </p>
                       <footer className="blockquote-footer">
-                        <cite title="Source Title">García (2006:82). </cite>
+                        <cite title="Source Title">(García, 2006, p.82).</cite>
                       </footer>
                     </blockquote>
                   </Card.Body>
@@ -83,7 +83,7 @@ const ThreeOne = () => {
                 <p>
                   A los medios o herramientas de apoyo que nos ayudan a realizar
                   el análisis e interpretación de los estados financieros se les
-                  conoce como métodos de análisis financiero.
+                  conoce como métodos de análisis financiero. (Figura 3.1)
                 </p>
               </Row>
               <Row>

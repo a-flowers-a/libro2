@@ -70,12 +70,12 @@ const ThreeTwoTwoTwo = () => {
                 <thead>
                   <tr>
                     <th colSpan={2}>Concepto</th>
-                    <th>2017</th>
-                    <th>2018</th>
-                    <th>2019</th>
-                    <th>2020</th>
-                    <th>2021</th>
-                    <th>2022</th>
+                    <th>2023</th>
+                    <th>2024</th>
+                    <th>2025</th>
+                    <th>2026</th>
+                    <th>2027</th>
+                    <th>2028</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -186,7 +186,7 @@ const ThreeTwoTwoTwo = () => {
                 desarrollo de la entidad económica desde su creación, se debe
                 considerar que las empresas tienen diversas etapas en su
                 desarrollo y que las soluciones financieras deben ser adecuadas
-                a la etapa en la cual se encuentra la empresa
+                a la etapa en la cual se encuentra la empresa.
               </p>
             </Col>
           </Row>
@@ -205,7 +205,7 @@ const options = {
     },
   },
 };
-const labels = ["2017", "2018", "2019", "2020", "2021", "2022"];
+const labels = ["2023", "2024", "2025", "2026", "2027", "2028"];
 
 const ventasX = [21000, 25000, 27000, 23000, 31000, 34000];
 const ventas = {

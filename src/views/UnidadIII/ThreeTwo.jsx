@@ -27,7 +27,7 @@ const ThreeTwo = () => {
             <Col>
               <p>
                 Los principales métodos para realizar el análisis financiero se
-                muestran en la [figura x].
+                muestran en la (Figura 3.2)
               </p>
             </Col>
           </Row>

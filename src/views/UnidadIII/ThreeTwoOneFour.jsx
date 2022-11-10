@@ -27,8 +27,8 @@ const ThreeTwoOneFour = () => {
             <Col>
               <p>
                 El método de razones estándar consiste en establecer y utilizar
-                medidas básicas (referentes) de comparación, que se
-                predeterminan como una meta o ideal a alcanzar. Una vez
+                medidas básicas (referentes) de comparación, que pueden
+                predeterminarse como una meta o ideal a alcanzar. Una vez
                 obtenidas las razones simples, éstas se comparan con las razones
                 estándar, identificando las desviaciones tanto positivas como
                 negativas con la finalidad de establecer medidas correctivas.
