@@ -8,6 +8,7 @@ import { scrollTop } from "../../helpers/general";
 
 const ThreeThreeTwoOne = () => {
   const MCP = "../../assets/images/MCP.png";
+  const PEsinUtilidad = "../../assets/images/PEsinUtilidad.png";
 
   useEffect(() => {
     scrollTop();
@@ -33,7 +34,7 @@ const ThreeThreeTwoOne = () => {
                 Continuando con el ejemplo de las hamburguesas, supongamos que
                 ahora venderemos hamburguesas sencillas y hamburguesas
                 hawaianas. Del total de las hamburguesas vendidas al mes el 20%
-                son sencillas y el 80% son hawaiana con queso
+                son sencillas y el 80% son hawaianas con queso.
               </p>
             </Col>
           </Row>
@@ -56,7 +57,7 @@ const ThreeThreeTwoOne = () => {
                   </tr>
                   <tr>
                     <td colSpan={2}>
-                      <b>Costo variable unitario (C.V.U)</b>
+                      <b>Costo variable unitario (CVU)</b>
                     </td>
                     <td>
                       <b>$15.00</b>
@@ -84,7 +85,7 @@ const ThreeThreeTwoOne = () => {
                   </tr>
                   <tr>
                     <td colSpan={2}>
-                      <b>Margen de contribución unitario</b>
+                      <b>Margen de contribución unitario(MCU)</b>
                     </td>
                     <td>
                       <b>$20.00</b>
@@ -95,7 +96,7 @@ const ThreeThreeTwoOne = () => {
                       <b>Proporción en las ventas totales</b>
                     </td>
                     <td>
-                      <b>0.20</b>
+                      <b>20% o 0.20</b>
                     </td>
                   </tr>
                 </tbody>
@@ -105,7 +106,7 @@ const ThreeThreeTwoOne = () => {
               <Table striped bordered responsive size="sm">
                 <thead>
                   <tr className="center-text">
-                    <th colSpan={3}>Hamburguesa sencilla</th>
+                    <th colSpan={3}>Hamburguesa hawaiana</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -119,7 +120,7 @@ const ThreeThreeTwoOne = () => {
                   </tr>
                   <tr>
                     <td colSpan={2}>
-                      <b>Costo variable unitario (C.V.U)</b>
+                      <b>Costo variable unitario (CVU)</b>
                     </td>
                     <td>
                       <b>$20.00</b>
@@ -152,7 +153,7 @@ const ThreeThreeTwoOne = () => {
                   </tr>
                   <tr>
                     <td colSpan={2}>
-                      <b>Margen de contribución unitario</b>
+                      <b>Margen de contribución unitario(MCU)</b>
                     </td>
                     <td>
                       <b>$25.00</b>
@@ -163,7 +164,7 @@ const ThreeThreeTwoOne = () => {
                       <b>Proporción en las ventas totales</b>
                     </td>
                     <td>
-                      <b>0.80</b>
+                      <b>80% o 0.80</b>
                     </td>
                   </tr>
                 </tbody>
@@ -179,26 +180,26 @@ const ThreeThreeTwoOne = () => {
                 <tbody>
                   <tr>
                     <td>Renta</td>
-                    <td>$10,000.00</td>
+                    <td className="justify-text-right">$10,000.00</td>
                   </tr>
                   <tr>
                     <td>Sueldos</td>
-                    <td>$18,000.00</td>
+                    <td className="justify-text-right">$18,000.00</td>
                   </tr>
                   <tr>
                     <td>Productos de limpieza</td>
-                    <td>$1,000.00</td>
+                    <td className="justify-text-right">$1,000.00</td>
                   </tr>
                   <tr>
                     <td>Servicios</td>
-                    <td>$1,000.00</td>
+                    <td className="justify-text-right">$1,000.00</td>
                   </tr>
                   <tr>
                     <td>
                       <b>Total</b>
                     </td>
                     <td>
-                      <b>$30,000.00</b>
+                      <b className="justify-text-right">$30,000.00</b>
                     </td>
                   </tr>
                 </tbody>
@@ -209,42 +210,41 @@ const ThreeThreeTwoOne = () => {
           <Row>
             <Col>
               <p>
-                Para calcular el punto de equilibrio utilizamos la fórmula de la
-                mezcla
+                Para calcular el punto de equilibrio sin utilidad utilizamos la
+                siguiente fórmula:
               </p>
-              <MathComponent tex={String.raw`P.E\;mezcla=\frac{C.F}{M.C.P}`} />
-              <p>Necesitamos calcular el M.C.P, se determina así:</p>
             </Col>
           </Row>
           <Row className="justify-content-center m-v-space">
-            <Col sm={6}>
-              <Image src={MCP} className="full-img" />
+            <Col sm={8}>
+              <Image src={PEsinUtilidad} className="full-img" />
             </Col>
           </Row>
           <Row className="justify-text">
             <Col>
-              <p>Entonces tenemos</p>
+              <p>
+                Ahora si ya contamos con todos los valores para sustituirlos en
+                la fórmula:
+              </p>
             </Col>
-            <MathComponent tex={String.raw`M.C.U=(20)(0.20)+(25)(0.80)`} />
-            <MathComponent tex={String.raw`M.C.U=24`} />
             <MathComponent
-              tex={String.raw`P.E\;Mezcla=\frac{30,000}{24}=1,250`}
+              tex={String.raw`PE\;Mezcla=\frac{30,000}{24}=1,250`}
             />
             <p>
-              1,250 hamburguesas (incluye tanto sencillas como hawaianas. Para
+              1,250 hamburguesas (incluye tanto sencillas como hawaianas). Para
               saber cuántas sencillas y cuántas hawaianas solo hay que
-              multiplicar por la proporción de cada una.
+              multiplicar por la proporción en la que participa cada una en las
+              ventas totales.
             </p>
             <MathComponent tex={String.raw`(1,250)(0.20)=`} />
             <MathComponent tex={String.raw`250\;hamburguesas\;sencillas`} />
             <MathComponent tex={String.raw`(1,250)(0.80)=`} />
             <MathComponent tex={String.raw`1,000\;hamburguesas\;hawaianas`} />
             <p>
-              El punto de equilibrio se obtiene vendiendo 250 hamburguesas
-              sencillas y 1,000 hawaianas y recibiendo por esa venta $53,750
-              pesos, así no se gana y no se pierde. Por arriba de dichas
-              cantidades se tendría utilidad y por debajo de esa cantidad se
-              tendrían pérdidas.
+              De acuerdo con los resultados anteriores el punto de equilibrio se
+              obtiene vendiendo 250 hamburguesas sencillas y 1,000 hawaianas y
+              recibiendo por esa venta $53,750 pesos, así no se gana y no se
+              pierde, tal y como se muestra en la siguiente tabla:
             </p>
           </Row>
           <Row>
@@ -273,14 +273,14 @@ const ThreeThreeTwoOne = () => {
                   </tr>
                   <tr>
                     <td>
-                      <b>= Margen de contribución (M.C)</b>
+                      <b>= Margen de contribución (MC)</b>
                     </td>
                     <td>$5,000.00</td>
                     <td>$25,000.00</td>
                     <td>$30,000.00</td>
                   </tr>
                   <tr>
-                    <td>- Costos fijos (C.F)</td>
+                    <td>- Costos fijos (CF)</td>
                     <td colSpan="2"></td>
                     <td>$30,000</td>
                   </tr>
@@ -298,11 +298,9 @@ const ThreeThreeTwoOne = () => {
           <Row className="justify-text">
             <Col>
               <p>
-                Nota: Para determinar el punto de equilibrio con utilidad para
-                uno o más productos (mezcla), solo hay que tener el dato de
-                cuánto utilidad se desea obtener en un periodo de tiempo x, se
-                aplican las fórmulas de la tabla que te mostré y realizas el
-                mismo análisis que hemos hecho a lo largo de este video.
+                Si se vendieran más de 250 hamburguesas sencillas y más de 1,000
+                hawaianas se tendrían utilidades, de lo contrario se tendrían
+                pérdidas.
               </p>
             </Col>
           </Row>

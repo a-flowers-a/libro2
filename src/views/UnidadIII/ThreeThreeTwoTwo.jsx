@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Row, Col, Container, Table } from "react-bootstrap";
+import { Row, Col, Container, Table, Image } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
@@ -7,6 +7,8 @@ import { MathComponent } from "mathjax-react";
 import { scrollTop } from "../../helpers/general";
 
 const ThreeThreeTwoTwo = () => {
+  const PEmezclaUtilidad = "../../../../assets/images/PEmezclaUtilidad.png";
+
   useEffect(() => {
     scrollTop();
   }, []);
@@ -28,20 +30,41 @@ const ThreeThreeTwoTwo = () => {
           <Row className="justify-text">
             <Col>
               <p>
-                También podemos calcular el punto de equilibrio, para una mezcla
-                de productos, con utilidad. Continuando con nuestro ejemplo y
-                considerando que la empresa desea obtener una utilidad de 45,000
-                pesos mensuales, entonces el punto de equilibrio se calcula así:
+                Antes de continuar es importante que hayas leído el tópico
+                anterior (3.3.2.1) que corresponde al punto de equilibrio para
+                una mezcla de productos sin utilidad. El punto de equilibrio
+                para una mezcla de productos con utilidad indica la cantidad de
+                productos que se tendrían que producir y/o vender para recuperar
+                el costo total y además obtener una utilidad deseada, para ello
+                ocuparemos la siguiente fórmula:
               </p>
-              <MathComponent tex={String.raw`P.E\;Mezcla=`} />
+            </Col>
+          </Row>
+          <Row className="justify-content-center m-v-space">
+            <Col sm={10} md={9}>
+              <Image
+                className="full-img"
+                src={PEmezclaUtilidad}
+                alt="Formulas punto de equilibrio para una mezcla de productos con utilidad"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <p>
+                Continuando con nuestro ejemplo y considerando que la empresa
+                desea obtener una utilidad de 45,000 pesos mensuales, entonces
+                el punto de equilibrio se calcula así:
+              </p>
+              <MathComponent tex={String.raw`PE\;Mezcla=`} />
               <MathComponent
-                tex={String.raw`\frac{C.F+utilidad\;deseada}{M.C.P}=`}
+                tex={String.raw`\frac{CF+utilidad\;deseada}{MCPP}=`}
               />
               <MathComponent tex={String.raw`\frac{30,000+45,000}{24}=`} />
               <MathComponent tex={String.raw`3,125\;hamburguesas`} />
               <p>Donde:</p>
-              <p>C.F = costos fijos</p>
-              <p>M.C.P = margen de contribución ponderado</p>
+              <p>CF = costos fijos</p>
+              <p>MCPP = margen de contribución ponderado promedio</p>
               <p>
                 Para obtener el punto de equilibrio para cada uno de los
                 productos, simplemente se multiplica el punto de equilibrio de

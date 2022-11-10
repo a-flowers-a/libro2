@@ -104,6 +104,9 @@ a {
   text-align: center;
 }
 
+.justify-text-right{
+  text-align: right;
+}
 .v-center-content {
   display: flex;
   align-items: center;
@@ -206,6 +209,9 @@ ol.upper-letter {
 }
 
 /****** Table *****/
+.table{
+  vertical-align: middle;
+}
 .table th {
   vertical-align: middle;
   text-align: center;

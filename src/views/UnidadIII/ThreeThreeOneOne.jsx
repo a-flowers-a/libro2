@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Row, Col, Container, Table } from "react-bootstrap";
+import { Row, Col, Container, Table, Image } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
@@ -7,6 +7,9 @@ import { MathComponent } from "mathjax-react";
 import { scrollTop } from "../../helpers/general";
 
 const ThreeThreeOneOne = () => {
+  const PEformulas = "../../../../assets/images/PEformulas.png";
+  const PEgrafica = "../../../../assets/images/PEgrafica.png";
+
   useEffect(() => {
     scrollTop();
   }, []);
@@ -37,33 +40,33 @@ const ThreeThreeOneOne = () => {
                 <Col sm={6} md={4}>
                   <Table striped bordered responsive size="sm">
                     <thead>
-                      <tr className="center-text">
+                      <tr>
                         <th colSpan={2}>Costos fijos mensuales</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td>Renta</td>
-                        <td>$10,000.00</td>
+                        <td className="justify-text-right">$10,000.00</td>
                       </tr>
                       <tr>
                         <td>Sueldos</td>
-                        <td>$18,000.00</td>
+                        <td className="justify-text-right">$18,000.00</td>
                       </tr>
                       <tr>
                         <td>Productos de limpieza</td>
-                        <td>$1,000.00</td>
+                        <td className="justify-text-right">$1,000.00</td>
                       </tr>
                       <tr>
                         <td>Servicios</td>
-                        <td>$1,000.00</td>
+                        <td className="justify-text-right">$1,000.00</td>
                       </tr>
                       <tr>
                         <td>
                           <b>Total</b>
                         </td>
                         <td>
-                          <b>$30,000.00</b>
+                          <b className="justify-text-right">$30,000.00</b>
                         </td>
                       </tr>
                     </tbody>
@@ -87,7 +90,7 @@ const ThreeThreeOneOne = () => {
                       </tr>
                       <tr>
                         <td colSpan={2}>
-                          <b>Costo variable unitario (C.V.U)</b>
+                          <b>Costo variable unitario (CVU)</b>
                         </td>
                         <td>
                           <b>$15.00</b>
@@ -115,7 +118,7 @@ const ThreeThreeOneOne = () => {
                       </tr>
                       <tr>
                         <td colSpan={2}>
-                          <b>Margen de contribución unitario</b>
+                          <b>Margen de contribución unitario(MCU)</b>
                         </td>
                         <td>
                           <b>$20.00</b>
@@ -147,55 +150,32 @@ const ThreeThreeOneOne = () => {
               <Row>
                 <Col>
                   <p>
-                    Para calcular el P.E en número de unidades y en cantidad de
-                    dinero sin utilidad ocuparemos la siguiente fórmula:
+                    Para calcular el punto de equilibrio en número de unidades y
+                    en cantidad de dinero sin utilidad ocuparemos la siguientes
+                    fórmulas:
                   </p>
                 </Col>
               </Row>
               <Row className="justify-content-center m-v-space">
-                <Col sm={10} md={9}>
-                  <Table striped bordered hover responsive size="sm">
-                    <thead>
-                      <tr>
-                        <th>Punto de equilibrio en número de unidades</th>
-                        <th>
-                          Punto de equilibrio expresado en cantidad de dinero
-                          (pesos)
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <MathComponent
-                            tex={String.raw`P.E\;en\;uds.=\frac{C.F}{M.C.U} `}
-                          />
-                        </td>
-                        <td>
-                          <MathComponent
-                            tex={String.raw`P.E\;en\;pesos.=\frac{C.F}{1-\frac{C.V.U}{P}}`}
-                          />
-                          <p>Otra forma de calcular P.E en pesos: </p>
-                          <MathComponent
-                            tex={String.raw`P.E\;en\;pesos.=(P.E\;en\;uds)(P)`}
-                          />
-                        </td>
-                      </tr>
-                    </tbody>
-                  </Table>
+                <Col sm={10} md={10}>
+                  <Image
+                    className="full-img"
+                    src={PEformulas}
+                    alt="Formulas punto de equilibrio"
+                  />
                 </Col>
               </Row>
               <Row>
                 <Col>
                   <p>Sustituyendo los datos tenemos:</p>
                   <MathComponent
-                    tex={String.raw`P.E\;en\;uds.=\frac{C.F}{M.C.U}=\frac{30000}{20}`}
+                    tex={String.raw`PE\;en\;uds.=\frac{CF}{MCU}=\frac{30000}{20}`}
                   />
                   <MathComponent
                     tex={String.raw`=1500\;hamburguesas\;mensuales`}
                   />
                   <MathComponent
-                    tex={String.raw`P.E\;en\;pesos.= \frac{C.F}{1-\frac{C.V.U}{P}} = 52,500`}
+                    tex={String.raw`PE\;en\;pesos.= \frac{CF}{1-\frac{CVU}{P}} = 52,500`}
                   />
                   <p>
                     El punto de equilibrio se alcanza al vender 1,500
@@ -206,18 +186,11 @@ const ThreeThreeOneOne = () => {
                     estaríamos recuperando el costo total pero no estaríamos
                     ganando, comprobémoslo:
                   </p>
+
                   <p>
                     Hagamos la gráfica del punto de equilibrio, para lo cual
                     necesitamos:
                   </p>
-
-                  <MathComponent tex={String.raw`I = C.T`} />
-                  <MathComponent tex={String.raw`(Q)(P) = C.F + C.V.U (Q)`} />
-                  <MathComponent
-                    tex={String.raw`(1,500)(35) = 30,000 + (15)(1,500)`}
-                  />
-                  <MathComponent tex={String.raw`52,500 = 52,500`} />
-
                   <ol>
                     <li>Definir una escala para las cantidades</li>
                     <li>
@@ -229,6 +202,19 @@ const ThreeThreeOneOne = () => {
                       </ul>
                     </li>
                   </ol>
+                  <MathComponent tex={String.raw`I = CT`} />
+                  <MathComponent tex={String.raw`(Q)(P) = CF + CVU (Q)`} />
+                  <MathComponent
+                    tex={String.raw`(1,500)(35) = 30,000 + (15)(1,500)`}
+                  />
+                  <MathComponent tex={String.raw`52,500 = 52,500`} />
+                  <p>Donde:</p>
+                  <p>I = Ingreso o ventas</p>
+                  <p>CT = Costo total</p>
+                  <p>Q = Cantidad</p>
+                  <p>P = Precio</p>
+                  <p>CF = Costos fijos</p>
+                  <p>CVU = Costo variable unitario</p>
                 </Col>
               </Row>
               <Row className="center-table-rows justify-content-center">
@@ -240,16 +226,16 @@ const ThreeThreeOneOne = () => {
                           <b>Q</b>
                         </th>
                         <th>
-                          <b>C.F</b>
+                          <b>CF</b>
                         </th>
                         <th>
-                          <b>C.V.U</b>
+                          <b>CVU</b>
                         </th>
                         <th>
-                          <b>C.V.T</b>
+                          <b>CVT</b>
                         </th>
                         <th>
-                          <b>C.T</b>
+                          <b>CT</b>
                         </th>
                         <th>
                           <b>P</b>
@@ -317,9 +303,15 @@ const ThreeThreeOneOne = () => {
                   </Table>
                 </Col>
               </Row>
-              <p>
-                <b>FALTA GRÁFICA</b>
-              </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center m-v-space">
+            <Col sm={10} md={9}>
+              <Image
+                className="full-img"
+                src={PEgrafica}
+                alt="Gráfica punto de equilibrio"
+              />
             </Col>
           </Row>
         </Container>
