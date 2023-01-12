@@ -2,6 +2,20 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Run app with docker
+
+This is useful when the environment for developing is not set and you want to see the app running.
+
+Preconditions:
+
+1. To have docker installed and its daemon running.
+2. To have docker-compose installed.
+3. Port 3000 should be available
+
+At the terminal in the root folder run the command `docker-compose up -d --build`. This will always build the project's image and run a container for it. Then open your browser on `localhost:3000` and the app should be shown.
+
+To stop the container just run `docker-compose down`, this will also delete the container when it has stopped.
+
 ## Available Scripts
 
 In the project directory, you can run:

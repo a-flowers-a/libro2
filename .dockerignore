@@ -1,0 +1,8 @@
+# Dockerfile
+Dockerfile
+
+# node modules
+**/node_modules
+
+#The markdown files
+*.md
