@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  libro2-container:
+    build:
+      context: '../'
+      # path to dockerfile is according to the context
+      dockerfile: './docker/Dockerfile'
+    ports:
+      - '3000:3000'
+    

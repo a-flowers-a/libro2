@@ -1,5 +1,9 @@
-# Dockerfile
-Dockerfile
+## the docker client (Command Line Interface) starts searching for a file
+# called .dockerignore in the Build Context’s root directory
+##
+
+# Docker and docker compose files
+/docker
 
 # node modules
 **/node_modules
