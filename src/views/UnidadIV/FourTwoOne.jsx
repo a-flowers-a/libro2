@@ -50,6 +50,24 @@ const FourTwoOne = () => {
                           />
                         </Col>
                       </Row>
+                      <p>
+                        Expliquemos como se obtuvieron los cálculos en la
+                        anterior linea de flujo de efectivo invertimos $10,000
+                        pesos al final del periodo 1, esos $10,000 pesos
+                        invertidos a una tasa del 10% anual ganan $1,100 pesos
+                        con lo que al final del período 2 se tendrían $11,000
+                        pesos; al final del período 2 se invierten otros $10,000
+                        pesos sumando un total de $21,000 pesos. Dicha cantidad
+                        se reinvierte y gana $2,100 pesos, entonces al final del
+                        período 3 se tienen $23,100 pesos que se suman a los
+                        $10,000 pesos que se están invirtiendo cada año dando un
+                        total de $33,100 pesos cantidad que se invierte y gana
+                        $3,310 dando un total de $36,410 pesos al final del
+                        período 4 y se le suman los $10,000 pesos (que ya no
+                        ganan intereses) en razon de que termina el plazo de la
+                        inversión, de tal manera que al final se tienen $46,410
+                        pesos.
+                      </p>
                     </li>
                     <li>
                       <p>
@@ -63,7 +81,7 @@ const FourTwoOne = () => {
                           />
                         </Col>
                       </Row>
-                      <p>El VF del periodo 1 se capitaliza en 3 periodos</p>
+                      <p>El VF del período 1 se capitaliza en 3 periodos</p>
                       <Row className="justify-content-center m-b-space">
                         <Col md={10}>
                           <MathComponent
@@ -71,7 +89,7 @@ const FourTwoOne = () => {
                           />
                         </Col>
                       </Row>
-                      <p>El VF del periodo 2 se capitaliza en 2 periodos</p>
+                      <p>El VF del período 2 se capitaliza en 2 periodos</p>
                       <Row className="justify-content-center m-b-space">
                         <Col md={10}>
                           <MathComponent
@@ -79,7 +97,7 @@ const FourTwoOne = () => {
                           />
                         </Col>
                       </Row>
-                      <p>El VF del periodo 2 se capitaliza en 2 periodos</p>
+                      <p>El VF del período 3 se capitaliza en 3 periodos</p>
                       <Row className="justify-content-center m-b-space">
                         <Col md={10}>
                           <MathComponent
@@ -87,7 +105,7 @@ const FourTwoOne = () => {
                           />
                         </Col>
                       </Row>
-                      <p>El VF del periodo 4 no se capitaliza</p>
+                      <p>El VF del período 4 no se capitaliza</p>
                       <Row className="justify-content-center m-b-space">
                         <Col md={10}>
                           <MathComponent

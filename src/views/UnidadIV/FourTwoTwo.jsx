@@ -28,34 +28,38 @@ const FourTwoTwo = () => {
               <Row className="justify-text">
                 <Col>
                   <p>
-                    Utilizando los datos del ejemplo anterior, ahora vamos a
-                    determinar el valor presente de la anualidad ordinaria.
+                    Utilizando los datos del ejemplo anterior (visto en valor
+                    futuro de anualidades ordinarias), ahora vamos a determinar
+                    el valor presente de la anualidad ordinaria.
                   </p>
                   <p>
-                    Puedes calcularlo cuentas con al menos estas tres opciones:
+                    Replanteamos el problema considerando los datos del ejemplo
+                    anterior:
                   </p>
+                  <p>
+                    Al final de cada año inviertes $10,000 durante los próximos
+                    4 años a una tasa de interés del 10% anual ¿cuál es el valor
+                    presente de la anualidad ordinaria?
+                  </p>
+                  <p>Para su cálculo cuentas con al menos dos opciones: </p>
                 </Col>
               </Row>
               <Row>
                 <Col>
                   <ol>
-                    <li>Utilizando la línea de flujo de efectivo </li>
                     <li>
-                      Utilizando la fórmula de valor presente como si se tratara
-                      de cantidades únicas
+                      Utilizando la línea de flujo de efectivo y la fórmula de
+                      valor presente como si se tratara de cantidades únicas{" "}
                     </li>
                     <li>
                       Fórmula de valor presente de una anualidad ordinaria
                     </li>
+                    <li>
+                      Cálculo del valor presente de anualidades ordinarias
+                      utilizando la línea de flujo de efectivo y la fórmula de
+                      valor presente somo si se tratara de cantidades únicas
+                    </li>
                   </ol>
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <p>
-                    1. Cálculo del valor presente de anualidades ordinarias
-                    utilizando la línea de flujo de efectivo.
-                  </p>
                 </Col>
               </Row>
               <Row className="justify-content-center">
@@ -118,21 +122,23 @@ const FourTwoTwo = () => {
                     Anualidad
                   </p>
                   <p className="no-marg-bottom">
-                    <span className="bold">i</span> = Tasa de Descuento i
+                    <span className="bold">
+                      <i>i</i>
+                    </span>
+                    = Tasa de Descuento <i>i</i>
                   </p>
                   <p>
                     <span className="bold">n</span> = Periodo de Tiempo
                   </p>
                   <p>Sustituyendo los valores en la fórmula tenemos:</p>
-                  <p className="no-marg-bottom">
-                    <span className="bold">PA</span> = 10,000
-                  </p>
-                  <p className="no-marg-bottom">
-                    <span className="bold">i</span> = 10%
-                  </p>
-                  <p>
-                    <span className="bold">n</span> = 4
-                  </p>
+                  <Row className="justify-content-center m-b-space">
+                    <Col md={10}>
+                      <MathComponent
+                        tex={String.raw`{{VP}_{An}}=10,000\frac{1-\frac{1}{(1+0.10)^{4}}}{0.10}`}
+                      />
+                      <MathComponent tex={String.raw`{{VP}_{An}}=31,698.63`} />
+                    </Col>
+                  </Row>
                   <p>
                     El valor futuro de esta anualidad es de $46,410 y el valor
                     presente es de $31,698.63 de las anualidades juntas.

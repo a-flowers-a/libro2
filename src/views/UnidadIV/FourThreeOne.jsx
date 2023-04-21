@@ -49,7 +49,10 @@ const FourThreeOne = () => {
                     la preparación de los estados financieros presupuestados
                     (González, 2003).
                   </p>
-                  <p>La secuencia para integrar el presupuesto maestro es:</p>
+                  <p>
+                    El presupuesto maestro se integra con los siguientes
+                    presupuestos, aunque dependerá del giro de la empresa:
+                  </p>
                 </Col>
               </Row>
               <Row>
@@ -67,9 +70,8 @@ const FourThreeOne = () => {
                     <li>Presupuestos de costos de venta</li>
                     <li>
                       Presupuestos financieros, de efectivo, de capital y de
-                      requerimientos
+                      requerimientos financieros
                     </li>
-                    <li>financieros</li>
                     <li>Estados financieros presupuestados o proforma</li>
                   </ol>
                 </Col>
@@ -77,67 +79,18 @@ const FourThreeOne = () => {
               <Row className="justify-text">
                 <Col>
                   <p>
-                    Utilizando la información anterior, elabore detallando para
-                    cada uno de los meses:
-                  </p>
-                  <ol>
-                    <li>
-                      <b>Presupuestos de operación</b>
-                      <ol>
-                        <li>Presupuesto de ventas </li>
-                        <li>
-                          Presupuesto de cobros de efectivo a los clientes
-                        </li>
-                        <li>Presupuesto de compras</li>
-                        <li>
-                          Presupuesto de salida de efectivo por concepto de
-                          compras
-                        </li>
-                        <li>Presupuesto de gastos generales (de operación)</li>
-                        <li>
-                          Presupuesto de salida de efectivo por concepto de
-                          gastos generales (de operación)
-                        </li>
-                      </ol>
-                    </li>
-                    <li>
-                      <b>Presupuestos financieros</b>
-                      <ol>
-                        <li>
-                          Presupuesto de efectivo (presupuesto de flujo de
-                          efectivo)
-                        </li>
-                        <li>
-                          Estado de Resultados del 1 de dic al 31 de marzo de
-                          2020
-                        </li>
-                        <li>
-                          Estado de situación financiera proforma al 31 de marzo
-                          de 2020
-                        </li>
-                      </ol>
-                    </li>
-                  </ol>
-                  <p>
-                    El estado de resultados presupuestado se basa en los
-                    presupuestos de operación y junto con los presupuestos
-                    financieros proporcionan información para la elaboración del
-                    estado de flujo de efectivo proforma y del estado de
-                    situación proforma.
+                    Es importante mencionar que el estado de resultados
+                    presupuestado se basa en los presupuestos de operación y
+                    junto con los presupuestos financieros proporcionan
+                    información para la elaboración del estado de flujo de
+                    efectivo proforma y del estado de situación proforma
                   </p>
                   <p>
-                    Los presupuestos de operación dan origen al estado de
-                    resultados presupuestado, que junto con los presupuestos
-                    financieros proporcionan la información necesaria para la
-                    elaboración del balance general y del estado de flujo de
-                    efectivo proforma.
-                  </p>
-                  <p>
-                    Por último la implementación y control del presupuesto
-                    maestro implican evaluar continuamente el desempeño real
-                    contra el presupuestado para detectar desviaciones y
-                    realizar los ajustes necesarios dirigidos al logro de los
-                    objetivos estratégicos de la organización.
+                    La implementación y control del presupuesto maestro implican
+                    evaluar continuamente el desempeño real contra el
+                    presupuestado para detectar desviaciones y realizar los
+                    ajustes necesarios dirigidos al logro de los objetivos
+                    estratégicos de la organización.
                   </p>
                 </Col>
               </Row>

@@ -44,7 +44,7 @@ const FourThree = () => {
                     estratégicos y con base en estos se formulan los planes y
                     presupuestos a corto plazo u operativos. No hay un consenso
                     en cuanto al tiempo que se considera como corto o largo
-                    plazos; en este sentido, Gitman (2003) menciona que el corto
+                    plazos; en este sentido, Gitman (2012) menciona que el corto
                     plazo podría cubrir un período de uno a dos años y el largo
                     plazo de más de dos años; también enfatiza que las empresas
                     que están sujetas a altos grados de incertidumbre operativa,

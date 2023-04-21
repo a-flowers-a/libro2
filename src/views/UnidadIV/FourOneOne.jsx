@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container, Image } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
@@ -10,6 +10,7 @@ const FourOneOne = () => {
   useEffect(() => {
     scrollTop();
   }, []);
+  const FlujoDeEfectivo = "../../assets/images/FlujosDeEfectivo.png";
 
   return (
     <div className="primary-div">
@@ -27,75 +28,70 @@ const FourOneOne = () => {
               <Row className="justify-text">
                 <Col>
                   <p>
-                    El valor del dinero en el tiempo hace referencia al valor
-                    futuro y al valor presente.
+                    Del valor del dinero en el tiempo hay dos conceptos básicos
+                    que debemos comprender: valor futuro y valor presente.
                   </p>
                 </Col>
               </Row>
               <Row>
                 <Col>
-                  <ul>
-                    <li>
-                      <span className="bold">Valor futuro:</span> Es el efectivo
-                      que se recibirá en una fecha futura. La técnica del valor
-                      futuro utiliza la capitalización para encontrar el valor
-                      futuro de cada flujo de efectivo
-                    </li>
-                    <li>
-                      <span className="bold">Valor presente:</span> Término que
-                      se usa para referirse al valor actual del dinero. La
-                      técnica del valor presente utiliza la tasa de descuento.
-                      Aunque el valor futuro es más atractivo por naturaleza, el
-                      valor presente es más útil para la toma de decisiones
-                      financieras (Gitman, 2003).
-                    </li>
-                  </ul>
+                  <p className="bold light-navy">Valor futuro</p>
+                  <p>
+                    Es el efectivo que se recibirá en una fecha futura. La
+                    técnica de valor futuro utiliza la capitalización para
+                    encontrar el valor futuro de cada flujo de efectivo.{" "}
+                  </p>
+                  <p className="bold light-navy">Valor presente</p>
+                  <p>
+                    Término que se usa para referirse al valor actual del
+                    dinero. La técnica del valor presente utiliza la tasa de
+                    descuento. Aunque el valor futuro es más atractivo por
+                    naturaleza, el valor presente es más útil para la toma de
+                    decisiones financieras (Gitman, 2012).
+                  </p>
+                </Col>
+              </Row>
+              <Row className="justify-content-center m-b-space">
+                <Col sm={8}>
+                  <Image src={FlujoDeEfectivo} className="full-img" />
                 </Col>
               </Row>
               <Row className="justify-text">
                 <Col>
+                  <span className="bold">Cantidad única</span>
                   <p>
-                    Es importante mencionar que el valor presente y el valor
-                    futuro se determinan sobre los flujos de efectivo –entradas
-                    y salidas de dinero– de una empresa, estos flujos de
-                    efectivo pueden ser: una cantidad única, una anualidad o una
-                    serie combinada.
+                    Es cualquier cantidad de dinero que se posee hoy o que se
+                    espera tener en alguna fecha futura. Por ejemplo, $1,000
+                    pesos o $200 pesos o $5,000 pesos que se tiene el día de hoy
+                    o bien que se espera recibir en el futuro.
+                    <span className="bold">Figura 29</span>.
                   </p>
                 </Col>
               </Row>
               <Row className="justify-text">
                 <Col>
+                  <span className="bold">Anualidad</span>
                   <p>
-                    <span className="bold">Cantidad única.</span> Cantidad
-                    global que se tiene actualmente (valor presente) o que se
-                    espera en una fecha futura (valor futuro); es cualquier
-                    cantidad que no se repite en forma periódica, si dicha
-                    cantidad se repite en forma periódica entonces ya no se
-                    trataría de una cantidad única sino de una anualidad. Los
-                    conceptos más básicos de valores futuro y presente se
-                    refieren a cantidades únicas. (verX)
-                    <span className="bold">Figura 29</span>).
+                    Son cantidades iguales que se repiten periódicamente durante
+                    un determinado tiempo. No necesariamente son flujos de
+                    efectivo anuales, pueden ser quincenales, mensuales,
+                    bimestrales o en cualquier otro periodo de tiempo.
                   </p>
                 </Col>
               </Row>
               <Row className="justify-text">
                 <Col>
+                  <span className="bold">Ingreso mixto</span>
                   <p>
-                    <span className="bold">Anualidad.</span>
-                    Es un patrón de flujos de efectivo periódicos iguales
-                    (Gitman, 2012). Es importante mencionar que no
-                    necesariamente se refiere a periodos anuales. Por ejemplo,
-                    pagar o recibir $15,000 al final de cada uno de los próximos
-                    10 meses.
+                    Conjunto de flujos de efectivo periódicos y desiguales que
+                    no reflejan un patrón en particular. Por ejemplo, para el
+                    período uno $5,000 pesos, para el período dos $4,000 pesos,
+                    para el período tres $8,000 pesos, etc.
                   </p>
-                </Col>
-              </Row>
-              <Row className="justify-text">
-                <Col>
                   <p>
-                    <span className="bold">Serie combinada.</span>
-                    Es una serie de flujos de efectivo en periodos desiguales
-                    que no refleja un patrón particular (Gitman, 2012).
+                    En los siguientes subtemas se abordarán el valor presente y
+                    valor futuro tanto de cantidades únicas, así como de
+                    anualidades.
                   </p>
                 </Col>
               </Row>

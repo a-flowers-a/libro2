@@ -41,13 +41,13 @@ const FourTwo = () => {
                       <span className="bold">
                         Ordinarias, vencidas o diferidas:
                       </span>
-                      El flujo de efectivo (entrada o salida de efectivo) ocurre
+                      el flujo de efectivo (entrada o salida de efectivo) ocurre
                       al final de cada periodo; estas anualidades son las más
                       comunes en finanzas.
                     </li>
                     <li>
-                      <span className="bold">Anticipadas:</span>
-                      El flujo de efectivo (entrada o salida de efectivo) ocurre
+                      <span className="bold">Anticipadas: </span>
+                      el flujo de efectivo (entrada o salida de efectivo) ocurre
                       al inicio de cada periodo.
                     </li>
                   </ul>

@@ -28,7 +28,10 @@ const FourOneOneOne = () => {
               </Row>
               <Row>
                 <Col>
-                  <p>Este valor se puede determinar con al menos dos formas:</p>
+                  <p>
+                    El valor futuro de una cantidad única se puede determinar,
+                    al menos, de dos formas
+                  </p>
                 </Col>
               </Row>
               <Row>
@@ -53,10 +56,10 @@ const FourOneOneOne = () => {
                   <p>Ejemplo:</p>
                   <p>
                     En el supuesto que el día de hoy realizaras una inversión de
-                    100,000 con vencimiento a 3 años con una tasa de interés
-                    anual del 10% ¿Cuánto dinero recibirás al finalizar los tres
-                    años? Hagamos los cálculos sobre la siguiente línea de flujo
-                    de efectivo:
+                    $100,000 pesos con vencimiento a 3 años con una tasa de
+                    interés anual del 10% ¿Cuánto dinero recibirás al finalizar
+                    los tres años? Hagamos los cálculos sobre la siguiente línea
+                    de flujo de efectivo:
                   </p>
                 </Col>
               </Row>
@@ -108,7 +111,7 @@ const FourOneOneOne = () => {
                         <td className="center-text">1</td>
                         <td>100,000</td>
                         <td>(100,000) (0.10) = 10,000</td>
-                        <td>100,000 + 10,000 = 110.000</td>
+                        <td>100,000 + 10,000 = 110,000</td>
                       </tr>
                       <tr>
                         <td className="center-text">2</td>
@@ -185,7 +188,10 @@ const FourOneOneOne = () => {
                     <span className="bold">VF</span> = Valor futuro
                   </p>
                   <p>
-                    <span className="bold">i</span> = Tasa de interés
+                    <span className="bold">
+                      <i>i</i>
+                    </span>
+                    = Tasa de interés
                   </p>
                   <p>
                     <span className="bold">n</span> = período de tiempo

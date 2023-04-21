@@ -32,9 +32,10 @@ const FourOneOneTwo = () => {
                     Ya sabes calcular el valor futuro de una cantidad única,
                     para encontrar el valor presente solo tienes que despejar,
                     por ejemplo, ¿cuánto tendrías que depositar hoy en una
-                    cuenta que paga el 6% de interés anual para recibir, al
-                    término de 5 años $100,000?
+                    cuenta que paga el 10% de interés anual para recibir, al
+                    término de 3 años $100,000?
                   </p>
+                  <p>Tenemos la fórmula de valor futuro </p>
                 </Col>
               </Row>
               <Row className="justify-content-center m-b-space">
@@ -45,6 +46,11 @@ const FourOneOneTwo = () => {
                   />
                 </Col>
               </Row>
+              <Row>
+                <Col>
+                  <p>Despejamos el valor presente</p>
+                </Col>
+              </Row>
               <Row className="justify-content-center m-b-space">
                 <Col sm={10}>
                   <MathComponent
@@ -53,11 +59,11 @@ const FourOneOneTwo = () => {
                   />
                   <MathComponent
                     className={"full-img"}
-                    tex={String.raw`=\frac{100,000}{(1+0.06)^{5}}`}
+                    tex={String.raw`=\frac{133,100}{(1+0.10)^{3}}`}
                   />
                   <MathComponent
                     className={"full-img"}
-                    tex={String.raw`=\frac{100,000}{1.338225578}=74,725.81`}
+                    tex={String.raw`=\frac{133,100}{1.331}=100,000`}
                   />
                 </Col>
               </Row>
