@@ -1,7 +1,7 @@
 import React from "react";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
-import { Container, Image, Row, Col } from "react-bootstrap";
+import { Container, Image, Row, Col, Card, CardGroup } from "react-bootstrap";
 import HomeMenu from "../../components/HomeSideMenu/HomeMenu";
 import ToBookButton from "../../components/ToBookButton";
 
@@ -28,47 +28,73 @@ function Welcome() {
                 <Col sm={11}>
                   <div className="full-card justify-text soft-blue-bg">
                     <Row>
-                      <Col sm={8}>
+                      <Col>
                         <p>
-                          Recibe la más cordial bienvenida a este recurso
-                          didáctico digital (RDD) de la Unidad de Aprendizaje
-                          (UA) de Administración de Proyectos que se imparte en
-                          la Escuela Superior de Cómputo del Instituto
-                          Politécnico Nacional. Este RDD fue construido con el
-                          propósito de promover el aprendizaje autónomo, así
-                          como de facilitar, enriquecer y fortalecer los
-                          procesos de enseñanza-aprendizaje de la UA en cuestión
-                          en la modalidad escolarizada.
+                          Estimados estudiantes de la unidad de aprendizaje de
+                          Finanzas empresariales, perteneciente al segundo
+                          semestre del programa académico de Ingeniería en
+                          Inteligencia Artificial y al tercer semestre de los
+                          programas académicos de Ingeniería en Sistemas
+                          Computacionales y de Licenciatura en Ciencia de Datos,
+                          que se imparten en diferentes campus del Instituto
+                          Politécnico Nacional, reciban la más cordial de las
+                          bienvenidas a este recurso didáctico digital (RDD):
+                          Polilibro académico de la unidad de aprendizaje
+                          Finanzas empresariales, que fue construido con el
+                          propósito de facilitar los procesos de
+                          enseñanza-aprendizaje y favorecer el aprendizaje
+                          autónomo.
                         </p>
+                        <p>
+                          Esperamos que las siguientes semanas sean
+                          enriquecedoras de experiencias de aprendizaje.
+                        </p>
+                        <p>¡Te deseamos el mayor de los éxitos!</p>
                       </Col>
-                      <Col sm={4}>
-                        <Image
-                          className="full-img"
-                          src={welcomeImg}
-                          alt="person"
-                        />
-                      </Col>
-
-                      <p>
-                        Esperamos que las próximas semanas sean enriquecedoras
-                        de experiencias de aprendizaje, para lo cual es
-                        indispensable tener en cuenta algunos elementos clave
-                        tales como: el compromiso e interacción de los actores
-                        (participantes y facilitadores del aprendizaje), la
-                        conformación de un gran equipo de trabajo colaborativo y
-                        la realización de las actividades de aprendizaje de
-                        acuerdo con las especificaciones proporcionadas y en los
-                        tiempos establecidos.
-                      </p>
-                      <p>
-                        Nuestra intención es que disfrutes esta experiencia
-                        educativa, ¡te deseamos el mayor de los éxitos!
-                      </p>
-                      <p>
-                        Para cualquier duda o comentario, en relación a este
-                        material, puedes contactarnos en:
-                      </p>
-                      <p>johernandezja@ipn.mx y jimenezg@ipn.mx</p>
+                    </Row>
+                    <Row>
+                      <CardGroup>
+                        <Card>
+                          <Card.Img variant="top" src={welcomeImg} />
+                          <Card.Body>
+                            <Card.Title>Josefina Hernández Jaime</Card.Title>
+                            <Card.Text>
+                              <p>
+                                Maestra en Ciencias de la Administración por la
+                                UPIICSA, del IPN.
+                              </p>
+                            </Card.Text>
+                          </Card.Body>
+                          <Card.Footer>johernandezja@ipn.mx</Card.Footer>
+                        </Card>
+                        <Card>
+                          <Card.Img variant="top" src={welcomeImg} />
+                          <Card.Body>
+                            <Card.Title>Eduardo Rodríguez Flores</Card.Title>
+                            <Card.Text>
+                              <p>Maestro en administración por la UNAM.</p>
+                            </Card.Text>
+                          </Card.Body>
+                          <Card.Footer>erodriguezf@ipn.mx</Card.Footer>
+                        </Card>
+                        <Card>
+                          <Card.Img variant="top" src={welcomeImg} />
+                          <Card.Body>
+                            <Card.Title>Yasmin Ivette Jiménez Galán</Card.Title>
+                            <Card.Text>
+                              <p>
+                                Doctora en educación por el Centro de Estudios
+                                Superiores en Educación CESE
+                              </p>
+                              <p>
+                                M. en C. con especialidad en Administración de
+                                negocios por la ESCA Sto. Tomás.
+                              </p>
+                            </Card.Text>
+                          </Card.Body>
+                          <Card.Footer>yjimenezg@ipn.mx</Card.Footer>
+                        </Card>
+                      </CardGroup>
                     </Row>
                   </div>
                 </Col>

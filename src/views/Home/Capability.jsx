@@ -18,7 +18,7 @@ function Capability() {
           </Row>
           <Row className="m-v-space ">
             <Col>
-              <h2>Unidad de competencia</h2>
+              <h2>Propósito de la unidad de aprendizaje</h2>
             </Col>
           </Row>
           <Row className="justify-content-center">
@@ -28,8 +28,8 @@ function Capability() {
             <Col sm={8}>
               <div className="full-card justify-text">
                 <p>
-                  Reconoce el papel de las finanzas a partir del contexto
-                  empresarial.
+                  Utiliza las herramientas matemáticas y financieras a partir de
+                  la información generada en la empresa.
                 </p>
               </div>
             </Col>

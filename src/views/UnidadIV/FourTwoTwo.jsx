@@ -140,8 +140,8 @@ const FourTwoTwo = () => {
                     </Col>
                   </Row>
                   <p>
-                    El valor futuro de esta anualidad es de $46,410 y el valor
-                    presente es de $31,698.63 de las anualidades juntas.
+                    El resultado: $31,698.63 que corresponde al valor presente
+                    considerando todas las anualidades juntas.
                   </p>
                 </Col>
               </Row>
