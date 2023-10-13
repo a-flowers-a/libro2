@@ -38,6 +38,7 @@ import TwoThreeTwo from "./views/UnidadII/TwoThreeTwo";
 import CierreII from "./views/UnidadII/Cierre";
 
 // Unit three
+import IntroduccionIII from "./views/UnidadIII/Introduccion";
 import ThreeOne from "./views/UnidadIII/ThreeOne";
 import ThreeTwo from "./views/UnidadIII/ThreeTwo";
 import ThreeTwoOne from "./views/UnidadIII/ThreeTwoOne";
@@ -57,8 +58,10 @@ import ThreeThreeTwoOne from "./views/UnidadIII/ThreeThreeTwoOne";
 import ThreeThreeTwoTwo from "./views/UnidadIII/ThreeThreeTwoTwo";
 import ThreeThreeOneTwo from "./views/UnidadIII/ThreeThreeOneTwo";
 import Formulario from "./views/UnidadIII/formulario";
+import CierreIII from "./views/UnidadIII/Cierre";
 
 //Fourth
+import IntroduccionIV from "./views/UnidadIV/Introduccion";
 import FourOne from "./views/UnidadIV/FourOne";
 import FourOneOne from "./views/UnidadIV/FourOneOne";
 import FourOneOneOne from "./views/UnidadIV/FourOneOneOne";
@@ -71,6 +74,7 @@ import FourTwoThreeOne from "./views/UnidadIV/FourTwoThreeOne";
 import FourThree from "./views/UnidadIV/FourThree";
 import FourThreeOne from "./views/UnidadIV/FourThreeOne";
 import FourFour from "./views/UnidadIV/FourFour";
+import CierreIV from "./views/UnidadIV/Cierre";
 
 //Fifth
 import FiveOne from "./views/UnidadV/FiveOne";
@@ -171,6 +175,11 @@ function App() {
           component={() => <TwoThreeTwoTwo />}
         />
         <Route path="/content/II/cierre" exact component={() => <CierreII />} />
+        <Route
+          path="/content/III/intro"
+          exact
+          component={() => <IntroduccionIII />}
+        />
         <Route path="/content/III/3.1" exact component={() => <ThreeOne />} />
         <Route path="/content/III/3.2" exact component={() => <ThreeTwo />} />
         <Route
@@ -254,6 +263,16 @@ function App() {
           exact
           component={() => <Formulario />}
         />
+        <Route
+          path="/content/III/cierre"
+          exact
+          component={() => <CierreIII />}
+        />
+        <Route
+          path="/content/IV/intro"
+          exact
+          component={() => <IntroduccionIV />}
+        />
         <Route path="/content/IV/4.1" exact component={() => <FourOne />} />
         <Route
           path="/content/IV/4.1.1"
@@ -298,6 +317,7 @@ function App() {
           component={() => <FourThreeOne />}
         />
         <Route path="/content/IV/4.4" exact component={() => <FourFour />} />
+        <Route path="/content/IV/cierre" exact component={() => <CierreIV />} />
         <Route
           path="/content/V/intro"
           exact

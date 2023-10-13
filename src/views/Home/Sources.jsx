@@ -5,8 +5,6 @@ import HomeMenu from "../../components/HomeSideMenu/HomeMenu";
 import ToBookButton from "../../components/ToBookButton";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import itemSources from "../../content/sources";
-import { faFeatherAlt } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Sources() {
   const bibliography = "../../../../assets/images/biblio.png";
@@ -33,10 +31,7 @@ function Sources() {
             <Col sm={11}>
               <div className="full-card justify-text">
                 {itemSources.map((item) => (
-                  <p>
-                    <FontAwesomeIcon className={"icon"} icon={faFeatherAlt} />
-                    {item}
-                  </p>
+                  <p className="indent-text">{item}</p>
                 ))}
               </div>
             </Col>

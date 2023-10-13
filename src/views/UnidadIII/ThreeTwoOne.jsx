@@ -20,22 +20,28 @@ const ThreeTwoOne = () => {
         <Container className="padding-md">
           <Row>
             <Col>
-              <h2>3.2.1. Análisis vertical (razones financieras y Dupont)</h2>
+              <h2>3.2.1. Análisis vertical</h2>
             </Col>
           </Row>
           <Row className="justify-text">
             <Col>
               <p>
-                Los métodos verticales se aplican a <b>un período contable</b>
+                Los métodos de análisis financiero vertical se aplican a un
+                período contable; se clasifican en reducción a porcientos,
+                razones simples y razones estándar, tal como se aprecia en la
+                figura 3.3.
               </p>
             </Col>
+          </Row>
+          <Row className="img-source center-text m-v-space">
+            <Col>Figura 3.3 Métodos verticales para el análisis financiero</Col>
           </Row>
           <Row>
             <Col>
               <Image
                 className="full-img"
                 src={imgVerticales}
-                alt="Figura 1.1 La empresa"
+                alt="Métodos verticales para el análisis financiero"
               />
             </Col>
           </Row>

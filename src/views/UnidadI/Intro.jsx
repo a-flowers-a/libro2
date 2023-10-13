@@ -55,7 +55,7 @@ const IntroduccionI = () => {
               <Image
                 className="full-img"
                 src={introImg}
-                alt="Figura 1.1. La empresa"
+                alt="Two people analyze a chart"
               />
             </Col>
           </Row>

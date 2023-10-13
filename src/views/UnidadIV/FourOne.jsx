@@ -33,7 +33,7 @@ const FourOne = () => {
                     aspectos más importantes de las finanzas; vamos a explicarlo
                     de manera sencilla, si por ejemplo en este momento tienes
                     $100 (cien pesos), valen más el día de hoy que en el futuro
-                    y esto se debe basicamente a que el día de hoy los puedes
+                    y esto se debe básicamente a que el día de hoy los puedes
                     invertir y ganar rendimientos. Sin embargo, esos mismos $100
                     (cien pesos) recibidos en el futuro no tedrán el mismo poder
                     adquisitivo que tienen el día de hoy, dicho cambio en el

@@ -52,6 +52,15 @@ const MaterialApoyo1 = () => {
                 type={"Actividad 1.2"}
                 number={""}
               />
+              <Actividad
+                color="aqua"
+                icon={faPuzzlePiece}
+                link={
+                  "https://drive.google.com/file/d/1wfSNJHqnOdg56pfnvvORsJvzrRGrCnyE/view"
+                }
+                type={"Actividad 1.3"}
+                number={""}
+              />
             </Col>
           </Row>
         </Container>

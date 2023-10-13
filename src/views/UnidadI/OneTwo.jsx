@@ -49,7 +49,7 @@ const OneTwo = () => {
                       <Image
                         className="full-img"
                         src={img14}
-                        alt="Figura 1.4 ¿Qué son las finanzas?"
+                        alt="¿Qué son las finanzas?"
                       />
                     </Row>
                     <Row className="img-source center-text m-v-space">
@@ -142,7 +142,7 @@ const OneTwo = () => {
                     <li>Pronósticos</li>
                     <li>Administración de riesgos</li>
                     <li>
-                      Verificar que le Administración esté de acuerdo con los
+                      Verificar que la Administración esté de acuerdo con los
                       objetivos de la empresa
                     </li>
                     <li>Auditoría interna</li>

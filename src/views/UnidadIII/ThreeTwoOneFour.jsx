@@ -50,8 +50,13 @@ const ThreeTwoOneFour = () => {
               </ul>
             </Col>
           </Row>
+          <Row className="img-source center-text m-v-space">
+            <Col>
+              <b>Figura 3.8 Razones estándar</b>
+            </Col>
+          </Row>
           <Row className=" m-v-space justify-content-center">
-            <Col xs={10} md={6}>
+            <Col xs={10} md={8}>
               <Image
                 src={razonesEstandar}
                 alt="Razones estándar"

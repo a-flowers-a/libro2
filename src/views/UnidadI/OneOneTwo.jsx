@@ -51,7 +51,7 @@ const OneOneTwo = () => {
                       <Image
                         className="full-img"
                         src={img12}
-                        alt="Figura 1.2 Estructura Organizacional"
+                        alt="Estructura Organizacional"
                       />
                     </Col>
                   </Row>

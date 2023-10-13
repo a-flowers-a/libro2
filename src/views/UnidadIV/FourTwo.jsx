@@ -38,9 +38,7 @@ const FourTwo = () => {
                 <Col>
                   <ul>
                     <li>
-                      <span className="bold">
-                        Ordinarias, vencidas o diferidas:
-                      </span>
+                      <b> Ordinarias, vencidas o diferidas: </b>
                       el flujo de efectivo (entrada o salida de efectivo) ocurre
                       al final de cada periodo; estas anualidades son las más
                       comunes en finanzas.

@@ -30,7 +30,7 @@ const FourOneOneOne = () => {
                 <Col>
                   <p>
                     El valor futuro de una cantidad única se puede determinar,
-                    al menos, de dos formas
+                    al menos, de dos formas:
                   </p>
                 </Col>
               </Row>

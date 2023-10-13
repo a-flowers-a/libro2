@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container, Image } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
@@ -7,6 +7,7 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import { scrollTop } from "../../helpers/general";
 
 const FourThree = () => {
+  const planeacionFinanciera = "../../assets/images/planeacion.png";
   useEffect(() => {
     scrollTop();
   }, []);
@@ -51,6 +52,15 @@ const FourThree = () => {
                     a ciclos de producción relativamente cortos, o a los dos,
                     tienden a usar horizontes de planeación más cortos.
                   </p>
+                </Col>
+              </Row>
+              <Row className="justify-content-center m-b-space">
+                <Col md={8}>
+                  <Image
+                    className="full-img"
+                    src={planeacionFinanciera}
+                    alt="Político-legales"
+                  />
                 </Col>
               </Row>
             </Col>

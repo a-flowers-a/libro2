@@ -28,6 +28,9 @@
   max-width: 120px;
   width: 110%;
 }
+.wrap-text {
+  white-space: normal;
+}
 
 @media (min-width: 550px) {
   .header-title-container {

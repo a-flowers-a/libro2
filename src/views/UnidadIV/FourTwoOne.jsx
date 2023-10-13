@@ -46,7 +46,7 @@ const FourTwoOne = () => {
                           <Image
                             className="full-img"
                             src={img421}
-                            alt="Línea de Flujo de efectivo"
+                            alt="Valor futuro de anualidades ordinarias"
                           />
                         </Col>
                       </Row>
@@ -97,7 +97,7 @@ const FourTwoOne = () => {
                           />
                         </Col>
                       </Row>
-                      <p>El VF del período 3 se capitaliza en 3 periodos</p>
+                      <p>El VF del período 3 se capitaliza en 1 periodo</p>
                       <Row className="justify-content-center m-b-space">
                         <Col md={10}>
                           <MathComponent

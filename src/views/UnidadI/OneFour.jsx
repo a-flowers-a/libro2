@@ -4,6 +4,8 @@ import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
 import { scrollTop } from "../../helpers/general";
+import Actividad from "../../components/Actividad";
+import { faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
 
 const OneFour = () => {
   const img19 = "../../assets/images/19.png";
@@ -277,7 +279,7 @@ const OneFour = () => {
                       </p>
                     </Col>
                   </Row>
-                  <Row>
+                  <Row className="justify-content-center m-b-space">
                     <Col md={3}>
                       <Image
                         className="full-img"
@@ -296,6 +298,30 @@ const OneFour = () => {
                         aspectos ambientales y quienes no las cumplan son
                         acreedores a sanciones.
                       </p>
+                    </Col>
+                  </Row>
+                  <Row className="justify-content-center m-b-space">
+                    <Col>
+                      {
+                        "Es momento de aplicar lo que has aprendido en esta unidad temática, realiza la siguiente actividad de aprendizaje:"
+                      }
+                    </Col>
+                  </Row>
+                  <Row className="justify-content-center m-b-space">
+                    <Col md={3}>
+                      <Actividad
+                        color="aqua"
+                        icon={faPuzzlePiece}
+                        link={
+                          "https://drive.google.com/file/d/1qq4C3UEpfppd4zL9SuYJGNZK8bFs-gnv/view"
+                        }
+                        type={"Actividad 1.3"}
+                        number={""}
+                      />
+                    </Col>
+                    <Col md={6} className="v-center-content text-descrip">
+                      Actividad 1.3 La empresa, sus finanzas y su relación con
+                      el entorno
                     </Col>
                   </Row>
                 </Col>

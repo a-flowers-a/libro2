@@ -61,7 +61,11 @@ function TwoThree() {
               <div className="center-text">
                 Figura 2.4 Estados financieros básicos
               </div>
-              <Image className="full-img" src={img24} alt="NIF" />
+              <Image
+                className="full-img"
+                src={img24}
+                alt="Estados financieros básicos"
+              />
               <div className="img-source center-text">
                 Hernández, J., Rodríguez, E. & Jiménez, Y. (2020). Figura basada
                 en las NIF (2020)
@@ -77,7 +81,11 @@ function TwoThree() {
               <div className="center-text">
                 Figura 2.5 Estados financieros básicos
               </div>
-              <Image className="full-img" src={img25} alt="NIF" />
+              <Image
+                className="full-img"
+                src={img25}
+                alt="Estados financieros básicos"
+              />
               <div className="img-source center-text">
                 Hernández, J., Rodríguez, E. & Jiménez, Y. (2020).
               </div>

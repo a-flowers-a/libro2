@@ -24,7 +24,7 @@ function Require() {
           </Row>
           <Row className="justify-content-center">
             <Col sm={3}>
-              <Image className="full-img" src={capabilityImg} alt="Path" />
+              <Image className="full-img" src={capabilityImg} alt="Gracias" />
             </Col>
             <Col sm={8}>
               <div className="full-card justify-text">

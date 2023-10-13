@@ -58,9 +58,9 @@ const OneOneOne = () => {
                 <Col>
                   "Individuo que realiza cualquier actividad económica
                   (vendedor, comerciante, empleado, profesionista, etc.), el
-                  cual tiene derechos y obligaciones (SAT, s.f). En el siguiente
-                  link conoce las actividades que como persona física se pueden
-                  realizar":
+                  cual tiene derechos y obligaciones" (SAT, s.f). En el
+                  siguiente link conoce las actividades que como persona física
+                  se pueden realizar:
                 </Col>
               </Row>
               <Row className="justify-content-center m-b-space">
@@ -69,7 +69,7 @@ const OneOneOne = () => {
                     color="aqua"
                     icon={faExternalLinkAlt}
                     link={others[0]}
-                    type={"Régimenes Fiscales"}
+                    type={"Regímenes fiscales"}
                     number={""}
                   />
                 </Col>
@@ -192,6 +192,13 @@ const OneOneOne = () => {
                 </Col>
                 <Col md={6} className="v-center-content text-descrip">
                   Las organizaciones y un tipo particular de éstas: la empresa
+                </Col>
+              </Row>
+              <Row className="justify-content-center m-b-space">
+                <Col>
+                  {
+                    "Después de haber leído el tema, ya cuentas con los conocimientos necesarios para desarrollar la siguiente actividad de aprendizaje:"
+                  }
                 </Col>
               </Row>
               <Row className="justify-content-center m-b-space">

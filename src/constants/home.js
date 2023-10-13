@@ -12,7 +12,7 @@ export const home = {
     { name: "Evaluación de los aprendizajes", path: "/evaluation", level: 1 },
     { name: "Contactos", path: "/contact", level: 1 },
     { name: "Cierre", path: "/requirements", level: 1 },
-    { name: "Fuentes", path: "/sources", level: 1 },
+    { name: "Referencias", path: "/sources", level: 1 },
   ],
 };
 

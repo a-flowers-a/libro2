@@ -61,10 +61,15 @@ const ThreeTwoTwoOne = () => {
               </p>
               <p>
                 <b>Ejemplo:</b> En el estado de situación financiera de la
-                Figura X, al determinar las diferencias (+,-), se está aplicando
-                el método de aumentos o disminuciones, sólo faltaría la
-                interpretación correspondiente
+                <b> Figura 3.10</b>, al determinar las diferencias (+,-), se
+                está aplicando el método de aumentos o disminuciones, sólo
+                faltaría la interpretación correspondiente
               </p>
+            </Col>
+          </Row>
+          <Row className="img-source center-text m-v-space">
+            <Col>
+              <b>Figura 3.10 Estados de situación financiera comparativos</b>
             </Col>
           </Row>
           <Row className="justify-content-center">
@@ -72,7 +77,7 @@ const ThreeTwoTwoOne = () => {
               <Image
                 src={img3221}
                 className="full-img"
-                alt="Figura 11.1. Estados de situación financiera comparativos"
+                alt="Estados de situación financiera comparativos"
               />
             </Col>
           </Row>

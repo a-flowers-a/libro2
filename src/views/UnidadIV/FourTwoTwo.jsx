@@ -54,6 +54,8 @@ const FourTwoTwo = () => {
                     <li>
                       Fórmula de valor presente de una anualidad ordinaria
                     </li>
+                  </ol>
+                  <ol>
                     <li>
                       Cálculo del valor presente de anualidades ordinarias
                       utilizando la línea de flujo de efectivo y la fórmula de
@@ -98,13 +100,13 @@ const FourTwoTwo = () => {
               <Row>
                 <Col>
                   <p>
-                    3. Utilizando la fórmula de Valor Presente de una anualidad
+                    2. Utilizando la fórmula de Valor Presente de una anualidad
                     ordinaria.
                   </p>
                   <Row className="justify-content-center m-b-space">
                     <Col md={10}>
                       <MathComponent
-                        tex={String.raw`{{VP}_{An}}=PA\frac{1-\frac{1}{(1+i)^{n}}}{i}`}
+                        tex={String.raw`{{VP}_{An}}=PA\left\{ \frac{1-\frac{1}{(1+i)^{n}}}{i}\right\}`}
                       />
                     </Col>
                   </Row>
@@ -113,10 +115,13 @@ const FourTwoTwo = () => {
               <Row>
                 <Col>
                   <p>Donde:</p>
-                  <p className="no-marg-bottom">
-                    <span className="bold">VPan</span> = Valor Presente de una
-                    Anualidad Ordinaria a un Periodo de Tiempo
-                  </p>
+                  <div className="no-marg-bottom inline-formula">
+                    <MathComponent tex={String.raw`{VP}_{An}`} />
+                    <p>
+                      = Valor Presente de una Anualidad Ordinaria a un Periodo
+                      de Tiempo
+                    </p>
+                  </div>
                   <p className="no-marg-bottom">
                     <span className="bold">PA</span> = Valor del Pago Igual o
                     Anualidad

@@ -49,6 +49,22 @@ const FourOneOne = () => {
                     naturaleza, el valor presente es más útil para la toma de
                     decisiones financieras (Gitman, 2012).
                   </p>
+                  <p>
+                    No olvides que el valor del dinero se determinan sobre los
+                    flujos de caja o flujos de efectivo. De acuerdo con Vidal y
+                    González (2014) el flujo de efectivo tiene como propósito
+                    determinar todas las entradas y salidas de dinero; es decir,
+                    los ingresos, costos, gastos e inversiones producidos por
+                    una empresa o proyecto en el futuro. Siguiendo a Gitman
+                    (2012), los flujos de efectivo se presentan como cantidades
+                    únicas (montos únicos), anualidades e ingreso mixto
+                    <b>(figura 4.1).</b>
+                  </p>
+                </Col>
+              </Row>
+              <Row className="img-source center-text m-v-space">
+                <Col>
+                  <b>Figura 4.1 Flujos de efectivo</b>
                 </Col>
               </Row>
               <Row className="justify-content-center m-b-space">
@@ -64,7 +80,6 @@ const FourOneOne = () => {
                     espera tener en alguna fecha futura. Por ejemplo, $1,000
                     pesos o $200 pesos o $5,000 pesos que se tiene el día de hoy
                     o bien que se espera recibir en el futuro.
-                    <span className="bold">Figura 29</span>.
                   </p>
                 </Col>
               </Row>

@@ -24,7 +24,7 @@ function Method() {
           </Row>
           <Row className="justify-content-center">
             <Col sm={4}>
-              <Image className="full-img" src={methodImg} alt="Path" />
+              <Image className="full-img" src={methodImg} alt="Metodologia" />
             </Col>
           </Row>
           <Row className="justify-content-center ">

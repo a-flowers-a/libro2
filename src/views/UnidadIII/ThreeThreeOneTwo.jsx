@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Row, Col, Container, Image, Table } from "react-bootstrap";
+import { Row, Col, Container, Table } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
@@ -7,8 +7,6 @@ import { MathComponent } from "mathjax-react";
 import { scrollTop } from "../../helpers/general";
 
 const ThreeThreeOneTwo = () => {
-  const PEutilidad = "../../../../assets/images/PEformulasUtilidad.png";
-
   useEffect(() => {
     scrollTop();
   }, []);
@@ -33,7 +31,7 @@ const ThreeThreeOneTwo = () => {
                 podrían utilizar la fórmula del punto de equilibrio con utilidad
                 que verás enseguida.
               </p>
-              <p>Retomemos los datos con los que hemos venido trabajando:</p>
+              <p>Retomemos los datos con los que hemos estado trabajando:</p>
             </Col>
           </Row>
           <Row className="justify-content-center m-v-space">
@@ -47,26 +45,26 @@ const ThreeThreeOneTwo = () => {
                 <tbody>
                   <tr>
                     <td>Renta</td>
-                    <td className="justify-text-right">$10,000.00</td>
+                    <td className="justify-text-right">$13,500</td>
                   </tr>
                   <tr>
                     <td>Sueldos</td>
-                    <td className="justify-text-right">$18,000.00</td>
+                    <td className="justify-text-right">$20,000</td>
                   </tr>
                   <tr>
                     <td>Productos de limpieza</td>
-                    <td className="justify-text-right">$1,000.00</td>
+                    <td className="justify-text-right">$1,000</td>
                   </tr>
                   <tr>
                     <td>Servicios</td>
-                    <td className="justify-text-right">$1,000.00</td>
+                    <td className="justify-text-right">$1,500</td>
                   </tr>
                   <tr>
                     <td>
                       <b>Total</b>
                     </td>
-                    <td>
-                      <b className="justify-text-right">$30,000.00</b>
+                    <td className="justify-text-right">
+                      <b>$36,000</b>
                     </td>
                   </tr>
                 </tbody>
@@ -85,7 +83,7 @@ const ThreeThreeOneTwo = () => {
                       <b>Precio de venta unitario (P)</b>
                     </td>
                     <td>
-                      <b>$35.00</b>
+                      <b>$50</b>
                     </td>
                   </tr>
                   <tr>
@@ -93,27 +91,27 @@ const ThreeThreeOneTwo = () => {
                       <b>Costo variable unitario (CVU)</b>
                     </td>
                     <td>
-                      <b>$15.00</b>
+                      <b>$20</b>
                     </td>
                   </tr>
                   <tr>
                     <td>Carne</td>
-                    <td>$7.00</td>
+                    <td>$11</td>
                     <td />
                   </tr>
                   <tr>
                     <td>Pan</td>
-                    <td>$4.00</td>
+                    <td>$5</td>
                     <td />
                   </tr>
                   <tr>
                     <td>Gas</td>
-                    <td>$2.00</td>
+                    <td>$2</td>
                     <td />
                   </tr>
                   <tr>
                     <td>Varios</td>
-                    <td>$2.00</td>
+                    <td>$2</td>
                     <td />
                   </tr>
                   <tr>
@@ -121,15 +119,7 @@ const ThreeThreeOneTwo = () => {
                       <b>Margen de contribución unitario(MCU)</b>
                     </td>
                     <td>
-                      <b>$20.00</b>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colSpan={2}>
-                      <b>Proporción en las ventas totales</b>
-                    </td>
-                    <td>
-                      <b>20%=0.20</b>
+                      <b>$20</b>
                     </td>
                   </tr>
                 </tbody>
@@ -161,7 +151,7 @@ const ThreeThreeOneTwo = () => {
                   <tr>
                     <td>
                       <MathComponent
-                        tex={String.raw`PE\;en\;uds.=\frac{CF}{MCU} `}
+                        tex={String.raw`PE\;en\;unidades=\frac{CF}{MCU} `}
                       />
                     </td>
                     <td>
@@ -170,7 +160,7 @@ const ThreeThreeOneTwo = () => {
                       />
                       <p>Otra forma de calcular PE en pesos: </p>
                       <MathComponent
-                        tex={String.raw`PE\;en\;pesos=(PE\;en\;uds)(P)`}
+                        tex={String.raw`PE\;en\;pesos=(PE\;en\;unidades)(P)`}
                       />
                     </td>
                   </tr>
@@ -178,28 +168,33 @@ const ThreeThreeOneTwo = () => {
               </Table>
             </Col>
           </Row>
-          <Row className="justify-content-center m-v-space">
-            <Col sm={10} md={9}>
-              <Image
-                className="full-img"
-                src={PEutilidad}
-                alt="Formulas punto de equilibrio para un producto con utilidad"
-              />
+          <Row>
+            <Col>
+              <p>Donde:</p>
+              <p>CF = Costos fijos</p>
+              <p>MCU = Margen de contribución unitario</p>
+              <p>CVU = Costo variable unitario</p>
+              <p>P = Precio</p>
+              <p>
+                <b>Nota:</b> recuerda que el margen de contribución unitario se
+                obtiene restado el costo variable unitario al precio; es decir:
+                <MathComponent tex={String.raw`(P-CVU).`} />
+              </p>
             </Col>
           </Row>
           <Row>
             <p>
               Continuando con nuestro ejemplo (venta de hamburguesas sencillas)
-              y considerando que deseamos obtener una utilidad de $40,000
+              y considerando que deseamos obtener una utilidad de $60,000
               mensuales, entonces el punto de equilibrio se calcula así:
             </p>
             <MathComponent
               tex={String.raw`Punto\;de\;equilibrio\;con\;utilidad=`}
             />
             <MathComponent tex={String.raw`\frac{CF+utilidad\;deseada}{MCU}`} />
-            <MathComponent tex={String.raw`=\frac{(30,000+40,000)}{20}`} />
+            <MathComponent tex={String.raw`=\frac{(36,000+60,000)}{30}`} />
             <MathComponent
-              tex={String.raw`=3,500\;hamburguesas\;sencillas\;al\;mes`}
+              tex={String.raw`=3,200\;hamburguesas\;sencillas\;al\;mes`}
             />
             <p>Comprobación:</p>
           </Row>
@@ -208,29 +203,29 @@ const ThreeThreeOneTwo = () => {
               <Table striped bordered responsive hover>
                 <tbody>
                   <tr>
-                    <td>+ Ventas = (3,500) ($35)</td>
-                    <td>$122,500</td>
+                    <td>+ Ventas = (3,200) ($50)</td>
+                    <td>$160,000</td>
                   </tr>
                   <tr>
-                    <td>- Costo variable total (CVT) = (3,500) (15) </td>
-                    <td>$52,500</td>
+                    <td>- Costo variable total (CVT) = (3,200) ($20) </td>
+                    <td>$64,000</td>
                   </tr>
                   <tr>
                     <td>
                       <b>= Margen de contribución (MC)</b>
                     </td>
-                    <td>$70,000</td>
+                    <td>$96,000</td>
                   </tr>
                   <tr>
                     <td>- Costos fijos (CF)</td>
-                    <td>$30,000</td>
+                    <td>$36,000</td>
                   </tr>
                   <tr>
                     <td>
                       <b>= Utilidad</b>
                     </td>
                     <td>
-                      <b>$40,000</b>
+                      <b>$60,000</b>
                     </td>
                   </tr>
                 </tbody>
@@ -240,9 +235,9 @@ const ThreeThreeOneTwo = () => {
           <Row>
             <Col>
               <p>
-                Lo que significa que al vender 3,500 hamburguesas al mes se
+                Lo que significa que al vender 3,200 hamburguesas al mes se
                 estaría recuperando el costo total y quedaría la utilidad
-                deseada que es de $40,000.
+                deseada que es de $60,000.
               </p>
             </Col>
           </Row>

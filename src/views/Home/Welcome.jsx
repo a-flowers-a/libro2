@@ -1,12 +1,12 @@
 import React from "react";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
-import { Container, Image, Row, Col, Card, CardGroup } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import HomeMenu from "../../components/HomeSideMenu/HomeMenu";
 import ToBookButton from "../../components/ToBookButton";
 
 function Welcome() {
-  const welcomeImg = "../../assets/images/person.png";
+  const bienvenida = "../../assets/images/bienvenida.png";
 
   return (
     <div className="primary-div">
@@ -52,49 +52,14 @@ function Welcome() {
                         <p>¡Te deseamos el mayor de los éxitos!</p>
                       </Col>
                     </Row>
-                    <Row>
-                      <CardGroup>
-                        <Card>
-                          <Card.Img variant="top" src={welcomeImg} />
-                          <Card.Body>
-                            <Card.Title>Josefina Hernández Jaime</Card.Title>
-                            <Card.Text>
-                              <p>
-                                Maestra en Ciencias de la Administración por la
-                                UPIICSA, del IPN.
-                              </p>
-                            </Card.Text>
-                          </Card.Body>
-                          <Card.Footer>johernandezja@ipn.mx</Card.Footer>
-                        </Card>
-                        <Card>
-                          <Card.Img variant="top" src={welcomeImg} />
-                          <Card.Body>
-                            <Card.Title>Eduardo Rodríguez Flores</Card.Title>
-                            <Card.Text>
-                              <p>Maestro en administración por la UNAM.</p>
-                            </Card.Text>
-                          </Card.Body>
-                          <Card.Footer>erodriguezf@ipn.mx</Card.Footer>
-                        </Card>
-                        <Card>
-                          <Card.Img variant="top" src={welcomeImg} />
-                          <Card.Body>
-                            <Card.Title>Yasmin Ivette Jiménez Galán</Card.Title>
-                            <Card.Text>
-                              <p>
-                                Doctora en educación por el Centro de Estudios
-                                Superiores en Educación CESE
-                              </p>
-                              <p>
-                                M. en C. con especialidad en Administración de
-                                negocios por la ESCA Sto. Tomás.
-                              </p>
-                            </Card.Text>
-                          </Card.Body>
-                          <Card.Footer>yjimenezg@ipn.mx</Card.Footer>
-                        </Card>
-                      </CardGroup>
+                    <Row className=" m-v-space justify-content-center">
+                      <Col xs={10} md={8}>
+                        <Image
+                          src={bienvenida}
+                          alt="Bienvenida"
+                          className="full-img"
+                        />
+                      </Col>
                     </Row>
                   </div>
                 </Col>

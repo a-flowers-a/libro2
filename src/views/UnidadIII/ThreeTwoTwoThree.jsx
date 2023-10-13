@@ -38,10 +38,15 @@ const ThreeTwoTwoThree = () => {
                 En términos generales el método de control presupuestal consiste
                 en preparar presupuestos para el conjunto de operaciones de una
                 empresa e ir monitoreándolos con el fin de detectar las
-                desviaciones entre lo planeado y lo real (tabla X ), lo que
-                permite emprender acciones de control y ejecución a efecto de
-                corregir las desviaciones presentadas.
+                desviaciones entre lo planeado y lo real <b>Figura 3.15</b>, lo
+                que permite emprender acciones de control y ejecución a efecto
+                de corregir las desviaciones presentadas.
               </p>
+            </Col>
+          </Row>
+          <Row className="img-source center-text m-v-space">
+            <Col>
+              <b>Figura 3.15 Método del control presupuestal</b>
             </Col>
           </Row>
           <Row className="justify-content-center center-table-rows m-v-space">

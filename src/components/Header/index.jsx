@@ -19,23 +19,25 @@ function Header() {
     switch (currentUnit.name) {
       case "unitOne":
         _colorClass = "aqua";
-        _unitNumber = "1";
+        _unitNumber = "1. La empresa y su entorno";
         break;
       case "unitTwo":
         _colorClass = "blue";
-        _unitNumber = "2";
+        _unitNumber =
+          "2. Importancia y utilización de la información financiera";
         break;
       case "unitThree":
         _colorClass = "purple";
-        _unitNumber = "3";
+        _unitNumber = "3. Análisis de la información financiera";
         break;
       case "unitFour":
         _colorClass = "pink";
-        _unitNumber = "4";
+        _unitNumber =
+          "4. Elementos de matemáticas financieras y planeación financiera";
         break;
       case "unitFive":
         _colorClass = "orange";
-        _unitNumber = "5";
+        _unitNumber = "5. Métodos de evaluación de proyectos de inversión";
         break;
       default:
         break;
@@ -57,12 +59,12 @@ function Header() {
           xs={{ span: 8, order: 2 }}
           className="center-flex-content header-title-container"
         >
-          <Row>
-            <Col xs={12}>Polilibro Académico de Finanzas Empresariales</Col>
+          <Row className="center-flex-content">
+            <Col xs={10}>Polilibro Académico de Finanzas Empresariales</Col>
             {location.pathname.startsWith("/content") && (
-              <Col>
+              <Col xs={10}>
                 <Badge
-                  className={`${colorClass}-bg`}
+                  className={`${colorClass}-bg wrap-text`}
                   bg="secondary"
                   text="light"
                 >

@@ -46,11 +46,7 @@ const CierreI = () => {
               </p>
             </Col>
             <Col md={4}>
-              <Image
-                className="full-img"
-                src={successImg}
-                alt="Figura 1.1. La empresa"
-              />
+              <Image className="full-img" src={successImg} alt="La empresa" />
             </Col>
           </Row>
         </Container>

@@ -40,7 +40,8 @@ const ThreeThree = () => {
                 funcionamiento.
               </p>
               <p>
-                El punto de equilibrio, tal y como se aprecia en la figura (X)
+                El punto de equilibrio, tal y como se aprecia en la{" "}
+                <b>figura 3.16 </b>
                 se obtiene cuando los ingresos son iguales al costo total (suma
                 de los costos y gastos); es decir, cuando no hay ganancias
                 tampoco pérdidas.

@@ -68,9 +68,11 @@ function SideMenu() {
     <>
       {open ? (
         <div
-          className={classes("sideMenuContainer", `${colorClass}-bg`, {
-            ["sideMenuMobileContainer"]: isMobile === true,
-          })}
+          className={classes(
+            "sideMenuContainer",
+            `${colorClass}-bg`,
+            isMobile ? "sideMenuMobileContainer" : null
+          )}
         >
           <div className={"iconsContainer"}>
             <FontAwesomeIcon

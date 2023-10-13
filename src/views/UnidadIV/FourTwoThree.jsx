@@ -89,14 +89,14 @@ const FourTwoThree = () => {
                   <Row className="justify-content-center m-b-space">
                     <Col md={10}>
                       <MathComponent
-                        tex={String.raw`{{VF}_{Anualidad\;Anticipada}}=VP\frac{{(1+i)}^{n}}{i}(1+i)`}
+                        tex={String.raw`{{VF}_{Anualidad\;Anticipada}}=VP\left\{\frac{{(1+i)}^{n}}{i}(1+i)\right\}`}
                       />
                     </Col>
                   </Row>
                   <Row className="justify-content-center m-b-space">
                     <Col md={10}>
                       <MathComponent
-                        tex={String.raw`{{VF}_{AAn}}=10,000\frac{{(1.10)}^{4}-1}{0.10}(1.10)=51,051`}
+                        tex={String.raw`{{VF}_{AAn}}=10,000\left\{\frac{{(1.10)}^{4}-1}{0.10}(1.10)\right\}=51,051`}
                       />
                     </Col>
                   </Row>

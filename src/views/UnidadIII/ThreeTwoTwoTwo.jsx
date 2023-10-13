@@ -59,8 +59,9 @@ const ThreeTwoTwoTwo = () => {
                 En resumen, con el conocimiento de los datos históricos de una
                 empresa se logra una mejor comprensión de la tendencia de un
                 negocio y aún más si ésta se grafica, tal como se puede apreciar
-                en las figuras 1 a 6; adicionalmente, nos proporciona
-                información valiosa para la realización de pronósticos.
+                en las <b>figuras 3.11, 3.12, 3.13, 3.14</b>; adicionalmente,
+                nos proporciona información valiosa para la realización de
+                pronósticos.
               </p>
             </Col>
           </Row>
@@ -148,15 +149,35 @@ const ThreeTwoTwoTwo = () => {
           </Row>
           <Row className="justify-content-center m-v-space">
             <Col sm={6}>
+              <Row className="img-source center-text m-v-space">
+                <Col>
+                  <b>Figura 3.11 Ventas proyectadas</b>
+                </Col>
+              </Row>
               <Line options={options} data={ventas} />
             </Col>
             <Col sm={6}>
+              <Row className="img-source center-text m-v-space">
+                <Col>
+                  <b>Figura 3.12 Gastos de administración proyectados</b>
+                </Col>
+              </Row>
               <Line options={options} data={gastos} />
             </Col>
             <Col sm={6}>
+              <Row className="img-source center-text m-v-space">
+                <Col>
+                  <b>Figura 3.13 Utilidad del ejercicio proyectada</b>
+                </Col>
+              </Row>
               <Line options={options} data={utilidades} />
             </Col>
             <Col sm={6}>
+              <Row className="img-source center-text m-v-space">
+                <Col>
+                  <b>Figura 3.14 Razón de liquidez inmediata proyectada</b>
+                </Col>
+              </Row>
               <Line options={options} data={liquidez} />
             </Col>
           </Row>

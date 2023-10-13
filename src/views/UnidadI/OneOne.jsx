@@ -65,7 +65,7 @@ const OneOne = () => {
                   <Image
                     className="full-img"
                     src={img11}
-                    alt="Figura 1.1. La empresa"
+                    alt="People discuss results"
                   />
                 </Col>
               </Row>

@@ -32,7 +32,7 @@ const Competencia1 = () => {
               <Image
                 className="full-img"
                 src={ideaImg}
-                alt="Página web en construcción"
+                alt="Man holding laptop"
               />
             </Col>
           </Row>

@@ -48,8 +48,8 @@ const ThreeTwoOneTwo = () => {
               <p>
                 El análisis financiero por el método de razones simples es de
                 gran apoyo para las empresas, permite identificar puntos fuertes
-                y probables puntos débiles (principales problemas) en el negocio
-                y, adicionalmente puede utilizarse también para determinar
+                y probables puntos débiles (red flags) en el negocio y,
+                adicionalmente puede utilizarse también para determinar
                 probabilidades y tendencias. Es importante considerar que este
                 método es solo una herramienta; sirve como auxiliar para el
                 estudio de las cifras de los negocios, por lo que es necesario
@@ -69,8 +69,13 @@ const ThreeTwoOneTwo = () => {
                 grupos de razones simples: índices de rentabilidad, índices de
                 liquidez, índices de endeudamiento, índices de rotación o
                 administración de activos e índices para la valuación de las
-                inversiones <b>(Figura x)</b>.
+                inversiones <b>(Figura 3.6)</b>.
               </p>
+            </Col>
+          </Row>
+          <Row className="img-source center-text m-v-space">
+            <Col>
+              <b>Figura 3.6 Método de razones simples (por grupos).</b>
             </Col>
           </Row>
           <Row className="justify-content-center">
@@ -78,7 +83,7 @@ const ThreeTwoOneTwo = () => {
               <Image
                 className="full-img"
                 src={razonesSimples}
-                alt="Estado de resultados"
+                alt="Razones simples"
               />
             </Col>
           </Row>
@@ -248,7 +253,14 @@ const ThreeTwoOneTwo = () => {
                     <p>
                       En este ejemplo el resultado es una razón de 2.32 a 1; lo
                       que significa que por cada peso que la empresa debe en el
-                      corto plazo se tienen $2.32 pesos para pagar.
+                      corto plazo se tienen $2.32 pesos en el activo circulante
+                      para poder pagar.
+                    </p>
+                    <p>
+                      <b>
+                        Si la razón de liquidez, razón circulante o razón
+                        corriente &gt; 1, se puede decir que sí hay liquidez.
+                      </b>
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -327,7 +339,7 @@ const ThreeTwoOneTwo = () => {
                     <p>Ejemplo:</p>
                     <Row className="justify-content-center overflow-auto m-v-space">
                       <MathComponent
-                        tex={String.raw`Ciclo\;operativo\;=46.23+28.74-20.53=54.44\;días`}
+                        tex={String.raw`Ciclo\;operativo\;=46.23+28.74-20.53=54.44\;d\acute{i}as`}
                       />
                     </Row>
                     <p>
@@ -459,9 +471,9 @@ const ThreeTwoOneTwo = () => {
                     </Row>
                     <p>
                       La rotación de cuentas por cobrar indica el número de días
-                      en promedio en que la empresa tarda en cobrar a sus
-                      deudores, en otras palabras, el tiempo en el que convierte
-                      sus cuentas por cobrar en efectivo.
+                      en promedio que la empresa tarda en cobrar a sus deudores,
+                      en otras palabras, el tiempo en el que convierte sus
+                      cuentas por cobrar en efectivo.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -473,7 +485,7 @@ const ThreeTwoOneTwo = () => {
                     <Row className="justify-content-center overflow-auto m-v-space">
                       <Col>
                         <MathComponent
-                          tex={String.raw`Rotaci\acute{o}n\;de\;cuentas\;por\;pagar=\frac{\frac{CxP\;al\;inicio\;del\;perido\;+CxP\;al\;final\;del\;perido}{2}}{\frac{ventas\;netas}{365}}`}
+                          tex={String.raw`Rotaci\acute{o}n\;de\;cuentas\;por\;pagar=\frac{\frac{CxP\;al\;inicio\;del\;periodo\;+CxP\;al\;final\;del\;periodo}{2}}{\frac{ventas\;netas}{365}}`}
                         />
                       </Col>
                     </Row>
@@ -496,10 +508,10 @@ const ThreeTwoOneTwo = () => {
                       La rotación de cuentas por pagar arroja el número de días
                       que, en promedio, la empresa tarda en pagar las deudas
                       adquiridas con proveedores y acreedores. Existen múltiples
-                      factores que afectan esta razón por lo que su análisis y
-                      comparación se vuelve complicada siendo necesario realizar
-                      un análisis retrospectivo para poder obtener una opinión
-                      fundamentada.
+                      factores que afectan esta razón financiera, por lo que su
+                      análisis y comparación se vuelven complicados, siendo
+                      necesario realizar un análisis retrospectivo para poder
+                      obtener una opinión fundamentada.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -535,16 +547,18 @@ const ThreeTwoOneTwo = () => {
                       tiempo en que tarda en sustituirse el inventario antiguo
                       por uno nuevo; esta razón se mide en número de días. No es
                       conveniente mantener por mucho tiempo los inventarios por
-                      los costos que implica. Es importante mencionar que la
-                      actividad que realiza una unidad económica es factor
-                      determinante para establecer el ciclo económico y
-                      considerarlo adecuado, toda vez que no es lo mismo una
-                      empresa dedicada a la fabricación de bienes de capital en
-                      donde su ciclo económico es lento, que una empresa
-                      dedicada a la comercialización de productos de consumo
-                      generalizado, donde la rotación de inventarios es ágil y
-                      probablemente no genere ventas a crédito y de hacerlo su
-                      recuperación sería casi inmediata.
+                      los costos que implica.
+                    </p>
+                    <p>
+                      Es importante mencionar que la actividad que realiza una
+                      unidad económica es factor determinante para establecer el
+                      ciclo económico y considerarlo adecuado, toda vez que no
+                      es lo mismo una empresa dedicada a la fabricación de
+                      bienes de capital en donde su ciclo económico es lento,
+                      que una empresa dedicada a la comercialización de
+                      productos de consumo generalizado, donde la rotación de
+                      inventarios es ágil y probablemente no genere ventas a
+                      crédito y de hacerlo su recuperación sería casi inmediata.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -600,9 +614,9 @@ const ThreeTwoOneTwo = () => {
                     </Row>
                     <p>
                       Esta razón financiera es muy útil para la empresa, ya que
-                      indica qué tan productiva de acuerdo con los activos que
-                      se tienen en la entidad. Cuando el resultado es menor a
-                      1.0, significa que no se vendió ni siquiera una vez el
+                      indica qué tan productiva es de acuerdo con los activos
+                      que se tienen en la entidad. Cuando el resultado es menor
+                      a 1.0, significa que no se vendió ni siquiera una vez el
                       valor de los activos, lo que podría significar que la
                       empresa tiene activos subutilizados, o que no están
                       generando ningún valor, y por tanto debe decidirse qué
@@ -717,10 +731,10 @@ const ThreeTwoOneTwo = () => {
                       En nuestro ejemplo, el precio de la acción en mercados
                       públicos cotiza 3.55 veces de lo que está registrado en la
                       empresa o dicho en otras palabras “la acción cotiza 3.55
-                      veces el valor en libros que se tiene en compañía”. Este
-                      indicador permite saber si una acción está sobrevaluada o
-                      premiada por el mercado (indicador positivo) o subvaluada
-                      o castigada (indicador negativo).
+                      veces el valor en libros que se tiene en la compañía”.
+                      Este indicador permite saber si una acción está
+                      sobrevaluada o premiada por el mercado (indicador
+                      positivo) o subvaluada o castigada (indicador negativo).
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>

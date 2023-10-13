@@ -44,11 +44,8 @@ const ThreeOne = () => {
                       <p>
                         “El análisis financiero es la situación actual de la
                         empresa basada principalmente en las decisiones pasadas
-                        de la empresa”
+                        de la empresa”. (González, 2009, p.14).
                       </p>
-                      <footer className="blockquote-footer">
-                        <cite title="Source Title">González, 2009:14</cite>
-                      </footer>
                     </blockquote>
                   </Card.Body>
                 </Card>
@@ -62,11 +59,8 @@ const ThreeOne = () => {
                         algunas medidas y relaciones que facilitan la toma de
                         decisiones”. Dichas decisiones pueden estar encaminadas
                         a: modificar, consolidar o mejorar el rumbo financiero
-                        de la empresa.
+                        de la empresa. (García, 2006, p.82).
                       </p>
-                      <footer className="blockquote-footer">
-                        <cite title="Source Title">(García, 2006, p.82).</cite>
-                      </footer>
                     </blockquote>
                   </Card.Body>
                 </Card>
@@ -85,6 +79,9 @@ const ThreeOne = () => {
                   el análisis e interpretación de los estados financieros se les
                   conoce como métodos de análisis financiero. (Figura 3.1)
                 </p>
+              </Row>
+              <Row className="img-source center-text m-v-space">
+                <Col>Figura 3.1 El análisis financiero.</Col>
               </Row>
               <Row>
                 <Col>

@@ -4,7 +4,7 @@ import PoliFooter from "../../components/Footer";
 import { Row, Col, Container } from "react-bootstrap";
 import SideMenu from "../../components/SideMenu/SideMenu";
 
-function CierreII() {
+function CierreIII() {
   return (
     <div className="primary-div">
       <PoliHeader />
@@ -19,16 +19,14 @@ function CierreII() {
           <Row className="justify-content-center m-v-space">
             <Col m={9}>
               <p className="justify-text">
-                <div className="inline bold light-navy">¡Felicidades!</div> ya
-                concluiste esta unidad temática. Ahora tienes un panorama más
-                claro acerca de qué es la información financiera, de dónde se
-                obtiene, así como los estados financieros en los que se muestra.
-                Adicionalmente, cuentas con conocimientos básicos sobre la
-                construcción de dos de los estados financieros más importantes
-                (estado de situación financiera y estado de resultados); qué
-                normatividad hay al respecto, y sobre todo la relevancia y el
-                impacto que tiene la información financiera en la toma de
-                decisiones empresariales.
+                <div className="inline bold purple-text">¡Enhorabuena!</div> Has
+                terminado la unidad temática 3. En este momento ya tienes un
+                panorama más claro de cómo se realiza el análisis de la
+                información contenida en los estados financieros y comprendes la
+                importancia que tiene dicho análisis para la toma de decisiones
+                y desde luego para la planeación financiera. La planeación
+                financiera y los elementos de matemáticas financieras son temas
+                que estudiarás en la siguiente unidad temática.
               </p>
             </Col>
           </Row>
@@ -46,4 +44,4 @@ function CierreII() {
     </div>
   );
 }
-export default CierreII;
+export default CierreIII;

@@ -207,6 +207,16 @@ ol.upper-letter {
   width: auto;
   max-width: 100%;
 }
+.inline-formula{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.indent-text{
+  text-indent: 3em;
+}
 
 /****** Table *****/
 .table{
@@ -242,6 +252,10 @@ ol.upper-letter {
 
 .light-navy {
   color: #6886c5;
+}
+
+.purple-text {
+  color:#b673de
 }
 
 .dark-blue {

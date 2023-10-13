@@ -4,7 +4,7 @@ import PoliFooter from "../../components/Footer";
 import { Row, Col, Container } from "react-bootstrap";
 import SideMenu from "../../components/SideMenu/SideMenu";
 
-function CierreII() {
+function CierreIV() {
   return (
     <div className="primary-div">
       <PoliHeader />
@@ -19,16 +19,14 @@ function CierreII() {
           <Row className="justify-content-center m-v-space">
             <Col m={9}>
               <p className="justify-text">
-                <div className="inline bold light-navy">¡Felicidades!</div> ya
-                concluiste esta unidad temática. Ahora tienes un panorama más
-                claro acerca de qué es la información financiera, de dónde se
-                obtiene, así como los estados financieros en los que se muestra.
-                Adicionalmente, cuentas con conocimientos básicos sobre la
-                construcción de dos de los estados financieros más importantes
-                (estado de situación financiera y estado de resultados); qué
-                normatividad hay al respecto, y sobre todo la relevancia y el
-                impacto que tiene la información financiera en la toma de
-                decisiones empresariales.
+                Tal y como lo estudiaste en esta unidad temática, el presupuesto
+                maestro se conforma de un conjunto de presupuestos de operación
+                y financieros a partir de los cuales se construyen los estados
+                financieros proforma. Uno de dichos presupuestos es el
+                presupuesto de flujo de efectivo, con el que es posible calcular
+                los flujos netos de efectivo (FNE) que son la base para evaluar
+                proyectos de inversión, tema que estudiarás en la siguiente
+                unidad temática.
               </p>
             </Col>
           </Row>
@@ -46,4 +44,4 @@ function CierreII() {
     </div>
   );
 }
-export default CierreII;
+export default CierreIV;

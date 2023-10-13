@@ -7,9 +7,6 @@ import { MathComponent } from "mathjax-react";
 import { scrollTop } from "../../helpers/general";
 
 const ThreeThreeTwoOne = () => {
-  const MCP = "../../assets/images/MCP.png";
-  const PEsinUtilidad = "../../assets/images/PEsinUtilidad.png";
-
   useEffect(() => {
     scrollTop();
   }, []);
@@ -33,8 +30,8 @@ const ThreeThreeTwoOne = () => {
               <p>
                 Continuando con el ejemplo de las hamburguesas, supongamos que
                 ahora venderemos hamburguesas sencillas y hamburguesas
-                hawaianas. Del total de las hamburguesas vendidas al mes el 20%
-                son sencillas y el 80% son hawaianas con queso.
+                hawaianas. Del total de las hamburguesas vendidas al mes el 75%
+                son sencillas y el 25% son hawaianas con queso.
               </p>
             </Col>
           </Row>
@@ -52,7 +49,7 @@ const ThreeThreeTwoOne = () => {
                       <b>Precio de venta unitario (P)</b>
                     </td>
                     <td>
-                      <b>$35.00</b>
+                      <b>$50.00</b>
                     </td>
                   </tr>
                   <tr>
@@ -60,17 +57,17 @@ const ThreeThreeTwoOne = () => {
                       <b>Costo variable unitario (CVU)</b>
                     </td>
                     <td>
-                      <b>$15.00</b>
+                      <b>$20.00</b>
                     </td>
                   </tr>
                   <tr>
                     <td>Carne</td>
-                    <td>$7.00</td>
+                    <td>$11.00</td>
                     <td />
                   </tr>
                   <tr>
                     <td>Pan</td>
-                    <td>$4.00</td>
+                    <td>$5.00</td>
                     <td />
                   </tr>
                   <tr>
@@ -88,7 +85,7 @@ const ThreeThreeTwoOne = () => {
                       <b>Margen de contribución unitario(MCU)</b>
                     </td>
                     <td>
-                      <b>$20.00</b>
+                      <b>$30.00</b>
                     </td>
                   </tr>
                   <tr>
@@ -96,7 +93,7 @@ const ThreeThreeTwoOne = () => {
                       <b>Proporción en las ventas totales</b>
                     </td>
                     <td>
-                      <b>20% o 0.20</b>
+                      <b>75% o 0.75</b>
                     </td>
                   </tr>
                 </tbody>
@@ -115,7 +112,7 @@ const ThreeThreeTwoOne = () => {
                       <b>Precio de venta unitario (P)</b>
                     </td>
                     <td>
-                      <b>$45.00</b>
+                      <b>$60.00</b>
                     </td>
                   </tr>
                   <tr>
@@ -123,17 +120,17 @@ const ThreeThreeTwoOne = () => {
                       <b>Costo variable unitario (CVU)</b>
                     </td>
                     <td>
-                      <b>$20.00</b>
+                      <b>$25.00</b>
                     </td>
                   </tr>
                   <tr>
                     <td>Carne</td>
-                    <td>$7.00</td>
+                    <td>$11.00</td>
                     <td />
                   </tr>
                   <tr>
                     <td>Pan</td>
-                    <td>$4.00</td>
+                    <td>$5.00</td>
                     <td />
                   </tr>
                   <tr>
@@ -156,7 +153,7 @@ const ThreeThreeTwoOne = () => {
                       <b>Margen de contribución unitario(MCU)</b>
                     </td>
                     <td>
-                      <b>$25.00</b>
+                      <b>$35.00</b>
                     </td>
                   </tr>
                   <tr>
@@ -164,7 +161,7 @@ const ThreeThreeTwoOne = () => {
                       <b>Proporción en las ventas totales</b>
                     </td>
                     <td>
-                      <b>80% o 0.80</b>
+                      <b>25% o 0.25</b>
                     </td>
                   </tr>
                 </tbody>
@@ -173,33 +170,33 @@ const ThreeThreeTwoOne = () => {
             <Col sm={6} md={4}>
               <Table striped bordered responsive size="sm">
                 <thead>
-                  <tr className="center-text">
+                  <tr>
                     <th colSpan={2}>Costos fijos mensuales</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>Renta</td>
-                    <td className="justify-text-right">$10,000.00</td>
+                    <td className="justify-text-right">$13,500</td>
                   </tr>
                   <tr>
                     <td>Sueldos</td>
-                    <td className="justify-text-right">$18,000.00</td>
+                    <td className="justify-text-right">$20,000</td>
                   </tr>
                   <tr>
                     <td>Productos de limpieza</td>
-                    <td className="justify-text-right">$1,000.00</td>
+                    <td className="justify-text-right">$1,000</td>
                   </tr>
                   <tr>
                     <td>Servicios</td>
-                    <td className="justify-text-right">$1,000.00</td>
+                    <td className="justify-text-right">$1,500</td>
                   </tr>
                   <tr>
                     <td>
                       <b>Total</b>
                     </td>
-                    <td>
-                      <b className="justify-text-right">$30,000.00</b>
+                    <td className="justify-text-right">
+                      <b>$36,000</b>
                     </td>
                   </tr>
                 </tbody>
@@ -215,9 +212,16 @@ const ThreeThreeTwoOne = () => {
               </p>
             </Col>
           </Row>
-          <Row className="justify-content-center m-v-space">
-            <Col sm={8}>
-              <Image src={PEsinUtilidad} className="full-img" />
+          <Row>
+            <Col>
+              <MathComponent tex={String.raw`PE\;Mezcla=\frac{CF}{MCPP}`} />
+              <p>Donde:</p>
+              <p>
+                PE Mezcla = punto de equilibrio de la mezcla en número de
+                unidades
+              </p>
+              <p>CF = costos fijos </p>
+              <p>MCPP = margen de contribución ponderado promedio</p>
             </Col>
           </Row>
           <Row className="justify-text">
@@ -228,22 +232,22 @@ const ThreeThreeTwoOne = () => {
               </p>
             </Col>
             <MathComponent
-              tex={String.raw`PE\;Mezcla=\frac{30,000}{24}=1,250`}
+              tex={String.raw`PE\;Mezcla=\frac{36,000}{(30)(0.75)+(35)(0.25)}=1,152\;hamburguesas`}
             />
             <p>
-              1,250 hamburguesas (incluye tanto sencillas como hawaianas). Para
+              1,152 hamburguesas (incluye tanto sencillas como hawaianas). Para
               saber cuántas sencillas y cuántas hawaianas solo hay que
               multiplicar por la proporción en la que participa cada una en las
               ventas totales.
             </p>
-            <MathComponent tex={String.raw`(1,250)(0.20)=`} />
-            <MathComponent tex={String.raw`250\;hamburguesas\;sencillas`} />
-            <MathComponent tex={String.raw`(1,250)(0.80)=`} />
-            <MathComponent tex={String.raw`1,000\;hamburguesas\;hawaianas`} />
+            <MathComponent tex={String.raw`(1,152)(0.75)=`} />
+            <MathComponent tex={String.raw`864\;hamburguesas\;sencillas`} />
+            <MathComponent tex={String.raw`(1,152)(0.25)=`} />
+            <MathComponent tex={String.raw`288\;hamburguesas\;hawaianas`} />
             <p>
               De acuerdo con los resultados anteriores el punto de equilibrio se
-              obtiene vendiendo 250 hamburguesas sencillas y 1,000 hawaianas y
-              recibiendo por esa venta $53,750 pesos, así no se gana y no se
+              obtiene vendiendo 864 hamburguesas sencillas y 288 hawaianas y
+              recibiendo por esa venta $60,480 pesos, así no se gana y no se
               pierde, tal y como se muestra en la siguiente tabla:
             </p>
           </Row>
@@ -261,35 +265,35 @@ const ThreeThreeTwoOne = () => {
                 <tbody>
                   <tr>
                     <td>+ Ventas = (Q)(P)</td>
-                    <td>$8,750.00</td>
-                    <td>$45,000.00</td>
-                    <td>$53,750.00</td>
+                    <td>$43,200</td>
+                    <td>$17,280</td>
+                    <td>$60,480</td>
                   </tr>
                   <tr>
                     <td>- Costo variable</td>
-                    <td>$3,750.00</td>
-                    <td>$20,000.00</td>
-                    <td>$23,750.00</td>
+                    <td>$17,280</td>
+                    <td>$7,200</td>
+                    <td>$24,480</td>
                   </tr>
                   <tr>
                     <td>
                       <b>= Margen de contribución (MC)</b>
                     </td>
-                    <td>$5,000.00</td>
-                    <td>$25,000.00</td>
-                    <td>$30,000.00</td>
+                    <td>$25,920</td>
+                    <td>$10,080</td>
+                    <td>$36,000</td>
                   </tr>
                   <tr>
                     <td>- Costos fijos (CF)</td>
                     <td colSpan="2"></td>
-                    <td>$30,000</td>
+                    <td>$36,000</td>
                   </tr>
                   <tr>
                     <td>
                       <b>= Ganancia</b>
                     </td>
                     <td colSpan="2"></td>
-                    <td>$-</td>
+                    <td>$0</td>
                   </tr>
                 </tbody>
               </Table>
@@ -298,9 +302,9 @@ const ThreeThreeTwoOne = () => {
           <Row className="justify-text">
             <Col>
               <p>
-                Si se vendieran más de 250 hamburguesas sencillas y más de 1,000
-                hawaianas se tendrían utilidades, de lo contrario se tendrían
-                pérdidas.
+                Si se vendieran más de 864 hamburguesas sencillas y más de 288
+                hamburguesas hawaianas se tendrían utilidades, de lo contrario
+                se tendrían pérdidas.
               </p>
             </Col>
           </Row>

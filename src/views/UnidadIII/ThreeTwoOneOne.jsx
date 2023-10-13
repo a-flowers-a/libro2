@@ -38,20 +38,21 @@ const ThreeTwoOneOne = () => {
                 de las cifras.
               </p>
               <p>
-                El método de reducción a por cientos cientos se puede aplicar
-                tanto al estado de situación financiera como al estado de
-                resultados.
+                El método de reducción a porcientos se puede aplicar tanto al
+                estado de situación financiera como al estado de resultados.
               </p>
               <dl>
                 <dd>
-                  <b> a.</b> Método de reducción a por cientos aplicado al
-                  estado de situación financiera, estado de posición financiera
-                  o balance general
+                  <b>
+                    a. Método de reducción a por cientos aplicado al estado de
+                    situación financiera, estado de posición financiera o
+                    balance general
+                  </b>
                 </dd>
               </dl>
               <p>
                 Para aplicar el método de reducción a por cientos a un estado de
-                situación financiera <b>(Figura 1)</b> se realiza el siguiente
+                situación financiera <b>(Figura 3.4)</b> se realiza el siguiente
                 procedimiento:
               </p>
               <ul>
@@ -80,6 +81,18 @@ const ThreeTwoOneOne = () => {
               </ul>
             </Col>
           </Row>
+          <Row className="img-source center-text">
+            <Col>
+              <b>
+                Figura 3.4. Estado de situación financiera aplicando el método
+                de reducción a porcientos
+              </b>
+              <p>
+                Fuente: Elaboración propia, con base en la bibliografía
+                consultada.
+              </p>
+            </Col>
+          </Row>
           <Row className="center-text">
             <Col>
               <Image
@@ -89,30 +102,20 @@ const ThreeTwoOneOne = () => {
               />
             </Col>
           </Row>
-          <Row className="img-source center-text">
-            <Col>
-              <b>
-                Figura 1. Estado de situación financiera aplicando el método de
-                reducción a porcientos
-              </b>
-              <p>
-                Fuente: Elaboración propia, con base en la bibliografía
-                consultada.
-              </p>
-            </Col>
-          </Row>
+
           <Row>
             <Col>
               <dl>
                 <dd>
-                  <b> b.</b> Método de reducción a por cientos aplicado al
-                  estado de situación financiera, estado de posición financiera
-                  o balance general
+                  <b>
+                    b. Método de reducción a porcientos aplicado al estado de
+                    resultados.
+                  </b>
                 </dd>
               </dl>
               <p>
                 Para aplicar el método de reducción a por cientos a un estado de
-                resultados <b>(Figura X)</b> se realiza el siguiente
+                resultados <b>(Figura 3.5)</b> se realiza el siguiente
                 procedimiento:
               </p>
               <ul>
@@ -122,7 +125,7 @@ const ThreeTwoOneOne = () => {
                   los renglones del estado de resultados. Para nuestro ejemplo
                   sí $190,400 corresponde al 100%, ¿qué porcentaje representa,
                   por ejemplo, el renglón del costo de ventas? El porcentaje es
-                  del 73% <b> (ver figura )</b>
+                  del 73% <b> (Figura 3.5)</b>
                 </li>
                 <li className="m-b-space">
                   Con una regla de tres puedes obtener los porcentajes de cada
@@ -136,6 +139,14 @@ const ThreeTwoOneOne = () => {
               <Image className="sm-img" src={formula1} alt="Regla de tres" />
             </Col>
           </Row>
+          <Row className="img-source center-text m-v-space">
+            <Col>
+              <b>
+                Figura 3.5 Estado de resultados de Comercializadora la Estrella,
+                S.A de C.V.
+              </b>
+            </Col>
+          </Row>
           <Row className="center-text">
             <Col>
               <Image
@@ -143,18 +154,6 @@ const ThreeTwoOneOne = () => {
                 src={estadoResultados}
                 alt="Estado de resultados"
               />
-            </Col>
-          </Row>
-          <Row className="img-source center-text">
-            <Col>
-              <b>
-                Figura 10.2. Estado de resultados aplicando el método de
-                reducción a porcientos.
-              </b>
-              <p>
-                Fuente: Elaboración propia, con base en la bibliografía
-                consultada.
-              </p>
             </Col>
           </Row>
           <Row className="justify-content-center m-b-space">

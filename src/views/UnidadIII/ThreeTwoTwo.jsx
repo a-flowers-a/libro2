@@ -32,16 +32,23 @@ const ThreeTwoTwo = () => {
               </p>
               <p>
                 Elizondo (1999), considera que los principales métodos de
-                análisis financiero horizontal son:
+                análisis financiero horizontal son: método de aumentos y
+                disminuciones, método de tendencias y método de control
+                presupuestal <b>(Figura 3.9)</b>.
               </p>
             </Col>
           </Row>
+          <Row className="img-source center-text m-v-space">
+            <Col>
+              <b>Figura Figura 3.9 Métodos horizontales</b>
+            </Col>
+          </Row>
           <Row className="justify-content-center">
-            <Col sm={6}>
+            <Col sm={5}>
               <Image
                 src={img322}
                 className="full-img"
-                alt="Figura 3.2.2 análisis horizontal"
+                alt="Métodos horizontales"
               />
             </Col>
           </Row>

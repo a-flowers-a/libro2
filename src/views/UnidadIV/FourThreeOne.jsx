@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container, Image } from "react-bootstrap";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
@@ -7,6 +7,7 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import { scrollTop } from "../../helpers/general";
 
 const FourThreeOne = () => {
+  const caminito = "../../assets/images/caminito.png";
   useEffect(() => {
     scrollTop();
   }, []);
@@ -74,6 +75,15 @@ const FourThreeOne = () => {
                     </li>
                     <li>Estados financieros presupuestados o proforma</li>
                   </ol>
+                </Col>
+              </Row>
+              <Row className="justify-content-center m-b-space">
+                <Col md={8}>
+                  <Image
+                    className="full-img"
+                    src={caminito}
+                    alt="Presupuesto maestro"
+                  />
                 </Col>
               </Row>
               <Row className="justify-text">

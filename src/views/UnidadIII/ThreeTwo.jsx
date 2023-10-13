@@ -31,12 +31,15 @@ const ThreeTwo = () => {
               </p>
             </Col>
           </Row>
+          <Row className="img-source center-text m-v-space">
+            <Col>Figura 3.2 Métodos para realizar análisis financiero</Col>
+          </Row>
           <Row>
             <Col>
               <Image
                 className="full-img"
                 src={imgAnalisis}
-                alt="Figura 1.1 La empresa"
+                alt="Métodos para realizar análisis financiero"
               />
             </Col>
           </Row>

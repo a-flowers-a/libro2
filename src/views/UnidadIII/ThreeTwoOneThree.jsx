@@ -7,7 +7,7 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import { scrollTop } from "../../helpers/general";
 
 const ThreeTwoOneThree = () => {
-  // const imgVerticales = "../../assets/images/verticales.png";
+  const metodoDupont = "../../assets/images/dupont.png";
   useEffect(() => {
     scrollTop();
   }, []);
@@ -23,9 +23,18 @@ const ThreeTwoOneThree = () => {
               <h2>3.2.1.3 Método Dupont</h2>
             </Col>
           </Row>
-          <Row className="justify-text">
+          <Row className="img-source center-text m-v-space">
             <Col>
-              <p>Pendiente: falta figura</p>
+              <b>Figura 3.7 Método Dupont.</b>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col sm={10}>
+              <Image
+                className="full-img"
+                src={metodoDupont}
+                alt="Método Dupont"
+              />
             </Col>
           </Row>
         </Container>
