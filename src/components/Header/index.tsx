@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { Row, Col, Container, Image, Badge } from "react-bootstrap"; //style
-import "./style.css";
-import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
+import { Row, Col, Container, Image, Badge } from "react-bootstrap";
+import { UnitContext } from "../../context/UnitProvider/context";
+//style
+import "./style.css";
 
 function Header() {
+  //Context
+  const { state: currentUnit } = UnitContext();
+
   const location = useLocation();
   const ipn = "../../assets/images/Logo_IPN.png";
   const escom = "../../assets/images/Logo_ESCOM.png";
-  const currentUnit = useSelector((state) => state.unitReducer);
   const [unitNumber, setUnitNumber] = useState("1");
   const [colorClass, setColorClass] = useState("aqua");
 

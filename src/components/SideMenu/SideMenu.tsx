@@ -1,31 +1,30 @@
 import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes, faBars, faHome } from "@fortawesome/free-solid-svg-icons";
 import { isMobile } from "react-device-detect";
 import { classes } from "typestyle";
 import { Dropdown } from "react-bootstrap";
-import { setUnit } from "../../actions";
+import { UnitContext } from "../../context/UnitProvider/context";
 import unitOne from "../../constants/unitOne";
 import unitTwo from "../../constants/unitTwo";
 import unitThree from "../../constants/unitThree";
 import unitFour from "../../constants/unitFour";
+import unitFive from "../../constants/unitFive";
 import Item from "./Item";
 import "./styles.css";
-import unitFive from "../../constants/unitFive";
 
 function SideMenu() {
+  const {
+    state: currentUnit,
+    actions: { setUnit },
+  } = UnitContext();
   const history = useHistory();
 
   // context
-  const dispatch = useDispatch();
-  const currentUnit = useSelector((state) => state.unitReducer);
   const [open, setOpen] = useState(true);
   const [colorClass, setColorClass] = useState("aqua");
   const [hoverClass, setHoverClass] = useState("aquaHover");
-
-  const setCurrentUnit = (unitObject) => dispatch(setUnit(unitObject));
 
   useEffect(() => {
     isMobile ? setOpen(false) : setOpen(true);
@@ -97,7 +96,7 @@ function SideMenu() {
               <Dropdown.Item
                 onClick={() => {
                   history.push("/content/I/intro");
-                  setCurrentUnit(unitOne);
+                  setUnit(unitOne);
                 }}
               >
                 Unidad 1
@@ -105,28 +104,28 @@ function SideMenu() {
               <Dropdown.Item
                 onClick={() => {
                   history.push("/content/II/intro");
-                  setCurrentUnit(unitTwo);
+                  setUnit(unitTwo);
                 }}
               >
                 Unidad 2
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => {
-                  setCurrentUnit(unitThree);
+                  setUnit(unitThree);
                 }}
               >
                 Unidad 3
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => {
-                  setCurrentUnit(unitFour);
+                  setUnit(unitFour);
                 }}
               >
                 Unidad 4
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => {
-                  setCurrentUnit(unitFive);
+                  setUnit(unitFive);
                 }}
               >
                 Unidad 5
