@@ -1,4 +1,4 @@
-const sources = [
+const sources: Array<string> = [
   "ABM en la red (23 de abril de 2013). Plan de negocio. Recuperado de https://www.youtube.com/watch?v=xwBfAEMLpV4",
   "Angulo, L. (2016). Proyectos Formulación y evaluación. México: Alfaomega.",
   "Araujo, D. (2012). Proyectos de inversión, análisis, formulación y evaluación práctica. México: Trillas.",

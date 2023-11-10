@@ -1,4 +1,6 @@
-export const unitOne = {
+import { Unit } from "../interfaces/unit";
+
+export const unitOne: Unit = {
   name: "unitOne",
   content: [
     { name: "Introducción", path: "/content/I/intro", level: 1 },

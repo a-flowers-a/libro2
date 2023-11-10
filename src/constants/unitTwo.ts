@@ -1,4 +1,6 @@
-export const unitTwo = {
+import { Unit } from "../interfaces/unit";
+
+export const unitTwo: Unit = {
   name: "unitTwo",
   content: [
     {
