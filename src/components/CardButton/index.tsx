@@ -1,10 +1,14 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { CardButtonProps } from "./types";
 
-function CardButton(props) {
-  const { cardColor, text, textColor, clickFunc } = props;
-  const icon = props.icon || false;
-  const iconFirst = props.iconFirst || false;
+function CardButton({
+  cardColor,
+  icon,
+  iconFirst,
+  text,
+  textColor,
+  clickFunc,
+}: CardButtonProps) {
   return (
     <div className={`card-button ${cardColor}-bg`}>
       <div onClick={clickFunc} className={textColor}>

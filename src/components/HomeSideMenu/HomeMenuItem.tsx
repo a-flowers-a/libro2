@@ -1,10 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
+import { ItemProps } from "../SideMenu/types";
 
-export default function Item(props) {
-  const { icon, topic, path, level } = props;
-
+export default function Item({ icon, topic, path, level }: ItemProps) {
   return (
     <NavLink to={path} activeClassName={"activeItem"}>
       <div

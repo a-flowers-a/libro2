@@ -7,7 +7,7 @@ import home from "../../constants/home";
 import Item from "./HomeMenuItem";
 import "./styles.css";
 
-function HomeMenu(props) {
+function HomeMenu() {
   const [open, setOpen] = useState(true);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ function HomeMenu(props) {
       {open ? (
         <div
           className={classes("sideMenuContainer", {
-            ["sideMenuMobileContainer"]: isMobile === true,
+            sideMenuMobileContainer: isMobile === true,
           })}
         >
           <div className="chevronContainer" onClick={() => setOpen(false)}>
