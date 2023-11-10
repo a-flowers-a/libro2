@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Row, Col, Container, Table } from "react-bootstrap";
+import { MathComponent } from "mathjax-react";
 import PoliHeader from "../../components/Header";
 import PoliFooter from "../../components/Footer";
 import SideMenu from "../../components/SideMenu/SideMenu";
-import { MathComponent } from "mathjax-react";
 import { scrollTop } from "../../helpers/general";
 
 const FiveThreeOne = () => {
