@@ -1,0 +1,15 @@
+.questionaire__question-container{
+  margin-bottom: 30px;
+}
+
+.questionaire__option-container{
+  margin: 5px 0;
+}
+
+.questionaire__option-text{
+  margin-left: 10px;
+}
+
+.questionaire__wrong-icon{
+  margin-right: 10px;
+}
