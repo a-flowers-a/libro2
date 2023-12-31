@@ -3,7 +3,8 @@
 ##
 
 # Docker and docker compose files
-/docker
+Dockerfile
+docker-compose.yaml
 
 # node modules
 **/node_modules
