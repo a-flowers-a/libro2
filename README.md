@@ -1,4 +1,4 @@
-# Fetch's Dog match challenge
+# Polilibro Académico de Finanzas Empresariales
 
 Digital resource with information related to business finance, whose content is developed by professors of the Instituto Politécnico Nacional who teach these classes at the Escuela Superior de Cómputo. It aims to support students' learning so that they can consult it at any time during and out of class session.
 
